@@ -1,4 +1,4 @@
-package UtsuPWiki.UtsuP;
+package UtsuPWiki;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
