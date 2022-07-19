@@ -1,4 +1,4 @@
-package Controller;
+package UtsuPWiki.Controller;
 
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Controller;
