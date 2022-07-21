@@ -19,15 +19,15 @@ public class Couriers {
     @Column(name = "ID")
     private long id;
 
-    @Column(name = "First_Name", nullable = false, unique = false)
+    @Column(name = "First_Name", nullable = false)
     private String firstName;
 
-    @Column(name = "Last_Name", nullable = false, unique = false)
+    @Column(name = "Last_Name", nullable = false)
     private String lastName;
 
-    @Column(name = "TotalQuantityOfDeliveredProducts", nullable = false, unique = false)
+    @Column(name = "TotalQuantityOfDeliveredProducts", nullable = false)
     private int totalQuantityOfDeliveredProducts = 0;
 
-    @Column(name = "Availability", nullable = false, unique = false)
+    @Column(name = "Availability", nullable = false)
     private boolean availability = false;
 }
