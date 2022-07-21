@@ -13,13 +13,6 @@ public class HomePageController {
     String indexController(Model model){
         log.info("Was called!");
         model.addAttribute("message","<h1>Utsu-P  --  The Dying Message</h1>");
-        return "huindex";
-    }
-
-    @GetMapping("/test")
-    String indexControllerTEST(Model model){
-        log.info("Was called!");
-        model.addAttribute("message","<h1>Utsu-P  --  The Dying Message</h1>");
         return "index";
     }
 
