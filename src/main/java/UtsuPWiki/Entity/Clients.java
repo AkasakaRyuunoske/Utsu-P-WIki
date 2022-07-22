@@ -44,4 +44,10 @@ public class Clients {
 
     @Column(name = "Default_Address")
     private String default_Address = "none";
+
+    @Column(name = "Registration_Date", nullable = false)
+    private String registrationDate;
+
+    @Column(name = "Comments_Quantity", nullable = false)
+    private int commentsQuantity = 0;
 }
