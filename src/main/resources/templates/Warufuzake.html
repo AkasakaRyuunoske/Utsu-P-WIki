@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Utsu-P-Wiki Home Page</title>
+
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<!-- Principal Header, same for all pages -->
+<header class="fav-color top-header">
+    <h1 class="middle-title">Utsu-P-Wiki!</h1>
+
+    <div>
+        <button>Authors</button>
+        <button>Community</button>
+    </div>
+
+    <div>
+        <button>Create</button>
+        <button>Buy</button>
+        <h1>We know you as:</h1>
+        <button>Akasaka Ryuunosuke</button>
+    </div>
+
+
+    <!-- 		<a href="/">
+                <img src="/Post-Traumatic-Stress-Disorder.jpg" class="utsu-p-icon" alt="error">
+            </a> -->
+
+</header>
+
+<nav>
+    <h2 class="top-header middle-title">You are in:
+        <p th:text="*{currentPage}" th:remove="tag"></p>
+    </h2>
+</nav>
+
+
+</body>
+</html>
