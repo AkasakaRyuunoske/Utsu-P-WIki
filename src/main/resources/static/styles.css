@@ -1,0 +1,24 @@
+.fav-color{
+	color: #6F18D3
+}
+
+.top-header{
+  	border-width: 1px;
+  	border-style: ridge;
+  	border-color: #6F18D3;
+}
+
+.middle-title{
+  	font-family: "Old English Text MT";
+  	padding-left: 40%;
+}
+
+.utsu-p-icon{
+	width: 5%; 
+	height: 5%;
+	border-width: 2px;
+  	border-style: ridge;
+  	border-color: #6F18D3;
+  	margin-top:-4%;
+  	margin-left: 1%;
+}
