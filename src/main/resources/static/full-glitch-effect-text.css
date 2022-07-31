@@ -31,10 +31,6 @@ h1, h2 {
   filter: drop-shadow(0 1px 3px);
 }
 
-.hero a{
-  text-decoration: none;
-}
-
 .demo {
   height: 100px;
   background: #fff;
