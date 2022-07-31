@@ -5,14 +5,18 @@
 	<title>Utsu-P-Wiki Home Page</title>
 
 	<link rel="stylesheet" href="/styles.css">
+	<link rel="stylesheet" href="/full-glitch-effect-text.css">
+	<link rel="stylesheet" href="/horizontal-glitch-effect-text.css">
 </head>
 <body>
 
+	<h2>You are at: 
+		<p th:text="*{currentPage}" th:remove="tag"></p>
+	</h2>
 	<!-- Principal Header, same for all pages -->
-	<header class="fav-color top-header">
-		<h1 class="middle-title">Utsu-P-Wiki!</h1>
- 
-		<div>
+	<header class="fav-color hero-container">
+		<h1 class="hero glitch layers" data-text="Utsu-P">Utsu-P</h1>
+<!-- 		<div>
 			<button>Authors</button>
 			<button>Community</button>
 		</div>
@@ -22,19 +26,66 @@
 			<button>Buy</button>
 			<h1>We know you as:</h1>
 			<button>Akasaka Ryuunosuke</button>
-		</div>
+		</div> -->
 
-			
+
 <!-- 		<a href="/">
 			<img src="/Post-Traumatic-Stress-Disorder.jpg" class="utsu-p-icon" alt="error">
 		</a> -->
 		
 	</header>
 
-	<nav>	
-		<h2 class="top-header middle-title">You are in: home page</h2>
-	</nav>
+	<div class="container hero">
+	 		<div class="stack" style="--stacks: 3;" id="Algorithm">
+				<span style="--index: 0;">Algorithm</span>
+				<span style="--index: 1;">Algorithm</span>
+				<span style="--index: 2;">Algorithm</span>
+	  		</div>
+ 		<div class="stack" style="--stacks: 3;" id="Post-Traumatic-Stress-Disorder">
+			<span style="--index: 0;">Post-Traumatic-Stress-Disorder</span>
+			<span style="--index: 1;">Post-Traumatic-Stress-Disorder</span>
+			<span style="--index: 2;">Post-Traumatic-Stress-Disorder</span>
+  		</div>
 
+ 		<div class="stack" style="--stacks: 3;" id="Moksha">
+			<span style="--index: 0;">Moksha</span>
+			<span style="--index: 1;">Moksha</span>
+			<span style="--index: 2;">Moksha</span>
+  		</div>
 
+ 		<div class="stack" style="--stacks: 3;" id="Warufuzake">
+			<span style="--index: 0;">Warufuzake</span>
+			<span style="--index: 1;">Warufuzake</span>
+			<span style="--index: 2;">Warufuzake</span>
+  		</div>
+	</div>
+<!-- 
+	<div class="hero-container">
+		<nav>	
+			<h2 class="top-header middle-title">You are in: 
+				<p th:text="*{currentPage}" th:remove="tag"></p>
+			</h2>
+			<h2 class="hero glitch layers" data-text="Home"><span>Home</span></h2>
+		</nav>
+	</div>
+ -->
 </body>
+<script type="text/javascript">
+
+	document.getElementById("Algorithm").onclick = function () {
+		window.location.href = "/authors/utsu-p/albums/Algorithm";
+	}
+
+	document.getElementById("Post-Traumatic-Stress-Disorder").onclick = function () {
+		window.location.href = "/authors/utsu-p/albums/Post-Traumatic-Stress-Disorder";
+	}
+
+	document.getElementById("Moksha").onclick = function () {
+		window.location.href = "/authors/utsu-p/albums/Moksha";
+	}
+
+	document.getElementById("Warufuzake").onclick = function () {
+		window.location.href = "/authors/utsu-p/albums/Warufuzake";
+	}
+</script>
 </html>
