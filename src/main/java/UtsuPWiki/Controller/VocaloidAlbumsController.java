@@ -9,13 +9,15 @@ import org.springframework.web.bind.annotation.PathVariable;
 public class VocaloidAlbumsController {
     @GetMapping("/authors/{author}/albums")
     public String albumsGETController(Model model, @PathVariable String author){
-        model.addAttribute("currentPage","/authors/{author}/albums");
-        return "albums";
+        String resultPage = "Authors/" + author + "/" + author + "-albums"; // here is defined page to be returned
+        model.addAttribute("currentPage","/authors/{" + author + "}/albums");
+        return resultPage;
     }
 
     @GetMapping("/authors/{author}/albums/{album}")
     public String albumGETController(Model model, @PathVariable String author, @PathVariable String album){
-        model.addAttribute("currentPage","/authors/{author}/albums/{album}");
+        String resultPage = "Authors/" + author + "/" + author + "-albums"; // here is defined page to be returned
+        model.addAttribute("currentPage","/authors/{" + author + "}/albums/{" + album + "}");
         return album;
     }
 }
