@@ -10,65 +10,27 @@
 </head>
 <body>
 
-	<h2>You are at: 
-		<p th:text="*{currentPage}" th:remove="tag"></p>
-	</h2>
+	<div>
+		<!-- To know where the the user is -->
+		<h2>You are at: 
+			<p th:text="*{currentPage}" th:remove="tag"></p>
+		</h2>
+
+		<!-- To know who the the user is -->
+		<h2>Your are:
+			<p th:text="*{currentUser}" th:remove="tag"></p>
+		</h2>
+
+	</div>
 	<!-- Principal Header, same for all pages -->
 	<header class="fav-color hero-container">
-		<h1 class="hero glitch layers" data-text="Utsu-P">Utsu-P</h1>
+		<h1 class="hero glitch layers" data-text="Utsu-P" id="Utsu-P Wiki">Utsu-P</h1>
 	</header>
-
-	<div class="container hero">
-	 		<div class="stack" style="--stacks: 3;" id="Algorithm">
-				<span style="--index: 0;">Algorithm</span>
-				<span style="--index: 1;">Algorithm</span>
-				<span style="--index: 2;">Algorithm</span>
-	  		</div>
- 		<div class="stack" style="--stacks: 3;" id="Post-Traumatic-Stress-Disorder">
-			<span style="--index: 0;">Post-Traumatic-Stress-Disorder</span>
-			<span style="--index: 1;">Post-Traumatic-Stress-Disorder</span>
-			<span style="--index: 2;">Post-Traumatic-Stress-Disorder</span>
-  		</div>
-
- 		<div class="stack" style="--stacks: 3;" id="Moksha">
-			<span style="--index: 0;">Moksha</span>
-			<span style="--index: 1;">Moksha</span>
-			<span style="--index: 2;">Moksha</span>
-  		</div>
-
- 		<div class="stack" style="--stacks: 3;" id="Warufuzake">
-			<span style="--index: 0;">Warufuzake</span>
-			<span style="--index: 1;">Warufuzake</span>
-			<span style="--index: 2;">Warufuzake</span>
-  		</div>
+	<div class="hero">
+		<h2>Authors</h2>
+		<h2>Community</h2>
+		<h2>Create</h2>
+		<h2>Buy</h2>
 	</div>
-<!-- 
-	<div class="hero-container">
-		<nav>	
-			<h2 class="top-header middle-title">You are in: 
-				<p th:text="*{currentPage}" th:remove="tag"></p>
-			</h2>
-			<h2 class="hero glitch layers" data-text="Home"><span>Home</span></h2>
-		</nav>
-	</div>
- -->
 </body>
-<script type="text/javascript">
-
-	document.getElementById("Algorithm").onclick = function () {
-		window.location.href = "/authors/utsu-p/albums/Algorithm";
-	}
-
-	document.getElementById("Post-Traumatic-Stress-Disorder").onclick = function () {
-		window.location.href = "/authors/utsu-p/albums/Post-Traumatic-Stress-Disorder";
-	}
-
-	document.getElementById("Moksha").onclick = function () {
-		window.location.href = "/authors/utsu-p/albums/Moksha";
-	}
-
-	document.getElementById("Warufuzake").onclick = function () {
-		window.location.href = "/authors/utsu-p/albums/Warufuzake";
-	}
-</script>
 </html>
