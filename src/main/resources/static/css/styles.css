@@ -1,0 +1,50 @@
+.fav-color{
+	color: #6F18D3
+}
+
+.neon-text{
+	text-shadow: 0 0 7px #fff,
+	0 0 10px #fff,
+	0 0 21px #fff,
+	0 0 42px #0fa,
+	0 0 82px #0fa,
+	0 0 92px #0fa,
+	0 0 102px #0fa,
+	0 0 151px #0fa,
+}
+
+.header-options-text{
+  font-size: 3rem;
+  line-height: 1;
+  color: white;
+  filter: drop-shadow(0 1px 3px);  /* giving off a glow */
+  font-family: "Old English Text MT";
+}
+
+.header-grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap:50px;
+}
+
+.header-grid-item {
+  text-align: center;
+}
+
+.main-content-container{
+	border-top: 5px solid white;
+	padding-left:5%; 
+	padding-top:10%;
+	margin-top: 20%;
+}
+
+.main-content-container h1{
+	text-align:center;
+}
+
+.footer{
+	background:#1A1A1A;
+	border-top: 3px solid white;
+	margin-top: 10%;
+	padding-left:5%; 
+}
