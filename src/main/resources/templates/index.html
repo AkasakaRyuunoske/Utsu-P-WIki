@@ -4,33 +4,157 @@
 <head>
 	<title>Utsu-P-Wiki Home Page</title>
 
-	<link rel="stylesheet" href="/styles.css">
-	<link rel="stylesheet" href="/full-glitch-effect-text.css">
-	<link rel="stylesheet" href="/horizontal-glitch-effect-text.css">
+	<!-- CSS only libs. JS at the end of the page -->
+
+	<link rel="stylesheet" href="/css/styles.css">
+	<link rel="stylesheet" href="/css/full-glitch-effect-text.css">
+	<link rel="stylesheet" href="/css/horizontal-glitch-effect-text.css">
+
 </head>
 <body>
 
 	<div>
-		<!-- To know where the the user is -->
-		<h2>You are at: 
-			<p th:text="*{currentPage}" th:remove="tag"></p>
-		</h2>
 
 		<!-- To know who the the user is -->
 		<h2>Your are:
 			<p th:text="*{currentUser}" th:remove="tag"></p>
 		</h2>
 
+		<!-- To know where the the user is -->
+		<h2>You are at: 
+			<p th:text="*{currentPage}" th:remove="tag"></p>
+		</h2>
+
 	</div>
+
 	<!-- Principal Header, same for all pages -->
 	<header class="fav-color hero-container">
-		<h1 class="hero glitch layers" data-text="Utsu-P" id="Utsu-P Wiki">Utsu-P</h1>
+		<h1 class="hero glitch layers" data-text="Utsu-P Wiki" id="Utsu-P">Utsu-P</h1>
 	</header>
-	<div class="hero">
-		<h2>Authors</h2>
-		<h2>Community</h2>
-		<h2>Create</h2>
-		<h2>Buy</h2>
+	<div class="header-options-text header-grid-container">
+		<h2 class="header-grid-item" id="Authors">Authors</h2>
+		<h2 class="header-grid-item" id="Community">Community</h2>
+		<h2 class="header-grid-item" id="Create">Create</h2>
+		<h2 class="header-grid-item" id="Buy">Buy</h2>
 	</div>
+	<!-- Here the main content of the page starts -->
+
+	<div class="main-content-container">
+		<h1>Utsu-P - The Dying Message</h1>
+		<span>Sanman de fuantei na kono sekai       </span>
+		<p>kakumei ho okoshite yo 					</p> 
+
+		<br>
+
+		<h2>"AI" ga seikai ni nareeee				</h2>
+		
+		<br>
+
+		<p>fuante nantei kankan ni kiechate 		</p>
+		<p>hakumei no hi terasu sono mukou hee  	</p>
+		
+		<br>
+
+		<p>kiroku mo kioku mo nai hito, maishou 	</p>
+		<p>kibuo mo mirai mo nai kuni, gaishou  	</p>
+		
+		<br>
+
+		<p>nagai yoru wo oe asayake wo mita			</p>
+		<p>akaku somaru senaka tooooooo				</p>
+		
+		<br>
+
+		<h2>NEE ANATA WA ITSUKA INAKU NARI MASU KA? </h2>
+		<h2>OWARI KAKE NO KONO SEKAI DE 			</h2>
+		<h2>YAOKE MAE NO UREI TAEGATAI KODOKU		</h2>
+		<h2>AWAI OMOI TO SEKIBAKU WO DAITA 			</h2>
+		
+		<br>
+
+		<p>senmen na dangan no kioku ni 		    </p>
+		<p>dare mo ga hi yotte wa 					</p>
+		
+		<br>
+
+		<h2>daiiipo ga de nai 						</h2>
+		
+		<br>
+
+		<p>	anzen wa kankan ni kiechate 			</p>
+		<p>	akukeyou oyoboshita boku no kokoro he   </p>
+		
+		<br>
+
+		<p>	nagai ame ga yami atsui hizashi ga 		</p>
+		<p>	terasu ookina senaka wooooo 			</p>
+		
+		<br>
+
+		<h2>	NEE ANATA WA ITSUMO YUME WO MITE MASU KA?	</h2>
+		<h2>	OWARI KAKE NO KONO SEKAI DE 				</h2>
+		<h2>	FUSAGA RE TA MICCHI WO HIRAKU MONO NI NARU  </h2>
+		<h2>	"MESSEJI" WO IDA ITA TSURAI YOOOO			</h2>
+		
+		<br>
+
+		<p>	mujou ni mo toki ga kitte kanata he tabidata	</p>
+		<p>	kankan na kanjou kamae kudake chiiru tame ni 	</p>
+		<p>	yuukan na anata wa sora wo kirisaita			</p>
+		<p>	seikan na hyoujou gamae kaze ni nattaaaaa		</p>
+		
+		<br>
+
+		<h2>	DOOOOOOOKOOOOOOOOOOOKUUUUUUU KAKUSHITE		</h2>
+		
+		<br>
+
+		<h2>	SEKIBAAAAAAAKUUUUUUU KAKUSHITE				</h2>
+		
+		<br>
+
+		<p>	ikiru koto sae nozome nai nara					</p>
+		<p>	tada sekai wo kanjite iki wo haku 				</p>
+		
+		<br>
+
+		<p>	nagai yoru wo oe senaka nado nai 				</p>
+		<p>	soko ni aru no wa tadaaaa hiroiiiiiiii buruuuuuuu</p>
+		
+		<br>
+
+		<h2>	NEE ANATA WA ITSUMO GENKI WO KURE MASU KA?	</h2>
+		<h2>	OWARI KAKE NO KONO SEKAI DE 				</h2>
+		<h2>	KURAGARI DE KAWASHITA CHIISANA YAKUSOKU GA 	</h2>
+		<h2>	WATASHI NOO IKIRUUUUU KATE SAAA 			</h2>
+		
+		<br>
+
+		<p>	nee watashi wa nido to kurai kao shinai yo 		</p>
+		<p>	saegiru kage mono mienu kara 					</p>
+		<p>	akarui hizashi wo zonbuni abinagara 			</p>
+		<p>	"Muika" no taoru tare ta wo daitaaaa 			</p>
+	</div>
+
+	<footer class="footer">
+		<p>	nagai yoru wo oe senaka nado nai 				</p>
+		<p>	soko ni aru no wa tadaaaa hiroiiiiiiii buruuuuuuu</p>
+		
+		<br>
+
+		<h2>	NEE ANATA WA ITSUMO GENKI WO KURE MASU KA?	</h2>
+		<h2>	OWARI KAKE NO KONO SEKAI DE 				</h2>
+		<h2>	KURAGARI DE KAWASHITA CHIISANA YAKUSOKU GA 	</h2>
+		<h2>	WATASHI NOO IKIRUUUUU KATE SAAA 			</h2>
+		
+		<br>
+
+		<p>	nee watashi wa nido to kurai kao shinai yo 		</p>
+		<p>	saegiru kage mono mienu kara 					</p>
+		<p>	akarui hizashi wo zonbuni abinagara 			</p>
+		<p>	"Muika" no taoru tare ta wo daitaaaa 			</p>
+	</footer>
 </body>
+
+<script type="text/javascript" src="/js/navigation.js"></script>
 </html>
