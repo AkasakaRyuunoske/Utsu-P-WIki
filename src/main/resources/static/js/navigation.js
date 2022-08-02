@@ -1,10 +1,21 @@
 let utsup = document.getElementById("Utsu-P");
+let counter = 0;
 
-console.log(utsup.dataset.text + " <-- that is the value i see");
+document.getElementById("currentUser").onclick = function(){
+	windows.location.href = "/logout";
+}
 
 document.getElementById("Utsu-P").onclick = function () {
-	utsup.dataset.text = "Sugoshi tsutzu";
-	utsup.innerHTML = "Sugoshi tsutzu";
+
+	if (counter == 0) {
+		utsup.dataset.text = "Utsu-P Wiki";
+		utsup.innerHTML = "Utsu-P Wiki";
+		counter = 1;
+	} else {
+		utsup.dataset.text = "鬱P Wiki";
+		utsup.innerHTML = "鬱P Wiki";
+		counter = 0;
+	}
 }
 
 document.getElementById("Authors").onclick = function () {
