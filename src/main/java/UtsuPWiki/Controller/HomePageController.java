@@ -10,15 +10,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class HomePageController {
     @GetMapping("/")
     String indexController(Model model){
-        log.info("Was called!");
+        log.info("indexController Was called!");
         model.addAttribute("currentPage","Home");
-        return "index";
-    }
-
-    @GetMapping("/authors/utsu-p/albums/Algorithm")
-    String test(Model model){
-        log.info("Was called!");
-        model.addAttribute("currentPage","/authors/utsu-p/albums/Algorithm");
         return "index";
     }
 }
