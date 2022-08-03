@@ -2,8 +2,29 @@ let utsup = document.getElementById("Utsu-P");
 let counter = 0;
 
 document.getElementById("currentUser").onclick = function(){
-	windows.location.href = "/logout";
+	window.location.href = "/logout";
 }
+
+document.getElementById("homePage").onclick = function(){
+	window.location.href = "/";
+}
+
+document.getElementById("authorsPage").onclick = function(){
+	window.location.href = "/authors/";
+}
+	//todo
+// document.getElementById("authorPage").onclick = function(){
+// 	window.location.href = "/authors/";
+// }
+document.getElementById("albumsPage").onclick = function(){
+	window.location.href = "/albums/";
+}
+	//todo
+// document.getElementById("albumPage").onclick = function(){
+// 	window.location.href = "/albums/";
+// }
+
+
 
 document.getElementById("Utsu-P").onclick = function () {
 
