@@ -12,6 +12,7 @@ public class AuthorMainPageController {
         model.addAttribute("currentPage","*/authors");
         return "authors";
     }
+
     @GetMapping("/authors/{author}")
     public String authorGETController(@PathVariable String author, Model model){
         model.addAttribute("author","utsu-p");
