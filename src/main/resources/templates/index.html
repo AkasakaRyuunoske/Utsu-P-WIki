@@ -19,19 +19,21 @@
 	<div class="navigation">
 
 		<!-- To know who the the user is -->
-		<h2>Your are:
+		<h2>You are:
 			<span th:text="*{currentUser}" id="currentUser"></span>
 		</h2>
 
+		<h2>You are at:
+			<span th:each="locations : ${location}" th:text="${locations}" onclick="navigate(this)"></span>
+		</h2>
 		<!-- To know where the the user is -->
-		<h2>You are at: 
+<!-- 		<h2>You are at: 
 			<span th:text="*{homePage}" 	id="homePage"	></span>
 			<span th:text="*{authorsPage}"  id="authorsPage"></span>
 			<span th:text="*{authorPage}"   id="authorPage"	></span>
 			<span th:text="*{albumsPage}" 	id="albumsPage"	></span>
 			<span th:text="*{albumPage}" 	id="albumPage"	></span>
-		</h2>
-
+		</h2> -->
 	</div>
 
 	<!-- Principal Header, same for all pages -->
@@ -39,10 +41,10 @@
 		<h1 class="hero glitch layers" data-text="鬱P Wiki" id="Utsu-P">鬱P Wiki</h1>
 	</header>
 	<div class="header-options-text header-grid-container">
-		<h2 class="header-grid-item" id="Authors">Authors</h2>
-		<h2 class="header-grid-item" id="Community">Community</h2>
-		<h2 class="header-grid-item" id="Create">Create</h2>
-		<h2 class="header-grid-item" id="Buy">Buy</h2>
+		<h2 class="header-grid-item" onclick="navigate(this)">Authors</h2>
+		<h2 class="header-grid-item" onclick="navigate(this)">Community</h2>
+		<h2 class="header-grid-item" onclick="navigate(this)">Create</h2>
+		<h2 class="header-grid-item" onclick="navigate(this)">Buy</h2>
 	</div>
 	<!-- Here the main content of the page starts -->
 
