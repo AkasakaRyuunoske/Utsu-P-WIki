@@ -9,6 +9,15 @@
 	height: auto;
 }
 
+.navigation span{
+	transition: background 2s;
+  	transition-timing-function: linear;
+}
+
+.navigation span:hover{
+	background:rgba(60, 0, 122,0.4);
+}
+
 .neon-text{
 	text-shadow: 0 0 7px #fff,
 	0 0 10px #fff,
