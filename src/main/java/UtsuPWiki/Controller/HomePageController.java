@@ -11,7 +11,10 @@ public class HomePageController {
     @GetMapping("/")
     String indexController(Model model){
         log.info("indexController Was called!");
-        model.addAttribute("currentPage","Home");
+
+        model.addAttribute("homePage","home/");
+        model.addAttribute("authorsPage","authors/");
+
         return "index";
     }
 }
