@@ -19,13 +19,17 @@
 	<div class="navigation">
 
 		<!-- To know who the the user is -->
-		<h2 id="currentUser">Your are:
-			<p th:text="*{currentUser}" th:remove="tag"></p>
+		<h2>Your are:
+			<span th:text="*{currentUser}" id="currentUser"></span>
 		</h2>
 
 		<!-- To know where the the user is -->
 		<h2>You are at: 
-			<p th:text="*{currentPage}" th:remove="tag"></p>
+			<span th:text="*{homePage}" 	id="homePage"	></span>
+			<span th:text="*{authorsPage}"  id="authorsPage"></span>
+			<span th:text="*{authorPage}"   id="authorPage"	></span>
+			<span th:text="*{albumsPage}" 	id="albumsPage"	></span>
+			<span th:text="*{albumPage}" 	id="albumPage"	></span>
 		</h2>
 
 	</div>
@@ -185,6 +189,10 @@
 
 				<p>Instagram:
 					<a href="https://www.instagram.com/asshole_wii/">https://www.instagram.com/asshole_wii/user/176618/mylist/6385075</a>
+				</p>
+
+				<p>linktr:
+					<a href="linktr.ee/asshole_wii">linktr.ee/asshole_wii</a>
 				</p>
 			</h3>
 		</div>
