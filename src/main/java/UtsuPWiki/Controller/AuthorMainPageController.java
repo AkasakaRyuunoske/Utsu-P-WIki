@@ -9,14 +9,15 @@ import org.springframework.web.bind.annotation.PathVariable;
 public class AuthorMainPageController {
     @GetMapping("/authors")
     public String authorsGETController(Model model){
-        model.addAttribute("currentPage","*/authors");
+        model.addAttribute("homePage","home/");
+        model.addAttribute("authorsPage","authors/");
         return "authors";
     }
 
     @GetMapping("/authors/{author}")
     public String authorGETController(@PathVariable String author, Model model){
         model.addAttribute("author","utsu-p");
-        model.addAttribute("currentPage","*/authors/{author}");
+        model.addAttribute("authorsPage","authors/{author}");
         return "authors";
     }
 }
