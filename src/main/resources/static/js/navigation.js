@@ -22,6 +22,12 @@ function navigate(element) {
 	element.id = "location";
 
 	let location = document.getElementById('location').innerHTML.toLowerCase();
+	
+	if (location == "home/") {
+		window.location.href = "/";
 
-	window.location.href = location;
+	} else {
+
+		window.location.href = location;
+	}
 }
