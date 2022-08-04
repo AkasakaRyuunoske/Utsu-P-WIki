@@ -24,16 +24,10 @@
 		</h2>
 
 		<h2>You are at:
-			<span th:each="locations : ${location}" th:text="${locations}" onclick="navigate(this)"></span>
+			<span id="locationsContainer">
+				<span th:each="locations : ${location}" th:text="${locations}" onclick="navigate(this)"></span>
+			</span>	
 		</h2>
-		<!-- To know where the the user is -->
-<!-- 		<h2>You are at: 
-			<span th:text="*{homePage}" 	id="homePage"	></span>
-			<span th:text="*{authorsPage}"  id="authorsPage"></span>
-			<span th:text="*{authorPage}"   id="authorPage"	></span>
-			<span th:text="*{albumsPage}" 	id="albumsPage"	></span>
-			<span th:text="*{albumPage}" 	id="albumPage"	></span>
-		</h2> -->
 	</div>
 
 	<!-- Principal Header, same for all pages -->
