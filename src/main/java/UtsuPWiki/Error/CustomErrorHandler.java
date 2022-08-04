@@ -5,8 +5,6 @@ import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.context.request.WebRequest;
-import org.springframework.web.servlet.NoHandlerFoundException;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -14,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 @Log4j2
 @Controller
 public class CustomErrorHandler implements ErrorController {
-    private String errorResponse;
+    private String errorResponse = "error";
 
     @RequestMapping("/error")
     public String handleErrors(HttpServletRequest httpServletRequest,
@@ -23,27 +21,32 @@ public class CustomErrorHandler implements ErrorController {
         int status = httpServletResponse.getStatus();
         log.info("Error handled: " + status);
 
-        if (status == 404){
-
-            handleError404(status, model);
-
-        } else {
-
-            log.info("idk this error: " + status);
-
-            model.addAttribute("error", httpServletResponse.getStatus());
-
-            errorResponse = "error";
+        if (status > 299){
+            handleError(status, model);
         }
-
         return errorResponse;
     }
 
-    public void handleError404(int status, Model model){
+    public void handleError(int status, Model model){
+        model.addAttribute("error", "Error: " + status);
+        switch (status){
+            case 404:
+                model.addAttribute("errorMessage",
+                        "Resource not found or might not exist");
+                break;
+            case 500:
+                model.addAttribute("errorMessage",
+                        "Server Side problem.");
+                break;
+            case 401:
+                model.addAttribute("errorMessage",
+                        "You have made bad request for some reason." +
+                                "Check your request or retry later");
+                break;
+            default:
+                model.addAttribute("errorMessage",
+                        "Unexpected problem occurred, try later.");
+        }
 
-        model.addAttribute("error",
-                "yeay handleError404 worked here!");
-
-        errorResponse = "error";
     }
 }
