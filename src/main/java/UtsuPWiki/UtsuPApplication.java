@@ -7,7 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @Log4j2
 @SpringBootApplication
 public class UtsuPApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(UtsuPApplication.class, args);
 		log.info("Application Started!");
@@ -17,6 +16,6 @@ public class UtsuPApplication {
 				" то твёрдая воля — это ежеминутно одерживаемая победа над инстинктами,\n" +
 				" над влечениями, которые воля обуздывает и подавляет, над препятствиями\n" +
 				" и преградами, которые она осиливает, над всяческими трудностями,\n" +
-				" которые она героически преодолевает. \" (Оноре де Бальзак)");
+				" которые она героически преодолевает. \" (Оноре де Бальзак)\")");
 	}
 }
