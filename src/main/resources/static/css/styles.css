@@ -1,5 +1,18 @@
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
 .fav-color{
 	color: #6F18D3
+}
+
+.error{
+	width: 100%;
+	height: auto;
+
+	font-size: 2vw;
+	color: white;
 }
 
 .navigation{
