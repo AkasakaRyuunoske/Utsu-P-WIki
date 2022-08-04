@@ -4,100 +4,208 @@
 <head>
     <title>Utsu-P-Wiki Home Page</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only libs. JS at the end of the page -->
+
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/full-glitch-effect-text.css">
     <link rel="stylesheet" href="/css/horizontal-glitch-effect-text.css">
+
+    <link rel="icon" type="image/x-icon" href="/Post-Traumatic-Stress-Disorder.jpg">
+
 </head>
 <body>
 
-<h2>You are at:
-    <p th:text="*{currentPage}" th:remove="tag"></p>
-</h2>
-<!-- Principal Header, same for all pages -->
-<header class="fav-color hero-container">
-    <h1 class="hero glitch layers" data-text="Utsu-P" id="Utsu-P">Utsu-P</h1>
-</header>
+    <div class="navigation">
 
-<div class="container hero">
+        <!-- To know who the the user is -->
+        <h2>You are:
+            <span th:text="*{currentUser}" id="currentUser"></span>
+        </h2>
 
-    <div class="stack" style="--stacks: 3;" id="Diarrhea">
-        <span style="--index: 0;">Diarrhea</span>
-        <span style="--index: 1;">Diarrhea</span>
-        <span style="--index: 2;">Diarrhea</span>
+        <h2>You are at:
+            <span th:each="locations : ${location}" th:text="${locations}" onclick="navigate(this)"></span>
+        </h2>
+        <!-- To know where the the user is -->
+<!--        <h2>You are at: 
+            <span th:text="*{homePage}"     id="homePage"   ></span>
+            <span th:text="*{authorsPage}"  id="authorsPage"></span>
+            <span th:text="*{authorPage}"   id="authorPage" ></span>
+            <span th:text="*{albumsPage}"   id="albumsPage" ></span>
+            <span th:text="*{albumPage}"    id="albumPage"  ></span>
+        </h2> -->
     </div>
 
-    <div class="stack" style="--stacks: 3;" id="Traumatic">
-        <span style="--index: 0;">Traumatic</span>
-        <span style="--index: 1;">Traumatic</span>
-        <span style="--index: 2;">Traumatic</span>
+    <!-- Principal Header, same for all pages -->
+    <header class="fav-color hero-container">
+        <h1 class="hero glitch layers" data-text="error" id="Utsu-P" th:text="*{error}"></h1>
+
+        <br>
+
+        <h1 class="error header-options-text" th:text="*{errorMessage}"></h1>
+    </header>
+    <div class="header-options-text header-grid-container">
+        <h2 class="header-grid-item" onclick="navigate(this)">Authors</h2>
+        <h2 class="header-grid-item" onclick="navigate(this)">Community</h2>
+        <h2 class="header-grid-item" onclick="navigate(this)">Create</h2>
+        <h2 class="header-grid-item" onclick="navigate(this)">Buy</h2>
+    </div>
+    <!-- Here the main content of the page starts -->
+
+    <!-- Important to note that footer is NOT RESPONSIVE by height
+        so long content container is needed to HIDE that -->
+    <div class="main-content-container">
+        <h1>Utsu-P - The Dying Message</h1>
+        <span>Sanman de fuantei na kono sekai       </span>
+        <p>kakumei ho okoshite yo                   </p> 
+
+        <br>
+
+        <h2>"AI" ga seikai ni nareeee               </h2>
+        
+        <br>
+
+        <p>fuante nantei kankan ni kiechate         </p>
+        <p>hakumei no hi terasu sono mukou hee      </p>
+        
+        <br>
+
+        <p>kiroku mo kioku mo nai hito, maishou     </p>
+        <p>kibuo mo mirai mo nai kuni, gaishou      </p>
+        
+        <br>
+
+        <p>nagai yoru wo oe asayake wo mita         </p>
+        <p>akaku somaru senaka tooooooo             </p>
+        
+        <br>
+
+        <h2>NEE ANATA WA ITSUKA INAKU NARI MASU KA? </h2>
+        <h2>OWARI KAKE NO KONO SEKAI DE             </h2>
+        <h2>YAOKE MAE NO UREI TAEGATAI KODOKU       </h2>
+        <h2>AWAI OMOI TO SEKIBAKU WO DAITA          </h2>
+        
+        <br>
+
+        <p>senmen na dangan no kioku ni             </p>
+        <p>dare mo ga hi yotte wa                   </p>
+        
+        <br>
+
+        <h2>daiiipo ga de nai                       </h2>
+        
+        <br>
+
+        <p> anzen wa kankan ni kiechate             </p>
+        <p> akukeyou oyoboshita boku no kokoro he   </p>
+        
+        <br>
+
+        <p> nagai ame ga yami atsui hizashi ga      </p>
+        <p> terasu ookina senaka wooooo             </p>
+        
+        <br>
+
+        <h2>    NEE ANATA WA ITSUMO YUME WO MITE MASU KA?   </h2>
+        <h2>    OWARI KAKE NO KONO SEKAI DE                 </h2>
+        <h2>    FUSAGA RE TA MICCHI WO HIRAKU MONO NI NARU  </h2>
+        <h2>    "MESSEJI" WO IDA ITA TSURAI YOOOO           </h2>
+        
+        <br>
+
+        <p> mujou ni mo toki ga kitte kanata he tabidata    </p>
+        <p> kankan na kanjou kamae kudake chiiru tame ni    </p>
+        <p> yuukan na anata wa sora wo kirisaita            </p>
+        <p> seikan na hyoujou gamae kaze ni nattaaaaa       </p>
+        
+        <br>
+
+        <h2>    DOOOOOUUKOOOOOOOOOOOKUUUUUUU KAKUSHITE      </h2>
+        
+        <br>
+
+        <h2>    SEKIBAAAAAAAKUUUUUUU KAKUSHITE              </h2>
+        
+        <br>
+
+        <p> ikiru koto sae nozome nai nara                  </p>
+        <p> tada sekai wo kanjite iki wo haku               </p>
+        
+        <br>
+
+        <p> nagai yoru wo oe senaka nado nai                </p>
+        <p> soko ni aru no wa tadaaaa hiroiiiiiiii buruuuuuuu</p>
+        
+        <br>
+
+        <h2>    NEE ANATA WA ITSUMO GENKI WO KURE MASU KA?  </h2>
+        <h2>    OWARI KAKE NO KONO SEKAI DE                 </h2>
+        <h2>    KURAGARI DE KAWASHITA CHIISANA YAKUSOKU GA  </h2>
+        <h2>    WATASHI NOO IKIRUUUUU KATE SAAA             </h2>
+        
+        <br>
+
+        <p> nee watashi wa nido to kurai kao shinai yo      </p>
+        <p> saegiru kage mono mienu kara                    </p>
+        <p> akarui hizashi wo zonbuni abinagara             </p>
+        <p> "Muika" no taoru tare ta wo daitaaaa            </p>
+
+        <br>    
+
+        <iframe width="80%" height="765" src="https://www.youtube.com/embed/XVIsijUM_NE" title="Utsu-P - THE DYING MESSAGE [PxTxSxD Ver.]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
     </div>
 
-    <div class="stack" style="--stacks: 3;" id="Moksha">
-        <span style="--index: 0;">Moksha</span>
-        <span style="--index: 1;">Moksha</span>
-        <span style="--index: 2;">Moksha</span>
-    </div>
+    <footer class="footer">
+        <div style="padding-left:5%;">
+            <h2>Created By:
+                <span class="fav-color" style="font-family: 'Old English Text MT">Akasaka Ryuunosuke</span>
+                <p>GitHub:
+                    <a href="https://github.com/AkasakaRyuunoske">https://github.com/AkasakaRyuunoske</a>
+                </p>
+            </h2>
 
-    <div class="stack" style="--stacks: 3;" id="CD-R">
-        <span style="--index: 0;">CD-R</span>
-        <span style="--index: 1;">CD-R</span>
-        <span style="--index: 2;">CD-R</span>
-    </div>
+            <br>
 
-    <div class="stack" style="--stacks: 3;" id="Warufuzake">
-        <span style="--index: 0;">Warufuzake</span>
-        <span style="--index: 1;">Warufuzake</span>
-        <span style="--index: 2;">Warufuzake</span>
-    </div>
+            <h2>Special thanks to: 鬱P / Utsu-P</h2>
 
-    <div class="stack" style="--stacks: 3;" id="Algorithm">
-        <span style="--index: 0;">Algorithm</span>
-        <span style="--index: 1;">Algorithm</span>
-        <span style="--index: 2;">Algorithm</span>
-    </div>
+            <br>
 
-    <div class="stack" style="--stacks: 3;" id="Post-Traumatic-Stress-Disorder">
-        <span style="--index: 0;">Post-Traumatic-Stress-Disorder</span>
-        <span style="--index: 1;">Post-Traumatic-Stress-Disorder</span>
-        <span style="--index: 2;">Post-Traumatic-Stress-Disorder</span>
-    </div>
+            <h3>His Socials:
+                <p>Youtube: 
+                    <a href="https://www.youtube.com/c/utsupofficial/">https://www.youtube.com/c/utsupofficial/</a>
+                </p>
 
+                <p>Official Site:
+                    <a href="https://msis.jimdofree.com/">https://msis.jimdofree.com/</a>
+                </p>
 
-    <div class="stack" style="--stacks: 3;" id="Galapagos">
-        <span style="--index: 0;">Galapagos</span>
-        <span style="--index: 1;">Galapagos</span>
-        <span style="--index: 2;">Galapagos</span>
-    </div>
+                <p>Apple Music:
+                    <a href="https://music.apple.com/jp/artist/鬱p/383043845">https://music.apple.com/jp/artist/鬱p/383043845</a>
+                </p> 
 
-    <div class="stack" style="--stacks: 3;" id="Greatest Shits">
-        <span style="--index: 0;">Greatest Shits</span>
-        <span style="--index: 1;">Greatest Shits</span>
-        <span style="--index: 2;">Greatest Shits</span>
-    </div>
+                <p>Twitter:
+                    <a href="https://twitter.com/asshole_wii">https://twitter.com/asshole_wii</a>
+                </p>
 
-    <div class="stack" style="--stacks: 3;" id="Renaissance">
-        <span style="--index: 0;">Renaissance</span>
-        <span style="--index: 1;">Renaissance</span>
-        <span style="--index: 2;">Renaissance</span>
-    </div>
+                <p>Spotify:
+                    <a href="https://open.spotify.com/artist/3Zo5u5IljPxQEfbNY2OgsX?si=KcSszKJqQb6JpRnRiCxKaA&nd=1">https://open.spotify.com/artist/3Zo5u5IljPxQEfbNY2OgsX?si=KcSszKJqQb6JpRnRiCxKaA&nd=1</a>
+                </p>
 
-    <div class="stack" style="--stacks: 3;" id="Unique">
-        <span style="--index: 0;">Unique</span>
-        <span style="--index: 1;">Unique</span>
-        <span style="--index: 2;">Unique</span>
-    </div>
-</div>
-<!--
-	<div class="hero-container">
-		<nav>
-			<h2 class="top-header middle-title">You are in:
-				<p th:text="*{currentPage}" th:remove="tag"></p>
-			</h2>
-			<h2 class="hero glitch layers" data-text="Home"><span>Home</span></h2>
-		</nav>
-	</div>
- -->
+                <p>NicoNico:
+                    <a href="https://www.nicovideo.jp/user/176618/mylist/6385075">https://www.nicovideo.jp/user/176618/mylist/6385075</a>
+                </p> 
+
+                <p>Instagram:
+                    <a href="https://www.instagram.com/asshole_wii/">https://www.instagram.com/asshole_wii/user/176618/mylist/6385075</a>
+                </p>
+
+                <p>linktr:
+                    <a href="linktr.ee/asshole_wii">linktr.ee/asshole_wii</a>
+                </p>
+            </h3>
+        </div>
+    </footer>
 </body>
+
 <script type="text/javascript" src="/js/navigation.js"></script>
-<script type="text/javascript" src="/js/utsu-p-albums-navigation.js"></script>
 </html>
