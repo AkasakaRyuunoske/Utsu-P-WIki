@@ -24,7 +24,7 @@ h1, h2 {
   display: inline-block;
   color: #6F18D3;
   z-index: 2;
-  letter-spacing: 10px;
+  letter-spacing: 0.1vw;
   font-family: "Old English Text MT";
 
   /* Bright things in dark environments usually cast that light, giving off a glow */
