@@ -24,7 +24,9 @@
 		</h2>
 
 		<h2>You are at:
-			<span th:each="locations : ${location}" th:text="${locations}" onclick="navigate(this)"></span>
+			<span id="locationsContainer">
+				<span th:each="locations : ${location}" th:text="${locations}" onclick="navigate(this)"></span>
+			</span>	
 		</h2>
 	</div>
 
@@ -38,7 +40,6 @@
 		<h2 class="header-grid-item" onclick="navigate(this)">Create</h2>
 		<h2 class="header-grid-item" onclick="navigate(this)">Buy</h2>
 	</div>
-	
 	<!-- Here the main content of the page starts -->
 
 	<div class="main-content-container">
