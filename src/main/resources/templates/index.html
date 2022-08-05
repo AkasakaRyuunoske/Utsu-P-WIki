@@ -20,7 +20,8 @@
 
 		<!-- To know who the the user is -->
 		<h2>You are:
-			<span th:text="*{currentUser}" id="currentUser"></span>
+			<span th:if="*{currentUser}" th:text="*{currentUser}" id="currentUser"></span>
+			<span th:unless="*{currentUser}" id="currentUser">Anonymous</span>
 		</h2>
 
 		<h2>You are at:
