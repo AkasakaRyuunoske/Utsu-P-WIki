@@ -24,6 +24,7 @@ public class CustomErrorHandler implements ErrorController {
         if (status > 299){
             handleError(status, model);
         }
+
         return errorResponse;
     }
 
@@ -32,7 +33,7 @@ public class CustomErrorHandler implements ErrorController {
         switch (status){
             case 404:
                 model.addAttribute("errorMessage",
-                        "Resource not found or might not exist");
+                        "Resource not found or might not exist.");
                 break;
             case 500:
                 model.addAttribute("errorMessage",
@@ -41,7 +42,7 @@ public class CustomErrorHandler implements ErrorController {
             case 401:
                 model.addAttribute("errorMessage",
                         "You have made bad request for some reason." +
-                                "Check your request or retry later");
+                                "Check your request or retry later.");
                 break;
             default:
                 model.addAttribute("errorMessage",
