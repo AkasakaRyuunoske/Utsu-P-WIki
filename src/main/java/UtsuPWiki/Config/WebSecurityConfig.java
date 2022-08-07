@@ -16,9 +16,9 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+@Log4j2
 @Configuration
 @EnableWebSecurity
-@Log4j2
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Bean
     public PasswordEncoder passwordEncoder(){
@@ -34,7 +34,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .csrf()
                 .disable()
                 .authorizeRequests()
-                .antMatchers(HttpMethod.POST, "/login")
+                .antMatchers("/login",
+                        "/registration",
+                        "/registration-complete",
+                        "/css/styles.css",
+                        "/css/full-glitch-effect-text.css")
                 .permitAll()
                 .anyRequest()
                 .authenticated()
