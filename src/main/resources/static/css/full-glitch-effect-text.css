@@ -1,3 +1,8 @@
+body {
+  color: #ccc;
+  background: #111;
+}
+
 /*
 Author:Matt Gross
 
@@ -7,11 +12,6 @@ Cyberpunk-Style Glitch Walkthrough
 https://codepen.io/mattgrosswork/pen/VwprebG?editors=1100
 
 */
-
-body {
-  color: #ccc;
-  background: #111;
-}
 
 h1, h2 {
   margin: 0;
