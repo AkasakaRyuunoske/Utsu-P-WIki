@@ -2,6 +2,7 @@ package UtsuPWiki.Service;
 
 import UtsuPWiki.Entity.Clients;
 import UtsuPWiki.Repository.ClientsRepository;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -13,6 +14,7 @@ import org.springframework.stereotype.Service;
 import javax.persistence.EntityNotFoundException;
 import java.util.ArrayList;
 
+@Log4j2
 @Service
 public class ClientsDetailsService implements UserDetailsService {
     @Autowired
@@ -22,7 +24,7 @@ public class ClientsDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
-
+        log.info("Ebanat");
         return new User("Oleg",
                 "$2a$11$ltlpU7OwyTMmUwmMJgSpU.uo5H4A2xdm1an6XC6SWSyKCe9Lr32ZS",
                 new ArrayList<>());
