@@ -49,9 +49,10 @@
 <!-- Here the main content of the page starts -->
 
 <div class="main-content-container">
-    <form method = "post" th:action = "@{/login}" th:object = " ${client}">
-        <input type="text" name="userName" th:field = "${client.userName}">
-        <input type="password" name="password" th:field = "${client.password}">
+    <form method = "post" th:action = "@{/login}">
+        <input  type="text" name="Authorization" value="null" hidden="true">
+        <input  type="text"     name="userName">
+        <input  type="password" name="password">
         <button type="submit">Submit</button>
     </form>
 </div>
