@@ -20,13 +20,12 @@ public class JWTAuthorizationFilter extends BasicAuthenticationFilter {
         super(authenticationManager);
         log.info("super(authenticationManager); <-- was called");
     }
-    @Override protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain chain) throws IOException, ServletException {
+    @Override protected void doFilterInternal(HttpServletRequest request,
+                                              HttpServletResponse response,
+                                              FilterChain chain) throws IOException, ServletException {
         String header = request.getHeader(SecurityConstants.HEADER_STRING);
 
-        log.info("doFilterInternal <-- was called, but before if");
-
         if (header == null || !header.startsWith(SecurityConstants.TOKEN_PREFIX)) {
-            log.info("doFilterInternal <-- was called, but after if");
 
             chain.doFilter(request, response);
             return;
@@ -34,21 +33,18 @@ public class JWTAuthorizationFilter extends BasicAuthenticationFilter {
 
         UsernamePasswordAuthenticationToken authentication = getAuthentication(request);
         SecurityContextHolder.getContext().setAuthentication(authentication);
-        chain.doFilter(request, response); //through
+        chain.doFilter(request, response);
     }
     private UsernamePasswordAuthenticationToken getAuthentication(HttpServletRequest request) {
         String token = request.getHeader(SecurityConstants.HEADER_STRING);
 
-        log.info("getAuthentication <-- was called, but before if");
-
         if (token != null) {
-            log.info("getAuthentication <-- was called, but after if");
 
             String user = JWT.require(Algorithm.HMAC512(SecurityConstants.SECRET.getBytes()))
                     .build()
                     .verify(token.replace(SecurityConstants.TOKEN_PREFIX, ""))
                     .getSubject();
-            log.info(user + " the user in there is");
+
             if (user != null) {
                 return new UsernamePasswordAuthenticationToken(user, null, new ArrayList<>());
             }
