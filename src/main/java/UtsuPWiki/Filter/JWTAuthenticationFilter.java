@@ -23,6 +23,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 
 @RequiredArgsConstructor
@@ -33,8 +34,22 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
     private final PasswordEncoder passwordEncoder = new BCryptPasswordEncoder(11);
 
     @Override
-    public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response) throws AuthenticationException {
+    public Authentication attemptAuthentication(HttpServletRequest request,
+                                                HttpServletResponse response) throws AuthenticationException {
         log.info("Was called! attemptAuthentication");
+
+        log.info(request.getAttribute("userName") + " attribute name: userName");
+        log.info(request.getAttribute("password") + " attribute name: password");
+
+        if (request.getHeader("userName") != null && request.getHeader("password") != null){
+
+            log.info(request.getHeader("password") + " get header password bf");
+
+            request.removeAttribute("userName");
+            request.removeAttribute("password");
+
+            log.info(request.getHeader("password") + " get header password after");
+        }
 
         try {
             Clients creds = new ObjectMapper()
