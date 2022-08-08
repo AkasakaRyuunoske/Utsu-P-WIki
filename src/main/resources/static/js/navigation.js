@@ -1,6 +1,9 @@
 let utsup = document.getElementById("Utsu-P");
 let counter = 0;
 
+let PREFIX_LOCAL   = "http://localhost:8080/";
+let PREFIX_HEROKU  = "https://.herokuapp.com/";
+
 document.getElementById("currentUser").onclick = function(){
 	window.location.href = "/logout";
 }
@@ -21,27 +24,27 @@ document.getElementById("Utsu-P").onclick = function () {
 function navigate(element) {
 	element.id 	 	   = "location";
 
-	let PREFIX_LOCAL   = "http://localhost:8080/";
-	let PREFIX_HEROKU  = "https://.herokuapp.com/";
-
 	let location = document.getElementById('location').innerHTML.toLowerCase();
 	let locationsContainer = document.getElementById('locationsContainer').innerHTML.toLowerCase();
 	let locationIndex = locationsContainer.indexOf(location);
 	let sliceTo;
-	if (locationIndex == -1) {
-		sliceTo = locationIndex + (location.length + 1);
-	} else {
-		sliceTo = locationIndex + location.length;
-	}
 
-	console.log(location + " starting location is that");
-	console.log(locationsContainer + " locationsContainer is that");
-	console.log(locationIndex + " locationIndex is that");
-	console.log(sliceTo + " sliceTo is that");
+//In this case locationIndex -1 means that the element that was clicked is outside 
+//locations container (so it's one of the header-grid-container's element).
+//In this case navigate() still works but it slices one letter more than needed.
+//Thus this if resolves the problem
+	if (locationIndex == -1) {
+
+		sliceTo = locationIndex + (location.length + 1);
+
+	} else {
+
+		sliceTo = locationIndex + location.length;
+
+	}
 
 	location = location.slice(0, sliceTo);
 
-	console.log(location + " location after optimisation");
 	if (location == "home/") {
 
 		window.location.href = PREFIX_LOCAL;
@@ -53,9 +56,29 @@ function navigate(element) {
 	}
 }
 
-// let toSearch = "/utsu-p";
-// let text = "/authors/utsu-p/albums/Warufuzake";
-// let result = text.indexOf(toSearch);
-// let howToSlice = result + toSearch.length;
-// let finalString = text.slice(0,15)
-// document.getElementById("demo").innerHTML = finalString; 
+var form = document.getElementById('myForm');
+form.onsubmit = function(event){
+
+	formData = new FormData(form);
+
+	alert("SEND DATA WAS FINALY CALLED!");
+
+	var json = JSON.stringify(Object.fromEntries(formData));
+
+	alert(json + " json is he");
+
+	$.ajax({
+	  type: "POST",
+	  url:PREFIX_LOCAL + "login",
+	  data: json,
+	  success: function(){
+	  	alert("success!");
+	  },
+	  dataType: "json",
+	  contentType : "application/json"
+	});
+
+	alert("ajax was called");
+
+	window.location.href = PREFIX_LOCAL;
+}
