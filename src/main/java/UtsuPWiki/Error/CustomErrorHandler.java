@@ -12,7 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 @Log4j2
 @Controller
 public class CustomErrorHandler implements ErrorController {
-    private String errorResponse = "error";
+    private final String ERROR_PAGE = "error"; // Name of the view that will be returned
+    private final String ERROR_MESSAGE = "errorMessage";
 
     @RequestMapping("/error")
     public String handleErrors(HttpServletRequest httpServletRequest,
@@ -25,27 +26,40 @@ public class CustomErrorHandler implements ErrorController {
             handleError(status, model);
         }
 
-        return errorResponse;
+        return ERROR_PAGE;
     }
 
     public void handleError(int status, Model model){
         model.addAttribute("error", "Error: " + status);
         switch (status){
-            case 404:
-                model.addAttribute("errorMessage",
-                        "Resource not found or might not exist.");
-                break;
-            case 500:
-                model.addAttribute("errorMessage",
-                        "Server Side problem.");
-                break;
             case 401:
-                model.addAttribute("errorMessage",
+                model.addAttribute(ERROR_MESSAGE,
                         "You have made bad request for some reason." +
                                 "Check your request or retry later.");
                 break;
+
+            case 403:
+                model.addAttribute(ERROR_MESSAGE,
+                        "You are not allowed to view this page.");
+                break;
+
+            case 404:
+                model.addAttribute(ERROR_MESSAGE,
+                        "Resource not found or might not exist.");
+                break;
+
+            case 405:
+                model.addAttribute(ERROR_MESSAGE,
+                        "HTTP method not allowed.");
+                break;
+
+            case 500:
+                model.addAttribute(ERROR_MESSAGE,
+                        "Server Side problem.");
+                break;
+
             default:
-                model.addAttribute("errorMessage",
+                model.addAttribute(ERROR_MESSAGE,
                         "Unexpected problem occurred, try later.");
         }
 
