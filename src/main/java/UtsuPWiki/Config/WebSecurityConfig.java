@@ -7,7 +7,6 @@ import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -27,6 +26,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     public AuthenticationUserDetailService authenticationUserDetailService;
 
+    public final String[] INACCESSIBLE_URLS_BY_NOT_AUTHENTICATED_USERS = {
+            "/authors",
+    };
+
     @Override
     protected void configure(HttpSecurity httpSecurity) throws Exception{
         log.info("Was called!");
@@ -34,14 +37,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .csrf()
                 .disable()
                 .authorizeRequests()
-                .antMatchers("/login",
-                        "/registration",
-                        "/registration-complete",
-                        "/css/styles.css",
-                        "/css/full-glitch-effect-text.css")
-                .permitAll()
-                .anyRequest()
+                .antMatchers(INACCESSIBLE_URLS_BY_NOT_AUTHENTICATED_USERS)
                 .authenticated()
+                .anyRequest()
+                .permitAll()
                 .and()
                 .addFilter(new JWTAuthenticationFilter(authenticationManager()))
                 .addFilter(new JWTAuthorizationFilter(authenticationManager()))
