@@ -2,6 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
     <title>Utsu-P-Wiki Home Page</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,8 +28,8 @@
 
     <h2>You are at:
         <span id="locationsContainer">
-				<span th:each="locations : ${location}" th:text="${locations}" onclick="navigate(this)"></span>
-			</span>
+			<span th:each="locations : ${location}" th:text="${locations}" onclick="navigate(this)"></span>
+		</span>
     </h2>
 </div>
 
@@ -49,11 +51,10 @@
 <!-- Here the main content of the page starts -->
 
 <div class="main-content-container">
-    <form method = "post" th:action = "@{/login}">
-        <input  type="text" name="Authorization" value="null" hidden="true">
-        <input  type="text"     name="userName">
-        <input  type="password" name="password">
-        <button type="submit">Submit</button>
+    <form method = "post" id="myForm">
+        <input  type="text" name="userName">
+        <input  type="password" name="password" >
+        <button type="submit">submit</button>
     </form>
 </div>
 
