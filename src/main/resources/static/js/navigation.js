@@ -57,16 +57,20 @@ function navigate(element) {
 }
 
 var form = document.getElementById('myForm');
+
 form.onsubmit = function(event){
+	userName = document.getElementById('userName').value;
+	password = document.getElementById('password').value;
 
 	formData = new FormData(form);
-
-	alert("SEND DATA WAS FINALY CALLED!");
+	formData.append("userName", userName);
+	formData.append("password", password);
+	
+	alert(formData + " this is form data");
 
 	var json = JSON.stringify(Object.fromEntries(formData));
 
-	alert(json + " json is he");
-
+	alert(json + " this is Json");
 	$.ajax({
 	  type: "POST",
 	  url:PREFIX_LOCAL + "login",
@@ -78,7 +82,6 @@ form.onsubmit = function(event){
 	  contentType : "application/json"
 	});
 
-	alert("ajax was called");
 
 	window.location.href = PREFIX_LOCAL;
 }
