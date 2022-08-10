@@ -58,25 +58,57 @@ function navigate(element) {
 
 var form = document.getElementById('myForm');
 
-form.onsubmit = function(event){
-	userName = document.getElementById('userName').value;
-	password = document.getElementById('password').value;
+if (form != null) {
+	form.onsubmit = function(event){
+		userName = document.getElementById('userName').value;
+		password = document.getElementById('password').value;
 
-	formData = new FormData(form);
-	formData.append("userName", userName);
-	formData.append("password", password);
+		formData = new FormData(form);
+		formData.append("userName", userName);
+		formData.append("password", password);
 
-	var json = JSON.stringify(Object.fromEntries(formData));
+		var json = JSON.stringify(Object.fromEntries(formData));
 
-	$.ajax({
-	  type: "POST",
-	  url:PREFIX_LOCAL + "login",
-	  data: json,
-	  success: function(){},
-	  dataType: "json",
-	  contentType : "application/json"
-	});
-	
+		$.ajax({
+		  type: "POST",
+		  url:PREFIX_LOCAL + "login",
+		  data: json,
+		  success: function(){},
+		  dataType: "json",
+		  contentType : "application/json"
+		});
+		
+
+		window.location.href = PREFIX_LOCAL;
+	}
+}
+
+if (window.location.href == PREFIX_LOCAL + "login?") {
 
 	window.location.href = PREFIX_LOCAL;
+}
+
+var caller = document.getElementById('caller');
+
+caller.onclick = function(){
+	json = {"Oleg":"Ril oleg","asd":"hyasd"};
+
+	$.ajax({
+		type: "POST",
+		url:PREFIX_LOCAL + "test-call",
+		data: json,
+		contentType : "application/json",
+		user: "Oleg",
+		success : function(data) {
+			console.log("SUCCESS: " + data);
+		},
+
+		error : function(e) {
+			console.log("ERROR: ", e);
+		},
+
+		done : function() {
+			console.log("DONE");
+		}
+	});
 }
