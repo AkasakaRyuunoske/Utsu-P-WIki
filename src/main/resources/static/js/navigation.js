@@ -65,23 +65,18 @@ form.onsubmit = function(event){
 	formData = new FormData(form);
 	formData.append("userName", userName);
 	formData.append("password", password);
-	
-	alert(formData + " this is form data");
 
 	var json = JSON.stringify(Object.fromEntries(formData));
 
-	alert(json + " this is Json");
 	$.ajax({
 	  type: "POST",
 	  url:PREFIX_LOCAL + "login",
 	  data: json,
-	  success: function(){
-	  	alert("success!");
-	  },
+	  success: function(){},
 	  dataType: "json",
 	  contentType : "application/json"
 	});
-
+	
 
 	window.location.href = PREFIX_LOCAL;
 }
