@@ -12,8 +12,19 @@ import java.io.IOException;
 import java.util.ArrayList;
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+/**
+ *
+ * Poorly made both JWTAuthorization and JWTAuthentication filters.
+ *
+ *  Every thing was made following <a href="https://javatodev.com/spring-boot-jwt-authentication/">this guide.</a>
+ *
+ * */
+
+@WebFilter("/*")
 @Log4j2
 public class JWTAuthorizationFilter extends BasicAuthenticationFilter {
     public JWTAuthorizationFilter(AuthenticationManager authenticationManager) {
@@ -23,7 +34,11 @@ public class JWTAuthorizationFilter extends BasicAuthenticationFilter {
     protected void doFilterInternal(HttpServletRequest request,
                                               HttpServletResponse response,
                                               FilterChain chain) throws IOException, ServletException {
+
         String header = request.getHeader(SecurityConstants.HEADER_STRING);
+
+        log.info("doFilterInternal was called: " + header);
+
 
         if (header == null || !header.startsWith(SecurityConstants.TOKEN_PREFIX)) {
 
@@ -35,6 +50,7 @@ public class JWTAuthorizationFilter extends BasicAuthenticationFilter {
         SecurityContextHolder.getContext().setAuthentication(authentication);
         chain.doFilter(request, response);
     }
+
     private UsernamePasswordAuthenticationToken getAuthentication(HttpServletRequest request,
                                                                   HttpServletResponse response) {
         String token = request.getHeader(SecurityConstants.HEADER_STRING);
@@ -45,8 +61,7 @@ public class JWTAuthorizationFilter extends BasicAuthenticationFilter {
                     .verify(token.replace(SecurityConstants.TOKEN_PREFIX, ""))
                     .getSubject();
 
-            response.addHeader(SecurityConstants.HEADER_STRING, token);
-
+            response.setHeader(SecurityConstants.HEADER_STRING, token);
             if (user != null) {
                 return new UsernamePasswordAuthenticationToken(user, null, new ArrayList<>());
             }
