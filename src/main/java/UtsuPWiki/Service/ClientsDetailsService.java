@@ -8,11 +8,10 @@ import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import javax.persistence.EntityNotFoundException;
 import java.util.ArrayList;
+
 
 @Log4j2
 @Service
@@ -20,18 +19,21 @@ public class ClientsDetailsService implements UserDetailsService {
     @Autowired
     ClientsRepository clientsRepository;
 
-    BCryptPasswordEncoder passwordEncoder;
-
     @Override
     public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
-        log.info("Ebanat");
-        return new User("Oleg",
-                "$2a$11$ltlpU7OwyTMmUwmMJgSpU.uo5H4A2xdm1an6XC6SWSyKCe9Lr32ZS",
+        return new User(userName,
+                clientsRepository.findByUserName(userName).getPassword(),
                 new ArrayList<>());
     }
 
 
-    public Clients readUserByUserName(String userName) {
-        return clientsRepository.findByUserName(userName).orElseThrow(EntityNotFoundException::new);
+    public Clients readUserByUserName(String userName) throws UsernameNotFoundException {
+        Clients client = clientsRepository.findByUserName(userName);
+
+        if (client == null){
+            throw new UsernameNotFoundException("User not found or does not exist");
+        }
+
+        return client;
     }
 }
