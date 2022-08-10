@@ -32,7 +32,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity httpSecurity) throws Exception{
-        log.info("Was called!");
         httpSecurity
                 .csrf()
                 .disable()
@@ -45,7 +44,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .addFilter(new JWTAuthenticationFilter(authenticationManager()))
                 .addFilter(new JWTAuthorizationFilter(authenticationManager()))
                 .sessionManagement()
-                .sessionCreationPolicy(SessionCreationPolicy.STATELESS);;
+                .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
     }
 
     @Override
