@@ -18,9 +18,9 @@ import javax.servlet.http.HttpServletResponse;
 public class JWTAuthorizationFilter extends BasicAuthenticationFilter {
     public JWTAuthorizationFilter(AuthenticationManager authenticationManager) {
         super(authenticationManager);
-        log.info("super(authenticationManager); <-- was called");
     }
-    @Override protected void doFilterInternal(HttpServletRequest request,
+    @Override
+    protected void doFilterInternal(HttpServletRequest request,
                                               HttpServletResponse response,
                                               FilterChain chain) throws IOException, ServletException {
         String header = request.getHeader(SecurityConstants.HEADER_STRING);
@@ -31,19 +31,21 @@ public class JWTAuthorizationFilter extends BasicAuthenticationFilter {
             return;
         }
 
-        UsernamePasswordAuthenticationToken authentication = getAuthentication(request);
+        UsernamePasswordAuthenticationToken authentication = getAuthentication(request, response);
         SecurityContextHolder.getContext().setAuthentication(authentication);
         chain.doFilter(request, response);
     }
-    private UsernamePasswordAuthenticationToken getAuthentication(HttpServletRequest request) {
+    private UsernamePasswordAuthenticationToken getAuthentication(HttpServletRequest request,
+                                                                  HttpServletResponse response) {
         String token = request.getHeader(SecurityConstants.HEADER_STRING);
-
         if (token != null) {
 
             String user = JWT.require(Algorithm.HMAC512(SecurityConstants.SECRET.getBytes()))
                     .build()
                     .verify(token.replace(SecurityConstants.TOKEN_PREFIX, ""))
                     .getSubject();
+
+            response.addHeader(SecurityConstants.HEADER_STRING, token);
 
             if (user != null) {
                 return new UsernamePasswordAuthenticationToken(user, null, new ArrayList<>());
