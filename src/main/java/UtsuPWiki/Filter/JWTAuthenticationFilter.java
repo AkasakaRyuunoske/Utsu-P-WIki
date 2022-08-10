@@ -19,6 +19,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -36,29 +37,10 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
     @Override
     public Authentication attemptAuthentication(HttpServletRequest request,
                                                 HttpServletResponse response) throws AuthenticationException {
-        log.info("Was called! attemptAuthentication");
-
-        log.info(request.getAttribute("userName") + " attribute name: userName");
-        log.info(request.getAttribute("password") + " attribute name: password");
-
-        if (request.getHeader("userName") != null && request.getHeader("password") != null){
-
-            log.info(request.getHeader("password") + " get header password bf");
-
-            request.removeAttribute("userName");
-            request.removeAttribute("password");
-
-            log.info(request.getHeader("password") + " get header password after");
-        }
 
         try {
             Clients creds = new ObjectMapper()
                     .readValue(request.getInputStream(), Clients.class);
-
-            log.info(creds.getUserName() + " creds user name ");
-            log.info(creds.getPassword() + " creds password ");
-            log.info(passwordEncoder + " password encoder is he");
-            log.info(passwordEncoder.encode(creds.getPassword()) + " creds password encoded");
 
             return authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(
@@ -78,7 +60,9 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
                 .withSubject(((User) auth.getPrincipal()).getUsername())
                 .withExpiresAt(new Date(System.currentTimeMillis() + SecurityConstants.EXPIRATION_TIME))
                 .sign(Algorithm.HMAC512(SecurityConstants.SECRET.getBytes()));
+
         log.info(token + " token that we have created!");
+
         response.addHeader(SecurityConstants.HEADER_STRING, SecurityConstants.TOKEN_PREFIX + token);
     }
 }
