@@ -1,7 +1,6 @@
 package UtsuPWiki.ApiController;
 
 import lombok.extern.log4j.Log4j2;
-import netscape.javascript.JSObject;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,14 +13,10 @@ public class TheDyingMessage {
 
     @PostMapping("/test-call")
     public String theDyingMessageReceiver(HttpServletRequest request, HttpServletResponse response){
-
-        log.info(request.getAttribute("user") + " attribute finishes");
-        log.info(request.getHeader("user") + " data header finishes");
+        log.info("custom header: " + request.getHeader("user"));
 
         response.setStatus(200);
         response.setHeader("data", "sosi");
-
-        log.info("{theDyingMessage\":\"sanman de fuantei na kono sekai\"}");
 
         return "{\"theDyingMessage\":\"sanman de fuantei na kono sekai\"}";
     }
