@@ -56,8 +56,9 @@ function navigate(element) {
 	}
 }
 
-var form = document.getElementById('myForm');
-
+var form  = document.getElementById('myForm');
+var token;
+var anyerror;
 if (form != null) {
 	form.onsubmit = function(event){
 		userName = document.getElementById('userName').value;
@@ -73,42 +74,49 @@ if (form != null) {
 		  type: "POST",
 		  url:PREFIX_LOCAL + "login",
 		  data: json,
-		  success: function(){},
-		  dataType: "json",
-		  contentType : "application/json"
-		});
-		
+		  contentType : "application/json",
 
-		window.location.href = PREFIX_LOCAL;
+		  success: function(data, textStatus, request){
+		  	alert("success произошел");
+			token = request.getResponseHeader('Authorization');
+			sessionStorage.setItem('JWTToken', token);
+		  },
+		  error : function(e) {
+				alert("ERROR: ", e);
+		  },
+		  complete: function(status){
+		  	alert("Complete: " + status);
+		  }
+
+		});
+		// window.location.href = PREFIX_LOCAL;
 	}
 }
 
-if (window.location.href == PREFIX_LOCAL + "login?") {
+// if (window.location.href == PREFIX_LOCAL + "login?") {
 
-	window.location.href = PREFIX_LOCAL;
-}
+// 	window.location.href = PREFIX_LOCAL;
+// }
 
 var caller = document.getElementById('caller');
 
-caller.onclick = function(){
-	json = {"Oleg":"Ril oleg","asd":"hyasd"};
+if (caller != null) {
+	caller.onclick = function(){
+		$.ajax({
+			type: "POST",
+			url: PREFIX_LOCAL + "test-call",
+			contentType: "application/json",
+			headers: { 'Authorization': token },
+			
+			success: function(data, textStatus, request) {
+				alert("SUCCESS: " + data);
+				console.log("Headers: " + request.getResponseHeader('Authorization'));
+				console.log("token in caller is: " + sessionStorage.getItem('JWTToken'));
+			},
 
-	$.ajax({
-		type: "POST",
-		url:PREFIX_LOCAL + "test-call",
-		data: json,
-		contentType : "application/json",
-		user: "Oleg",
-		success : function(data) {
-			console.log("SUCCESS: " + data);
-		},
-
-		error : function(e) {
-			console.log("ERROR: ", e);
-		},
-
-		done : function() {
-			console.log("DONE");
-		}
-	});
+			error : function(e) {
+				alert("ERROR: ", e);
+			}
+		});
+	}
 }
