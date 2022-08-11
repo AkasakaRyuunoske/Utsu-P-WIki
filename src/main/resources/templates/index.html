@@ -47,7 +47,8 @@
 	<!-- Here the main content of the page starts -->
 
 	<div class="main-content-container">
-
+		<span th:text="*{JWT_TOKEN}" id="JWT_TOKEN" hidden="true"></span>
+		<span th:text="*{anata}"></span>
 		<button id="caller">Make a call!</button>
 
 		<h1>Utsu-P - The Dying Message</h1>
