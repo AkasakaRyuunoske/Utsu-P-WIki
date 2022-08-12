@@ -57,16 +57,42 @@ function navigate(element) {
 	location = location.slice(0, sliceTo);
 
 	if (location == "home/") {
+		if (sessionStorage.getItem('JWTToken')) {
+		$.ajax({
+			type: "GET",
+			url: PREFIX_LOCAL,
+			contentType: "application/json",
+			headers: { 'Authorization': sessionStorage.getItem('JWTToken')},
+			
+			success: function() {},
+
+			error : function(e) {
+				console.log("ERROR: ", e);
+			}
+		});
 
 		window.location.href = PREFIX_LOCAL;
+		}
+	}
 
-	} else {
+	if (location != "home/") {
+		if (sessionStorage.getItem('JWTToken')) {
+			$.ajax({
+				type: "GET",
+				url: PREFIX_LOCAL + location,
+				contentType: "application/json",
+				headers: { 'Authorization': sessionStorage.getItem('JWTToken')},
+				
+				success: function() {},
 
+				error : function(e) {
+					console.log("ERROR: ", e);
+				}
+			});
 		window.location.href = PREFIX_LOCAL + location;
-
+		}
 	}
 }
-
 if (form != null) {
 	form.onsubmit = function(event){
 		userName = document.getElementById('userName').value;
@@ -114,10 +140,10 @@ if (caller != null) {
 			type: "POST",
 			url: PREFIX_LOCAL + "test-call",
 			contentType: "application/json",
-			headers: { 'Authorization': token },
+			headers: { 'Authorization': sessionStorage.getItem('JWTToken')},
 			
 			success: function(data, textStatus, request) {
-				console.log("Headers: " + request.getResponseHeader('Authorization'));
+				alert("Headers: " + request.getResponseHeader('Authorization'));
 
 				console.log("token in caller is: " + sessionStorage.getItem('JWTToken'));
 				console.log("username in caller is: " + sessionStorage.getItem('userName'));
