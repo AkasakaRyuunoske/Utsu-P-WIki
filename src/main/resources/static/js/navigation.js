@@ -4,7 +4,18 @@ let counter = 0;
 let PREFIX_LOCAL   = "http://localhost:8080/";
 let PREFIX_HEROKU  = "https://.herokuapp.com/";
 
-document.getElementById("currentUser").onclick = function(){
+var currentUser = document.getElementById("currentUser");
+var form  = document.getElementById('myForm');
+
+var token;
+var userName;
+var password;
+
+if (sessionStorage.getItem('userName')) {
+	currentUser.innerHTML = sessionStorage.getItem('userName');
+} 
+
+currentUser.onclick = function(){
 	window.location.href = "/logout";
 }
 
@@ -56,9 +67,6 @@ function navigate(element) {
 	}
 }
 
-var form  = document.getElementById('myForm');
-var token;
-var anyerror;
 if (form != null) {
 	form.onsubmit = function(event){
 		userName = document.getElementById('userName').value;
@@ -77,26 +85,26 @@ if (form != null) {
 		  contentType : "application/json",
 
 		  success: function(data, textStatus, request){
-		  	alert("success произошел");
+		  	alert("success");
 			token = request.getResponseHeader('Authorization');
+
 			sessionStorage.setItem('JWTToken', token);
+			sessionStorage.setItem('userName', userName);
 		  },
 		  error : function(e) {
 				alert("ERROR: ", e);
 		  },
-		  complete: function(status){
-		  	alert("Complete: " + status);
+		  complete: function () {
+		  	alert("comelete");
 		  }
-
 		});
-		// window.location.href = PREFIX_LOCAL;
+		window.location.href = PREFIX_LOCAL;
 	}
 }
 
-// if (window.location.href == PREFIX_LOCAL + "login?") {
-
-// 	window.location.href = PREFIX_LOCAL;
-// }
+if (window.location.href == PREFIX_LOCAL + "login?") {
+	window.location.href = PREFIX_LOCAL;
+}
 
 var caller = document.getElementById('caller');
 
@@ -109,13 +117,14 @@ if (caller != null) {
 			headers: { 'Authorization': token },
 			
 			success: function(data, textStatus, request) {
-				alert("SUCCESS: " + data);
 				console.log("Headers: " + request.getResponseHeader('Authorization'));
+
 				console.log("token in caller is: " + sessionStorage.getItem('JWTToken'));
+				console.log("username in caller is: " + sessionStorage.getItem('userName'));
 			},
 
 			error : function(e) {
-				alert("ERROR: ", e);
+				console.log("ERROR: ", e);
 			}
 		});
 	}
