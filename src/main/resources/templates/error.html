@@ -23,22 +23,18 @@
             <span th:text="*{currentUser}" id="currentUser"></span>
         </h2>
 
+        <!-- To know where the the user is -->
+
         <h2>You are at:
             <span id="locationsContainer">
                 <span th:each="locations : ${location}" th:text="${locations}" onclick="navigate(this)"></span>
             </span>
         </h2>
-        <!-- To know where the the user is -->
-<!--        <h2>You are at: 
-            <span th:text="*{homePage}"     id="homePage"   ></span>
-            <span th:text="*{authorsPage}"  id="authorsPage"></span>
-            <span th:text="*{authorPage}"   id="authorPage" ></span>
-            <span th:text="*{albumsPage}"   id="albumsPage" ></span>
-            <span th:text="*{albumPage}"    id="albumPage"  ></span>
-        </h2> -->
+
     </div>
 
     <!-- Principal Header, same for all pages -->
+    
     <header class="fav-color hero-container">
         <h1 class="hero glitch layers" data-text="error" id="Utsu-P" th:text="*{error}"></h1>
 
@@ -202,7 +198,7 @@
                 </p>
 
                 <p>linktr:
-                    <a href="linktr.ee/asshole_wii">linktr.ee/asshole_wii</a>
+                    <a href="https://linktr.ee/asshole_wii">linktr.ee/asshole_wii</a>
                 </p>
             </h3>
         </div>
