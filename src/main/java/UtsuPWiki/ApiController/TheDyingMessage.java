@@ -1,5 +1,6 @@
 package UtsuPWiki.ApiController;
 
+import UtsuPWiki.utilities.SecurityConstants;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,6 +15,7 @@ public class TheDyingMessage {
     @PostMapping("/test-call")
     public String theDyingMessageReceiver(HttpServletRequest request, HttpServletResponse response){
         log.info("custom header: " + request.getHeader("user"));
+        log.info("authorization filter is: "  + request.getHeader(SecurityConstants.HEADER_STRING));
 
         response.setStatus(200);
         response.setHeader("data", "sosi");
