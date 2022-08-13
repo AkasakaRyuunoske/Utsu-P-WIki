@@ -61,6 +61,7 @@ function navigate(element) {
 		$.ajax({
 			type: "GET",
 			url: PREFIX_LOCAL,
+			async: false,
 			contentType: "application/json",
 			headers: { 'Authorization': sessionStorage.getItem('JWTToken')},
 			
@@ -80,10 +81,15 @@ function navigate(element) {
 			$.ajax({
 				type: "GET",
 				url: PREFIX_LOCAL + location,
+				async: false,
 				contentType: "application/json",
 				headers: { 'Authorization': sessionStorage.getItem('JWTToken')},
 				
-				success: function() {},
+				success: function(data, textStatus, request) {
+					alert("was called");
+					alert("token in locations is: " + sessionStorage.getItem('JWTToken'));
+					alert("username in locations is: " + sessionStorage.getItem('userName'));
+				},
 
 				error : function(e) {
 					console.log("ERROR: ", e);
@@ -107,11 +113,17 @@ if (form != null) {
 		$.ajax({
 		  type: "POST",
 		  url:PREFIX_LOCAL + "login",
+		  async: false,
 		  data: json,
 		  contentType : "application/json",
 
 		  success: function(data, textStatus, request){
 		  	alert("success");
+
+		  	if (sessionStorage.getItem('JWTToken')) {
+		  		sessionStorage.removeItem('JWTToken');
+		  	}
+
 			token = request.getResponseHeader('Authorization');
 
 			sessionStorage.setItem('JWTToken', token);
@@ -139,14 +151,16 @@ if (caller != null) {
 		$.ajax({
 			type: "POST",
 			url: PREFIX_LOCAL + "test-call",
+			async: false,
 			contentType: "application/json",
-			headers: { 'Authorization': sessionStorage.getItem('JWTToken')},
+			headers: { 'Authorization': sessionStorage.getItem('JWTToken'), 'user':'Oleg'},
 			
 			success: function(data, textStatus, request) {
 				alert("Headers: " + request.getResponseHeader('Authorization'));
 
 				console.log("token in caller is: " + sessionStorage.getItem('JWTToken'));
 				console.log("username in caller is: " + sessionStorage.getItem('userName'));
+				window.location.href = PREFIX_LOCAL;
 			},
 
 			error : function(e) {
