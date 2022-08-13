@@ -39,7 +39,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
                 .addFilter(new JWTAuthenticationFilter(authenticationManager()))
-                .addFilter(new JWTAuthorizationFilter(authenticationManager()))
+                .addFilterAfter(new JWTAuthorizationFilter(), JWTAuthenticationFilter.class)
                 .authorizeRequests()
                 .antMatchers(INACCESSIBLE_URLS_BY_NOT_AUTHENTICATED_USERS)
                 .authenticated()
