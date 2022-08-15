@@ -77,7 +77,7 @@ public class JWTAuthorizationFilter extends OncePerRequestFilter {
                 path.contains("/js/") ||
                 path.contains(".jpg") ||
                 path.contains(".png") ||
-                path.contains("test-call") ||
+                path.contains("/test-call") ||
                 path.contains("/error");
     }
 
