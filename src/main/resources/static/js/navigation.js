@@ -79,7 +79,7 @@ function navigate(element) {
 	if (location != "home/") {
 		if (sessionStorage.getItem('JWTToken')) {
 
-			window.location.href = PREFIX_LOCAL + location;
+			// window.location.href = PREFIX_LOCAL + location;
 
 			$.ajax({
 				type: "GET",
@@ -156,7 +156,7 @@ if (caller != null) {
 		// window.location.href = PREFIX_LOCAL;
 
 		$.ajax({
-			type: "POST",
+			type: "GET",
 			url: PREFIX_LOCAL + "test-call",
 			async: false,
 			contentType: "application/json",
@@ -166,10 +166,9 @@ if (caller != null) {
 			
 			success: function(data, textStatus, request) {
 				// alert("Headers: " + request.getResponseHeader('Authorization'));
-
+				console.log("REQUEST headers are : " + request.getAllResponseHeaders());
 				console.log("token in caller is: " + sessionStorage.getItem('JWTToken'));
 				console.log("username in caller is: " + sessionStorage.getItem('userName'));
-			    window.location.reload(true);
 			},
 
 			error : function(e) {
