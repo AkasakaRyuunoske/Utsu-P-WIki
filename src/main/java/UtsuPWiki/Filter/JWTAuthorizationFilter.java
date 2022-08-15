@@ -88,6 +88,6 @@ public class JWTAuthorizationFilter extends OncePerRequestFilter {
 
     @Override
     protected boolean shouldNotFilterErrorDispatch() {
-        return false;
+        return true;
     }
 }
