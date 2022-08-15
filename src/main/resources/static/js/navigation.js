@@ -78,6 +78,9 @@ function navigate(element) {
 
 	if (location != "home/") {
 		if (sessionStorage.getItem('JWTToken')) {
+
+			window.location.href = PREFIX_LOCAL + location;
+
 			$.ajax({
 				type: "GET",
 				url: PREFIX_LOCAL + location,
@@ -86,16 +89,15 @@ function navigate(element) {
 				headers: { 'Authorization': sessionStorage.getItem('JWTToken')},
 				
 				success: function(data, textStatus, request) {
-					alert("was called");
-					alert("token in locations is: " + sessionStorage.getItem('JWTToken'));
-					alert("username in locations is: " + sessionStorage.getItem('userName'));
+					// alert("was called");
+					// alert("token in locations is: " + sessionStorage.getItem('JWTToken'));
+					// alert("username in locations is: " + sessionStorage.getItem('userName'));
 				},
 
 				error : function(e) {
 					console.log("ERROR: ", e);
 				}
 			});
-		window.location.href = PREFIX_LOCAL + location;
 		}
 	}
 }
@@ -115,7 +117,7 @@ if (form != null) {
 		  url:PREFIX_LOCAL + "login",
 		  async: false,
 		  data: json,
-		  contentType : "application/json",
+		  contentType : "applica+tion/json",
 
 		  success: function(data, textStatus, request){
 		  	alert("success");
@@ -146,21 +148,28 @@ if (window.location.href == PREFIX_LOCAL + "login?") {
 
 var caller = document.getElementById('caller');
 
+// location = PREFIX_LOCAL + "authors";
+
 if (caller != null) {
 	caller.onclick = function(){
+
+		// window.location.href = PREFIX_LOCAL;
+
 		$.ajax({
 			type: "POST",
 			url: PREFIX_LOCAL + "test-call",
 			async: false,
 			contentType: "application/json",
-			headers: { 'Authorization': sessionStorage.getItem('JWTToken'), 'user':'Oleg'},
+			headers: { 'Authorization': sessionStorage.getItem('JWTToken'),
+			 'user':'Oleg',
+			 'Location':location},
 			
 			success: function(data, textStatus, request) {
-				alert("Headers: " + request.getResponseHeader('Authorization'));
+				// alert("Headers: " + request.getResponseHeader('Authorization'));
 
 				console.log("token in caller is: " + sessionStorage.getItem('JWTToken'));
 				console.log("username in caller is: " + sessionStorage.getItem('userName'));
-				window.location.href = PREFIX_LOCAL;
+			    window.location.reload(true);
 			},
 
 			error : function(e) {
