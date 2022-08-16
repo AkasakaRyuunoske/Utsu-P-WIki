@@ -25,14 +25,15 @@ public class TheDyingMessage {
         String token = request.getHeader(SecurityConstants.HEADER_STRING);
         log.info("token is: " + token);
         response.setHeader(SecurityConstants.HEADER_STRING, token);
-//        response.setHeader("The Dying Message", "By Utsu-P");
+
 //        response.setHeader("Location", "/authors");
 //        response.setStatus(302);
+
 //        try {
 //            response.sendRedirect("/authors");
 //        } catch (IOException e) {
 //            throw new RuntimeException(e);
 //        }
-        return "redirect:/authors";
+        return "forward:/authors";
     }
 }
