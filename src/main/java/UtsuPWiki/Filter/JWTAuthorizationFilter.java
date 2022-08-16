@@ -8,13 +8,16 @@ import lombok.extern.log4j.Log4j2;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.filter.OncePerRequestFilter;
+import org.springframework.web.util.WebUtils;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  *
@@ -36,15 +39,31 @@ public class JWTAuthorizationFilter extends OncePerRequestFilter {
 
         String header = request.getHeader(SecurityConstants.HEADER_STRING);
 
-        log.info("################################################################");
         log.info("doFilterInternal was called: " + header);
         log.info("URL = " + request.getRequestURL());
+//        log.info("The Cookies are: " + request.getCookies().length);
+//        log.info("The Cookies are: " + Arrays.stream(request.getCookies()).findFirst());
+//
+//        Cookie name = WebUtils.getCookie(request, "poshel_nahuy");
+//        log.info("Coockie is: " + name.getValue());
+        log.info("################################################################");
 
-        if (header == null || !header.startsWith(SecurityConstants.TOKEN_PREFIX)) {
+//        if (header == null || !header.startsWith(SecurityConstants.TOKEN_PREFIX)) {
+//
+//            chain.doFilter(request, response);
+//            return;
+//        }
+
+        Cookie coockie = WebUtils.getCookie(request, "JWT");
+        log.info("cookie value is: " + coockie.getValue());
+        log.info("cookie name is: " + coockie.getName());
+
+        if (coockie.getName() == null || !coockie.getValue().startsWith(SecurityConstants.TOKEN_PREFIX)) {
 
             chain.doFilter(request, response);
             return;
         }
+
 
         UsernamePasswordAuthenticationToken authentication = getAuthentication(request, response);
         SecurityContextHolder.getContext().setAuthentication(authentication);
@@ -53,8 +72,9 @@ public class JWTAuthorizationFilter extends OncePerRequestFilter {
 
     private UsernamePasswordAuthenticationToken getAuthentication(HttpServletRequest request,
                                                                   HttpServletResponse response) {
-
-        token = request.getHeader(SecurityConstants.HEADER_STRING);
+        Cookie coockie = WebUtils.getCookie(request, "JWT");
+        token = coockie.getValue();
+//        token = request.getHeader(SecurityConstants.HEADER_STRING);
         try {
             String user = JWT.require(Algorithm.HMAC512(SecurityConstants.SECRET.getBytes()))
                     .build()
