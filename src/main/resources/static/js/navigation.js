@@ -79,7 +79,7 @@ function navigate(element) {
 	if (location != "home/") {
 		if (sessionStorage.getItem('JWTToken')) {
 
-			// window.location.href = PREFIX_LOCAL + location;
+			window.location.href = PREFIX_LOCAL + location;
 
 			$.ajax({
 				type: "GET",
