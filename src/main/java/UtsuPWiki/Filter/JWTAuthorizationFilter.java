@@ -3,10 +3,12 @@ package UtsuPWiki.Filter;
 import UtsuPWiki.utilities.SecurityConstants;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
+import com.auth0.jwt.exceptions.TokenExpiredException;
 import io.jsonwebtoken.JwtException;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.filter.OncePerRequestFilter;
 import org.springframework.web.util.WebUtils;
 
@@ -17,11 +19,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 /**
+ *  Filter that checks every filter for tokens and if there is one, tries to validate it
  *
- * Poorly made both JWTAuthorization and JWTAuthentication filters.
  *
  *  Every thing was made following this guide. https://javatodev.com/spring-boot-jwt-authentication/
  *
@@ -37,33 +38,18 @@ public class JWTAuthorizationFilter extends OncePerRequestFilter {
                                               HttpServletResponse response,
                                               FilterChain chain) throws IOException, ServletException {
 
-        String header = request.getHeader(SecurityConstants.HEADER_STRING);
+        Cookie cookie = WebUtils.getCookie(request, "JWT");
 
-        log.info("doFilterInternal was called: " + header);
-        log.info("URL = " + request.getRequestURL());
-//        log.info("The Cookies are: " + request.getCookies().length);
-//        log.info("The Cookies are: " + Arrays.stream(request.getCookies()).findFirst());
-//
-//        Cookie name = WebUtils.getCookie(request, "poshel_nahuy");
-//        log.info("Coockie is: " + name.getValue());
-        log.info("################################################################");
+        if (cookie != null) {
+            log.info("cookie value is: " + cookie.getValue());
+            log.info("cookie name is: " + cookie.getName());
+        }
 
-//        if (header == null || !header.startsWith(SecurityConstants.TOKEN_PREFIX)) {
-//
-//            chain.doFilter(request, response);
-//            return;
-//        }
-
-        Cookie coockie = WebUtils.getCookie(request, "JWT");
-        log.info("cookie value is: " + coockie.getValue());
-        log.info("cookie name is: " + coockie.getName());
-
-        if (coockie.getName() == null || !coockie.getValue().startsWith(SecurityConstants.TOKEN_PREFIX)) {
+        if (cookie == null || !cookie.getValue().startsWith(SecurityConstants.TOKEN_PREFIX)) {
 
             chain.doFilter(request, response);
             return;
         }
-
 
         UsernamePasswordAuthenticationToken authentication = getAuthentication(request, response);
         SecurityContextHolder.getContext().setAuthentication(authentication);
@@ -72,10 +58,15 @@ public class JWTAuthorizationFilter extends OncePerRequestFilter {
 
     private UsernamePasswordAuthenticationToken getAuthentication(HttpServletRequest request,
                                                                   HttpServletResponse response) {
-        Cookie coockie = WebUtils.getCookie(request, "JWT");
-        token = coockie.getValue();
-//        token = request.getHeader(SecurityConstants.HEADER_STRING);
         try {
+            Cookie cookie = WebUtils.getCookie(request, "JWT");
+
+            try {
+                token = cookie.getValue();
+            }catch (NullPointerException nullPointerException){
+                throw new NullPointerException("Right token is not found.");
+            }
+
             String user = JWT.require(Algorithm.HMAC512(SecurityConstants.SECRET.getBytes()))
                     .build()
                     .verify(token.replace(SecurityConstants.TOKEN_PREFIX, ""))
@@ -83,7 +74,8 @@ public class JWTAuthorizationFilter extends OncePerRequestFilter {
 
             response.addHeader(SecurityConstants.HEADER_STRING, token);
 
-            return new UsernamePasswordAuthenticationToken(user, null, new ArrayList<>());
+            return new UsernamePasswordAuthenticationToken(user, "none", new ArrayList<>());
+
         } catch (JwtException jwtException){
             throw new IllegalStateException("Token cannot be trusted or is expired. Error message: " + jwtException);
         }
@@ -109,5 +101,10 @@ public class JWTAuthorizationFilter extends OncePerRequestFilter {
     @Override
     protected boolean shouldNotFilterErrorDispatch() {
         return true;
+    }
+
+    @ExceptionHandler({TokenExpiredException.class })
+    public void handleException() {
+        log.info("The error is handled");
     }
 }
