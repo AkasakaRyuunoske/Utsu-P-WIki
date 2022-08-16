@@ -44,7 +44,17 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers(INACCESSIBLE_URLS_BY_NOT_AUTHENTICATED_USERS)
                 .authenticated()
                 .anyRequest()
-                .permitAll();
+                .permitAll()
+                .and()
+                .formLogin()
+                .defaultSuccessUrl("/", false)
+                .and()
+                .formLogin()
+                .loginPage("/login")
+                .and()
+                .logout()
+                .logoutUrl("/logout")
+                .logoutSuccessUrl("/login");
     }
 
     @Override
