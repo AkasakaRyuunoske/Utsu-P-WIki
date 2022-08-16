@@ -1,12 +1,14 @@
 package UtsuPWiki.Filter;
 
 import UtsuPWiki.Entity.Clients;
+import UtsuPWiki.Repository.ClientsRepository;
 import UtsuPWiki.utilities.SecurityConstants;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -27,6 +29,7 @@ import java.util.Date;
 @Log4j2
 public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilter {
     private final AuthenticationManager authenticationManager;
+
     @Override
     public Authentication attemptAuthentication(HttpServletRequest request,
                                                 HttpServletResponse response) throws AuthenticationException {
@@ -34,6 +37,11 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
         try {
             Clients creds = new ObjectMapper()
                     .readValue(request.getInputStream(), Clients.class);
+
+            if (creds.getUserName() == null){
+                log.info("runtimeexaption was troven");
+                throw new RuntimeException("User does not exist or username is wrong.");
+            }
 
             return authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(
