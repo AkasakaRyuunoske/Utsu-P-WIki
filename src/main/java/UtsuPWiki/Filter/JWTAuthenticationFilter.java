@@ -60,20 +60,25 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
                                             HttpServletResponse response,
                                             FilterChain chain,
                                             Authentication auth) throws IOException, ServletException {
+        User user = ((User) auth.getPrincipal());
+        String username = user.getUsername();
 
         String token = JWT.create()
-                .withSubject(((User) auth.getPrincipal()).getUsername())
+                .withSubject(username)
                 .withExpiresAt(new Date(System.currentTimeMillis() + SecurityConstants.EXPIRATION_TIME))
                 .sign(Algorithm.HMAC512(SecurityConstants.SECRET.getBytes()));
 
         log.info(token + " token that was created!");
-        log.info("auth.getPrincipal().toString() result: " + ((User) auth.getPrincipal()).getUsername());
 
         Cookie jwt_cookie = new Cookie("JWT", SecurityConstants.TOKEN_PREFIX + token);
         jwt_cookie.setMaxAge(60 * 60); //Same one hour, but SecurityConstants.EXPIRATION_TIME cannot be used coz it's Long
         jwt_cookie.setHttpOnly(true);
 
-        Cookie userName_cookie = new Cookie("userName", ((User) auth.getPrincipal()).getUsername());
+        if (username.contains(" ")){
+            username = username.replace(" ", "_");
+        }
+
+        Cookie userName_cookie = new Cookie("userName", username);
 
         response.addCookie(jwt_cookie);
         response.addCookie(userName_cookie);
