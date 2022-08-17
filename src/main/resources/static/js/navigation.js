@@ -43,7 +43,7 @@ function navigate(element) {
 //In this case locationIndex -1 means that the element that was clicked is outside 
 //locations container (so it's one of the header-grid-container's element).
 //In this case navigate() still works but it slices one letter more than needed.
-//Thus this if resolves the problem
+//Thus this if resolves the problem.
 	if (locationIndex == -1) {
 
 		sliceTo = locationIndex + (location.length + 1);
@@ -57,47 +57,15 @@ function navigate(element) {
 	location = location.slice(0, sliceTo);
 
 	if (location == "home/") {
-		if (sessionStorage.getItem('JWTToken')) {
-		$.ajax({
-			type: "GET",
-			url: PREFIX_LOCAL,
-			async: false,
-			contentType: "application/json",
-			headers: { 'Authorization': sessionStorage.getItem('JWTToken')},
-			
-			success: function() {},
-
-			error : function(e) {
-				console.log("ERROR: ", e);
-			}
-		});
 
 		window.location.href = PREFIX_LOCAL;
-		}
-	}
 
-	if (location != "home/") {
-		if (sessionStorage.getItem('JWTToken')) {
+	} else{
 
-			window.location.href = PREFIX_LOCAL + location;
-
-			$.ajax({
-				type: "GET",
-				url: PREFIX_LOCAL + location,
-				async: false,
-				contentType: "application/json",
-				headers: { 'Authorization': sessionStorage.getItem('JWTToken')},
-				
-				success: function(data, textStatus, request) {
-				},
-
-				error : function(e) {
-					console.log("ERROR: ", e);
-				}
-			});
-		}
+		window.location.href = PREFIX_LOCAL + location;
 	}
 }
+
 if (form != null) {
 	form.onsubmit = function(event){
 		userName = document.getElementById('userName').value;
