@@ -7,7 +7,6 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @Log4j2
 @SpringBootApplication
-@EnableWebMvc
 public class UtsuPApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(UtsuPApplication.class, args);
