@@ -5,14 +5,26 @@ let PREFIX_LOCAL   = "http://localhost:8080/";
 let PREFIX_HEROKU  = "https://.herokuapp.com/";
 
 var currentUser = document.getElementById("currentUser");
-var form  = document.getElementById('myForm');
 
-var token;
-var userName;
-var password;
+function getCookie(cookie_name) {
+  let name = cookie_name + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let cookies = decodedCookie.split(';');
 
-if (sessionStorage.getItem('userName')) {
-	currentUser.innerHTML = sessionStorage.getItem('userName');
+  for(let i = 0; i <cookies.length; i++) {
+    let cookie = cookies[i];
+    while (cookie.charAt(0) == ' ') {
+      cookie = cookie.substring(1);
+    }
+    if (cookie.indexOf(name) == 0) {
+      return cookie.substring(name.length, cookie.length);
+    }
+  }
+  return "";
+}
+
+if (getCookie("userName") != null) {
+	currentUser.innerHTML = getCookie("userName").replace("_", " ");
 } 
 
 currentUser.onclick = function(){
@@ -40,10 +52,10 @@ function navigate(element) {
 	let locationIndex = locationsContainer.indexOf(location);
 	let sliceTo;
 
-//In this case locationIndex -1 means that the element that was clicked is outside 
-//locations container (so it's one of the header-grid-container's element).
-//In this case navigate() still works but it slices one letter more than needed.
-//Thus this if resolves the problem.
+	//In this case locationIndex -1 means that the element that was clicked is outside 
+	//locations container (so it's one of the header-grid-container's element).
+	//In this case navigate() still works but it slices one letter more than needed.
+	//Thus this if resolves the problem.
 	if (locationIndex == -1) {
 
 		sliceTo = locationIndex + (location.length + 1);
@@ -66,35 +78,9 @@ function navigate(element) {
 	}
 }
 
-if (form != null) {
-	form.onsubmit = function(event){
-		userName = document.getElementById('userName').value;
-		password = document.getElementById('password').value;
-
-		formData = new FormData(form);
-		formData.append("userName", userName);
-		formData.append("password", password);
-
-		var json = JSON.stringify(Object.fromEntries(formData));
-
-		$.ajax({
-		  type: "POST",
-		  url:PREFIX_LOCAL + "login",
-		  async: false,
-		  data: json,
-		  contentType : "applica+tion/json",
-
-		  success: function(data, textStatus, request){
-
-			sessionStorage.setItem('userName', userName);
-		  },
-		  error : function(e) {
-				alert("ERROR: ", e);
-		  }
-		});
-	}
-}
-
+// for some reason after data submition window location changes to /login?
+// and not that configured in spring boot (.http.defaultSuccessUrl("/"))
+// for now this is solution
 if (window.location.href == PREFIX_LOCAL + "login?") {
 	window.location.href = PREFIX_LOCAL;
 }
