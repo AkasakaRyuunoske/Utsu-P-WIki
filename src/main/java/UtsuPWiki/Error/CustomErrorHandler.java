@@ -33,7 +33,7 @@ public class CustomErrorHandler implements ErrorController {
             IllegalStateException.class,
             ExpiredJwtException.class,
             JWTVerificationException.class,
-            TokenExpiredException.class})
+            TokenExpiredException.class}) //Does nothing for the moment
     public String handleErrors(HttpServletRequest httpServletRequest,
                                HttpServletResponse httpServletResponse,
                                Model model){
