@@ -13,11 +13,19 @@ import org.springframework.web.bind.annotation.GetMapping;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+
+/**
+ * Is used to handle all Http error status codes(400 - 599).
+ *
+ * First method must be used as a config and the handleError to handle the actual errors
+ * */
 @Log4j2
 @Controller
 public class CustomErrorHandler implements ErrorController {
+    @SuppressWarnings("FieldCanBeLocal")
     private final String ERROR_PAGE = "error"; // Name of the view that will be returned
-    private final String ERROR_MESSAGE = "errorMessage";
+    @SuppressWarnings("FieldCanBeLocal")
+    private final String ERROR_MESSAGE = "errorMessage"; //name of the thymeleaf attribute
 
     @GetMapping("/error")
     @ExceptionHandler(value = { IllegalArgumentException.class,
@@ -40,6 +48,7 @@ public class CustomErrorHandler implements ErrorController {
     public void handleError(int status, Model model){
         model.addAttribute("error", "Error: " + status);
         switch (status){
+            // 400 - 499 Client Side Errors
             case 401:
                 model.addAttribute(ERROR_MESSAGE,
                         "You have made bad request for some reason." +
@@ -66,7 +75,7 @@ public class CustomErrorHandler implements ErrorController {
                 model.addAttribute(ERROR_MESSAGE,
                         "Custom Error.");
                 break;
-
+            // 500 - 599 Server side Errors
             case 500:
                 model.addAttribute(ERROR_MESSAGE,
                         "Server Side problem.");
