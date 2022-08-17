@@ -18,11 +18,10 @@ form.onsubmit = function(event){
 	  url:PREFIX_LOCAL + "login",
 	  async: false,
 	  data: json,
-	  contentType : "applica+tion/json",
+	  contentType : "application/json",
 
 	  success: function(data, textStatus, request){
-
-		sessionStorage.setItem('userName', userName);
+		window.location.href = "/";
 	  },
 	  error : function(e) {
 			alert("ERROR: ", e);
