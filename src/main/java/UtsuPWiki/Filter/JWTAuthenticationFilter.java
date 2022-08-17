@@ -1,14 +1,15 @@
 package UtsuPWiki.Filter;
 
 import UtsuPWiki.Entity.Clients;
-import UtsuPWiki.Repository.ClientsRepository;
 import UtsuPWiki.utilities.SecurityConstants;
+
 import com.auth0.jwt.JWT;
-import com.auth0.jwt.algorithms.Algorithm;
+import com.auth0.jwt.algorithms.Algorithm; // 8 anniversary (Aug 17, 2014)
 import com.fasterxml.jackson.databind.ObjectMapper;
+
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
-import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -39,7 +40,7 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
                     .readValue(request.getInputStream(), Clients.class);
 
             if (creds.getUserName() == null){
-                log.info("runtimeexaption was troven");
+                log.info("RuntimeException was thrown in creds.getUserName == null");
                 throw new RuntimeException("User does not exist or username is wrong.");
             }
 
@@ -55,15 +56,22 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
     }
 
     @Override
-    protected void successfulAuthentication(HttpServletRequest request, HttpServletResponse response, FilterChain chain, Authentication auth) throws IOException, ServletException {
-        log.info("Was called! successfulAuthentication");
+    protected void successfulAuthentication(HttpServletRequest request,
+                                            HttpServletResponse response,
+                                            FilterChain chain,
+                                            Authentication auth) throws IOException, ServletException {
+
         String token = JWT.create()
                 .withSubject(((User) auth.getPrincipal()).getUsername())
                 .withExpiresAt(new Date(System.currentTimeMillis() + SecurityConstants.EXPIRATION_TIME))
                 .sign(Algorithm.HMAC512(SecurityConstants.SECRET.getBytes()));
 
         log.info(token + " token that we have created!");
+
         Cookie jwt_cookie = new Cookie("JWT", SecurityConstants.TOKEN_PREFIX + token);
+        jwt_cookie.setMaxAge(60 * 60); //Same one hour, but SecurityConstants.EXPIRATION_TIME cannot be used coz it's Long
+        jwt_cookie.setHttpOnly(true);
+
         response.addCookie(jwt_cookie);
         response.addHeader(SecurityConstants.HEADER_STRING, SecurityConstants.TOKEN_PREFIX + token);
     }
