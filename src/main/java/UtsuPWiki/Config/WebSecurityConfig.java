@@ -47,14 +47,14 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .permitAll()
                 .and()
                 .formLogin()
-                .defaultSuccessUrl("/", false)
+                .loginPage("/login")
                 .and()
                 .formLogin()
-                .loginPage("/login")
+                .defaultSuccessUrl("/", true)
                 .and()
                 .logout()
                 .logoutUrl("/logout")
-                .logoutSuccessUrl("/login");
+                .logoutSuccessUrl("/login").deleteCookies("JWT","userName");
     }
 
     @Override
