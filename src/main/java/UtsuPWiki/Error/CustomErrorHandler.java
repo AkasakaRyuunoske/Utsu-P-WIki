@@ -28,19 +28,20 @@ public class CustomErrorHandler implements ErrorController {
     private final String ERROR_MESSAGE = "errorMessage"; //name of the thymeleaf attribute
 
     @GetMapping("/error")
-    @ExceptionHandler(value = { IllegalArgumentException.class,
-            IllegalStateException.class, ExpiredJwtException.class,
+    @ExceptionHandler(value = {
+            IllegalArgumentException.class,
+            IllegalStateException.class,
+            ExpiredJwtException.class,
             JWTVerificationException.class,
             TokenExpiredException.class})
     public String handleErrors(HttpServletRequest httpServletRequest,
-                                 HttpServletResponse httpServletResponse,
+                               HttpServletResponse httpServletResponse,
                                Model model){
+
         int status = httpServletResponse.getStatus();
         log.info("Error handled: " + status);
 
-        if (status > 299){
-            handleError(status, model);
-        }
+        handleError(status, model);
 
         return ERROR_PAGE;
     }
