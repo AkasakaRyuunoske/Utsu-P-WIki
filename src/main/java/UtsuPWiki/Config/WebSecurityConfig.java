@@ -28,6 +28,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     public final String[] INACCESSIBLE_URLS_BY_NOT_AUTHENTICATED_USERS = {
             "/authors",
+            //these are CMS end points, obviously to manipulate data user must be authenticated
+            "/create",
+            "/update",
+            "/delete"
     };
 
     @Override
@@ -48,8 +52,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .formLogin()
                 .loginPage("/login")
-                .and()
-                .formLogin()
                 .defaultSuccessUrl("/", true)
                 .and()
                 .logout()
