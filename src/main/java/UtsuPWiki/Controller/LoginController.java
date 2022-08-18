@@ -1,6 +1,7 @@
 package UtsuPWiki.Controller;
 
 import UtsuPWiki.Entity.Clients;
+import UtsuPWiki.Service.ClientsDetailsService;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
