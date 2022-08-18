@@ -1,13 +1,9 @@
 package UtsuPWiki.Error;
 
-import com.auth0.jwt.exceptions.JWTVerificationException;
-import com.auth0.jwt.exceptions.TokenExpiredException;
-import io.jsonwebtoken.ExpiredJwtException;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
@@ -29,12 +25,6 @@ public class CustomErrorHandler implements ErrorController {
     private String error_message;
 
     @RequestMapping("/error")
-    @ExceptionHandler(value = {
-            IllegalArgumentException.class,
-            IllegalStateException.class,
-            ExpiredJwtException.class,
-            JWTVerificationException.class,
-            TokenExpiredException.class}) //Does nothing for the moment
     public String handleErrors(HttpServletRequest request,
                                HttpServletResponse response,
                                Model model){
@@ -42,7 +32,7 @@ public class CustomErrorHandler implements ErrorController {
         int status = response.getStatus();
         log.info("Error handled: " + status);
 
-        handleError(status, model);
+            handleError(status, model);
 
         response.setHeader(ATTRIBUTE_ERROR_MESSAGE, error_message);
 
@@ -88,6 +78,5 @@ public class CustomErrorHandler implements ErrorController {
                 error_message = "Unexpected problem occurred, try later.";
                 model.addAttribute(ATTRIBUTE_ERROR_MESSAGE, error_message);
         }
-
     }
 }
