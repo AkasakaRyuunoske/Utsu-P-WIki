@@ -3,7 +3,11 @@ var form  = document.getElementById('myForm');
 var userName;
 var password;
 
+var error = document.getElementById('userNameOrPasswordError');
+
 form.onsubmit = function(event){
+	event.preventDefault(); // prrevents default form submitting.
+
 	userName = document.getElementById('userName').value;
 	password = document.getElementById('password').value;
 
@@ -23,8 +27,9 @@ form.onsubmit = function(event){
 	  success: function(data, textStatus, request){
 		window.location.href = "/";
 	  },
-	  error : function(e) {
-			alert("ERROR: ", e);
+	  error : function(e, res) {
+	  		alert(res.getResponseHeader("errorMessage"));
+			error.innerHTML = "User Name or Password error";
 	  }
 	});
 }
