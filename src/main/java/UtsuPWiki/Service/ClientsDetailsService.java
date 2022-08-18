@@ -21,6 +21,7 @@ public class ClientsDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
+        log.info("loadUserByUsername : was called!");
         return new User(userName,
                 clientsRepository.findByUserName(userName).getPassword(),
                 new ArrayList<>());
@@ -30,8 +31,13 @@ public class ClientsDetailsService implements UserDetailsService {
     public Clients readUserByUserName(String userName) throws UsernameNotFoundException {
         Clients client = clientsRepository.findByUserName(userName);
 
+        log.info("readUserByUserName : was called!");
+        log.info("client : " + client);
+//        log.info("client userName : " + client.getUserName());
+//        log.info("client password : " + client.getPassword());
+
         if (client == null){
-            throw new UsernameNotFoundException("User not found or does not exist");
+            throw new UsernameNotFoundException("User not found or does not exist.");
         }
 
         return client;
