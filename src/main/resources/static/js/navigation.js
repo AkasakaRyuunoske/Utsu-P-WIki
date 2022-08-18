@@ -23,7 +23,7 @@ function getCookie(cookie_name) {
   return "";
 }
 
-if (getCookie("userName") != null) {
+if (getCookie("userName") != "") {
 	currentUser.innerHTML = getCookie("userName").replace("_", " ");
 } 
 
@@ -81,6 +81,7 @@ function navigate(element) {
 // for some reason after data submition window location changes to /login?
 // and not that configured in spring boot (.http.defaultSuccessUrl("/"))
 // for now this is solution
-if (window.location.href == PREFIX_LOCAL + "login?") {
-	window.location.href = PREFIX_LOCAL;
-}
+
+// if (window.location.href == PREFIX_LOCAL + "login?") {
+// 	window.location.href = PREFIX_LOCAL;
+// }
