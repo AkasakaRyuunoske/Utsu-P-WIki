@@ -11,17 +11,18 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Log4j2
 @Controller
 public class LoginController {
-    @PostMapping("/login")
-    public String GETLogin(Model model){
-        model.addAttribute("client", new Clients());
 
+    //The page client can see and insert data
+    @GetMapping("/login")
+    public String GETLogin(@ModelAttribute Clients client){
 
         return "login";
     }
 
-    @GetMapping("/login")
-    public String POSTLogin(@ModelAttribute Clients client){
-
-        return "login";
+   //only receives data, must NOT be viewed by clients
+    @PostMapping("/login")
+    public void POSTLogin(Model model){
+        model.addAttribute("client", new Clients());
+        log.info("Post Login was called!");
     }
 }
