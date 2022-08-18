@@ -27,9 +27,11 @@ form.onsubmit = function(event){
 	  success: function(data, textStatus, request){
 		window.location.href = "/";
 	  },
-	  error : function(e, res) {
-	  		alert(res.getResponseHeader("errorMessage"));
+	  error : function(e, xhr) {
+	  		alert(xhr.getResponseHeader("errorMessage"));
 			error.innerHTML = "User Name or Password error";
 	  }
 	});
 }
+
+//.failureHandler((request, response, exception) -> System.out.println(exception))
