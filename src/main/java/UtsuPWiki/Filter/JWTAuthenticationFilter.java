@@ -2,18 +2,14 @@ package UtsuPWiki.Filter;
 
 import UtsuPWiki.Entity.Clients;
 import UtsuPWiki.utilities.SecurityConstants;
-
 import com.auth0.jwt.JWT;
-import com.auth0.jwt.algorithms.Algorithm; // 8 anniversary (Aug 17, 2014)
+import com.auth0.jwt.algorithms.Algorithm;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
-
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
@@ -33,16 +29,11 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
 
     @Override
     public Authentication attemptAuthentication(HttpServletRequest request,
-                                                HttpServletResponse response) throws AuthenticationException {
+                                                HttpServletResponse response) {
 
         try {
             Clients creds = new ObjectMapper()
                     .readValue(request.getInputStream(), Clients.class);
-
-            if (creds.getUserName() == null){
-                log.info("RuntimeException was thrown in creds.getUserName == null");
-                throw new RuntimeException("User does not exist or username is wrong.");
-            }
 
             return authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(
