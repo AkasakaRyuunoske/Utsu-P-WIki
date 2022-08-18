@@ -8,7 +8,7 @@ import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -25,23 +25,26 @@ public class CustomErrorHandler implements ErrorController {
     @SuppressWarnings("FieldCanBeLocal")
     private final String ERROR_PAGE = "error"; // Name of the view that will be returned
     @SuppressWarnings("FieldCanBeLocal")
-    private final String ERROR_MESSAGE = "errorMessage"; //name of the thymeleaf attribute
+    private final String ATTRIBUTE_ERROR_MESSAGE = "errorMessage"; //name of the thymeleaf attribute
+    private String error_message;
 
-    @GetMapping("/error")
+    @RequestMapping("/error")
     @ExceptionHandler(value = {
             IllegalArgumentException.class,
             IllegalStateException.class,
             ExpiredJwtException.class,
             JWTVerificationException.class,
             TokenExpiredException.class}) //Does nothing for the moment
-    public String handleErrors(HttpServletRequest httpServletRequest,
-                               HttpServletResponse httpServletResponse,
+    public String handleErrors(HttpServletRequest request,
+                               HttpServletResponse response,
                                Model model){
 
-        int status = httpServletResponse.getStatus();
+        int status = response.getStatus();
         log.info("Error handled: " + status);
 
         handleError(status, model);
+
+        response.setHeader(ATTRIBUTE_ERROR_MESSAGE, error_message);
 
         return ERROR_PAGE;
     }
@@ -51,40 +54,39 @@ public class CustomErrorHandler implements ErrorController {
         switch (status){
             // 400 - 499 Client Side Errors
             case 401:
-                model.addAttribute(ERROR_MESSAGE,
-                        "You have made bad request for some reason." +
-                                "Check your request or retry later.");
+                error_message = "You have made bad request for some reason. Check your request or retry later.";
+                model.addAttribute(ATTRIBUTE_ERROR_MESSAGE, error_message);
                 break;
 
             case 403:
-                model.addAttribute(ERROR_MESSAGE,
-                        "You are not allowed to view this page.");
+                error_message = "You are not allowed to view this page.";
+                model.addAttribute(ATTRIBUTE_ERROR_MESSAGE, error_message);
                 break;
 
             case 404:
-                model.addAttribute(ERROR_MESSAGE,
-                        "Resource not found or might not exist.");
+                error_message = "Resource not found or might not exist.";
+                model.addAttribute(ATTRIBUTE_ERROR_MESSAGE,error_message);
                 break;
 
             case 405:
-                model.addAttribute(ERROR_MESSAGE,
-                        "HTTP method not allowed.");
+                error_message = "HTTP method not allowed.";
+                model.addAttribute(ATTRIBUTE_ERROR_MESSAGE,error_message);
                 break;
 
 
             case 453:
-                model.addAttribute(ERROR_MESSAGE,
-                        "Custom Error.");
+                error_message = "Custom Error.";
+                model.addAttribute(ATTRIBUTE_ERROR_MESSAGE, error_message);
                 break;
             // 500 - 599 Server side Errors
             case 500:
-                model.addAttribute(ERROR_MESSAGE,
-                        "Server Side problem.");
+                error_message = "Server Side problem. If error remains, retry later.";
+                model.addAttribute(ATTRIBUTE_ERROR_MESSAGE, error_message);
                 break;
 
             default:
-                model.addAttribute(ERROR_MESSAGE,
-                        "Unexpected problem occurred, try later.");
+                error_message = "Unexpected problem occurred, try later.";
+                model.addAttribute(ATTRIBUTE_ERROR_MESSAGE, error_message);
         }
 
     }
