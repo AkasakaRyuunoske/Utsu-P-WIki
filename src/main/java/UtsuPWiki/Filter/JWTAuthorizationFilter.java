@@ -24,6 +24,10 @@ import java.util.ArrayList;
  *
  *  Every thing was made following this guide. https://javatodev.com/spring-boot-jwt-authentication/
  *
+ *
+ *  EXCEPTIONS are handled inside the filter coz this guy said so
+ *  https://stackoverflow.com/questions/48584175/controlleradvice-doesnt-handle-exceptions
+ *
  * */
 
 @Log4j2
@@ -74,7 +78,7 @@ public class JWTAuthorizationFilter extends OncePerRequestFilter {
             return new UsernamePasswordAuthenticationToken(user, "none", new ArrayList<>());
 
         } catch (JwtException jwtException){
-            response.setStatus(500);
+            response.setStatus(401);
             throw new IllegalStateException("Token cannot be trusted or is expired. Error message: " + jwtException);
         }
     }
