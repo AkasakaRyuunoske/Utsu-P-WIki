@@ -49,7 +49,7 @@
 	<!-- Here the main content of the page starts -->
 
 	<div class="main-content-container">
-		<form method = "post" th:action = "@{/registration-complete}" th:object = " ${client}">
+		<form method = "post" th:action = "@{/registration}" th:object = " ${client}">
 			<input type="text" name="userName" th:field = "${client.userName}">
 			<input type="password" name="password" th:field = "${client.password}">
 			<input type="text" name="email" th:field = "${client.email}">
