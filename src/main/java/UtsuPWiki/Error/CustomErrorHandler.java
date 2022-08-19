@@ -43,8 +43,13 @@ public class CustomErrorHandler implements ErrorController {
         model.addAttribute("error", "Error: " + status);
         switch (status){
             // 400 - 499 Client Side Errors
-            case 401:
+            case 400:
                 error_message = "You have made bad request for some reason. Check your request or retry later.";
+                model.addAttribute(ATTRIBUTE_ERROR_MESSAGE, error_message);
+                break;
+
+            case 401:
+                error_message = "User name or password are incorrect or user does not exist.";
                 model.addAttribute(ATTRIBUTE_ERROR_MESSAGE, error_message);
                 break;
 
