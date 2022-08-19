@@ -27,8 +27,13 @@ $.ajax({
 	  success: function(data, textStatus, request){
 		window.location.href = "/";
 	  },
-	  error : function(data, textStatus, request) {
-			error.innerHTML = "User name or password are incorrect or user does not exist.";
+
+	  //In order to be able to read response header
+	  //function must follow this temoplate.
+	  //the function must be absolutly same as below 
+	  //otherwise it DOES NOT WORK.
+	  error : function(request, textStatus, errorThrown) {
+			error.innerHTML = request.getResponseHeader('errorMessage');
 	  }
 	});
 }
