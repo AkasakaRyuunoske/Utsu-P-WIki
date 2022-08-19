@@ -1,6 +1,7 @@
 package UtsuPWiki.Filter;
 
 import UtsuPWiki.Entity.Clients;
+import UtsuPWiki.Error.CustomException;
 import UtsuPWiki.utilities.SecurityConstants;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
@@ -8,6 +9,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.InternalAuthenticationServiceException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.User;
@@ -29,20 +31,33 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
 
     @Override
     public Authentication attemptAuthentication(HttpServletRequest request,
-                                                HttpServletResponse response) {
+                                                HttpServletResponse response) throws InternalAuthenticationServiceException {
+        Clients credentials;
 
         try {
-            Clients creds = new ObjectMapper()
+             credentials = new ObjectMapper()
                     .readValue(request.getInputStream(), Clients.class);
+        } catch (IOException e) {
+            throw new RuntimeException("Exception occurred when ObjectMapper()" +
+                    " was reading request for Clients credentials. Error Message: " + e);
+        }
+
+        try {
 
             return authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(
-                            creds.getUserName(),
-                            creds.getPassword(),    //Is already using defined as @Bean password encoder(BCrypt(11))
-                            new ArrayList<>())
-            );
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+                            credentials.getUserName(),
+                            credentials.getPassword(),    //Is already using defined as @Bean password encoder(BCrypt(11))
+                            new ArrayList<>()));
+
+        } catch (InternalAuthenticationServiceException internalAuthenticationServiceException){
+
+            response.setStatus(453);
+            log.info("InternalAuthenticationServiceException was thrown");
+
+            throw new CustomException(this.messages
+                    .getMessage("AbstractUserDetailsAuthenticationProvider.UserUnknown",
+                            "User was not found."));
         }
     }
 
