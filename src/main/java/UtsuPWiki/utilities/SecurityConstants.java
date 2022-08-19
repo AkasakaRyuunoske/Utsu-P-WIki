@@ -37,5 +37,13 @@ public class SecurityConstants {
             "DAIPO_GA_DE_NAI"                       +
             "_"                                     +
             "anzen_wa_kankan_ni_kiechate"           +
-            "akukeyou_oyoboshita_boku_no_kokoro_he";
+            "akukeyou_oyoboshita_boku_no_kokoro_he" +
+            "_"                                     +
+            "nagai_ame_ga_yami_atsui_hizashi_ga"    +
+            "terasu_ookina_senaka_tooo"             +
+            "_"                                          +
+            "NEE_ANATA_WA_ITSUMO_YUME_WO_MITE_MASU_KA_?" +
+            "OWARI_KAKE_NO_KONO_SEKAI_DE"                +
+            "FUSAGA_RE_TA_MICCHI_WO_HITAKU_MONO_NI_NARU" +
+            "'MESSEJI'_WO_IDA_ITA_TSURAI_YOOOO";
 }
