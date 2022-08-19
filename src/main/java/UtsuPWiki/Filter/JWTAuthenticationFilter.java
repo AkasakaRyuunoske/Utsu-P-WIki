@@ -48,6 +48,7 @@ import java.util.Date;
  *  CustomException - seems like the only way to see "hidden" AbstractUserDetailsAuthenticationProvider errors
  *  is to implement a custom class with only method that shows "hidden" error message.
  *  And .setHideUserNotFoundExceptions to false in WebSecurityConfig.
+ *
  * */
 
 @RequiredArgsConstructor
