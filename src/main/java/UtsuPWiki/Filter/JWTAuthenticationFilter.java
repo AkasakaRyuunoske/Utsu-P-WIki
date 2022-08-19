@@ -1,6 +1,7 @@
 package UtsuPWiki.Filter;
 
 import UtsuPWiki.Entity.Clients;
+import UtsuPWiki.Error.CustomErrorHandler;
 import UtsuPWiki.Error.CustomException;
 import UtsuPWiki.utilities.SecurityConstants;
 import com.auth0.jwt.JWT;
@@ -24,6 +25,31 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
 
+/**
+ *  Filter that used to Authenticate user using his credentials,
+ *  if everything OK user receives cookie containing the JWT token.
+ *
+ *
+ *  Every thing was made following this guide. https://javatodev.com/spring-boot-jwt-authentication/
+ *  then was adapted.
+ *
+ *
+ *  EXCEPTIONS are handled inside the filter coz this guy said so:
+ *  https://stackoverflow.com/questions/48584175/controlleradvice-doesnt-handle-exceptions
+ *  and I could not find any better way.
+ *
+ *  Exception handling in details:
+ *  CustomErrorHandler.doesUserExist - is used to differentiate 2 possible errors with user credentials.
+ *  One being RIGHT username(one that does not exist in db) but WRONG password.
+ *  Another being WRONG username(one that does not exist in db).
+ *
+ *  This might have security issues but idfc.
+ *
+ *  CustomException - seems like the only way to see "hidden" AbstractUserDetailsAuthenticationProvider errors
+ *  is to implement a custom class with only method that shows "hidden" error message.
+ *  And .setHideUserNotFoundExceptions to false in WebSecurityConfig.
+ * */
+
 @RequiredArgsConstructor
 @Log4j2
 public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilter {
@@ -33,6 +59,7 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
     public Authentication attemptAuthentication(HttpServletRequest request,
                                                 HttpServletResponse response) throws InternalAuthenticationServiceException {
         Clients credentials;
+        CustomErrorHandler.doesUserExist = true;
 
         try {
              credentials = new ObjectMapper()
@@ -54,6 +81,8 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
 
             response.setStatus(453);
             log.info("InternalAuthenticationServiceException was thrown");
+
+            CustomErrorHandler.doesUserExist = false;
 
             throw new CustomException(this.messages
                     .getMessage("AbstractUserDetailsAuthenticationProvider.UserUnknown",
