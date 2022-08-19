@@ -17,7 +17,7 @@ form.onsubmit = function(event){
 
 	var json = JSON.stringify(Object.fromEntries(formData));
 
-	$.ajax({
+$.ajax({
 	  type: "POST",
 	  url:PREFIX_LOCAL + "login",
 	  async: false,
@@ -27,9 +27,8 @@ form.onsubmit = function(event){
 	  success: function(data, textStatus, request){
 		window.location.href = "/";
 	  },
-	  error : function(e, xhr) {
-	  		alert(xhr.getResponseHeader("errorMessage"));
-			error.innerHTML = "User Name or Password error";
+	  error : function(data, textStatus, request) {
+			error.innerHTML = "User name or password are incorrect or user does not exist.";
 	  }
 	});
 }
