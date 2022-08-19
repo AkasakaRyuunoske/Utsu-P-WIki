@@ -2,7 +2,7 @@
 package UtsuPWiki.Service;
 
 import UtsuPWiki.Entity.Clients;
-import UtsuPWiki.Error.DisabledException;
+import UtsuPWiki.Error.CustomException;
 import UtsuPWiki.Repository.ClientsRepository;
 
 import lombok.extern.log4j.Log4j2;
@@ -17,6 +17,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import java.util.ArrayList;
 
@@ -48,11 +49,31 @@ public class ClientsDetailsService implements UserDetailsService {
 
             log.error("badCredentials was thrown: " + internalAuthenticationServiceException.getMessage());
 
-            throw new DisabledException(this.messages
+            throw new CustomException(this.messages
                     .getMessage("AbstractUserDetailsAuthenticationProvider.badCredentials",
                             "User found but password is wrong."));
             }
         }
+    }
+
+    @ExceptionHandler(value = {CustomException.class, InternalAuthenticationServiceException.class})
+    public void handleClientsCredentialsError(Exception ex,
+                                              CustomException customException,
+                                              InternalAuthenticationServiceException internalAuthenticationServiceException){
+
+        log.info("Some error was handled: " + ex.getMessage());
+
+        try{
+            if (ex instanceof CustomException){
+                log.error("DisableException was handled: " + customException);
+            }
+            if (ex instanceof InternalAuthenticationServiceException){
+                log.error("InternalAuthenticationServiceException was handled: " + internalAuthenticationServiceException);
+            }
+        } catch (Exception exception) {
+            log.warn("Handling of [" + ex.getClass().getName() + "] resulted in Exception", exception);
+        }
+
     }
 
     @Deprecated
