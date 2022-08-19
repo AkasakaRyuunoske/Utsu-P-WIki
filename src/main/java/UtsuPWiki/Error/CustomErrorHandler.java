@@ -24,6 +24,8 @@ public class CustomErrorHandler implements ErrorController {
     private final String ATTRIBUTE_ERROR_MESSAGE = "errorMessage"; //name of the thymeleaf attribute
     private String error_message;
 
+    public static boolean doesUserExist = true;
+
     @RequestMapping("/error")
     public String handleErrors(HttpServletRequest request,
                                HttpServletResponse response,
@@ -49,7 +51,13 @@ public class CustomErrorHandler implements ErrorController {
                 break;
 
             case 401:
-                error_message = "User name or password are incorrect or user does not exist.";
+
+                if (doesUserExist){
+                    error_message = "User is found but password is incorrect. Try another password.";
+                } else {
+                    error_message = "User is not found. Try another user name.";
+                }
+
                 model.addAttribute(ATTRIBUTE_ERROR_MESSAGE, error_message);
                 break;
 
