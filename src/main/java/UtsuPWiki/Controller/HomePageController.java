@@ -13,8 +13,6 @@ import javax.servlet.http.HttpServletRequest;
 public class HomePageController {
     @GetMapping("/")
     String indexController(Model model, HttpServletRequest request){
-        log.info("indexController Was called!");
-
         Navigation.addLocations(model, request);
 
         return "index";
