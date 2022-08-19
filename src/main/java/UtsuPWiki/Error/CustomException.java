@@ -2,8 +2,8 @@ package UtsuPWiki.Error;
 
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
-public class DisabledException extends UsernameNotFoundException {
-    public DisabledException(String msg) {
+public class CustomException extends UsernameNotFoundException {
+    public CustomException(String msg) {
         super(msg);
     }
 }
