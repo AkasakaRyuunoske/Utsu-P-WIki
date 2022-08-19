@@ -106,7 +106,7 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
         log.info(token + " token that was created!");
 
         Cookie jwt_cookie = new Cookie("JWT", SecurityConstants.TOKEN_PREFIX + token);
-        jwt_cookie.setMaxAge(60 * 60); //Same one hour, but SecurityConstants.EXPIRATION_TIME cannot be used coz it's Long
+        jwt_cookie.setMaxAge(60 * 60); //Same one hour, but SecurityConstants.EXPIRATION_TIME cannot be applied
         jwt_cookie.setHttpOnly(true);
 
         if (username.contains(" ")){
