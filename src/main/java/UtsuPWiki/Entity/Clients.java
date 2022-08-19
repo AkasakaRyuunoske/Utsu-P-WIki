@@ -41,9 +41,6 @@ public class Clients {
 //    @Column(name = "Profile_Photo", nullable = false, unique = false)
 //    private Blob profilePhoto;
 
-    @Column(name = "Session_Id")
-    private String sessionId;
-
     @Column(name = "Default_Address")
     private String default_Address = "none";
 
