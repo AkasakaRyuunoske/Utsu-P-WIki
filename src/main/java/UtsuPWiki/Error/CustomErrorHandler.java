@@ -1,5 +1,6 @@
 package UtsuPWiki.Error;
 
+import UtsuPWiki.utilities.Navigation;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.stereotype.Controller;
@@ -31,10 +32,12 @@ public class CustomErrorHandler implements ErrorController {
                                HttpServletResponse response,
                                Model model){
 
+        Navigation.addLocations(model, request);
+
         int status = response.getStatus();
         log.info("Error handled: " + status);
 
-            handleError(status, model);
+        handleError(status, model);
 
         response.setHeader(ATTRIBUTE_ERROR_MESSAGE, error_message);
 
