@@ -35,6 +35,10 @@ public class Navigation {
 
         //finally list of locations is passed to front-end through Thymeleaf where JS will make
         //every "location" clickable. See navigation.js for more info.
-        model.addAttribute("location", currentLocation);
+        if(!locations_to_split.contains("error")) {
+            model.addAttribute("location", currentLocation);
+        } else {
+            model.addAttribute("location", "home/");
+        }
     }
 }
