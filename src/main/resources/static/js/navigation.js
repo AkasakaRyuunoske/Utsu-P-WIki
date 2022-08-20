@@ -68,7 +68,7 @@ function navigate(element) {
 
 	location = location.slice(0, sliceTo);
 
-	if (location == "home") {
+	if (location == "home/") {
 
 		window.location.href = PREFIX_LOCAL;
 
