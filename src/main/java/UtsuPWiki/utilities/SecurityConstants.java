@@ -47,34 +47,3 @@ public class SecurityConstants {
             "FUSAGA_RE_TA_MICCHI_WO_HITAKU_MONO_NI_NARU" +
             "'MESSEJI'_WO_IDA_ITA_TSURAI_YOOOO";
 }
-
-//    Entities(DB):
-//Clients 		  -> UserName, Password, Email, Role,
-// Content Created(a quantity of things made by a user), ProfileFoto,
-//Comments Quantity, Registration Date, Country_id_fk, Defaults_Address
-//
-//Pages -> Author_id_fk, Description, Name, file_path, clients_id_fk
-//
-//Authors -> name, last_name, author_pseudonym,
-// additional_info, date_of_birth, country_id_fk,
-// total_masterpieces, main_type_id_fk
-//
-//Products -> ProductName, Type_id_fk, Author_id_fk,
-// Cost, Quantity, date_out, Genres_id_fk
-//
-//Corriers -> FirstName, LastName, TotalQuantityOfProducts
-// , Disponibility(?), LastOrder
-//
-//Delivery	-> DeliveredBy, AddressTo, AddressFrom(?),
-// ExpectedTime(?), Date, AditionalInfo, country_id_fk
-//
-//Order	-> Date, Products, totalCost, Amount,
-// Products Acquired, Products Quantity
-//
-//Comments -> Content, Date, clients_id_fk, pages_id_fk
-//
-//Genres -> Name, Description
-//
-//Types	-> Name, Description
-//
-//Countries -> Name, Description
