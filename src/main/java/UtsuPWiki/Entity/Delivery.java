@@ -38,4 +38,8 @@ public class Delivery {
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "id_order_fk", referencedColumnName = "id")
     private Orders orders;
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "country_id_fk", referencedColumnName = "id")
+    private Countries countries;
 }
