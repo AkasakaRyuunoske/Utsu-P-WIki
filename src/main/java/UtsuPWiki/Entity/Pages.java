@@ -22,19 +22,17 @@ public class Pages {
     @Column(name = "Name", nullable = false, unique = true)
     private String name;
 
-    @Column(name = "Header", nullable = false)
-    private String header;
-
-    @Column(name = "Footer", nullable = false)
-    private String footer;
-
-    @Column(name = "Author",  nullable = false)
-    private String author;
-
     @Column(name = "Description")
     private String description = "none";
+
+    @Column(name = "file_path")
+    private String file_path;
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "client_id_fk", referencedColumnName = "id")
     private Clients clients;
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "author_id_fk", referencedColumnName = "id")
+    private Authors authors;
 }
