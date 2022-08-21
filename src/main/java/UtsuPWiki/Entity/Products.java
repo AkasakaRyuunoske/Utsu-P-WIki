@@ -25,16 +25,24 @@ public class Products {
     @Column(name = "Type", nullable = false)
     private String type;
 
-    @Column(name = "Author", nullable = false)
-    private String author;
-
     @Column(name = "Cost", nullable = false)
     private double cost;
 
     @Column(name = "Quantity")
     private int quantity = 0;
 
+    @Column(name = "Date_out")
+    private String date_out;
+
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "genres_id_fk", referencedColumnName = "id")
     private Genres genres;
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "Types_id_fk", referencedColumnName = "id")
+    private Types types;
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "Author_id_fk", referencedColumnName = "id")
+    private Authors authors;
 }
