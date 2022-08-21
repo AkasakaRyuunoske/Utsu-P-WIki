@@ -35,18 +35,22 @@ public class Clients {
     private String role = "Client";
 
     @Column(name = "Content_Created", nullable = false)
-    private int contentCreated = 0;
+    private int content_created = 0;
 
     //todo idk how to make the thing, so for now it'll be commented out
 //    @Column(name = "Profile_Photo", nullable = false, unique = false)
 //    private Blob profilePhoto;
 
     @Column(name = "Default_Address")
-    private String default_Address = "none";
+    private String default_address = "none";
 
     @Column(name = "Registration_Date", nullable = false)
-    private String registrationDate;
+    private String registration_date;
 
     @Column(name = "Comments_Quantity", nullable = false)
-    private int commentsQuantity = 0;
+    private int comments_quantity = 0;
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "country_id_fk", referencedColumnName = "id")
+    private Countries countries;
 }
