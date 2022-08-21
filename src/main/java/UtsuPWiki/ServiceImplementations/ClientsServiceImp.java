@@ -21,7 +21,7 @@ public class ClientsServiceImp implements ClientsService {
 
     @Override
     public void registerClient(Clients client) {
-        client.setRegistrationDate(new Date().toString());
+        client.setRegistration_date(new Date().toString());
         client.setPassword(passwordEncoder.encode(client.getPassword()));
 
         clientsRepository.save(client);
