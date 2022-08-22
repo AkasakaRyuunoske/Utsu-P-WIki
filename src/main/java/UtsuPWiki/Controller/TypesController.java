@@ -25,7 +25,19 @@ public class TypesController {
 
         model.addAttribute("typesList", typesList);
 
-        return "types";
+        return "Types/types";
+    }
+
+    @GetMapping("/types/{type}")
+    private String GETType(Model model, HttpServletRequest request){
+
+        Navigation.addLocations(model, request);
+
+        String [] typesList = typesRepository.getAllTypesNames();
+
+        model.addAttribute("typesList", typesList);
+
+        return "Types/type";
     }
 
 
