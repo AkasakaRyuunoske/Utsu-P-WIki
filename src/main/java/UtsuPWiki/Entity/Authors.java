@@ -35,6 +35,9 @@ public class Authors {
     @Column(name = "total_masterpieces", nullable = false)
     private int total_masterpieces = 0;
 
+    @Column(name = "additional_info")
+    private String additional_info;
+
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "country_id_fk", referencedColumnName = "id")
     private Countries countries;
