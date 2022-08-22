@@ -24,19 +24,19 @@ public class Authors {
     private String name;
 
     @Column(name = "last_name")
-    private String last_name;
+    private String lastName;
 
     @Column(name = "author_pseudonym", nullable = false)
-    private String author_pseudonym;
+    private String authorPseudonym;
 
     @Column(name = "date_of_birth")
-    private String date_of_birth;
+    private String dateOfBirth;
 
     @Column(name = "total_masterpieces", nullable = false)
-    private int total_masterpieces = 0;
+    private int totalMasterpieces = 0;
 
     @Column(name = "additional_info")
-    private String additional_info;
+    private String additionalInfo;
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "country_id_fk", referencedColumnName = "id")
