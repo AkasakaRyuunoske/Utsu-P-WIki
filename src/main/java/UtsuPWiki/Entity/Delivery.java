@@ -32,14 +32,14 @@ public class Delivery {
     private String additionalInfo;
 
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "id_courier_fk", referencedColumnName = "id")
-    private Couriers couriers;
+    @JoinColumn(name = "delivered_by", referencedColumnName = "id")
+    private Couriers delivered_by;
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "id_order_fk", referencedColumnName = "id")
     private Orders orders;
 
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "country_id_fk", referencedColumnName = "id")
+    @JoinColumn(name = "country", referencedColumnName = "id")
     private Countries countries;
 }
