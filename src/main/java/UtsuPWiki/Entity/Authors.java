@@ -43,6 +43,10 @@ public class Authors {
     private Countries countries;
 
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "main_type_id_fk")
+    @JoinColumn(name = "main_type", referencedColumnName = "id")
     private Types types;
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "main_genre", referencedColumnName = "id")
+    private Genres genres;
 }
