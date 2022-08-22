@@ -47,6 +47,10 @@
 	<!-- Here the main content of the page starts -->
 
 	<div class="main-content-container">
+		<h1>Authors:</h1>
+		<li th:each="authors : ${authorsList}">
+			<a th:href="@{'/authors/' + ${authors} }" th:text="${authors}"></a>
+		</li>
 	</div>
 
 	<footer class="footer">
