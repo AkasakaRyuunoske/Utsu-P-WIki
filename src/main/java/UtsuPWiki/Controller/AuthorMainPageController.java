@@ -27,7 +27,7 @@ public class AuthorMainPageController {
 
         model.addAttribute("authorsList", authorsList);
 
-        return "authors";
+        return "Authors/authors";
     }
 
     @GetMapping("/types/authors")
@@ -38,7 +38,20 @@ public class AuthorMainPageController {
 
         model.addAttribute("authorsList", authorsList);
 
-        return "authors";
+        return "Authors/authors";
+    }
+
+    @GetMapping("/{type}/authors")
+    public String GETAllAuthorsController(Model model,
+                                          HttpServletRequest request,
+                                          @PathVariable String type){
+        Navigation.addLocations(model, request);
+
+        String [] authorsList = authorsRepository.getAllAuthorsPseudonymsByType(type);
+
+        model.addAttribute("authorsList", authorsList);
+
+        return "Authors/authors";
     }
 
     @GetMapping("/{type}/authors/{author}")
@@ -48,6 +61,6 @@ public class AuthorMainPageController {
                                       HttpServletRequest request){
         Navigation.addLocations(model, request);
 
-        return author;
+        return "Authors/" + author + "/" + author;
     }
 }
