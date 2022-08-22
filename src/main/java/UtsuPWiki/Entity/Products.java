@@ -22,9 +22,6 @@ public class Products {
     @Column(name = "Product_Name", nullable = false)
     private String productName;
 
-    @Column(name = "Type", nullable = false)
-    private String type;
-
     @Column(name = "Cost", nullable = false)
     private double cost;
 
