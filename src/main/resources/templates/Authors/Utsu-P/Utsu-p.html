@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Utsu-P-Wiki Home Page</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- CSS only libs. JS at the end of the page -->
+
+	<link rel="stylesheet" href="/css/styles.css">
+	<link rel="stylesheet" href="/css/full-glitch-effect-text.css">
+	<link rel="stylesheet" href="/css/horizontal-glitch-effect-text.css">
+
+    <link rel="icon" type="image/x-icon" href="/Post-Traumatic-Stress-Disorder.jpg">
+
+    <!-- JQuery for AJAX calls only-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> 
+
+</head>
+<body>
+
+	<div class="navigation">
+
+		<!-- To know who the the user is -->
+		<h2>You are:
+        	<span id="currentUser">Anonymous</span>
+		</h2>
+
+		<h2>You are at:
+			<span id="locationsContainer">
+				<span th:each="locations : ${location}" th:text="${locations}" onclick="navigate(this)"></span>
+			</span>	
+		</h2>
+	</div>
+
+	<!-- Principal Header, same for all pages -->
+	<header class="fav-color hero-container">
+		<h1 class="hero glitch layers" data-text="鬱P Wiki" id="Utsu-P">鬱P Wiki</h1>
+	</header>
+	<header class="header-options-text header-grid-container">
+		<h2 class="header-grid-item" onclick="navigate(this)">Authors</h2>
+		<h2 class="header-grid-item" onclick="navigate(this)">Community</h2>
+		<h2 class="header-grid-item" onclick="navigate(this)">Create</h2>
+		<h2 class="header-grid-item" onclick="navigate(this)">Buy</h2>
+	</header>
+	<!-- Here the main content of the page starts -->
+
+	<div class="main-content-container">
+        <div>Navigation:
+            <div>
+                <a href="#about-the-progect">1.About</a>
+                <a href="#tecnologies-used">2.Stack</a>
+                <a href="#why-was-it-created">3.Why?</a>
+            </div>
+                
+        </div>
+
+		<div id="about-the-progect">
+			<h1>About the progect:</h1>
+
+			<div class="white-line">
+				<p>This is only practice progect.</p>
+
+				<br>
+
+				<h2>Utsu-P - Constipation of death</h2>
+
+				<br>
+
+				<h2>KILL ALL ASSHOLES!!</h2>
+
+				<br>
+
+				<p>yare to iwarerya sunani ni hai to migi ni narae de mukosei na </p>
+				<p>kyou mo hirogaru kudaranu kaiwa ni kokoro no naka de azawaratta no sa</p>
+				<p>gaki no toki kara kizuite ita ze </p>
+				<p>"Omaera nante kasu douzen"</p>
+
+				<br>
+
+				<p>shikashi nande da ki ga tsukya boku wa</p>
+				<p>nagusami shisen o okurareta ita </p>
+
+				<br>
+
+				<p>tasutsu nado machigai da!</p>
+
+				<br>
+
+				<p>rabu ando piisu minna byoudou </p>
+				<p>rabu ando piisu minshushugi</p>
+				<p>rabu ando piisu shoujikimono</p>
+				<p>rabu ando piisu sukuwareru </p>
+
+				<br>
+
+				<p>rabu ando piisu minna byoudou </p>
+				<p>rabu ando piisu minshushugi </p>
+				<p>rabu ando piisu shoujikimono</p>
+				<p>rabu ando piisu sukuwareru </p>
+
+				<br>
+
+				<p>kono yo waa aaa nante utsukushiii</p>
+
+				<br>
+
+				<p>aaaa nante subarashiiiii </p>
+
+				<br>
+
+				<p>"Shineba ii no ni" </p>
+
+				<br>
+
+				<p>mousou no naka de aitsu o sukutte yaru ze boku hiiro </p>
+
+				<br>
+
+				<p>kusaba no kage kara keshiki wa yume to kibuo mo michite imashita </p>
+				<p>yume to kibuo mo michite imashita </p>
+
+				<br>
+
+				<p>ijimerarezu ni matomo demo naku "Futsuu" no risou to </p>
+				<p>kodoku no hazama de </p>
+				<p>boku wa tsuyogari ippiki kidori kidotte atomodori </p>
+				<p>dekinai!!</p>
+
+				<br>
+
+				<p>tasutsu nado machigai da!</p>
+
+				<br>
+
+				<p>rabu ando piisu minna byoudou </p>
+				<p>rabu ando piisu minshushugi </p>
+				<p>rabu ando piisu shoujikimono</p>
+				<p>rabu ando piisu sukuwareru</p>
+
+				<br>
+
+				<p>rabu ando piisu minna byoudou </p>
+				<p>rabu ando piisu minshushugi </p>
+				<p>rabu ando piisu shoujikimono</p>
+				<p>rabu ando piisu sukuwareru</p>
+
+				<br>
+
+				<p>kono yo waaa aaa nante utsukushiiii</p>
+
+				<br>
+
+				<p>aaa nante subarashiii </p>
+
+				<br>
+
+				<p>nda </p>
+
+				<br>
+
+				<p>it's beautiful world, mazafakkin waarudo </p>
+				<p>it's wonderful world, mazafakkin waarudo</p>
+				<p>it's beautiful world, mazafakkin waarudo </p>
+				<p>it's wonderful world, mazafakkin waarudo </p>
+
+				<br>
+
+				<p>it's beautiful world, mazafakkin waarudo</p>
+				<p>it's wonderful world, mazafakkin waarudo </p>
+				<p>it's beautiful world, mazafakkin waarudo </p>
+				<p>it's wonderful world, mazafakkin waarudo </p>
+				<br>
+
+				<p>uwaaaaaaaaaa</p>
+
+				<br>
+
+				<p>aaaaaaaaaaaaa</p>
+
+				<br>
+
+				<p>itsukaaaaaaaa hanashita naaaaaaaa</p>
+			</div>
+		</div>
+
+		<div id="tecnologies-used">
+			<h1>Tecnologies used:</h1>
+
+			<div class="white-line">
+				<tr>Front-End:
+					<br> 
+
+					<td>HTML/CSS/JS</td>
+					
+					<br>
+
+					<td>JQuery</td>
+
+					<br>
+				</tr>
+
+				<br>
+
+				<tr>Back-End:
+					<br>
+
+					<td>1. Spring Core:</td>
+
+					<br>
+
+					<td>1.1 Boot</td>
+
+					<br>
+
+					<td>1.2 Security</td>	
+
+					<br>
+
+					<td>1.3 JPA</td>	
+
+					<br>
+
+					<td>1.4 Web</td>	
+
+					<br>
+
+					<td>1.5 Test</td>
+
+					<br>
+
+					<td>1.6 Mail</td>
+
+					<br>
+
+					<td>2. JJWT</td>
+
+					<br>
+
+					<td>3. Lombok</td>
+
+					<br>
+
+					<td>4. MySQL 5</td>
+
+					<br>
+
+					<td>5. Thymeleaf</td>
+				</tr>
+
+				<br>
+
+				<h2>Utsu-P - P.O.R.N.O</h2>
+
+				<br>
+
+				<p>Mushi ga takaru mushi ga takaru </p>
+				<p>sunaarashi no hikari de kimi o mite ita </p>
+				<p>yo no hikari ja mie surirukara kowai </p>
+				<p>aaaa ko jigen no machi ja nani mo fure rarenai </p>
+				<p>itsumo itsumo kawari o sagashi teru nda </p>
+				<p>hito ga shinu mata shinu nou no naka de</p>
+				<p>don'nani mushi ga hebari tsui tete mo </p>
+				<p>kimi no koto dake wa mada sukiddesu yo.</p>
+			</div>
+		</div>
+
+		<div id="why-was-it-created">
+			<h1>Why was it created?</h1>
+
+			<div class="white-line">
+				<h2>Utsu-P - Black Hole Artist</h1>
+				
+				<br>
+
+				<p>ijyuu o egaita inu neko buta baka</p>
+				<p>namaniku mezashite koko hore WAN WAN</p>		
+				
+				<br>
+
+				<p>shouben kusee hihyou ni wa</p>
+				<p>hae to uso ga yotte kita</p> 
+				
+				<br>
+
+				<p>"Kurutta sekai wa machigai ja nai" to</p> 
+				<p>sensei mo kyoushou mo omae mo kyoumei</p> 
+				
+				<br>
+
+				<p>chihedo de egaita en yori mo </p>
+				<p>kinsen ga kinsen furemashita </p>
+				
+				<br>
+
+				<p>koyoi mo tsuki o ten ni kazaredo</p> 
+				<p>zokusei wa mimuki shi ya shinai</p> 
+				
+				<br>
+
+				<p>one, two, three, four hiniku toujou</p> 
+				<p>koutei mo hitei mo ura de wa dangou</p> 
+				
+				<br>
+
+				<h3>sono ongaku joudan desu ne?</h3>
+				<h3>sono kaiga mo joudan desu ne?</h3>
+				<h3>sono shisou mo joudan desu ne?</h3>
+				<h3>sono sainou wa joudan da</h3>
+				
+				<br>
+
+				<p>warawarete otosarete </p>
+				<p>mikudasare yaburare </p>
+				<p>hora SENSU ga SENSU ga SENSU ga </p>
+				<p>SENSU tte nani?</p>
+				
+				<br>
+
+				<p>kuroi kaze kuroi kiri</p>
+				<p>tsutsumarete mienai </p>
+				<p>hora KANSEI ga KANSEI ga KANSEI ga</p>
+				<p>ima bakuhatsu daaaaaa</p>
+				
+				<br>
+
+				<p>dare ni mo yomitori dekinai kessaku </p>
+				<p>tsukurushi anata wa kirai shiteru no?</p>
+				
+				<br>
+
+				<p>sore o shitou to kurouto kidori </p>
+				<p>"Kore wa saikou" to saitei no kaeshi </p>
+				
+				<br>
+
+				<p>ikue ni kasanaru KARAKURI hikake o </p>
+				<p>sono uchi nannin toita no darou </p>
+				
+				<br>
+
+				<p>ura no ura no ura o kaite </p>
+				<p>ura o futatsu tobashite toita </p>
+				
+				<br>
+
+				<p>koyoi mo tsuki o ten ni kazaredo </p>
+				<p>zokusei wa mimuki shi ya shinai </p>
+				
+				<br>
+
+				<p>one, two, three, four hiniku toujou</p> 
+				<p>koutei mo hitei mo ure de wa dangou </p>
+				
+				<br>
+
+				<h3>sono ongaku joudan desu ne?</h3>
+				<h3>sono kaiga mo joudan desu ne?</h3>
+				<h3>sono shisou mo joudan desu ne?</h3>
+				<h3>sono sainou wa joudan daaaaaaaaaaaaa</h3>
+				
+				<br>
+
+				<p>warawarete otosarete </p>
+				<p>miotosare yaburare </p>
+				<p>hora KANSEI ga KANSEI ga KANSEI ga </p>
+				<p>KANSEI tte nani?</p>
+				
+				<br>
+
+				<p>houtou wa nani mo kamo </p>
+				<p>wakatteru furi dake </p>
+				<p>iya JOOKU sa JOOKU sa JOOKU sa</p>
+				<p>mangetsu no yoreeeeeee</p>
+				
+				<br>
+
+				<p>warawarete otosarete </p>
+				<p>mikudasare yaburare </p>
+				<p>hora SENSU ga SENSU ga SENSU ga </p>
+				<p>SENSU tte nani?</p>
+				
+				<br>
+
+				<p>kuroi kaze kuroi kiri </p>
+				<p>tsutsumarete mienai </p>
+				<p>hora KANSEI ga KANSEI ga KANSEI ga</p>
+				<p>bakuhatsu shite shimaeeeeeeeeeeeeeeeeeee</p>
+
+			</div>
+
+			<br>
+		</div>
+
+		<h1>Utsu-P - The Dying Message</h1>
+		<span>Sanman de fuantei na kono sekai       </span>
+		<p>kakumei ho okoshite yo 					</p> 
+
+		<br>
+
+		<h2>"AI" ga seikai ni nareeee				</h2>
+		
+		<br>
+
+		<p>fuante nantei kankan ni kiechate 		</p>
+		<p>hakumei no hi terasu sono mukou hee  	</p>
+		
+		<br>
+
+		<p>kiroku mo kioku mo nai hito, maishou 	</p>
+		<p>kibuo mo mirai mo nai kuni, gaishou  	</p>
+		
+		<br>
+
+		<p>nagai yoru wo oe asayake wo mita			</p>
+		<p>akaku somaru senaka tooooooo				</p>
+		
+		<br>
+
+		<h2>NEE ANATA WA ITSUKA INAKU NARI MASU KA? </h2>
+		<h2>OWARI KAKE NO KONO SEKAI DE 			</h2>
+		<h2>YAOKE MAE NO UREI TAEGATAI KODOKU		</h2>
+		<h2>AWAI OMOI TO SEKIBAKU WO DAITA 			</h2>
+		
+		<br>
+
+		<p>senmen na dangan no kioku ni 		    </p>
+		<p>dare mo ga hi yotte wa 					</p>
+		
+		<br>
+
+		<h2>daiiipo ga de nai 						</h2>
+		
+		<br>
+
+		<p>	anzen wa kankan ni kiechate 			</p>
+		<p>	akukeyou oyoboshita boku no kokoro he   </p>
+		
+		<br>
+
+		<p>	nagai ame ga yami atsui hizashi ga 		</p>
+		<p>	terasu ookina senaka wooooo 			</p>
+		
+		<br>
+
+		<h2>	NEE ANATA WA ITSUMO YUME WO MITE MASU KA?	</h2>
+		<h2>	OWARI KAKE NO KONO SEKAI DE 				</h2>
+		<h2>	FUSAGA RE TA MICCHI WO HIRAKU MONO NI NARU  </h2>
+		<h2>	"MESSEJI" WO IDA ITA TSURAI YOOOO			</h2>
+		
+		<br>
+
+		<p>	mujou ni mo toki ga kitte kanata he tabidata	</p>
+		<p>	kankan na kanjou kamae kudake chiiru tame ni 	</p>
+		<p>	yuukan na anata wa sora wo kirisaita			</p>
+		<p>	seikan na hyoujou gamae kaze ni nattaaaaa		</p>
+		
+		<br>
+
+		<h2>	DOOOOOUUKOOOOOOOOOOOKUUUUUUU KAKUSHITE		</h2>
+		
+		<br>
+
+		<h2>	SEKIBAAAAAAAKUUUUUUU KAKUSHITE				</h2>
+		
+		<br>
+
+		<p>	ikiru koto sae nozome nai nara					</p>
+		<p>	tada sekai wo kanjite iki wo haku 				</p>
+		
+		<br>
+
+		<p>	nagai yoru wo oe senaka nado nai 				</p>
+		<p>	soko ni aru no wa tadaaaa hiroiiiiiiii buruuuuuuu</p>
+		
+		<br>
+
+		<h2>	NEE ANATA WA ITSUMO GENKI WO KURE MASU KA?	</h2>
+		<h2>	OWARI KAKE NO KONO SEKAI DE 				</h2>
+		<h2>	KURAGARI DE KAWASHITA CHIISANA YAKUSOKU GA 	</h2>
+		<h2>	WATASHI NOO IKIRUUUUU KATE SAAA 			</h2>
+		
+		<br>
+
+		<p>	nee watashi wa nido to kurai kao shinai yo 		</p>
+		<p>	saegiru kage mono mienu kara 					</p>
+		<p>	akarui hizashi wo zonbuni abinagara 			</p>
+		<p>	"Muika" no taoru tare ta wo daitaaaa 			</p>
+
+		<br>	
+
+		<iframe width="80%" height="765" src="https://www.youtube.com/embed/XVIsijUM_NE" title="Utsu-P - THE DYING MESSAGE [PxTxSxD Ver.]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+
+	<footer class="footer">
+		<div style="padding-left:5%;">
+			<h2>Created By:
+				<span class="fav-color" style="font-family: 'Old English Text MT">Akasaka Ryuunosuke</span>
+				<p>GitHub:
+					<a href="https://github.com/AkasakaRyuunoske">https://github.com/AkasakaRyuunoske</a>
+				</p>
+			</h2>
+
+			<br>
+
+			<h2>Special thanks to: 鬱P / Utsu-P</h2>
+
+			<br>
+
+			<h3>His Socials:
+				<p>Youtube: 
+					<a href="https://www.youtube.com/c/utsupofficial/">https://www.youtube.com/c/utsupofficial/</a>
+				</p>
+
+				<p>Official Site:
+					<a href="https://msis.jimdofree.com/">https://msis.jimdofree.com/</a>
+				</p>
+
+				<p>Apple Music:
+					<a href="https://music.apple.com/jp/artist/鬱p/383043845">https://music.apple.com/jp/artist/鬱p/383043845</a>
+				</p> 
+
+				<p>Twitter:
+					<a href="https://twitter.com/asshole_wii">https://twitter.com/asshole_wii</a>
+				</p>
+
+				<p>Spotify:
+					<a href="https://open.spotify.com/artist/3Zo5u5IljPxQEfbNY2OgsX?si=KcSszKJqQb6JpRnRiCxKaA&nd=1">https://open.spotify.com/artist/3Zo5u5IljPxQEfbNY2OgsX?si=KcSszKJqQb6JpRnRiCxKaA&nd=1</a>
+				</p>
+
+				<p>NicoNico:
+					<a href="https://www.nicovideo.jp/user/176618/mylist/6385075">https://www.nicovideo.jp/user/176618/mylist/6385075</a>
+				</p> 
+
+				<p>Instagram:
+					<a href="https://www.instagram.com/asshole_wii/">https://www.instagram.com/asshole_wii/user/176618/mylist/6385075</a>
+				</p>
+
+				<p>linktr:
+					<a href="https://linktr.ee/asshole_wii">linktr.ee/asshole_wii</a>
+				</p>
+			</h3>
+		</div>
+	</footer>
+</body>
+
+<script type="text/javascript" src="/js/navigation.js"></script>
+</html>
