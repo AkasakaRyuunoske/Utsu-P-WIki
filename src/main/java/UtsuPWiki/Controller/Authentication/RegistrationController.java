@@ -1,4 +1,4 @@
-package UtsuPWiki.Controller;
+package UtsuPWiki.Controller.Authentication;
 
 import UtsuPWiki.Entity.Clients;
 import UtsuPWiki.ServiceImplementations.ClientsServiceImp;
