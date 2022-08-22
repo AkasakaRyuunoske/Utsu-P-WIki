@@ -19,7 +19,8 @@ import java.util.Arrays;
 public class Navigation {
 
     public static void addLocations(Model model, HttpServletRequest request){
-        //extract host, in locale it will be => "localhost:8080"
+
+        //extract host, in locale it will be => "localhost:port" (port = 8080 in application.properties for this app)
         String host = request.getHeader("Host" );
 
 
@@ -29,6 +30,11 @@ public class Navigation {
 
         //then useless part is replaced by "home" which is root page
         String locations_to_split = request.getRequestURL().toString().replace(protocol[0] + host,"home");
+
+        //Because all Types start with upper case letter
+        locations_to_split = locations_to_split.toLowerCase();
+
+        //locations are split into array
         String[] split_currentLocation = locations_to_split.split("(?<=/)");
 
         ArrayList<String> currentLocation = new ArrayList<>(Arrays.asList(split_currentLocation));
@@ -36,8 +42,13 @@ public class Navigation {
         //finally list of locations is passed to front-end through Thymeleaf where JS will make
         //every "location" clickable. See navigation.js for more info.
         if(!locations_to_split.contains("error")) {
+
             model.addAttribute("location", currentLocation);
+
         } else {
+
+            //attribute value is "home/" and not "home/error" or just "/error" because the objects
+            //are still clickable on the Front-End, so it's leads to access /error without error
             model.addAttribute("location", "home/");
         }
     }
