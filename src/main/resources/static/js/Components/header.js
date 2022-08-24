@@ -1,12 +1,13 @@
 var headers = document.getElementById("headers");
-headers.innerHTML = "<header class='fav-color hero-container'>" 
+headers.innerHTML = 
+			  "<header class='fav-color hero-container'>" 
 			+	"<h1 class='hero glitch layers' data-text='鬱P Wiki' id='Utsu-P'>"
 			+		"鬱P Wiki"
 			+	"</h1>"
 			+ "</header>"
 
 			+	"<header class='header-options-text header-grid-container'>"
-			+		"<h2 class='header-grid-item' onclick='navigate(this)'>Authors</h2>"
+			+		"<h2 class='header-grid-item' onclick='navigate(this)'>Explore</h2>"
 			+		"<h2 class='header-grid-item' onclick='navigate(this)'>Community</h2>"
 			+		"<h2 class='header-grid-item' onclick='navigate(this)'>Create</h2>"
 			+		"<h2 class='header-grid-item' onclick='navigate(this)'>Buy</h2>"
