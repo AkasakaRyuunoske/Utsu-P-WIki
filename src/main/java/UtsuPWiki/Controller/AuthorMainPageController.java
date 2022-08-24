@@ -51,7 +51,7 @@ public class AuthorMainPageController {
         return "Authors/authors";
     }
 
-    @GetMapping("/{type}/authors")
+    @GetMapping("/types/{type}/authors")
     public String GETAllAuthorsController(Model model,
                                           HttpServletRequest request,
                                           @PathVariable String type){
@@ -64,7 +64,7 @@ public class AuthorMainPageController {
         return "Authors/authors";
     }
 
-    @GetMapping("/{type}/authors/{author}")
+    @GetMapping("/types/{type}/authors/{author}")
     public String GETAuthorController(@PathVariable String author,
                                       @PathVariable String type,
                                       Model model,
