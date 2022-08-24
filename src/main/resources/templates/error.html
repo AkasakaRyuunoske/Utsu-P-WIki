@@ -37,7 +37,19 @@
 
     <!-- Principal Header, same for all pages -->
     
-    <header id="headers"></header>
+    <header class="fav-color hero-container">
+        <h1 class="hero glitch layers" data-text="error" id="Utsu-P" th:text="*{error}"></h1>
+
+        <br>
+
+        <h1 class="error header-options-text" th:text="*{errorMessage}"></h1>
+    </header>
+    <header class="header-options-text header-grid-container">
+        <h2 class="header-grid-item" onclick="navigate(this)">Authors</h2>
+        <h2 class="header-grid-item" onclick="navigate(this)">Community</h2>
+        <h2 class="header-grid-item" onclick="navigate(this)">Create</h2>
+        <h2 class="header-grid-item" onclick="navigate(this)">Buy</h2>
+    </header>
     <!-- Here the main content of the page starts -->
 
     <!-- Important to note that footer is NOT RESPONSIVE by height
@@ -145,7 +157,7 @@
 
 <footer id="footer"></footer>
 </body>
-<script type="text/javascript" src="/js/navigation.js"></script>
 <script type="text/javascript" src="/js/Components/header.js"></script>
 <script type="text/javascript" src="/js/Components/footer.js"></script>
+<script type="text/javascript" src="/js/navigation.js"></script>
 </html>
