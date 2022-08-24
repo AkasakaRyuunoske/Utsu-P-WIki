@@ -41,9 +41,9 @@
 	<div class="main-content-container">
         <div>Navigation:
             <div>
-                <a href="#about-the-progect">1.About</a>
-                <a href="#tecnologies-used">2.Stack</a>
-                <a href="#why-was-it-created">3.Why?</a>
+                <a href="#explore-by-type">1.About</a>
+                <a href="#explore-by-genre">2.Stack</a>
+                <a href="#explore-by-most-products">3.Why?</a>
             </div>
                 
         </div>
@@ -52,6 +52,17 @@
 			<h1>About the progect:</h1>
 			<h2>This page will contain progect-related stuff related as wiki-part goes. Quantity of pages, what to seek, this will be starting page for searching an author by 
 				type -> genre -> final author.</h2>
+
+			<h1>Genres:</h1>
+			<li th:each="genres : ${genresList}">
+				<a th:href="@{'/genres/' + ${genres} }" th:text="${genres}"></a>
+			</li>
+
+			<h1>Types:</h1>
+			<li th:each="types : ${typesList}">
+				<a th:href="@{'/types/' + ${types} }" th:text="${types}"></a>
+			</li>
+
 			<div class="white-line">
 				<h1>Utsu-P - Collage</h1>
 
