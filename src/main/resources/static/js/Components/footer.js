@@ -1,3 +1,4 @@
+//	footer.js is a component responsive for generating static(at least for now) footer
 var footer = document.getElementById("footer");
 footer.innerHTML = 	
 		"<footer class='footer'>"
