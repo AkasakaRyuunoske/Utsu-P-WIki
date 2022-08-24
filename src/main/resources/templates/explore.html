@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Utsu-P-Wiki Home Page</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- CSS only libs. JS at the end of the page -->
+
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/full-glitch-effect-text.css">
+	<link rel="stylesheet" href="css/horizontal-glitch-effect-text.css">
+
+    <link rel="icon" type="image/x-icon" href="/Post-Traumatic-Stress-Disorder.jpg">
+
+    <!-- JQuery for AJAX calls only-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> 
+
+</head>
+<body>
+
+	<div class="navigation">
+
+		<!-- To know who the the user is -->
+		<h2>You are:
+        	<span id="currentUser">Anonymous</span>
+		</h2>
+
+		<h2>You are at:
+			<span id="locationsContainer">
+				<span th:each="locations : ${location}" th:text="${locations}" onclick="navigate(this)"></span>
+			</span>	
+		</h2>
+	</div>
+
+	<!-- Principal Header, same for all pages -->
+
+	<header id="headers"></header>
+	<!-- Here the main content of the page starts -->
+
+	<div class="main-content-container">
+        <div>Navigation:
+            <div>
+                <a href="#about-the-progect">1.About</a>
+                <a href="#tecnologies-used">2.Stack</a>
+                <a href="#why-was-it-created">3.Why?</a>
+            </div>
+                
+        </div>
+
+		<div id="about-the-progect">
+			<h1>About the progect:</h1>
+			<h2>This page will contain progect-related stuff related as wiki-part goes. Quantity of pages, what to seek, this will be starting page for searching an author by 
+				type -> genre -> final author.</h2>
+			<div class="white-line">
+				<h1>Utsu-P - Collage</h1>
+
+				<br>
+
+				<p>Hatte hatte hatte hatte…hatero</p>
+
+				<br>
+
+				<p>hane ga haenu hakuchō no soba o </p>
+				<p>yasashī kao de mimamotte iru hito ga iru </p>
+				<p>aruki ikiru yō ni renzu o mukete </p>
+				<p>kuruma ni hika reru shunkan o matte iru </p>
+
+				<br>
+
+				<p>kioku ni nokoreba tōzakaru ue </p>
+				<p>nani mo umidasenu kara haru shika nai</p> 
+
+				<br>
+
+				<p>hareruya hareruya dō ka hito sukui demo </p>
+				<p>hareruya hareruya anata no kanshōo kure </p>
+				<p>ā dōse jigoku-iki dakara </p>
+				<p>wazukana ma wa ga ni kō are sā </p>
+
+				<br>
+
+				<p>mata hatte hatte hatte  hatte hatte   hatte  hatte… tarinu </p>
+				<p>hatte hatte hatte  hatte  hatte hatte   hatte…  mata hatte</p>
+				<p>hatte hatte hatte  hatte  hatte hatte   hatte… tarinu hatte</p>
+				<p>hatte hatte hatte  hatte  hatte  hatte  hatte… hate no hate</p>
+
+				<br>
+
+				<p>made kirakira kagayaku hazudattae kara </p>
+				<p>namari to seieki no nioi tatsu koro </p>
+				<p>hara igai wa mitasa reru hazu mo naku</p>
+				<p>aru no wa tada hakushi to taiya-kon </p>
+
+				<br>
+
+				<p>hareruya hareruya dō ka hito sukui demo </p>
+				<p>hareruya hareruya anata no kanshō o kure </p>
+				<p>ā dōse jigoku-iki dakara </p>
+				<p>wazukana ma wa ga ni kōare </p>
+
+				<br>
+
+				<p>hareruya hareruya yurusa renakute mo</p>
+			</div>
+
+		<h1>Utsu-P - The Dying Message</h1>
+		<span>Sanman de fuantei na kono sekai       </span>
+		<p>kakumei ho okoshite yo 					</p> 
+
+		<br>
+
+		<h2>"AI" ga seikai ni nareeee				</h2>
+		
+		<br>
+
+		<p>fuante nantei kankan ni kiechate 		</p>
+		<p>hakumei no hi terasu sono mukou hee  	</p>
+		
+		<br>
+
+		<p>kiroku mo kioku mo nai hito, maishou 	</p>
+		<p>kibuo mo mirai mo nai kuni, gaishou  	</p>
+		
+		<br>
+
+		<p>nagai yoru wo oe asayake wo mita			</p>
+		<p>akaku somaru senaka tooooooo				</p>
+		
+		<br>
+
+		<h2>NEE ANATA WA ITSUKA INAKU NARI MASU KA? </h2>
+		<h2>OWARI KAKE NO KONO SEKAI DE 			</h2>
+		<h2>YAOKE MAE NO UREI TAEGATAI KODOKU		</h2>
+		<h2>AWAI OMOI TO SEKIBAKU WO DAITA 			</h2>
+		
+		<br>
+
+		<p>senmen na dangan no kioku ni 		    </p>
+		<p>dare mo ga hi yotte wa 					</p>
+		
+		<br>
+
+		<h2>daiiipo ga de nai 						</h2>
+		
+		<br>
+
+		<p>	anzen wa kankan ni kiechate 			</p>
+		<p>	akukeyou oyoboshita boku no kokoro he   </p>
+		
+		<br>
+
+		<p>	nagai ame ga yami atsui hizashi ga 		</p>
+		<p>	terasu ookina senaka wooooo 			</p>
+		
+		<br>
+
+		<h2>	NEE ANATA WA ITSUMO YUME WO MITE MASU KA?	</h2>
+		<h2>	OWARI KAKE NO KONO SEKAI DE 				</h2>
+		<h2>	FUSAGA RE TA MICCHI WO HIRAKU MONO NI NARU  </h2>
+		<h2>	"MESSEJI" WO IDA ITA TSURAI YOOOO			</h2>
+		
+		<br>
+
+		<p>	mujou ni mo toki ga kitte kanata he tabidata	</p>
+		<p>	kankan na kanjou kamae kudake chiiru tame ni 	</p>
+		<p>	yuukan na anata wa sora wo kirisaita			</p>
+		<p>	seikan na hyoujou gamae kaze ni nattaaaaa		</p>
+		
+		<br>
+
+		<h2>	DOOOOOUUKOOOOOOOOOOOKUUUUUUU KAKUSHITE		</h2>
+		
+		<br>
+
+		<h2>	SEKIBAAAAAAAKUUUUUUU KAKUSHITE				</h2>
+		
+		<br>
+
+		<p>	ikiru koto sae nozome nai nara					</p>
+		<p>	tada sekai wo kanjite iki wo haku 				</p>
+		
+		<br>
+
+		<p>	nagai yoru wo oe senaka nado nai 				</p>
+		<p>	soko ni aru no wa tadaaaa hiroiiiiiiii buruuuuuuu</p>
+		
+		<br>
+
+		<h2>	NEE ANATA WA ITSUMO GENKI WO KURE MASU KA?	</h2>
+		<h2>	OWARI KAKE NO KONO SEKAI DE 				</h2>
+		<h2>	KURAGARI DE KAWASHITA CHIISANA YAKUSOKU GA 	</h2>
+		<h2>	WATASHI NOO IKIRUUUUU KATE SAAA 			</h2>
+		
+		<br>
+
+		<p>	nee watashi wa nido to kurai kao shinai yo 		</p>
+		<p>	saegiru kage mono mienu kara 					</p>
+		<p>	akarui hizashi wo zonbuni abinagara 			</p>
+		<p>	"Muika" no taoru tare ta wo daitaaaa 			</p>
+
+		<br>	
+
+		<iframe width="80%" height="765" src="https://www.youtube.com/embed/XVIsijUM_NE" title="Utsu-P - THE DYING MESSAGE [PxTxSxD Ver.]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+</div>
+<footer id="footer"></footer>
+ 
+</body>
+<script type="text/javascript" src="/js/navigation.js"></script>
+<script type="text/javascript" src="/js/Components/header.js"></script>
+<script type="text/javascript" src="/js/Components/footer.js"></script>
+</html>
