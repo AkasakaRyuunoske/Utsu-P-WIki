@@ -11,7 +11,17 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import javax.servlet.http.HttpServletRequest;
 
-
+/**
+ * Is responsive for returning Authors related pages.
+ *
+ * currently does:
+ *
+ * GET : /authors                   (soon will be deprecated, remains for compatibility)
+ * GET : /types/authors             Returns ALL authors that are available in db
+ * GET : /{type}/authors            Returns all authors that have that TYPE as main_type(fk)
+ * GET : /{type}/authors/{author}   Return specific author for specific type
+ *
+ * */
 @Log4j2
 @Controller
 public class AuthorMainPageController {
