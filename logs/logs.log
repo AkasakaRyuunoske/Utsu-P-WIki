@@ -1,28 +1,28 @@
-2022-08-24 14:45:15.055  INFO 3348 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.15 on DESKTOP-GEHCQ0N with PID 3348 (C:\Робочий стол\Utsu-P\target\classes started by utente in C:\Робочий стол\Utsu-P)
-2022-08-24 14:45:15.073  INFO 3348 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
-2022-08-24 14:45:19.575  INFO 3348 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-08-24 14:45:20.064  INFO 3348 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 447 ms. Found 10 JPA repository interfaces.
-2022-08-24 14:45:24.621  INFO 3348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-08-24 14:45:24.732  INFO 3348 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-08-24 14:45:24.732  INFO 3348 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-08-24 14:45:26.282  INFO 3348 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-08-24 14:45:26.283  INFO 3348 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 10716 ms
-2022-08-24 14:45:27.864  INFO 3348 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-08-24 14:45:28.547  INFO 3348 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
-2022-08-24 14:45:30.103  INFO 3348 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-08-24 14:45:30.436  INFO 3348 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-08-24 14:45:30.464  WARN 3348 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2022-08-24 14:45:31.209  INFO 3348 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-08-24 14:45:31.375  INFO 3348 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
-2022-08-24 14:45:34.421  INFO 3348 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-08-24 14:45:34.489  INFO 3348 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 14:45:34.770  WARN 3348 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-08-24 14:45:37.896  INFO 3348 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
-2022-08-24 14:45:38.544  INFO 3348 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-08-24 14:45:39.076  INFO 3348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-08-24 14:45:39.084  INFO 3348 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 26.578 seconds (JVM running for 33.063)
-2022-08-24 14:45:39.087  INFO 3348 --- [main] UtsuPWiki.UtsuPApplication               : Application Started!
-2022-08-24 14:45:39.088  INFO 3348 --- [main] UtsuPWiki.UtsuPApplication               : 
+2022-08-25 13:34:04.965  INFO 7912 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.15 on DESKTOP-GEHCQ0N with PID 7912 (C:\Робочий стол\Utsu-P\target\classes started by utente in C:\Робочий стол\Utsu-P)
+2022-08-25 13:34:05.009  INFO 7912 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-08-25 13:34:08.131  INFO 7912 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-25 13:34:08.497  INFO 7912 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 350 ms. Found 10 JPA repository interfaces.
+2022-08-25 13:34:17.561  INFO 7912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-25 13:34:17.589  INFO 7912 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-25 13:34:17.590  INFO 7912 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-08-25 13:34:18.208  INFO 7912 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-25 13:34:18.211  INFO 7912 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 12980 ms
+2022-08-25 13:34:19.187  INFO 7912 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-25 13:34:19.341  INFO 7912 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-08-25 13:34:20.310  INFO 7912 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-25 13:34:21.025  INFO 7912 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-25 13:34:21.080  WARN 7912 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-08-25 13:34:21.655  INFO 7912 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-25 13:34:21.723  INFO 7912 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-08-25 13:34:25.233  INFO 7912 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-25 13:34:25.280  INFO 7912 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-25 13:34:25.640  WARN 7912 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-25 13:34:28.027  INFO 7912 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-08-25 13:34:28.673  INFO 7912 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-08-25 13:34:29.557  INFO 7912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-25 13:34:29.575  INFO 7912 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 25.979 seconds (JVM running for 28.21)
+2022-08-25 13:34:29.580  INFO 7912 --- [main] UtsuPWiki.UtsuPApplication               : Application Started!
+2022-08-25 13:34:29.582  INFO 7912 --- [main] UtsuPWiki.UtsuPApplication               : 
 
 "Воля может и должна быть предметом гордости гораздо больше, нежели талант.
  Если талант — это развитие природных склонностей, 
@@ -31,44 +31,42 @@
  и преградами, которые она осиливает, над всяческими трудностями,
  которые она героически преодолевает. " (Оноре де Бальзак)"
 
-2022-08-24 14:45:47.894  INFO 3348 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-24 14:45:47.896  INFO 3348 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-24 14:45:47.905  INFO 3348 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2022-08-24 14:45:52.114  INFO 3348 --- [http-nio-8080-exec-7] UtsuPWiki.Error.CustomErrorHandler       : Error handled: 404
-2022-08-24 14:46:57.127  INFO 3348 --- [http-nio-8080-exec-8] U.Filter.JWTAuthenticationFilter         : eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJBa2FzYWthIFJ5dXVub3N1a2UiLCJleHAiOjE2NjEzNDg4MTZ9.GEGtCgM0NgXpICAdJGjuf_SCWuSY40C0mxlyD3aw2maLEabqrPioenOkzPU7h7vPNC0gOKhMjz-YIsGZsi-k_Q token that was created!
-2022-08-24 14:47:04.185 ERROR 3348 --- [http-nio-8080-exec-1] UtsuPWiki.Service.ClientsDetailsService  : UserUnknown was thrown
-2022-08-24 14:47:04.191  INFO 3348 --- [http-nio-8080-exec-1] U.Filter.JWTAuthenticationFilter         : InternalAuthenticationServiceException was thrown
-2022-08-24 14:47:04.197  INFO 3348 --- [http-nio-8080-exec-1] UtsuPWiki.Error.CustomErrorHandler       : Error handled: 401
-2022-08-24 14:47:09.236  INFO 3348 --- [http-nio-8080-exec-7] UtsuPWiki.Error.CustomErrorHandler       : Error handled: 401
-2022-08-24 14:47:13.461  INFO 3348 --- [http-nio-8080-exec-5] U.Filter.JWTAuthenticationFilter         : eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJBa2FzYWthIFJ5dXVub3N1a2UiLCJleHAiOjE2NjEzNDg4MzN9.20NmTn4W7O7Kh3u2LgootR7OgNhdOC0-FqhuL5tcvQuIaZYwBMko-WR5gJV-bdAxgL9Ke7vbhztDhLu5T-4ROQ token that was created!
-2022-08-24 14:53:35.550  INFO 3348 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 14:53:35.567  INFO 3348 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-08-24 14:53:35.684  INFO 3348 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-08-24 14:53:44.805  INFO 13608 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.15 on DESKTOP-GEHCQ0N with PID 13608 (C:\Робочий стол\Utsu-P\target\classes started by utente in C:\Робочий стол\Utsu-P)
-2022-08-24 14:53:44.847  INFO 13608 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
-2022-08-24 14:53:46.948  INFO 13608 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-08-24 14:53:47.069  INFO 13608 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109 ms. Found 10 JPA repository interfaces.
-2022-08-24 14:53:48.297  INFO 13608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-08-24 14:53:48.367  INFO 13608 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-08-24 14:53:48.368  INFO 13608 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-08-24 14:53:48.836  INFO 13608 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-08-24 14:53:48.840  INFO 13608 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3691 ms
-2022-08-24 14:53:49.705  INFO 13608 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-08-24 14:53:50.287  INFO 13608 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
-2022-08-24 14:53:51.990  INFO 13608 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-08-24 14:53:52.273  INFO 13608 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-08-24 14:53:52.280  WARN 13608 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2022-08-24 14:53:52.960  INFO 13608 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-08-24 14:53:53.073  INFO 13608 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
-2022-08-24 14:53:56.751  INFO 13608 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-08-24 14:53:56.761  INFO 13608 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 14:53:56.831  WARN 13608 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-08-24 14:53:58.032  INFO 13608 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
-2022-08-24 14:53:58.364  INFO 13608 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-08-24 14:53:58.800  INFO 13608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-08-24 14:53:58.818  INFO 13608 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 15.013 seconds (JVM running for 16.42)
-2022-08-24 14:53:58.823  INFO 13608 --- [main] UtsuPWiki.UtsuPApplication               : Application Started!
-2022-08-24 14:53:58.827  INFO 13608 --- [main] UtsuPWiki.UtsuPApplication               : 
+2022-08-25 13:34:39.895  INFO 7912 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-25 13:34:39.897  INFO 7912 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-25 13:34:39.904  INFO 7912 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-08-25 13:35:02.115  INFO 7912 --- [http-nio-8080-exec-3] UtsuPWiki.Error.CustomErrorHandler       : Error handled: 404
+2022-08-25 13:35:18.126  INFO 7912 --- [http-nio-8080-exec-6] UtsuPWiki.Error.CustomErrorHandler       : Error handled: 404
+2022-08-25 13:43:06.095  INFO 7912 --- [http-nio-8080-exec-7] UtsuPWiki.Error.CustomErrorHandler       : Error handled: 404
+2022-08-25 13:43:14.800  INFO 7912 --- [http-nio-8080-exec-7] UtsuPWiki.Error.CustomErrorHandler       : Error handled: 404
+2022-08-25 13:43:19.134  INFO 7912 --- [http-nio-8080-exec-2] UtsuPWiki.Error.CustomErrorHandler       : Error handled: 404
+2022-08-25 13:50:57.206  INFO 7912 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-25 13:50:57.261  INFO 7912 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-25 13:50:57.438  INFO 7912 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-25 13:51:06.905  INFO 1444 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.15 on DESKTOP-GEHCQ0N with PID 1444 (C:\Робочий стол\Utsu-P\target\classes started by utente in C:\Робочий стол\Utsu-P)
+2022-08-25 13:51:06.925  INFO 1444 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-08-25 13:51:08.870  INFO 1444 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-25 13:51:09.033  INFO 1444 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 148 ms. Found 10 JPA repository interfaces.
+2022-08-25 13:51:10.280  INFO 1444 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-25 13:51:10.332  INFO 1444 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-25 13:51:10.333  INFO 1444 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-08-25 13:51:10.582  INFO 1444 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-25 13:51:10.582  INFO 1444 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3457 ms
+2022-08-25 13:51:11.021  INFO 1444 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-25 13:51:11.168  INFO 1444 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-08-25 13:51:11.505  INFO 1444 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-25 13:51:11.632  INFO 1444 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-25 13:51:11.637  WARN 1444 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-08-25 13:51:11.880  INFO 1444 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-25 13:51:11.919  INFO 1444 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-08-25 13:51:13.325  INFO 1444 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-25 13:51:13.333  INFO 1444 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-25 13:51:13.398  WARN 1444 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-25 13:51:14.421  INFO 1444 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-08-25 13:51:14.838  INFO 1444 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-08-25 13:51:15.223  INFO 1444 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-25 13:51:15.237  INFO 1444 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 9.912 seconds (JVM running for 10.931)
+2022-08-25 13:51:15.240  INFO 1444 --- [main] UtsuPWiki.UtsuPApplication               : Application Started!
+2022-08-25 13:51:15.241  INFO 1444 --- [main] UtsuPWiki.UtsuPApplication               : 
 
 "Воля может и должна быть предметом гордости гораздо больше, нежели талант.
  Если талант — это развитие природных склонностей, 
@@ -77,37 +75,37 @@
  и преградами, которые она осиливает, над всяческими трудностями,
  которые она героически преодолевает. " (Оноре де Бальзак)"
 
-2022-08-24 14:54:01.773  INFO 13608 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-24 14:54:01.775  INFO 13608 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-24 14:54:01.789  INFO 13608 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
-2022-08-24 14:54:54.019  INFO 13608 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 14:54:54.133  INFO 13608 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-08-24 14:54:54.219  INFO 13608 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-08-24 14:54:59.829  INFO 8372 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.15 on DESKTOP-GEHCQ0N with PID 8372 (C:\Робочий стол\Utsu-P\target\classes started by utente in C:\Робочий стол\Utsu-P)
-2022-08-24 14:54:59.837  INFO 8372 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
-2022-08-24 14:55:01.637  INFO 8372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-08-24 14:55:01.939  INFO 8372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 227 ms. Found 10 JPA repository interfaces.
-2022-08-24 14:55:03.156  INFO 8372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-08-24 14:55:03.172  INFO 8372 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-08-24 14:55:03.172  INFO 8372 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-08-24 14:55:03.356  INFO 8372 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-08-24 14:55:03.358  INFO 8372 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3391 ms
-2022-08-24 14:55:03.617  INFO 8372 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-08-24 14:55:03.684  INFO 8372 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
-2022-08-24 14:55:03.895  INFO 8372 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-08-24 14:55:04.039  INFO 8372 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-08-24 14:55:04.050  WARN 8372 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2022-08-24 14:55:04.261  INFO 8372 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-08-24 14:55:04.298  INFO 8372 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
-2022-08-24 14:55:05.617  INFO 8372 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-08-24 14:55:05.626  INFO 8372 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 14:55:05.713  WARN 8372 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-08-24 14:55:06.823  INFO 8372 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
-2022-08-24 14:55:07.139  INFO 8372 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-08-24 14:55:07.589  INFO 8372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-08-24 14:55:07.597  INFO 8372 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 8.504 seconds (JVM running for 9.29)
-2022-08-24 14:55:07.601  INFO 8372 --- [main] UtsuPWiki.UtsuPApplication               : Application Started!
-2022-08-24 14:55:07.602  INFO 8372 --- [main] UtsuPWiki.UtsuPApplication               : 
+2022-08-25 13:51:18.236  INFO 1444 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-25 13:51:18.237  INFO 1444 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-25 13:51:18.239  INFO 1444 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-08-25 13:51:45.995  INFO 1444 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-25 13:51:46.006  INFO 1444 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-25 13:51:46.053  INFO 1444 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-25 13:51:50.998  INFO 10340 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.15 on DESKTOP-GEHCQ0N with PID 10340 (C:\Робочий стол\Utsu-P\target\classes started by utente in C:\Робочий стол\Utsu-P)
+2022-08-25 13:51:51.003  INFO 10340 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-08-25 13:51:52.303  INFO 10340 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-25 13:51:52.438  INFO 10340 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 124 ms. Found 10 JPA repository interfaces.
+2022-08-25 13:51:53.535  INFO 10340 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-25 13:51:53.550  INFO 10340 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-25 13:51:53.551  INFO 10340 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-08-25 13:51:53.698  INFO 10340 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-25 13:51:53.699  INFO 10340 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2601 ms
+2022-08-25 13:51:53.963  INFO 10340 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-25 13:51:54.050  INFO 10340 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-08-25 13:51:54.286  INFO 10340 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-25 13:51:54.422  INFO 10340 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-25 13:51:54.428  WARN 10340 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-08-25 13:51:54.646  INFO 10340 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-25 13:51:54.696  INFO 10340 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-08-25 13:51:56.209  INFO 10340 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-25 13:51:56.219  INFO 10340 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-25 13:51:56.279  WARN 10340 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-25 13:51:57.334  INFO 10340 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-08-25 13:51:57.684  INFO 10340 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-08-25 13:51:58.092  INFO 10340 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-25 13:51:58.104  INFO 10340 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 7.772 seconds (JVM running for 8.704)
+2022-08-25 13:51:58.108  INFO 10340 --- [main] UtsuPWiki.UtsuPApplication               : Application Started!
+2022-08-25 13:51:58.109  INFO 10340 --- [main] UtsuPWiki.UtsuPApplication               : 
 
 "Воля может и должна быть предметом гордости гораздо больше, нежели талант.
  Если талант — это развитие природных склонностей, 
@@ -116,37 +114,37 @@
  и преградами, которые она осиливает, над всяческими трудностями,
  которые она героически преодолевает. " (Оноре де Бальзак)"
 
-2022-08-24 14:55:26.979  INFO 8372 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-24 14:55:26.980  INFO 8372 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-24 14:55:26.984  INFO 8372 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2022-08-24 14:56:13.460  INFO 8372 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 14:56:13.464  INFO 8372 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-08-24 14:56:13.489  INFO 8372 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-08-24 14:56:18.720  INFO 3128 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.15 on DESKTOP-GEHCQ0N with PID 3128 (C:\Робочий стол\Utsu-P\target\classes started by utente in C:\Робочий стол\Utsu-P)
-2022-08-24 14:56:18.724  INFO 3128 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
-2022-08-24 14:56:20.193  INFO 3128 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-08-24 14:56:20.384  INFO 3128 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 177 ms. Found 10 JPA repository interfaces.
-2022-08-24 14:56:21.680  INFO 3128 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-08-24 14:56:21.699  INFO 3128 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-08-24 14:56:21.699  INFO 3128 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-08-24 14:56:21.929  INFO 3128 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-08-24 14:56:21.930  INFO 3128 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3071 ms
-2022-08-24 14:56:22.211  INFO 3128 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-08-24 14:56:22.301  INFO 3128 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
-2022-08-24 14:56:22.529  INFO 3128 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-08-24 14:56:22.653  INFO 3128 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-08-24 14:56:22.663  WARN 3128 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2022-08-24 14:56:22.900  INFO 3128 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-08-24 14:56:22.952  INFO 3128 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
-2022-08-24 14:56:24.299  INFO 3128 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-08-24 14:56:24.310  INFO 3128 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 14:56:24.379  WARN 3128 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-08-24 14:56:25.369  INFO 3128 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
-2022-08-24 14:56:25.653  INFO 3128 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-08-24 14:56:26.067  INFO 3128 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-08-24 14:56:26.075  INFO 3128 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 8.042 seconds (JVM running for 8.795)
-2022-08-24 14:56:26.078  INFO 3128 --- [main] UtsuPWiki.UtsuPApplication               : Application Started!
-2022-08-24 14:56:26.079  INFO 3128 --- [main] UtsuPWiki.UtsuPApplication               : 
+2022-08-25 13:52:00.648  INFO 10340 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-25 13:52:00.649  INFO 10340 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-25 13:52:00.656  INFO 10340 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2022-08-25 13:56:44.590  INFO 10340 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-25 13:56:44.594  INFO 10340 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-25 13:56:44.656  INFO 10340 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-25 13:56:48.373  INFO 9620 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.15 on DESKTOP-GEHCQ0N with PID 9620 (C:\Робочий стол\Utsu-P\target\classes started by utente in C:\Робочий стол\Utsu-P)
+2022-08-25 13:56:48.377  INFO 9620 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-08-25 13:56:49.167  INFO 9620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-25 13:56:49.264  INFO 9620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 10 JPA repository interfaces.
+2022-08-25 13:56:49.998  INFO 9620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-25 13:56:50.010  INFO 9620 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-25 13:56:50.011  INFO 9620 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-08-25 13:56:50.123  INFO 9620 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-25 13:56:50.124  INFO 9620 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1677 ms
+2022-08-25 13:56:50.292  INFO 9620 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-25 13:56:50.344  INFO 9620 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-08-25 13:56:50.563  INFO 9620 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-25 13:56:50.660  INFO 9620 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-25 13:56:50.665  WARN 9620 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-08-25 13:56:50.799  INFO 9620 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-25 13:56:50.828  INFO 9620 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-08-25 13:56:51.621  INFO 9620 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-25 13:56:51.629  INFO 9620 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-25 13:56:51.672  WARN 9620 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-25 13:56:52.349  INFO 9620 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-08-25 13:56:52.533  INFO 9620 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-08-25 13:56:52.810  INFO 9620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-25 13:56:52.820  INFO 9620 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 4.927 seconds (JVM running for 5.482)
+2022-08-25 13:56:52.824  INFO 9620 --- [main] UtsuPWiki.UtsuPApplication               : Application Started!
+2022-08-25 13:56:52.825  INFO 9620 --- [main] UtsuPWiki.UtsuPApplication               : 
 
 "Воля может и должна быть предметом гордости гораздо больше, нежели талант.
  Если талант — это развитие природных склонностей, 
@@ -155,37 +153,37 @@
  и преградами, которые она осиливает, над всяческими трудностями,
  которые она героически преодолевает. " (Оноре де Бальзак)"
 
-2022-08-24 14:56:28.803  INFO 3128 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-24 14:56:28.804  INFO 3128 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-24 14:56:28.809  INFO 3128 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2022-08-24 14:59:31.928  INFO 3128 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 14:59:31.948  INFO 3128 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-08-24 14:59:32.032  INFO 3128 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-08-24 14:59:38.265  INFO 544 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.15 on DESKTOP-GEHCQ0N with PID 544 (C:\Робочий стол\Utsu-P\target\classes started by utente in C:\Робочий стол\Utsu-P)
-2022-08-24 14:59:38.271  INFO 544 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
-2022-08-24 14:59:39.678  INFO 544 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-08-24 14:59:39.810  INFO 544 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 113 ms. Found 10 JPA repository interfaces.
-2022-08-24 14:59:40.842  INFO 544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-08-24 14:59:40.856  INFO 544 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-08-24 14:59:40.857  INFO 544 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-08-24 14:59:41.003  INFO 544 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-08-24 14:59:41.004  INFO 544 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2609 ms
-2022-08-24 14:59:41.269  INFO 544 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-08-24 14:59:41.344  INFO 544 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
-2022-08-24 14:59:41.601  INFO 544 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-08-24 14:59:41.741  INFO 544 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-08-24 14:59:41.747  WARN 544 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2022-08-24 14:59:41.979  INFO 544 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-08-24 14:59:42.053  INFO 544 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
-2022-08-24 14:59:43.601  INFO 544 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-08-24 14:59:43.609  INFO 544 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 14:59:43.667  WARN 544 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-08-24 14:59:44.754  INFO 544 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
-2022-08-24 14:59:45.093  INFO 544 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-08-24 14:59:45.507  INFO 544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-08-24 14:59:45.517  INFO 544 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 7.967 seconds (JVM running for 8.803)
-2022-08-24 14:59:45.524  INFO 544 --- [main] UtsuPWiki.UtsuPApplication               : Application Started!
-2022-08-24 14:59:45.528  INFO 544 --- [main] UtsuPWiki.UtsuPApplication               : 
+2022-08-25 13:56:57.721  INFO 9620 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-25 13:56:57.722  INFO 9620 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-25 13:56:57.724  INFO 9620 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-08-25 13:57:41.402  INFO 9620 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-25 13:57:41.404  INFO 9620 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-25 13:57:41.424  INFO 9620 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-25 13:57:44.973  INFO 11992 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.15 on DESKTOP-GEHCQ0N with PID 11992 (C:\Робочий стол\Utsu-P\target\classes started by utente in C:\Робочий стол\Utsu-P)
+2022-08-25 13:57:44.990  INFO 11992 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-08-25 13:57:46.249  INFO 11992 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-25 13:57:46.339  INFO 11992 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 10 JPA repository interfaces.
+2022-08-25 13:57:47.859  INFO 11992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-25 13:57:47.886  INFO 11992 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-25 13:57:47.887  INFO 11992 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-08-25 13:57:48.249  INFO 11992 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-25 13:57:48.249  INFO 11992 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3178 ms
+2022-08-25 13:57:48.472  INFO 11992 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-25 13:57:48.524  INFO 11992 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-08-25 13:57:48.673  INFO 11992 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-25 13:57:48.767  INFO 11992 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-25 13:57:48.772  WARN 11992 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-08-25 13:57:48.978  INFO 11992 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-25 13:57:49.036  INFO 11992 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-08-25 13:57:50.676  INFO 11992 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-25 13:57:50.686  INFO 11992 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-25 13:57:50.728  WARN 11992 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-25 13:57:51.455  INFO 11992 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-08-25 13:57:51.644  INFO 11992 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-08-25 13:57:51.911  INFO 11992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-25 13:57:51.919  INFO 11992 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 7.456 seconds (JVM running for 8.04)
+2022-08-25 13:57:51.921  INFO 11992 --- [main] UtsuPWiki.UtsuPApplication               : Application Started!
+2022-08-25 13:57:51.922  INFO 11992 --- [main] UtsuPWiki.UtsuPApplication               : 
 
 "Воля может и должна быть предметом гордости гораздо больше, нежели талант.
  Если талант — это развитие природных склонностей, 
@@ -194,37 +192,37 @@
  и преградами, которые она осиливает, над всяческими трудностями,
  которые она героически преодолевает. " (Оноре де Бальзак)"
 
-2022-08-24 14:59:48.276  INFO 544 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-24 14:59:48.277  INFO 544 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-24 14:59:48.279  INFO 544 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2022-08-24 15:08:55.348  INFO 544 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 15:08:55.368  INFO 544 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-08-24 15:08:55.444  INFO 544 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-08-24 15:09:00.993  INFO 5804 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.15 on DESKTOP-GEHCQ0N with PID 5804 (C:\Робочий стол\Utsu-P\target\classes started by utente in C:\Робочий стол\Utsu-P)
-2022-08-24 15:09:01.002  INFO 5804 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
-2022-08-24 15:09:02.159  INFO 5804 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-08-24 15:09:02.318  INFO 5804 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 138 ms. Found 10 JPA repository interfaces.
-2022-08-24 15:09:03.307  INFO 5804 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-08-24 15:09:03.324  INFO 5804 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-08-24 15:09:03.324  INFO 5804 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-08-24 15:09:03.484  INFO 5804 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-08-24 15:09:03.484  INFO 5804 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2384 ms
-2022-08-24 15:09:03.719  INFO 5804 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-08-24 15:09:03.783  INFO 5804 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
-2022-08-24 15:09:03.992  INFO 5804 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-08-24 15:09:04.112  INFO 5804 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-08-24 15:09:04.117  WARN 5804 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2022-08-24 15:09:04.420  INFO 5804 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-08-24 15:09:04.461  INFO 5804 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
-2022-08-24 15:09:05.719  INFO 5804 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-08-24 15:09:05.727  INFO 5804 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 15:09:05.784  WARN 5804 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-08-24 15:09:06.860  INFO 5804 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
-2022-08-24 15:09:07.245  INFO 5804 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-08-24 15:09:07.677  INFO 5804 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-08-24 15:09:07.691  INFO 5804 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 7.333 seconds (JVM running for 8.018)
-2022-08-24 15:09:07.696  INFO 5804 --- [main] UtsuPWiki.UtsuPApplication               : Application Started!
-2022-08-24 15:09:07.697  INFO 5804 --- [main] UtsuPWiki.UtsuPApplication               : 
+2022-08-25 13:57:56.411  INFO 11992 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-25 13:57:56.413  INFO 11992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-25 13:57:56.414  INFO 11992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-08-25 13:59:10.343  INFO 11992 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-25 13:59:10.372  INFO 11992 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-25 13:59:10.440  INFO 11992 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-25 13:59:14.688  INFO 3496 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.15 on DESKTOP-GEHCQ0N with PID 3496 (C:\Робочий стол\Utsu-P\target\classes started by utente in C:\Робочий стол\Utsu-P)
+2022-08-25 13:59:14.693  INFO 3496 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-08-25 13:59:15.433  INFO 3496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-25 13:59:15.523  INFO 3496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 10 JPA repository interfaces.
+2022-08-25 13:59:16.277  INFO 3496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-25 13:59:16.291  INFO 3496 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-25 13:59:16.292  INFO 3496 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-08-25 13:59:16.402  INFO 3496 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-25 13:59:16.403  INFO 3496 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1648 ms
+2022-08-25 13:59:16.571  INFO 3496 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-25 13:59:16.624  INFO 3496 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-08-25 13:59:16.777  INFO 3496 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-25 13:59:16.879  INFO 3496 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-25 13:59:16.884  WARN 3496 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-08-25 13:59:17.042  INFO 3496 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-25 13:59:17.081  INFO 3496 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-08-25 13:59:18.398  INFO 3496 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-25 13:59:18.407  INFO 3496 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-25 13:59:18.473  WARN 3496 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-25 13:59:19.268  INFO 3496 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-08-25 13:59:19.462  INFO 3496 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-08-25 13:59:19.761  INFO 3496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-25 13:59:19.769  INFO 3496 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 5.611 seconds (JVM running for 6.243)
+2022-08-25 13:59:19.773  INFO 3496 --- [main] UtsuPWiki.UtsuPApplication               : Application Started!
+2022-08-25 13:59:19.774  INFO 3496 --- [main] UtsuPWiki.UtsuPApplication               : 
 
 "Воля может и должна быть предметом гордости гораздо больше, нежели талант.
  Если талант — это развитие природных склонностей, 
@@ -233,751 +231,9 @@
  и преградами, которые она осиливает, над всяческими трудностями,
  которые она героически преодолевает. " (Оноре де Бальзак)"
 
-2022-08-24 15:09:10.290  INFO 5804 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-24 15:09:10.292  INFO 5804 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-24 15:09:10.297  INFO 5804 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2022-08-24 15:10:04.703  INFO 5804 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 15:10:04.763  INFO 5804 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-08-24 15:10:04.891  INFO 5804 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-08-24 15:10:09.725  INFO 10716 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.15 on DESKTOP-GEHCQ0N with PID 10716 (C:\Робочий стол\Utsu-P\target\classes started by utente in C:\Робочий стол\Utsu-P)
-2022-08-24 15:10:09.730  INFO 10716 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
-2022-08-24 15:10:10.872  INFO 10716 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-08-24 15:10:11.048  INFO 10716 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 158 ms. Found 10 JPA repository interfaces.
-2022-08-24 15:10:12.136  INFO 10716 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-08-24 15:10:12.152  INFO 10716 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-08-24 15:10:12.152  INFO 10716 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-08-24 15:10:12.296  INFO 10716 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-08-24 15:10:12.296  INFO 10716 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2482 ms
-2022-08-24 15:10:12.530  INFO 10716 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-08-24 15:10:12.595  INFO 10716 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
-2022-08-24 15:10:12.812  INFO 10716 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-08-24 15:10:12.933  INFO 10716 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-08-24 15:10:12.942  WARN 10716 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2022-08-24 15:10:13.147  INFO 10716 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-08-24 15:10:13.193  INFO 10716 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
-2022-08-24 15:10:14.667  INFO 10716 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-08-24 15:10:14.682  INFO 10716 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 15:10:14.735  WARN 10716 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-08-24 15:10:15.629  INFO 10716 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
-2022-08-24 15:10:15.896  INFO 10716 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-08-24 15:10:16.235  INFO 10716 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-08-24 15:10:16.247  INFO 10716 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 7.135 seconds (JVM running for 8.037)
-2022-08-24 15:10:16.255  INFO 10716 --- [main] UtsuPWiki.UtsuPApplication               : Application Started!
-2022-08-24 15:10:16.257  INFO 10716 --- [main] UtsuPWiki.UtsuPApplication               : 
-
-"Воля может и должна быть предметом гордости гораздо больше, нежели талант.
- Если талант — это развитие природных склонностей, 
- то твёрдая воля — это ежеминутно одерживаемая победа над инстинктами,
- над влечениями, которые воля обуздывает и подавляет, над препятствиями
- и преградами, которые она осиливает, над всяческими трудностями,
- которые она героически преодолевает. " (Оноре де Бальзак)"
-
-2022-08-24 15:10:19.045  INFO 10716 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-24 15:10:19.048  INFO 10716 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-24 15:10:19.049  INFO 10716 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-08-24 15:13:10.190  INFO 10716 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 15:13:10.193  INFO 10716 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-08-24 15:13:10.218  INFO 10716 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-08-24 15:13:14.468  INFO 14024 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.15 on DESKTOP-GEHCQ0N with PID 14024 (C:\Робочий стол\Utsu-P\target\classes started by utente in C:\Робочий стол\Utsu-P)
-2022-08-24 15:13:14.473  INFO 14024 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
-2022-08-24 15:13:15.607  INFO 14024 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-08-24 15:13:15.732  INFO 14024 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106 ms. Found 10 JPA repository interfaces.
-2022-08-24 15:13:16.696  INFO 14024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-08-24 15:13:16.709  INFO 14024 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-08-24 15:13:16.710  INFO 14024 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-08-24 15:13:16.857  INFO 14024 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-08-24 15:13:16.857  INFO 14024 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2289 ms
-2022-08-24 15:13:17.075  INFO 14024 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-08-24 15:13:17.133  INFO 14024 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
-2022-08-24 15:13:17.332  INFO 14024 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-08-24 15:13:17.448  INFO 14024 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-08-24 15:13:17.458  WARN 14024 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2022-08-24 15:13:17.642  INFO 14024 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-08-24 15:13:17.678  INFO 14024 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
-2022-08-24 15:13:19.223  INFO 14024 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-08-24 15:13:19.234  INFO 14024 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 15:13:19.282  WARN 14024 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-08-24 15:13:20.154  INFO 14024 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
-2022-08-24 15:13:20.418  INFO 14024 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-08-24 15:13:20.784  INFO 14024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-08-24 15:13:20.797  INFO 14024 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 6.935 seconds (JVM running for 7.652)
-2022-08-24 15:13:20.801  INFO 14024 --- [main] UtsuPWiki.UtsuPApplication               : Application Started!
-2022-08-24 15:13:20.802  INFO 14024 --- [main] UtsuPWiki.UtsuPApplication               : 
-
-"Воля может и должна быть предметом гордости гораздо больше, нежели талант.
- Если талант — это развитие природных склонностей, 
- то твёрдая воля — это ежеминутно одерживаемая победа над инстинктами,
- над влечениями, которые воля обуздывает и подавляет, над препятствиями
- и преградами, которые она осиливает, над всяческими трудностями,
- которые она героически преодолевает. " (Оноре де Бальзак)"
-
-2022-08-24 15:13:41.255  INFO 14024 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-24 15:13:41.256  INFO 14024 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-24 15:13:41.258  INFO 14024 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-08-24 15:15:50.080  INFO 14024 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 15:15:50.107  INFO 14024 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-08-24 15:15:50.142  INFO 14024 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-08-24 15:15:54.084  INFO 12344 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.15 on DESKTOP-GEHCQ0N with PID 12344 (C:\Робочий стол\Utsu-P\target\classes started by utente in C:\Робочий стол\Utsu-P)
-2022-08-24 15:15:54.089  INFO 12344 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
-2022-08-24 15:15:55.015  INFO 12344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-08-24 15:15:55.121  INFO 12344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 10 JPA repository interfaces.
-2022-08-24 15:15:55.951  INFO 12344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-08-24 15:15:55.965  INFO 12344 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-08-24 15:15:55.967  INFO 12344 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-08-24 15:15:56.097  INFO 12344 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-08-24 15:15:56.098  INFO 12344 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1937 ms
-2022-08-24 15:15:56.305  INFO 12344 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-08-24 15:15:56.356  INFO 12344 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
-2022-08-24 15:15:56.534  INFO 12344 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-08-24 15:15:56.654  INFO 12344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-08-24 15:15:56.659  WARN 12344 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2022-08-24 15:15:56.857  INFO 12344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-08-24 15:15:56.884  INFO 12344 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
-2022-08-24 15:15:57.970  INFO 12344 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-08-24 15:15:57.983  INFO 12344 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 15:15:58.033  WARN 12344 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-08-24 15:15:58.837  INFO 12344 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
-2022-08-24 15:15:59.082  INFO 12344 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-08-24 15:15:59.413  INFO 12344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-08-24 15:15:59.422  INFO 12344 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 5.869 seconds (JVM running for 6.464)
-2022-08-24 15:15:59.425  INFO 12344 --- [main] UtsuPWiki.UtsuPApplication               : Application Started!
-2022-08-24 15:15:59.426  INFO 12344 --- [main] UtsuPWiki.UtsuPApplication               : 
-
-"Воля может и должна быть предметом гордости гораздо больше, нежели талант.
- Если талант — это развитие природных склонностей, 
- то твёрдая воля — это ежеминутно одерживаемая победа над инстинктами,
- над влечениями, которые воля обуздывает и подавляет, над препятствиями
- и преградами, которые она осиливает, над всяческими трудностями,
- которые она героически преодолевает. " (Оноре де Бальзак)"
-
-2022-08-24 15:16:01.512  INFO 12344 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-24 15:16:01.513  INFO 12344 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-24 15:16:01.519  INFO 12344 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2022-08-24 15:16:17.680  INFO 12344 --- [http-nio-8080-exec-7] UtsuPWiki.Error.CustomErrorHandler       : Error handled: 404
-2022-08-24 15:19:39.350  INFO 12344 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 15:19:39.353  INFO 12344 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-08-24 15:19:39.419  INFO 12344 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-08-24 15:19:44.355  INFO 11784 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.15 on DESKTOP-GEHCQ0N with PID 11784 (C:\Робочий стол\Utsu-P\target\classes started by utente in C:\Робочий стол\Utsu-P)
-2022-08-24 15:19:44.360  INFO 11784 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
-2022-08-24 15:19:45.561  INFO 11784 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-08-24 15:19:45.682  INFO 11784 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 104 ms. Found 10 JPA repository interfaces.
-2022-08-24 15:19:46.629  INFO 11784 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-08-24 15:19:46.646  INFO 11784 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-08-24 15:19:46.646  INFO 11784 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-08-24 15:19:46.792  INFO 11784 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-08-24 15:19:46.793  INFO 11784 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2318 ms
-2022-08-24 15:19:47.019  INFO 11784 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-08-24 15:19:47.085  INFO 11784 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
-2022-08-24 15:19:47.288  INFO 11784 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-08-24 15:19:47.424  INFO 11784 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-08-24 15:19:47.430  WARN 11784 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2022-08-24 15:19:47.623  INFO 11784 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-08-24 15:19:47.658  INFO 11784 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
-2022-08-24 15:19:48.942  INFO 11784 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-08-24 15:19:48.950  INFO 11784 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 15:19:49.001  WARN 11784 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-08-24 15:19:49.924  INFO 11784 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
-2022-08-24 15:19:50.169  INFO 11784 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-08-24 15:19:50.543  INFO 11784 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-08-24 15:19:50.552  INFO 11784 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 6.824 seconds (JVM running for 7.534)
-2022-08-24 15:19:50.556  INFO 11784 --- [main] UtsuPWiki.UtsuPApplication               : Application Started!
-2022-08-24 15:19:50.556  INFO 11784 --- [main] UtsuPWiki.UtsuPApplication               : 
-
-"Воля может и должна быть предметом гордости гораздо больше, нежели талант.
- Если талант — это развитие природных склонностей, 
- то твёрдая воля — это ежеминутно одерживаемая победа над инстинктами,
- над влечениями, которые воля обуздывает и подавляет, над препятствиями
- и преградами, которые она осиливает, над всяческими трудностями,
- которые она героически преодолевает. " (Оноре де Бальзак)"
-
-2022-08-24 15:19:57.652  INFO 11784 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-24 15:19:57.655  INFO 11784 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-24 15:19:57.659  INFO 11784 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2022-08-24 15:20:27.715  INFO 11784 --- [http-nio-8080-exec-6] UtsuPWiki.Error.CustomErrorHandler       : Error handled: 404
-2022-08-24 15:20:32.587  INFO 11784 --- [http-nio-8080-exec-5] UtsuPWiki.Error.CustomErrorHandler       : Error handled: 404
-2022-08-24 15:20:39.457  INFO 11784 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 15:20:39.461  INFO 11784 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-08-24 15:20:39.486  INFO 11784 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-08-24 15:21:46.590  INFO 8864 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.15 on DESKTOP-GEHCQ0N with PID 8864 (C:\Робочий стол\Utsu-P\target\classes started by utente in C:\Робочий стол\Utsu-P)
-2022-08-24 15:21:46.593  INFO 8864 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
-2022-08-24 15:21:47.717  INFO 8864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-08-24 15:21:47.843  INFO 8864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109 ms. Found 10 JPA repository interfaces.
-2022-08-24 15:21:48.802  INFO 8864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-08-24 15:21:48.814  INFO 8864 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-08-24 15:21:48.815  INFO 8864 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-08-24 15:21:48.961  INFO 8864 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-08-24 15:21:48.962  INFO 8864 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2278 ms
-2022-08-24 15:21:49.195  INFO 8864 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-08-24 15:21:49.262  INFO 8864 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
-2022-08-24 15:21:49.467  INFO 8864 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-08-24 15:21:49.593  INFO 8864 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-08-24 15:21:49.603  WARN 8864 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2022-08-24 15:21:49.802  INFO 8864 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-08-24 15:21:49.831  INFO 8864 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
-2022-08-24 15:21:51.075  INFO 8864 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-08-24 15:21:51.086  INFO 8864 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 15:21:51.141  WARN 8864 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-08-24 15:21:52.049  INFO 8864 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
-2022-08-24 15:21:52.322  INFO 8864 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-08-24 15:21:52.677  INFO 8864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-08-24 15:21:52.685  INFO 8864 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 6.702 seconds (JVM running for 7.417)
-2022-08-24 15:21:52.689  INFO 8864 --- [main] UtsuPWiki.UtsuPApplication               : Application Started!
-2022-08-24 15:21:52.690  INFO 8864 --- [main] UtsuPWiki.UtsuPApplication               : 
-
-"Воля может и должна быть предметом гордости гораздо больше, нежели талант.
- Если талант — это развитие природных склонностей, 
- то твёрдая воля — это ежеминутно одерживаемая победа над инстинктами,
- над влечениями, которые воля обуздывает и подавляет, над препятствиями
- и преградами, которые она осиливает, над всяческими трудностями,
- которые она героически преодолевает. " (Оноре де Бальзак)"
-
-2022-08-24 15:21:56.349  INFO 8864 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-24 15:21:56.350  INFO 8864 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-24 15:21:56.354  INFO 8864 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2022-08-24 15:23:30.549  INFO 8864 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 15:23:30.561  INFO 8864 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-08-24 15:23:30.594  INFO 8864 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-08-24 15:23:34.869  INFO 5752 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.15 on DESKTOP-GEHCQ0N with PID 5752 (C:\Робочий стол\Utsu-P\target\classes started by utente in C:\Робочий стол\Utsu-P)
-2022-08-24 15:23:34.873  INFO 5752 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
-2022-08-24 15:23:35.973  INFO 5752 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-08-24 15:23:36.103  INFO 5752 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 115 ms. Found 10 JPA repository interfaces.
-2022-08-24 15:23:37.130  INFO 5752 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-08-24 15:23:37.143  INFO 5752 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-08-24 15:23:37.144  INFO 5752 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-08-24 15:23:37.301  INFO 5752 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-08-24 15:23:37.301  INFO 5752 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2321 ms
-2022-08-24 15:23:37.533  INFO 5752 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-08-24 15:23:37.603  INFO 5752 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
-2022-08-24 15:23:37.817  INFO 5752 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-08-24 15:23:37.947  INFO 5752 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-08-24 15:23:37.956  WARN 5752 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2022-08-24 15:23:38.153  INFO 5752 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-08-24 15:23:38.203  INFO 5752 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
-2022-08-24 15:23:39.412  INFO 5752 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-08-24 15:23:39.425  INFO 5752 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 15:23:39.490  WARN 5752 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-08-24 15:23:40.407  INFO 5752 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
-2022-08-24 15:23:40.771  INFO 5752 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-08-24 15:23:41.146  INFO 5752 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-08-24 15:23:41.159  INFO 5752 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 6.983 seconds (JVM running for 7.655)
-2022-08-24 15:23:41.161  INFO 5752 --- [main] UtsuPWiki.UtsuPApplication               : Application Started!
-2022-08-24 15:23:41.162  INFO 5752 --- [main] UtsuPWiki.UtsuPApplication               : 
-
-"Воля может и должна быть предметом гордости гораздо больше, нежели талант.
- Если талант — это развитие природных склонностей, 
- то твёрдая воля — это ежеминутно одерживаемая победа над инстинктами,
- над влечениями, которые воля обуздывает и подавляет, над препятствиями
- и преградами, которые она осиливает, над всяческими трудностями,
- которые она героически преодолевает. " (Оноре де Бальзак)"
-
-2022-08-24 15:23:44.670  INFO 5752 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-24 15:23:44.673  INFO 5752 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-24 15:23:44.676  INFO 5752 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2022-08-24 15:24:55.508  INFO 5752 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 15:24:55.542  INFO 5752 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-08-24 15:24:55.692  INFO 5752 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-08-24 15:25:03.028  INFO 2660 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.15 on DESKTOP-GEHCQ0N with PID 2660 (C:\Робочий стол\Utsu-P\target\classes started by utente in C:\Робочий стол\Utsu-P)
-2022-08-24 15:25:03.033  INFO 2660 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
-2022-08-24 15:25:04.953  INFO 2660 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-08-24 15:25:05.441  INFO 2660 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 460 ms. Found 10 JPA repository interfaces.
-2022-08-24 15:25:06.773  INFO 2660 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-08-24 15:25:06.795  INFO 2660 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-08-24 15:25:06.796  INFO 2660 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-08-24 15:25:06.939  INFO 2660 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-08-24 15:25:06.940  INFO 2660 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3823 ms
-2022-08-24 15:25:07.175  INFO 2660 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-08-24 15:25:07.241  INFO 2660 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
-2022-08-24 15:25:07.456  INFO 2660 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-08-24 15:25:07.572  INFO 2660 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-08-24 15:25:07.577  WARN 2660 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2022-08-24 15:25:07.777  INFO 2660 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-08-24 15:25:07.834  INFO 2660 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
-2022-08-24 15:25:09.065  INFO 2660 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-08-24 15:25:09.076  INFO 2660 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 15:25:09.139  WARN 2660 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-08-24 15:25:10.082  INFO 2660 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
-2022-08-24 15:25:10.498  INFO 2660 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-08-24 15:25:10.932  INFO 2660 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-08-24 15:25:10.940  INFO 2660 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 8.488 seconds (JVM running for 9.26)
-2022-08-24 15:25:10.943  INFO 2660 --- [main] UtsuPWiki.UtsuPApplication               : Application Started!
-2022-08-24 15:25:10.944  INFO 2660 --- [main] UtsuPWiki.UtsuPApplication               : 
-
-"Воля может и должна быть предметом гордости гораздо больше, нежели талант.
- Если талант — это развитие природных склонностей, 
- то твёрдая воля — это ежеминутно одерживаемая победа над инстинктами,
- над влечениями, которые воля обуздывает и подавляет, над препятствиями
- и преградами, которые она осиливает, над всяческими трудностями,
- которые она героически преодолевает. " (Оноре де Бальзак)"
-
-2022-08-24 15:25:12.457  INFO 2660 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-24 15:25:12.458  INFO 2660 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-24 15:25:12.459  INFO 2660 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-08-24 15:25:16.730 ERROR 2660 --- [http-nio-8080-exec-8] UtsuPWiki.Service.ClientsDetailsService  : UserUnknown was thrown
-2022-08-24 15:25:16.747  INFO 2660 --- [http-nio-8080-exec-8] U.Filter.JWTAuthenticationFilter         : InternalAuthenticationServiceException was thrown
-2022-08-24 15:25:16.765  INFO 2660 --- [http-nio-8080-exec-8] UtsuPWiki.Error.CustomErrorHandler       : Error handled: 401
-2022-08-24 15:25:22.793  INFO 2660 --- [http-nio-8080-exec-9] UtsuPWiki.Error.CustomErrorHandler       : Error handled: 401
-2022-08-24 15:25:28.137  INFO 2660 --- [http-nio-8080-exec-10] U.Filter.JWTAuthenticationFilter         : eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJBa2FzYWthIFJ5dXVub3N1a2UiLCJleHAiOjE2NjEzNTExMjh9.Uqq6zgUKZsPpsrZSnI8yGuQWrnCHCJl_KBu0LjId9WyumaDjh664Tif67YgwXxg4HxeC4A0MQ3PeJgwqlXoNqQ token that was created!
-2022-08-24 15:25:35.170  INFO 2660 --- [http-nio-8080-exec-3] UtsuPWiki.Error.CustomErrorHandler       : Error handled: 404
-2022-08-24 15:25:39.700  INFO 2660 --- [http-nio-8080-exec-1] U.Controller.CustomCMS.CreateController  : some one wants to create something!
-2022-08-24 15:25:39.702  INFO 2660 --- [http-nio-8080-exec-1] U.Controller.CustomCMS.CreateController  : request for /create contains: [javax.servlet.http.Cookie@407f3fa, javax.servlet.http.Cookie@1a46e5a2]
-2022-08-24 15:25:46.471  INFO 2660 --- [http-nio-8080-exec-7] UtsuPWiki.Error.CustomErrorHandler       : Error handled: 404
-2022-08-24 15:25:47.641  INFO 2660 --- [http-nio-8080-exec-5] UtsuPWiki.Error.CustomErrorHandler       : Error handled: 404
-2022-08-24 15:25:53.975  INFO 2660 --- [http-nio-8080-exec-7] UtsuPWiki.Error.CustomErrorHandler       : Error handled: 404
-2022-08-24 15:34:19.196  INFO 2660 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 15:34:19.203  INFO 2660 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-08-24 15:34:19.217  INFO 2660 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-08-24 15:43:14.624  INFO 12372 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.15 on DESKTOP-GEHCQ0N with PID 12372 (C:\Робочий стол\Utsu-P\target\classes started by utente in C:\Робочий стол\Utsu-P)
-2022-08-24 15:43:14.675  INFO 12372 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
-2022-08-24 15:43:18.991  INFO 12372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-08-24 15:43:19.339  INFO 12372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 314 ms. Found 10 JPA repository interfaces.
-2022-08-24 15:43:21.581  INFO 12372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-08-24 15:43:21.630  INFO 12372 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-08-24 15:43:21.631  INFO 12372 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-08-24 15:43:22.705  INFO 12372 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-08-24 15:43:22.706  INFO 12372 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7886 ms
-2022-08-24 15:43:24.993  INFO 12372 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-08-24 15:43:25.425  INFO 12372 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
-2022-08-24 15:43:26.743  INFO 12372 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-08-24 15:43:27.479  INFO 12372 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-08-24 15:43:27.544  WARN 12372 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2022-08-24 15:43:28.216  INFO 12372 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-08-24 15:43:28.255  INFO 12372 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
-2022-08-24 15:43:30.322  INFO 12372 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-08-24 15:43:30.349  INFO 12372 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 15:43:30.501  WARN 12372 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-08-24 15:43:37.329  INFO 12372 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
-2022-08-24 15:43:38.289  INFO 12372 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-08-24 15:43:38.763  INFO 12372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-08-24 15:43:38.770  INFO 12372 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 25.306 seconds (JVM running for 26.652)
-2022-08-24 15:43:38.774  INFO 12372 --- [main] UtsuPWiki.UtsuPApplication               : Application Started!
-2022-08-24 15:43:38.787  INFO 12372 --- [main] UtsuPWiki.UtsuPApplication               : 
-
-"Воля может и должна быть предметом гордости гораздо больше, нежели талант.
- Если талант — это развитие природных склонностей, 
- то твёрдая воля — это ежеминутно одерживаемая победа над инстинктами,
- над влечениями, которые воля обуздывает и подавляет, над препятствиями
- и преградами, которые она осиливает, над всяческими трудностями,
- которые она героически преодолевает. " (Оноре де Бальзак)"
-
-2022-08-24 15:43:44.927  INFO 12372 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-24 15:43:44.928  INFO 12372 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-24 15:43:44.929  INFO 12372 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-08-24 15:45:45.113  INFO 12372 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 15:45:45.120  INFO 12372 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-08-24 15:45:45.191  INFO 12372 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-08-24 15:45:49.841  INFO 14524 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.15 on DESKTOP-GEHCQ0N with PID 14524 (C:\Робочий стол\Utsu-P\target\classes started by utente in C:\Робочий стол\Utsu-P)
-2022-08-24 15:45:49.846  INFO 14524 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
-2022-08-24 15:45:50.992  INFO 14524 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-08-24 15:45:51.111  INFO 14524 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109 ms. Found 10 JPA repository interfaces.
-2022-08-24 15:45:52.098  INFO 14524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-08-24 15:45:52.111  INFO 14524 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-08-24 15:45:52.112  INFO 14524 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-08-24 15:45:52.294  INFO 14524 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-08-24 15:45:52.295  INFO 14524 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2355 ms
-2022-08-24 15:45:52.519  INFO 14524 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-08-24 15:45:52.591  INFO 14524 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
-2022-08-24 15:45:52.813  INFO 14524 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-08-24 15:45:52.944  INFO 14524 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-08-24 15:45:52.951  WARN 14524 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2022-08-24 15:45:53.203  INFO 14524 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-08-24 15:45:53.261  INFO 14524 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
-2022-08-24 15:45:54.939  INFO 14524 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-08-24 15:45:54.950  INFO 14524 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 15:45:55.025  WARN 14524 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-08-24 15:45:56.033  INFO 14524 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
-2022-08-24 15:45:56.300  INFO 14524 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-08-24 15:45:56.647  INFO 14524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-08-24 15:45:56.660  INFO 14524 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 7.451 seconds (JVM running for 8.128)
-2022-08-24 15:45:56.663  INFO 14524 --- [main] UtsuPWiki.UtsuPApplication               : Application Started!
-2022-08-24 15:45:56.664  INFO 14524 --- [main] UtsuPWiki.UtsuPApplication               : 
-
-"Воля может и должна быть предметом гордости гораздо больше, нежели талант.
- Если талант — это развитие природных склонностей, 
- то твёрдая воля — это ежеминутно одерживаемая победа над инстинктами,
- над влечениями, которые воля обуздывает и подавляет, над препятствиями
- и преградами, которые она осиливает, над всяческими трудностями,
- которые она героически преодолевает. " (Оноре де Бальзак)"
-
-2022-08-24 15:46:00.777  INFO 14524 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-24 15:46:00.778  INFO 14524 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-24 15:46:00.780  INFO 14524 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-08-24 15:51:33.658  INFO 14524 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 15:51:33.662  INFO 14524 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-08-24 15:51:33.683  INFO 14524 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-08-24 15:51:38.907  INFO 13792 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.15 on DESKTOP-GEHCQ0N with PID 13792 (C:\Робочий стол\Utsu-P\target\classes started by utente in C:\Робочий стол\Utsu-P)
-2022-08-24 15:51:38.912  INFO 13792 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
-2022-08-24 15:51:40.048  INFO 13792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-08-24 15:51:40.221  INFO 13792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 155 ms. Found 10 JPA repository interfaces.
-2022-08-24 15:51:41.250  INFO 13792 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-08-24 15:51:41.264  INFO 13792 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-08-24 15:51:41.266  INFO 13792 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-08-24 15:51:41.427  INFO 13792 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-08-24 15:51:41.429  INFO 13792 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2415 ms
-2022-08-24 15:51:41.657  INFO 13792 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-08-24 15:51:41.720  INFO 13792 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
-2022-08-24 15:51:41.927  INFO 13792 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-08-24 15:51:42.065  INFO 13792 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-08-24 15:51:42.079  WARN 13792 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2022-08-24 15:51:42.294  INFO 13792 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-08-24 15:51:42.330  INFO 13792 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
-2022-08-24 15:51:43.655  INFO 13792 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-08-24 15:51:43.665  INFO 13792 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 15:51:43.726  WARN 13792 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-08-24 15:51:44.643  INFO 13792 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
-2022-08-24 15:51:44.895  INFO 13792 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-08-24 15:51:45.253  INFO 13792 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-08-24 15:51:45.261  INFO 13792 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 7.022 seconds (JVM running for 8.066)
-2022-08-24 15:51:45.264  INFO 13792 --- [main] UtsuPWiki.UtsuPApplication               : Application Started!
-2022-08-24 15:51:45.265  INFO 13792 --- [main] UtsuPWiki.UtsuPApplication               : 
-
-"Воля может и должна быть предметом гордости гораздо больше, нежели талант.
- Если талант — это развитие природных склонностей, 
- то твёрдая воля — это ежеминутно одерживаемая победа над инстинктами,
- над влечениями, которые воля обуздывает и подавляет, над препятствиями
- и преградами, которые она осиливает, над всяческими трудностями,
- которые она героически преодолевает. " (Оноре де Бальзак)"
-
-2022-08-24 15:51:48.531  INFO 13792 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-24 15:51:48.533  INFO 13792 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-24 15:51:48.535  INFO 13792 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-08-24 15:54:00.773  INFO 13792 --- [http-nio-8080-exec-1] UtsuPWiki.Error.CustomErrorHandler       : Error handled: 404
-2022-08-24 15:54:03.946  INFO 13792 --- [http-nio-8080-exec-5] U.Controller.CustomCMS.CreateController  : some one wants to create something!
-2022-08-24 15:54:03.946  INFO 13792 --- [http-nio-8080-exec-5] U.Controller.CustomCMS.CreateController  : request for /create contains: [javax.servlet.http.Cookie@db837d2, javax.servlet.http.Cookie@7b6c9cbc]
-2022-08-24 15:57:28.080  INFO 13792 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 15:57:28.083  INFO 13792 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-08-24 15:57:28.107  INFO 13792 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-08-24 15:57:33.036  INFO 14712 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.15 on DESKTOP-GEHCQ0N with PID 14712 (C:\Робочий стол\Utsu-P\target\classes started by utente in C:\Робочий стол\Utsu-P)
-2022-08-24 15:57:33.042  INFO 14712 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
-2022-08-24 15:57:34.155  INFO 14712 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-08-24 15:57:34.282  INFO 14712 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107 ms. Found 10 JPA repository interfaces.
-2022-08-24 15:57:35.281  INFO 14712 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-08-24 15:57:35.303  INFO 14712 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-08-24 15:57:35.304  INFO 14712 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-08-24 15:57:35.471  INFO 14712 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-08-24 15:57:35.471  INFO 14712 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2327 ms
-2022-08-24 15:57:35.695  INFO 14712 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-08-24 15:57:35.767  INFO 14712 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
-2022-08-24 15:57:35.975  INFO 14712 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-08-24 15:57:36.103  INFO 14712 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-08-24 15:57:36.108  WARN 14712 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2022-08-24 15:57:36.318  INFO 14712 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-08-24 15:57:36.355  INFO 14712 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
-2022-08-24 15:57:37.476  INFO 14712 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-08-24 15:57:37.487  INFO 14712 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 15:57:37.547  WARN 14712 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-08-24 15:57:38.450  INFO 14712 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
-2022-08-24 15:57:38.715  INFO 14712 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-08-24 15:57:39.084  INFO 14712 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-08-24 15:57:39.093  INFO 14712 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 6.703 seconds (JVM running for 7.405)
-2022-08-24 15:57:39.098  INFO 14712 --- [main] UtsuPWiki.UtsuPApplication               : Application Started!
-2022-08-24 15:57:39.100  INFO 14712 --- [main] UtsuPWiki.UtsuPApplication               : 
-
-"Воля может и должна быть предметом гордости гораздо больше, нежели талант.
- Если талант — это развитие природных склонностей, 
- то твёрдая воля — это ежеминутно одерживаемая победа над инстинктами,
- над влечениями, которые воля обуздывает и подавляет, над препятствиями
- и преградами, которые она осиливает, над всяческими трудностями,
- которые она героически преодолевает. " (Оноре де Бальзак)"
-
-2022-08-24 15:58:24.974  INFO 14712 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-24 15:58:24.975  INFO 14712 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-24 15:58:24.976  INFO 14712 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-08-24 15:58:29.356  INFO 14712 --- [http-nio-8080-exec-5] UtsuPWiki.Error.CustomErrorHandler       : Error handled: 404
-2022-08-24 15:58:31.031  INFO 14712 --- [http-nio-8080-exec-4] U.Controller.CustomCMS.CreateController  : some one wants to create something!
-2022-08-24 15:58:31.031  INFO 14712 --- [http-nio-8080-exec-4] U.Controller.CustomCMS.CreateController  : request for /create contains: [javax.servlet.http.Cookie@37cf2de1, javax.servlet.http.Cookie@6c762e79]
-2022-08-24 15:59:01.295  INFO 14712 --- [http-nio-8080-exec-6] U.Controller.CustomCMS.CreateController  : some one wants to create something!
-2022-08-24 15:59:01.296  INFO 14712 --- [http-nio-8080-exec-6] U.Controller.CustomCMS.CreateController  : request for /create contains: [javax.servlet.http.Cookie@17719c66, javax.servlet.http.Cookie@37541042]
-2022-08-24 15:59:07.815  INFO 14712 --- [http-nio-8080-exec-2] UtsuPWiki.Error.CustomErrorHandler       : Error handled: 404
-2022-08-24 15:59:09.234  INFO 14712 --- [http-nio-8080-exec-5] U.Controller.CustomCMS.CreateController  : some one wants to create something!
-2022-08-24 15:59:09.235  INFO 14712 --- [http-nio-8080-exec-5] U.Controller.CustomCMS.CreateController  : request for /create contains: [javax.servlet.http.Cookie@3a55d433, javax.servlet.http.Cookie@69fff96e]
-2022-08-24 16:00:18.335  INFO 14712 --- [http-nio-8080-exec-2] U.Controller.CustomCMS.CreateController  : some one wants to create something!
-2022-08-24 16:00:18.336  INFO 14712 --- [http-nio-8080-exec-2] U.Controller.CustomCMS.CreateController  : request for /create contains: [javax.servlet.http.Cookie@5be396bc, javax.servlet.http.Cookie@5978e795]
-2022-08-24 16:01:06.613  INFO 14712 --- [http-nio-8080-exec-8] UtsuPWiki.Error.CustomErrorHandler       : Error handled: 404
-2022-08-24 16:01:13.967  INFO 14712 --- [http-nio-8080-exec-6] UtsuPWiki.Error.CustomErrorHandler       : Error handled: 404
-2022-08-24 16:01:29.897  INFO 14712 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 16:01:29.902  INFO 14712 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-08-24 16:01:29.918  INFO 14712 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-08-24 18:03:25.988  INFO 8632 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.15 on DESKTOP-GEHCQ0N with PID 8632 (C:\Робочий стол\Utsu-P\target\classes started by utente in C:\Робочий стол\Utsu-P)
-2022-08-24 18:03:26.075  INFO 8632 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
-2022-08-24 18:03:32.639  INFO 8632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-08-24 18:03:32.838  INFO 8632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 157 ms. Found 10 JPA repository interfaces.
-2022-08-24 18:03:34.631  INFO 8632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-08-24 18:03:34.679  INFO 8632 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-08-24 18:03:34.680  INFO 8632 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-08-24 18:03:35.067  INFO 8632 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-08-24 18:03:35.067  INFO 8632 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8640 ms
-2022-08-24 18:03:35.440  INFO 8632 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-08-24 18:03:35.527  INFO 8632 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
-2022-08-24 18:03:35.833  INFO 8632 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-08-24 18:03:35.999  INFO 8632 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-08-24 18:03:36.012  WARN 8632 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2022-08-24 18:03:36.249  INFO 8632 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-08-24 18:03:36.289  INFO 8632 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
-2022-08-24 18:03:37.604  INFO 8632 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-08-24 18:03:37.611  INFO 8632 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 18:03:37.669  WARN 8632 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-08-24 18:03:38.755  INFO 8632 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
-2022-08-24 18:03:39.132  INFO 8632 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-08-24 18:03:39.462  INFO 8632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-08-24 18:03:39.473  INFO 8632 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 16.807 seconds (JVM running for 20.082)
-2022-08-24 18:03:39.479  INFO 8632 --- [main] UtsuPWiki.UtsuPApplication               : Application Started!
-2022-08-24 18:03:39.483  INFO 8632 --- [main] UtsuPWiki.UtsuPApplication               : 
-
-"Воля может и должна быть предметом гордости гораздо больше, нежели талант.
- Если талант — это развитие природных склонностей, 
- то твёрдая воля — это ежеминутно одерживаемая победа над инстинктами,
- над влечениями, которые воля обуздывает и подавляет, над препятствиями
- и преградами, которые она осиливает, над всяческими трудностями,
- которые она героически преодолевает. " (Оноре де Бальзак)"
-
-2022-08-24 18:03:45.657  INFO 8632 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-24 18:03:45.658  INFO 8632 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-24 18:03:45.661  INFO 8632 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2022-08-24 18:08:09.873  INFO 8632 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 18:08:09.880  INFO 8632 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-08-24 18:08:09.919  INFO 8632 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-08-24 18:15:29.420  INFO 10980 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.15 on DESKTOP-GEHCQ0N with PID 10980 (C:\Робочий стол\Utsu-P\target\classes started by utente in C:\Робочий стол\Utsu-P)
-2022-08-24 18:15:29.426  INFO 10980 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
-2022-08-24 18:15:30.873  INFO 10980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-08-24 18:15:30.992  INFO 10980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105 ms. Found 10 JPA repository interfaces.
-2022-08-24 18:15:31.959  INFO 10980 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-08-24 18:15:31.973  INFO 10980 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-08-24 18:15:31.973  INFO 10980 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-08-24 18:15:32.137  INFO 10980 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-08-24 18:15:32.138  INFO 10980 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2630 ms
-2022-08-24 18:15:32.367  INFO 10980 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-08-24 18:15:32.435  INFO 10980 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
-2022-08-24 18:15:32.665  INFO 10980 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-08-24 18:15:32.792  INFO 10980 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-08-24 18:15:32.799  WARN 10980 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2022-08-24 18:15:32.986  INFO 10980 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-08-24 18:15:33.047  INFO 10980 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
-2022-08-24 18:15:34.234  INFO 10980 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-08-24 18:15:34.247  INFO 10980 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 18:15:34.299  WARN 10980 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-08-24 18:15:35.145  INFO 10980 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
-2022-08-24 18:15:35.387  INFO 10980 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-08-24 18:15:35.723  INFO 10980 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-08-24 18:15:35.734  INFO 10980 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 6.992 seconds (JVM running for 7.649)
-2022-08-24 18:15:35.741  INFO 10980 --- [main] UtsuPWiki.UtsuPApplication               : Application Started!
-2022-08-24 18:15:35.742  INFO 10980 --- [main] UtsuPWiki.UtsuPApplication               : 
-
-"Воля может и должна быть предметом гордости гораздо больше, нежели талант.
- Если талант — это развитие природных склонностей, 
- то твёрдая воля — это ежеминутно одерживаемая победа над инстинктами,
- над влечениями, которые воля обуздывает и подавляет, над препятствиями
- и преградами, которые она осиливает, над всяческими трудностями,
- которые она героически преодолевает. " (Оноре де Бальзак)"
-
-2022-08-24 18:15:38.617  INFO 10980 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-24 18:15:38.619  INFO 10980 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-24 18:15:38.628  INFO 10980 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2022-08-24 18:29:12.660  INFO 10980 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 18:29:12.662  INFO 10980 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-08-24 18:29:12.677  INFO 10980 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-08-24 18:43:16.284  INFO 13828 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.15 on DESKTOP-GEHCQ0N with PID 13828 (C:\Робочий стол\Utsu-P\target\classes started by utente in C:\Робочий стол\Utsu-P)
-2022-08-24 18:43:16.309  INFO 13828 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
-2022-08-24 18:43:18.612  INFO 13828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-08-24 18:43:18.842  INFO 13828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 204 ms. Found 10 JPA repository interfaces.
-2022-08-24 18:43:20.332  INFO 13828 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-08-24 18:43:20.386  INFO 13828 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-08-24 18:43:20.387  INFO 13828 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-08-24 18:43:20.671  INFO 13828 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-08-24 18:43:20.671  INFO 13828 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4208 ms
-2022-08-24 18:43:21.022  INFO 13828 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-08-24 18:43:21.107  INFO 13828 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
-2022-08-24 18:43:21.411  INFO 13828 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-08-24 18:43:21.573  INFO 13828 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-08-24 18:43:21.594  WARN 13828 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2022-08-24 18:43:21.888  INFO 13828 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-08-24 18:43:21.960  INFO 13828 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
-2022-08-24 18:43:23.374  INFO 13828 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-08-24 18:43:23.388  INFO 13828 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 18:43:23.509  WARN 13828 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-08-24 18:43:24.720  INFO 13828 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
-2022-08-24 18:43:25.085  INFO 13828 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-08-24 18:43:25.550  INFO 13828 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-08-24 18:43:25.559  INFO 13828 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 10.284 seconds (JVM running for 11.91)
-2022-08-24 18:43:25.562  INFO 13828 --- [main] UtsuPWiki.UtsuPApplication               : Application Started!
-2022-08-24 18:43:25.563  INFO 13828 --- [main] UtsuPWiki.UtsuPApplication               : 
-
-"Воля может и должна быть предметом гордости гораздо больше, нежели талант.
- Если талант — это развитие природных склонностей, 
- то твёрдая воля — это ежеминутно одерживаемая победа над инстинктами,
- над влечениями, которые воля обуздывает и подавляет, над препятствиями
- и преградами, которые она осиливает, над всяческими трудностями,
- которые она героически преодолевает. " (Оноре де Бальзак)"
-
-2022-08-24 18:43:34.638  INFO 13828 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-24 18:43:34.640  INFO 13828 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-24 18:43:34.641  INFO 13828 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-08-24 18:43:51.399  INFO 13828 --- [http-nio-8080-exec-6] UtsuPWiki.Error.CustomErrorHandler       : Error handled: 404
-2022-08-24 18:45:04.510  INFO 13828 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 18:45:04.528  INFO 13828 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-08-24 18:45:04.590  INFO 13828 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-08-24 18:45:07.844  INFO 7548 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.15 on DESKTOP-GEHCQ0N with PID 7548 (C:\Робочий стол\Utsu-P\target\classes started by utente in C:\Робочий стол\Utsu-P)
-2022-08-24 18:45:07.848  INFO 7548 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
-2022-08-24 18:45:08.843  INFO 7548 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-08-24 18:45:08.960  INFO 7548 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105 ms. Found 10 JPA repository interfaces.
-2022-08-24 18:45:09.860  INFO 7548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-08-24 18:45:09.878  INFO 7548 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-08-24 18:45:09.878  INFO 7548 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-08-24 18:45:10.006  INFO 7548 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-08-24 18:45:10.007  INFO 7548 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2076 ms
-2022-08-24 18:45:10.222  INFO 7548 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-08-24 18:45:10.279  INFO 7548 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
-2022-08-24 18:45:10.465  INFO 7548 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-08-24 18:45:10.572  INFO 7548 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-08-24 18:45:10.580  WARN 7548 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2022-08-24 18:45:10.757  INFO 7548 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-08-24 18:45:10.797  INFO 7548 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
-2022-08-24 18:45:12.109  INFO 7548 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-08-24 18:45:12.123  INFO 7548 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 18:45:12.198  WARN 7548 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-08-24 18:45:13.118  INFO 7548 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
-2022-08-24 18:45:13.387  INFO 7548 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-08-24 18:45:13.750  INFO 7548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-08-24 18:45:13.761  INFO 7548 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 6.603 seconds (JVM running for 7.246)
-2022-08-24 18:45:13.764  INFO 7548 --- [main] UtsuPWiki.UtsuPApplication               : Application Started!
-2022-08-24 18:45:13.765  INFO 7548 --- [main] UtsuPWiki.UtsuPApplication               : 
-
-"Воля может и должна быть предметом гордости гораздо больше, нежели талант.
- Если талант — это развитие природных склонностей, 
- то твёрдая воля — это ежеминутно одерживаемая победа над инстинктами,
- над влечениями, которые воля обуздывает и подавляет, над препятствиями
- и преградами, которые она осиливает, над всяческими трудностями,
- которые она героически преодолевает. " (Оноре де Бальзак)"
-
-2022-08-24 18:45:15.907  INFO 7548 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-24 18:45:15.909  INFO 7548 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-24 18:45:15.917  INFO 7548 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2022-08-24 18:45:16.040  INFO 7548 --- [http-nio-8080-exec-1] UtsuPWiki.Error.CustomErrorHandler       : Error handled: 404
-2022-08-24 18:47:30.933  INFO 7548 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 18:47:30.934  INFO 7548 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-08-24 18:47:31.080  INFO 7548 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-08-24 18:47:35.155  INFO 1868 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.15 on DESKTOP-GEHCQ0N with PID 1868 (C:\Робочий стол\Utsu-P\target\classes started by utente in C:\Робочий стол\Utsu-P)
-2022-08-24 18:47:35.168  INFO 1868 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
-2022-08-24 18:47:36.256  INFO 1868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-08-24 18:47:36.402  INFO 1868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 134 ms. Found 10 JPA repository interfaces.
-2022-08-24 18:47:37.304  INFO 1868 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-08-24 18:47:37.315  INFO 1868 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-08-24 18:47:37.316  INFO 1868 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-08-24 18:47:37.454  INFO 1868 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-08-24 18:47:37.455  INFO 1868 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2213 ms
-2022-08-24 18:47:37.672  INFO 1868 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-08-24 18:47:37.730  INFO 1868 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
-2022-08-24 18:47:37.927  INFO 1868 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-08-24 18:47:38.050  INFO 1868 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-08-24 18:47:38.055  WARN 1868 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2022-08-24 18:47:38.252  INFO 1868 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-08-24 18:47:38.283  INFO 1868 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
-2022-08-24 18:47:39.492  INFO 1868 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-08-24 18:47:39.509  INFO 1868 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 18:47:39.566  WARN 1868 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-08-24 18:47:40.399  INFO 1868 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
-2022-08-24 18:47:40.717  INFO 1868 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-08-24 18:47:41.080  INFO 1868 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-08-24 18:47:41.092  INFO 1868 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 6.526 seconds (JVM running for 7.175)
-2022-08-24 18:47:41.096  INFO 1868 --- [main] UtsuPWiki.UtsuPApplication               : Application Started!
-2022-08-24 18:47:41.097  INFO 1868 --- [main] UtsuPWiki.UtsuPApplication               : 
-
-"Воля может и должна быть предметом гордости гораздо больше, нежели талант.
- Если талант — это развитие природных склонностей, 
- то твёрдая воля — это ежеминутно одерживаемая победа над инстинктами,
- над влечениями, которые воля обуздывает и подавляет, над препятствиями
- и преградами, которые она осиливает, над всяческими трудностями,
- которые она героически преодолевает. " (Оноре де Бальзак)"
-
-2022-08-24 18:47:43.551  INFO 1868 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-24 18:47:43.552  INFO 1868 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-24 18:47:43.557  INFO 1868 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2022-08-24 18:47:43.799  INFO 1868 --- [http-nio-8080-exec-1] UtsuPWiki.Error.CustomErrorHandler       : Error handled: 404
-2022-08-24 18:50:56.459  INFO 1868 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 18:50:56.461  INFO 1868 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-08-24 18:50:56.471  INFO 1868 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-08-24 18:50:59.458  INFO 9068 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.15 on DESKTOP-GEHCQ0N with PID 9068 (C:\Робочий стол\Utsu-P\target\classes started by utente in C:\Робочий стол\Utsu-P)
-2022-08-24 18:50:59.462  INFO 9068 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
-2022-08-24 18:51:01.831  INFO 9068 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-08-24 18:51:02.038  INFO 9068 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 192 ms. Found 10 JPA repository interfaces.
-2022-08-24 18:51:03.766  INFO 9068 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-08-24 18:51:03.785  INFO 9068 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-08-24 18:51:03.785  INFO 9068 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-08-24 18:51:03.929  INFO 9068 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-08-24 18:51:03.930  INFO 9068 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4383 ms
-2022-08-24 18:51:04.142  INFO 9068 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-08-24 18:51:04.202  INFO 9068 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
-2022-08-24 18:51:04.378  INFO 9068 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-08-24 18:51:04.482  INFO 9068 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-08-24 18:51:04.488  WARN 9068 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2022-08-24 18:51:04.675  INFO 9068 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-08-24 18:51:04.721  INFO 9068 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
-2022-08-24 18:51:05.849  INFO 9068 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-08-24 18:51:05.861  INFO 9068 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 18:51:05.920  WARN 9068 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-08-24 18:51:06.828  INFO 9068 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
-2022-08-24 18:51:07.101  INFO 9068 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-08-24 18:51:07.471  INFO 9068 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-08-24 18:51:07.479  INFO 9068 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 8.637 seconds (JVM running for 9.279)
-2022-08-24 18:51:07.484  INFO 9068 --- [main] UtsuPWiki.UtsuPApplication               : Application Started!
-2022-08-24 18:51:07.486  INFO 9068 --- [main] UtsuPWiki.UtsuPApplication               : 
-
-"Воля может и должна быть предметом гордости гораздо больше, нежели талант.
- Если талант — это развитие природных склонностей, 
- то твёрдая воля — это ежеминутно одерживаемая победа над инстинктами,
- над влечениями, которые воля обуздывает и подавляет, над препятствиями
- и преградами, которые она осиливает, над всяческими трудностями,
- которые она героически преодолевает. " (Оноре де Бальзак)"
-
-2022-08-24 18:51:09.823  INFO 9068 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-24 18:51:09.830  INFO 9068 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-24 18:51:09.833  INFO 9068 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2022-08-24 18:51:09.953  INFO 9068 --- [http-nio-8080-exec-1] UtsuPWiki.Error.CustomErrorHandler       : Error handled: 404
-2022-08-24 18:51:15.395  INFO 9068 --- [http-nio-8080-exec-9] UtsuPWiki.Error.CustomErrorHandler       : Error handled: 404
-2022-08-24 18:51:21.713  INFO 9068 --- [http-nio-8080-exec-2] UtsuPWiki.Error.CustomErrorHandler       : Error handled: 404
-2022-08-24 18:52:52.421  INFO 9068 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 18:52:52.424  INFO 9068 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-08-24 18:52:52.451  INFO 9068 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-08-24 18:52:57.797  INFO 14396 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.15 on DESKTOP-GEHCQ0N with PID 14396 (C:\Робочий стол\Utsu-P\target\classes started by utente in C:\Робочий стол\Utsu-P)
-2022-08-24 18:52:57.802  INFO 14396 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
-2022-08-24 18:52:59.491  INFO 14396 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-08-24 18:52:59.665  INFO 14396 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 153 ms. Found 10 JPA repository interfaces.
-2022-08-24 18:53:00.655  INFO 14396 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-08-24 18:53:00.666  INFO 14396 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-08-24 18:53:00.666  INFO 14396 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-08-24 18:53:00.795  INFO 14396 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-08-24 18:53:00.795  INFO 14396 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2782 ms
-2022-08-24 18:53:00.996  INFO 14396 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-08-24 18:53:01.056  INFO 14396 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
-2022-08-24 18:53:01.254  INFO 14396 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-08-24 18:53:01.361  INFO 14396 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-08-24 18:53:01.367  WARN 14396 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2022-08-24 18:53:01.547  INFO 14396 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-08-24 18:53:01.592  INFO 14396 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
-2022-08-24 18:53:02.719  INFO 14396 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-08-24 18:53:02.729  INFO 14396 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 18:53:02.791  WARN 14396 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-08-24 18:53:03.637  INFO 14396 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
-2022-08-24 18:53:03.896  INFO 14396 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-08-24 18:53:04.255  INFO 14396 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-08-24 18:53:04.263  INFO 14396 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 7.352 seconds (JVM running for 8.599)
-2022-08-24 18:53:04.266  INFO 14396 --- [main] UtsuPWiki.UtsuPApplication               : Application Started!
-2022-08-24 18:53:04.267  INFO 14396 --- [main] UtsuPWiki.UtsuPApplication               : 
-
-"Воля может и должна быть предметом гордости гораздо больше, нежели талант.
- Если талант — это развитие природных склонностей, 
- то твёрдая воля — это ежеминутно одерживаемая победа над инстинктами,
- над влечениями, которые воля обуздывает и подавляет, над препятствиями
- и преградами, которые она осиливает, над всяческими трудностями,
- которые она героически преодолевает. " (Оноре де Бальзак)"
-
-2022-08-24 18:53:06.961  INFO 14396 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-24 18:53:06.961  INFO 14396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-24 18:53:06.963  INFO 14396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-08-24 18:53:10.941 ERROR 14396 --- [http-nio-8080-exec-10] UtsuPWiki.Service.ClientsDetailsService  : UserUnknown was thrown
-2022-08-24 18:53:10.947  INFO 14396 --- [http-nio-8080-exec-10] U.Filter.JWTAuthenticationFilter         : InternalAuthenticationServiceException was thrown
-2022-08-24 18:53:10.965  INFO 14396 --- [http-nio-8080-exec-10] UtsuPWiki.Error.CustomErrorHandler       : Error handled: 401
-2022-08-24 18:53:19.643  INFO 14396 --- [http-nio-8080-exec-1] UtsuPWiki.Error.CustomErrorHandler       : Error handled: 401
-2022-08-24 18:53:23.236  INFO 14396 --- [http-nio-8080-exec-5] U.Filter.JWTAuthenticationFilter         : eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJBa2FzYWthIFJ5dXVub3N1a2UiLCJleHAiOjE2NjEzNjM2MDN9.zwGYmHW5uc2bzE2HfILRB8oesmPFVsI8S8pE10292QRrgvGpWb3zOb34YXHVe1aKoKjZveRzqOyb4q191Olbyg token that was created!
-2022-08-24 19:05:02.398  INFO 14396 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-08-24 19:05:02.400  INFO 14396 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-08-24 19:05:02.436  INFO 14396 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-25 13:59:22.143  INFO 3496 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-25 13:59:22.145  INFO 3496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-25 13:59:22.147  INFO 3496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-08-25 14:01:20.931  INFO 3496 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-25 14:01:20.934  INFO 3496 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-25 14:01:20.978  INFO 3496 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
