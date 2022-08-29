@@ -112,3 +112,13 @@ html, body {
 
 	font-size: 1vw;
 }
+
+.unselectable {
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/*style="background-image: url('https://i.ytimg.com/vi/siQxhzOksWU/maxresdefault.jpg');background-repeat: no-repeat;background-position: center;"*/
