@@ -52,6 +52,85 @@
 			<h1>About the progect:</h1>
 
 			<div class="white-line">
+				<div class="unselectable" style="z-index: -1; color: #6F18D3; position: absolute; opacity: 0.2;" >
+					<p>package UtsuPWiki.Controller;</p>
+<br>
+					<p>import UtsuPWiki.Repository.AuthorsRepository;</p>
+					<p>import UtsuPWiki.utilities.Navigation;</p>
+					<p>import lombok.extern.log4j.Log4j2;</p>
+					<p>import org.springframework.beans.factory.annotation.Autowired;</p>
+					<p>import org.springframework.stereotype.Controller;</p>
+					<p>import org.springframework.ui.Model;</p>
+					<p>import org.springframework.web.bind.annotation.GetMapping;</p>
+					<p>import org.springframework.web.bind.annotation.PathVariable;</p>
+<br>
+					<p>import javax.servlet.http.HttpServletRequest;</p>
+<br>
+						<p>/**																							</p>
+						<p> * Is responsive for returning Authors related pages.										</p>
+						<p> *																							</p>
+						<p> * currently does:																			</p>
+						<p> *																							</p>
+						<p> * GET : /authors                   (soon will be deprecated, remains for compatibility)		</p>
+						<p> * GET : /types/authors             Returns ALL authors that are available in db				</p>
+						<p> * GET : /{type}/authors            Returns all authors that have that TYPE as main_type(fk)	</p>
+						<p> * GET : /{type}/authors/{author}   Return specific author for specific type 				</p>
+						<p> *																							</p>
+						<p> * */																						</p>
+						<p>@Log4j2																						</p>
+						<p>@Controller 																					</p>
+						<p>public class AuthorMainPageController { 														</p>
+<br>
+					<pre> 	@Autowired 																			</pre>
+					<pre> 	AuthorsRepository authorsRepository;													</pre>
+
+					    <p>@GetMapping("/authors")</p>
+					    <p>public String GETAuthorsController(Model model, HttpServletRequest request){</p>
+					    <p>    Navigation.addLocations(model, request);</p>
+<br>
+					     <p>   String [] authorsList = authorsRepository.getAllAuthorsPseudonyms();</p>
+
+					     <p>   model.addAttribute("authorsList", authorsList);</p>
+<br>
+					        return "Authors/authors";</p>
+					    <p>}</p>
+<br>
+					    <p>@GetMapping("/types/authors")</p>
+					    <p>public String GETAllAuthorsController(Model model, HttpServletRequest request){</p>
+					    <p>    Navigation.addLocations(model, request);</p>
+<br>
+					    <p>    String [] authorsList = authorsRepository.getAllAuthorsPseudonyms();</p>
+<br>
+					    <p>    model.addAttribute("authorsList", authorsList);</p>
+<br>
+					    <p>    return "Authors/authors";</p>
+					   <p>}</p>
+<br>
+					    <p>@GetMapping("/types/{type}/authors")</p>
+					    <p>public String GETAllAuthorsController(Model model,</p>
+					    <p>                                      HttpServletRequest request,</p>
+					    <p>                                      @PathVariable String type){</p>
+					    <p>    Navigation.addLocations(model, request);</p>
+<br>
+					    <p>    String [] authorsList = authorsRepository.getAllAuthorsPseudonymsByType(type);</p>
+<br>
+					    <p>    model.addAttribute("authorsList", authorsList);</p>
+<br>
+					    <p>    return "Authors/authors";</p>
+					    <p>}return</p>
+<br>
+					    <p>@GetMapping("/types/{type}/authors/{author}")</p>
+					    <p>public String GETAuthorController(@PathVariable String author,</p>
+					    <p>                                  @PathVariable String type,</p>
+					    <p>                                  Model model,</p>
+					    <p>                                  HttpServletRequest request){</p>
+					    <pre>    						Navigation.addLocations(model, request);</pre>
+<br>
+					    <p>    return "Authors/" + author + "/" + author;</p>
+					    <pre>  }</pre>
+					<pre> }<pre>
+				</div>
+
 				<p>This is only practice progect. This page will contain all progect-related info. Such as source code documentation and stuff.</p>
 
 				<br>
@@ -482,7 +561,8 @@
 
 		<br>	
 
-		<iframe width="80%" height="765" src="https://www.youtube.com/embed/XVIsijUM_NE" title="Utsu-P - THE DYING MESSAGE [PxTxSxD Ver.]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- 		<iframe width="80%" height="765" src="https://www.youtube.com/embed/XVIsijUM_NE" title="Utsu-P - THE DYING MESSAGE [PxTxSxD Ver.]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+		<div id="ytplayer"></div>
 	</div>
 <footer id="footer"></footer>
  
@@ -490,4 +570,5 @@
 <script type="text/javascript" src="/js/navigation.js"></script>
 <script type="text/javascript" src="/js/Components/header.js"></script>
 <script type="text/javascript" src="/js/Components/footer.js"></script>
+<script type="text/javascript" src="/js/the_dying_message_integration.js"></script>
 </html>
