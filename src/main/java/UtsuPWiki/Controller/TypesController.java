@@ -39,6 +39,4 @@ public class TypesController {
 
         return "Types/type";
     }
-
-
 }
