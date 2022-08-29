@@ -19,13 +19,21 @@ function navigate(element) {
 
 	let location = document.getElementById('location').innerHTML.toLowerCase();
 	let locationsContainer = document.getElementById('locationsContainer').innerHTML.toLowerCase();
+	
+	locationsContainer = locationsContainer.replace("\n", "");
+	locationsContainer = locationsContainer.replace("\t", "");
+	locationsContainer = locationsContainer.replace("<span onclick='navigate(this)'>", "");
+	locationsContainer = locationsContainer.replace("</span>", "");
+
+	
 	let locationIndex = locationsContainer.indexOf(location);
 	let sliceTo;
+
+	alert("location before slice: " + location);
 
 	//In this case locationIndex -1 means that the element that was clicked is outside 
 	//locations container (so it's one of the header-grid-container's element).
 	//In this case navigate() still works but it slices one letter more than needed.
-	//Thus this if resolves the problem.
 	if (locationIndex == -1) {
 
 		sliceTo = locationIndex + (location.length + 1);
@@ -36,7 +44,13 @@ function navigate(element) {
 
 	}
 
-	location = location.slice(0, sliceTo);
+
+	location = locationsContainer.slice(0, sliceTo);
+
+	alert("Location is: " +  PREFIX_LOCAL + location);
+	alert("locationsContainer is: " +  locationsContainer);
+	alert("locationIndex is: " +  locationIndex);
+	alert("sliceTo is: " +  sliceTo);
 
 	if (location == "home/") {
 
