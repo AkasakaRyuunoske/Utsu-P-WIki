@@ -26,8 +26,6 @@ function navigate(element) {
 	let locationIndex = locationsContainer.indexOf(location);
 	let sliceTo;
 
-	alert("location before slice: " + location);
-
 	//In this case locationIndex -1 means that the element that was clicked is outside 
 	//locations container (so it's one of the header-grid-container's element).
 	if (locationIndex == -1) {
@@ -35,7 +33,7 @@ function navigate(element) {
 		window.location.href = PREFIX_LOCAL + location;
 
 	} else {
-		
+
 		sliceTo = locationIndex + location.length;
 		location = locationsContainer.slice(0, sliceTo);
 
