@@ -29,7 +29,10 @@ public class Products {
     private int quantity = 0;
 
     @Column(name = "Date_out")
-    private String date_out;
+    private String dateOut;
+
+    @Column(name = "product_image", nullable = false)
+    private String productImage = "This product has no image.";
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "genres_id_fk", referencedColumnName = "id")
