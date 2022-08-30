@@ -30,31 +30,22 @@ function navigate(element) {
 
 	//In this case locationIndex -1 means that the element that was clicked is outside 
 	//locations container (so it's one of the header-grid-container's element).
-	//In this case navigate() still works but it slices one letter more than needed.
 	if (locationIndex == -1) {
 
-		sliceTo = locationIndex + (location.length + 1);
+		window.location.href = PREFIX_LOCAL + location;
 
 	} else {
-
+		
 		sliceTo = locationIndex + location.length;
+		location = locationsContainer.slice(0, sliceTo);
 
-	}
+		if (location == "home/") {
 
+			window.location.href = PREFIX_LOCAL;
 
-	location = locationsContainer.slice(0, sliceTo);
-
-	console.log("Location with prefix is: " +  PREFIX_LOCAL + location);
-	console.log("locationsContainer is: " +  locationsContainer);
-	console.log("locationIndex is: " +  locationIndex);
-	console.log("sliceTo is: " +  sliceTo);
-
-	if (location == "home/") {
-
-		window.location.href = PREFIX_LOCAL;
-
-	} else{
-		location = location.replace("home/", "");
-		window.location.href = PREFIX_LOCAL + location;
+		} else{
+			location = location.replace("home/", "");
+			window.location.href = PREFIX_LOCAL + location;
+		}
 	}
 }
