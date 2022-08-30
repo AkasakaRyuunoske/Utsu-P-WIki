@@ -18,13 +18,10 @@ function navigate(element) {
 	element.id 	 	   = "location";
 
 	let location = document.getElementById('location').innerHTML.toLowerCase();
-	let locationsContainer = document.getElementById('locationsContainer').innerHTML.toLowerCase();
+	let locationsContainer = document.getElementById('locationsContainer').textContent;
 	
-	locationsContainer = locationsContainer.replace("\n", "");
-	locationsContainer = locationsContainer.replace("\t", "");
-	locationsContainer = locationsContainer.replace("<span onclick='navigate(this)'>", "");
-	locationsContainer = locationsContainer.replace("</span>", "");
-
+	locationsContainer = locationsContainer.replaceAll("\n", "");
+	locationsContainer = locationsContainer.replaceAll("\t", "");
 	
 	let locationIndex = locationsContainer.indexOf(location);
 	let sliceTo;
@@ -47,17 +44,17 @@ function navigate(element) {
 
 	location = locationsContainer.slice(0, sliceTo);
 
-	alert("Location is: " +  PREFIX_LOCAL + location);
-	alert("locationsContainer is: " +  locationsContainer);
-	alert("locationIndex is: " +  locationIndex);
-	alert("sliceTo is: " +  sliceTo);
+	console.log("Location with prefix is: " +  PREFIX_LOCAL + location);
+	console.log("locationsContainer is: " +  locationsContainer);
+	console.log("locationIndex is: " +  locationIndex);
+	console.log("sliceTo is: " +  sliceTo);
 
 	if (location == "home/") {
 
 		window.location.href = PREFIX_LOCAL;
 
 	} else{
-
+		location = location.replace("home/", "");
 		window.location.href = PREFIX_LOCAL + location;
 	}
 }
