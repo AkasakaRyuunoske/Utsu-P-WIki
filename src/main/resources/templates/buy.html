@@ -39,7 +39,14 @@
 	<!-- Here the main content of the page starts -->
 
 	<div class="main-content-container">
-			<h1>Work in progress</h1>
+			<h1>Products</h1>
+			<li th:each="products : ${productsList}">
+				<div class="stack" style="--stacks: 3;">
+					<span style="--index: 0;" th:text="${products.productName}"></span>
+					<span style="--index: 1;"th:text="${products.productName}"></span>
+					<span style="--index: 2;" th:text="${products.productName}"></span>
+				</div>
+			</li>
 	</div>
 
 <footer id="footer"></footer>
