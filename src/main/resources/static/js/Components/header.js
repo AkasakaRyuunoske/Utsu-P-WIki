@@ -10,9 +10,7 @@ if (headers != null) {
 			+		"鬱P Wiki"
 			+	"</h1>"
 			+ "</header>"
-
-		    + "<h1 th:if='${errorMessage}' class='error header-options-text' th:text='*{errorMessage}'></h1>"
-
+			
 			+	"<header class='header-options-text header-grid-container'>"
 			+		"<h2 class='header-grid-item' onclick='navigate(this)'>Explore</h2>"
 			+		"<h2 class='header-grid-item' onclick='navigate(this)'>Community</h2>"
