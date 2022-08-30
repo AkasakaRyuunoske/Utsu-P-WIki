@@ -4,7 +4,7 @@ footer.innerHTML =
 		"<footer class='footer'>"
 +		"<div style='padding-left:5%;'>"
 +		"	<h2>Created By:"
-+		"		<span class='fav-color' style='font-family: 'Old English Text MT'>Akasaka Ryuunosuke</span>"
++		"		<span class='fav-color' style='font-family: Old English Text MT'>Akasaka Ryuunosuke</span>"
 +		"		<p>GitHub:"
 +		"			<a href='https://github.com/AkasakaRyuunoske'>https://github.com/AkasakaRyuunoske</a>"
 +		"		</p>"
