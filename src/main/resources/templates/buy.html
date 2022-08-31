@@ -8,6 +8,7 @@
 	<!-- CSS only libs. JS at the end of the page -->
 
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/products.css">
 	<link rel="stylesheet" href="css/full-glitch-effect-text.css">
 	<link rel="stylesheet" href="css/horizontal-glitch-effect-text.css">
 
@@ -38,17 +39,28 @@
 	<header id="headers"></header>
 	<!-- Here the main content of the page starts -->
 
-	<div class="main-content-container">
+	<div class="main-content-container" style="width: 99%">
 			<h1>Products</h1>
-			<li th:each="products : ${productsList}">
-				<div class="stack" style="--stacks: 3;">
-					<span style="--index: 0;" th:text="${products.productName}"></span>
-					<span style="--index: 1;"th:text="${products.productName}"></span>
-					<span style="--index: 2;" th:text="${products.productName}"></span>
+<!-- 			<li th:each="products : ${productsList}"> -->
+				<div th:each="products : ${productsList}" class="products-container">
+					<span th:text="${products.productName}"></span>
+					<div th:style="'background: 
+				 url(' + ${products.productImage} + ') no-repeat center center;
+				 background-size: cover;'"></div>
 				</div>
-			</li>
+<!-- 			</li> -->
 	</div>
 
+<!--
+utsu-p's products generator 
+
+	<div class="stack header-options-text" style="--stacks: 3;" th:each="products : ${productsList}">
+		<span style="--index: 0;" th:text="${products.productName}"></span>
+		<span style="--index: 1;" th:text="${products.productName}"></span>
+		<span style="--index: 2;" th:text="${products.productName}"></span>
+	</div>
+
+-->
 <footer id="footer"></footer>
 </body>
 <script type="text/javascript" src="/js/navigation.js"></script>
