@@ -1,0 +1,105 @@
+Progect name: Utsu-P Wiki(Manga, Anime, Another Music included)
+
+Tecnologies in use:
+Back-End      -> Java(TLS 11), Spring Boot, Spring JPA,
+		 Spring Security, Spring Mail(Gmail, SMTPS),
+		 Hibernate, JDBC(+Spring Session), Thymeleaf
+Front-End     -> HTML, CSS, JavaScript (*May be try Boostrap, good thing as they say), VUE*(may be used too)
+Data-Base     -> Mysql
+Another Stuff -> Maven, Intelijidea, Xampp, Heroku
+
+About:
+Progect's main goal is to make an easy way & light way to create Wiki(or Fandom) pages
+and manage them in an easyer way. Second main goal is practice and learning.
+
+Functions to be realized:
+1)  Registration & Login
+2)  Thymeleaf way to make repeating object in a page(Header, Footer must be in a template or kinda there)
+3)  Easy way to manage pages (CRUD must be possbile)
+4)  Categorization by language
+5)  Category thing in a easy + light way
+6)  Commentaries(Viewed by any one, but only who is registrated can make them)
+7)  User Area
+8)  Main page and good Navigation in general
+9)  Error handling(404 and other included)
+10) A way for a user to upload content or update existing one
+11) Communication folowing SOAP 
+12) Minimize local resource quantity 
+13) OBV Responsive design(as mutch as possble)
+14) Role Usage 
+15) Better Sessions management 
+16) Real-Time updating chart of activity
+17) Session management
+18) REST architecture implementation
+
+*1) Online shop functions as was in the first progect but all done in a better way
+*2) Shopping cart
+*3) Better mail service perfomance
+
+Non function things to be realized:
+1) Progectation as detalied as possbile
+2) Documentation(in english)
+3) More than one branch on GitHub
+4) Clear code as mutch as possibile
+
+Entityes(DB):
+Clients 		  -> UserName, Password, Email, Role, Content Created(a quantity of things made by a user), ProfileFoto,
+			      SessionID, Comments Quantity, Registration Date
+Pages(*) 		  -> Footer, Headers, Author, Description, MainContent, Name, Comments
+
+Spring_Session 		  -> Created automaticly
+Spring_Session_Attributes -> Created automaticly
+
+Products		  -> ProductName, Type, Author, Cost, Quantity
+Corriers		  -> FirstName, LastName, TotalQuantityOfProducts(just for statistics), Disponibility(?), LastOrder
+Delivery		  -> DeliveredBy, AddressTo, AddressFrom(?), ExpectedTime(?), Date, AditionalInfo
+Order			  -> Date, Products, totalCost, Amount, Products Acquired, Products Quantity
+Comments		  -> Content, Date
+Genres			  -> Name, Description
+
+Entityes(Java):
+Main
+
+HomePageController
+VocaloidPagesController
+MangaPagesController
+AuthorPagesController
+CategoriesPageController
+CRUDController(*)
+ProductsController
+OrdersController
+StatisticsController
+
+RegistrationController
+LoginController
+ErrorController
+
+Clients
+Pages
+Corriers
+Orders
+Delivery
+
+ClientsRepository
+PagesRepository
+CorriersRepository
+OrdersRepository 
+DeliveryRepository 
+
+ClientsService
+PagesService
+CorriersService
+OrdersService
+DevileriesService
+MailSenderService
+ClientsDetailsService
+
+ClientsServiceImp
+PagesServiceImp
+CorriersServiceImp
+OrdersServiceImp
+DevileriesServiceImp
+
+WebSecurityConfig
+MailConfig
+CustomUserDetails
