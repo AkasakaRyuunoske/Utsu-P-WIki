@@ -1,0 +1,115 @@
+Progect name: Utsu-P Wiki(Manga, Anime, Another Music included)
+
+Tecnologies in use:
+Back-End      -> Java(LTS 11), Spring Boot, Spring JPA,
+		 Spring Security, Spring Mail(Gmail, SMTPS),
+		 Hibernate, JDBC(+Spring Session), Thymeleaf
+Front-End     -> HTML, CSS, JavaScript (*May be try Boostrap, good thing as they say), VUE*(may be used too)
+Data-Base     -> Mysql
+Another Stuff -> Maven, Intelijidea, Xampp, Heroku
+
+About:
+Progect's main goal is to make an easy way & light way to create Wiki(or Fandom) pages
+and manage them in an easyer way. Second main goal is practice and learning.
+
+Functions to be realized:
+1)  Registration & Login --
+2)  Thymeleaf way to make repeating object in a page(Header, Footer must be in a template or kinda there)  X
+3)  Easy way to manage pages (CRUD must be possbile)
+4)  Categorization by language
+5)  Category thing in a easy + light way
+6)  Commentaries(Viewed by any one, but only who is registrated can make them)
+7)  User Area
+8)  Main page and good Navigation in general --
+9)  Error handling(404 and other included) --
+10) A way for a user to upload content or update existing one
+11) Communication folowing SOAP 
+12) Minimize local resource quantity X
+13) OBV Responsive design(as mutch as possble) --
+14) Role Usage --
+15) Better Sessions management --X ( changed to JWT)
+16) Real-Time updating chart of activity 
+17) Session management  --X ( changed to JWT)
+18) REST architecture implementation --
+
+*1) Online shop functions as was in the first progect but all done in a better way
+*2) Shopping cart
+*3) Better mail service perfomance
+
+Non function things to be realized:
+1) Progectation as detalied as possbile 
+2) Documentation(in english) --
+3) More than one branch on GitHub 
+4) Clear code as mutch as possibile --
+
+Entityes(DB):
+Clients 		  -> UserName, Password, Email, Role, Content Created(a quantity of things made by a user), ProfileFoto,
+			      Comments Quantity, Registration Date, Country_id_fk
+
+Pages 		  	  -> Author_id_fk, Description, Name, file_path, clients_id_fk
+
+Authors			  -> name, last_name, author_pseudonym, additional_info, date_of_birth, country_id_fk, total_masterpieces(total number of product ids that have this author as fk), main_type
+
+Products		  -> ProductName, Type_id_fk, Author_id_fk, Cost, Quantity, date_out, Genres_id_fk
+
+Corriers		  -> FirstName, LastName, TotalQuantityOfProducts(just for statistics), Disponibility(?), LastOrder
+
+Delivery		  -> DeliveredBy, AddressTo, AddressFrom(?), ExpectedTime(?), Date, AditionalInfo, country_id_fk
+
+Order			  -> Date, Products, totalCost, Amount, Products Acquired, Products Quantity
+
+Comments		  -> Content, Date, clients_id_fk, pages_id_fk
+
+Genres			  -> Name, Description
+
+Types			  -> Name, Description
+
+Country			  -> Name, Describtion
+
+
+Entityes(Java):
+Main
+
+HomePageController
+VocaloidPagesController
+MangaPagesController
+AuthorPagesController
+CategoriesPageController
+CRUDController(*)
+ProductsController
+OrdersController
+StatisticsController
+
+RegistrationController
+LoginController
+ErrorController
+
+Clients
+Pages
+Corriers
+Orders
+Delivery
+
+ClientsRepository
+PagesRepository
+CorriersRepository
+OrdersRepository 
+DeliveryRepository 
+
+ClientsService
+PagesService
+CorriersService
+OrdersService
+DevileriesService
+MailSenderService
+ClientsDetailsService
+
+ClientsServiceImp
+PagesServiceImp
+CorriersServiceImp
+OrdersServiceImp
+DevileriesServiceImp
+
+WebSecurityConfig
+MailConfig
+CustomUserDetails
