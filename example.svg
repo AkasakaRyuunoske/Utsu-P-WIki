@@ -9,7 +9,7 @@
 
                 .hero {
                   color: #6F18D3;
-                  font-size: 6vw;
+                  font-size: 50px;
                   line-height: 1;
                   display: inline-block;
                   color: #6F18D3;
