@@ -67,7 +67,7 @@ function follow_player_time() {
     the_dying_message_lyrics_box.innerHTML = "kioku mo";
     break;
 
-    case (player.playerInfo.currentTime >= 43 && player.playerInfo.currentTime < 44):
+    case (player.playerInfo.currentTime >= 42.5 && player.playerInfo.currentTime < 44):
     the_dying_message_lyrics_box.innerHTML = "nai hito, maishou";
     break;
 
@@ -91,7 +91,7 @@ function follow_player_time() {
     the_dying_message_lyrics_box.innerHTML = "Akaku somaru senaka toooo";
     break;
 
-    case (player.playerInfo.currentTime >= 59 && player.playerInfo.currentTime < 60.5):
+    case (player.playerInfo.currentTime >= 58 && player.playerInfo.currentTime < 60.5):
     the_dying_message_lyrics_box.innerHTML = "NEE ANATA WA ITSUKA";
     break;
 
@@ -111,15 +111,15 @@ function follow_player_time() {
     the_dying_message_lyrics_box.innerHTML = "YAOKE MAE NO UREI";
     break;
 
-    case (player.playerInfo.currentTime >= 71 && player.playerInfo.currentTime < 72):
+    case (player.playerInfo.currentTime >= 70.5 && player.playerInfo.currentTime < 72):
     the_dying_message_lyrics_box.innerHTML = "TAEGATAI KODOKU";
     break;
 
-    case (player.playerInfo.currentTime >= 74 && player.playerInfo.currentTime < 77):
+    case (player.playerInfo.currentTime >= 74 && player.playerInfo.currentTime < 76.5):
     the_dying_message_lyrics_box.innerHTML = "AWAI OMOI TO";
     break;
 
-    case (player.playerInfo.currentTime >= 77.5 && player.playerInfo.currentTime < 78):
+    case (player.playerInfo.currentTime >= 76.5 && player.playerInfo.currentTime < 78):
     the_dying_message_lyrics_box.innerHTML = "WO";
     break;
 
