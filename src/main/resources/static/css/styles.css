@@ -4,7 +4,7 @@ html, body {
 }
 
 .fav-color{
-	color: #6F18D3
+	color: #6F18D3;
 }
 
 .error{
@@ -56,7 +56,7 @@ html, body {
 .header-grid-container {
 	width: 100%;
 	height: auto;
-
+	
 	display: grid;
 	grid-template-columns: auto auto auto auto;
 	column-gap:1vw;
