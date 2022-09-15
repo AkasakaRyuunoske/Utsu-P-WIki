@@ -1,4 +1,4 @@
-<svg fill="none" viewBox="0 0 400 400" width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 400 200" width="400" height="200" xmlns="http://www.w3.org/2000/svg">
     <foreignObject width="100%" height="100%">
         <div xmlns="http://www.w3.org/1999/xhtml">
             <style>
@@ -9,7 +9,7 @@
 
                 .hero {
                   color: #6F18D3;
-                  font-size: 6vw;
+                  font-size: 70px;
                   line-height: 1;
                   display: inline-block;
                   color: #6F18D3;
@@ -481,13 +481,12 @@
 
                 .hero-container {
                   position: relative;
-                  padding: 200px 0;
                   text-align: center;
                 }
             </style>
 
             <div class="hero-container">
-                <h1 class='hero glitch layers' data-text='鬱P Wiki'>HELLO WORLD!</h1>
+                <h1 class='hero glitch layers' data-text='鬱P Wiki'>Utsu-P Wiki</h1>
             </div>
         </div>
     </foreignObject>
