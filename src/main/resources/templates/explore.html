@@ -26,6 +26,7 @@
         	<span id="currentUser">Anonymous</span>
 		</h2>
 
+		<!-- To know where the user is -->
 		<h2>You are at:
 			<span id="locationsContainer">
 				<span th:each="locations : ${location}" th:text="${locations}" onclick="navigate(this)"></span>
@@ -55,12 +56,12 @@
 
 			<h1>Genres:</h1>
 			<li th:each="genres : ${genresList}">
-				<a th:href="@{'/genres/' + ${genres} }" th:text="${genres}"></a>
+				<a th:href="@{'/genres/' + ${genres.toLowerCase()} }" th:text="${genres}"></a>
 			</li>
 
 			<h1>Types:</h1>
 			<li th:each="types : ${typesList}">
-				<a th:href="@{'/types/' + ${types} }" th:text="${types}"></a>
+				<a th:href="@{'/types/' + ${types.toLowerCase()} }" th:text="${types}"></a>
 			</li>
 
 			<div class="white-line">
