@@ -25,6 +25,7 @@ html, body {
 .navigation span{
 	transition: background 2s;
   	transition-timing-function: linear;
+  	cursor: pointer;	
 }
 
 .navigation span:hover{
@@ -46,10 +47,15 @@ html, body {
 	width: 100%;
 	height: auto;
 
+	/* Normally cursor is in "text", but this is a button */
+	cursor: pointer;	
+
 	font-size: 3vw;
 	line-height: 1;
 	color: white;
-	filter: drop-shadow(0 1px 3px);  /* giving off a glow */
+
+	/* giving off a glow */
+	filter: drop-shadow(0 1px 3px); 
 	font-family: "Old English Text MT";
 }
 
@@ -82,13 +88,9 @@ html, body {
 
 	padding-left:5%; 
 	padding-top:10%;
-/*	margin-top: 20%;*/ 
 }
 
 .main-content-container h1{
-/*	width: 100%;
-	height: auto;*/
-
 	font-size: 2vw;
 
 	text-align:center;
@@ -113,6 +115,11 @@ html, body {
 	font-size: 1vw;
 }
 
+/*
+	Will be used to put in background text of the controller
+	responsible for the page returned, making sure that
+	text will not be selectable.
+*/
 .unselectable {
 	-webkit-user-select: none;
 	-webkit-touch-callout: none;
