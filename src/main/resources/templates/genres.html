@@ -40,7 +40,7 @@
 	<div class="main-content-container">
 		<h1>Genres:</h1>
 		<li th:each="genres : ${genresList}">
-			<a th:href="@{'/genres/' + ${genres} }" th:text="${genres}"></a>
+			<a th:href="@{'/genres/' + ${genres.toLowerCase()} }" th:text="${genres}"></a>
 		</li>
 	</div>
 
