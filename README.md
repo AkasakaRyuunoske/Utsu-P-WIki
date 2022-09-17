@@ -34,7 +34,13 @@
 6: Thymeleaf.
 <br>
 7: Maven.
-
+<br>
+8: HTML.
+<br>
+9: CSS.
+<br>
+10: JS.
+10.1: JQuery.
 It's only practice progect
 
 #Todo put info here
