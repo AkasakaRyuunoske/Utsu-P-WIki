@@ -40,7 +40,9 @@
 9: CSS.
 <br>
 10: JS.
+<br>
 10.1: JQuery.
+<br>
 It's only practice progect
 
 #Todo put info here
