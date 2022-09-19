@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="example.svg" alt="css-in-readme">
+    <img src="src/main/resources/readme_resources/full-glitch-logo.svg" alt="css-in-readme">
 </div>
 
 >"Воля может и должна быть предметом гордости гораздо больше, нежели талант.
