@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="src/main/resources/readme_resources/full-glitch-navigation-src.svg" alt="css-in-readme">
+    <img src="main/resources/readme_resources/full-glitch-navigation-src.svg" alt="css-in-readme">
 </div>
 
 >"Воля может и должна быть предметом гордости гораздо больше, нежели талант.
@@ -8,6 +8,3 @@
 >над влечениями, которые воля обуздывает и подавляет, над препятствиями
 >и преградами, которые она осиливает, над всяческими трудностями,
 >которые она героически преодолевает. " (Оноре де Бальзак)
->А я каеста игрок
-
-<img src="https://i.ytimg.com/vi/siQxhzOksWU/maxresdefault.jpg"></img>
