@@ -2,18 +2,22 @@
     <img src="src/main/resources/readme_resources/full-glitch-logo.svg" alt="css-in-readme">
 </div>
 
-Project fully dedicated to Utsu-P/鬱P Works (https://www.youtube.com/c/utsupofficial).<br>
+Project fully dedicated to <a href="https://www.youtube.com/c/utsupofficial"> Utsu-P / 鬱P Works </a>.<br>
 And some other Vocaloid Producers.
 
 # Features
-<a href="#this-is-only-practice-project">Here will be described features</a>
+1. <a href="#this-is-only-practice-project">Here will be described features</a>
+2. <a href="#this-is-only-practice-project">Here will be described features</a>
+3. <a href="#this-is-only-practice-project">Here will be described features</a>
+4. <a href="#this-is-only-practice-project">Here will be described features</a>
 
-# Structure
+# Structure 
 
 The project structure is repeating that of Wikipedia, in terms of:
 1) Many simple pages refering one to another.
 2) Every registered user can manage content of these pages or add new.
 3) Some pages are accessible only by certain role.
+4) Another annoying stuff written with obvious grammatical errors.
 
 <img src="https://i.ytimg.com/vi/siQxhzOksWU/maxresdefault.jpg"></img>
 
@@ -35,6 +39,4 @@ The project structure is repeating that of Wikipedia, in terms of:
 10.1. JQuery.<br>
 <br>
 
-<div id="#this-is-only-practice-project"> It's only practice progect </div>
-
-#Todo put info here
+<div id="this-is-only-practice-project"> It's only practice progect. This project is made only to learn java. This project is not made for gaining money but only expirience (exp > money) </div>
