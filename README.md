@@ -39,4 +39,6 @@ The project structure is repeating that of Wikipedia, in terms of:
 10.1. JQuery.<br>
 <br>
 
+# How to use
+
 <div id="this-is-only-practice-project"> It's only practice progect. This project is made only to learn java. This project is not made for gaining money but only expirience (exp > money) </div>
