@@ -1,4 +1,4 @@
-Progect name: Utsu-P Wiki(Manga, Anime, Another Music included)
+Progect name: Utsu-P Wiki
 
 Tecnologies in use:
 Back-End      -> Java(TLS 11), Spring Boot, Spring JPA,
