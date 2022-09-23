@@ -22,20 +22,20 @@ The project structure is repeating that of Wikipedia, in terms of:
 <img src="https://i.ytimg.com/vi/siQxhzOksWU/maxresdefault.jpg"></img>
 
 # Tecnologies used: 
-1) Java.(11)
-2) Spring Boot.(2.6.6)      <br>
-2.1) Spring Web.            <br>
-2.2) Spring Test. (Junit)   <br>
-2.3) Spring Data JPA.       <br>
-2.4) Spring Security.(JWT)  <br>
-3) Mysql.
-4) Hibernate.
-5) Lombok.
-6) Thymeleaf.
-7) Maven.
-8) HTML.
-9) CSS.
-10) JS.                     
+1. Java.(11)
+2. Spring Boot.(2.6.6)      <br>
+2.1. Spring Web.            <br>
+2.2. Spring Test. (Junit)   <br>
+2.3. Spring Data JPA.       <br>
+2.4. Spring Security.(JWT)  <br>
+3. Mysql.
+4. Hibernate.
+5. Lombok.
+6. Thymeleaf.
+7. Maven.
+8. HTML.
+9. CSS.
+10. JS.                     
 10.1. JQuery.<br>
 <br>
 
