@@ -1,0 +1,22 @@
+.navigation{
+	font-family:'Old English Text MT';
+	font-size: 1vw;
+	width: auto;
+	height: auto;
+}
+
+.navigation span{
+	transition: background 2s;
+  	transition-timing-function: linear;
+  	cursor: pointer;	
+}
+
+.navigation span:hover{
+	background:rgba(60, 0, 122,0.4);
+}
+
+.search-box-input{
+	border: 1px 1px solid white;
+	width: 20vw;
+	height: 1.5vw
+}
