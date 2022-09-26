@@ -1,0 +1,34 @@
+.header-options-text{
+	width: 100%;
+	height: auto;
+
+	/* Normally cursor is in "text", but this is a button */
+	cursor: pointer;	
+
+	font-size: 3vw;
+	line-height: 1;
+	color: white;
+
+	/* giving off a glow */
+	filter: drop-shadow(0 1px 3px); 
+	font-family: "Old English Text MT";
+}
+
+.header-grid-container {
+	width: 100%;
+	height: auto;
+	
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	column-gap:1vw;
+}
+
+.header-grid-item {
+	text-align: center;
+	transition: background 2s;
+  	transition-timing-function: linear;
+}
+
+.header-grid-item:hover {
+	 background:rgba(60, 0, 122,0.2);
+}
