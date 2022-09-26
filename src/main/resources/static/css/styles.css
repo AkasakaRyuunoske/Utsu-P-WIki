@@ -3,6 +3,10 @@ html, body {
 	width: 100%;
 }
 
+/*
+	This style.css contains styles that are same for every page, 
+	but are not referred to a certain component
+*/
 .fav-color{
 	color: #6F18D3;
 }
@@ -13,69 +17,6 @@ html, body {
 
 	font-size: 2vw;
 	color: white;
-}
-
-.navigation{
-	font-family:'Old English Text MT';
-	font-size: 1vw;
-	width: auto;
-	height: auto;
-}
-
-.navigation span{
-	transition: background 2s;
-  	transition-timing-function: linear;
-  	cursor: pointer;	
-}
-
-.navigation span:hover{
-	background:rgba(60, 0, 122,0.4);
-}
-
-.neon-text{
-	text-shadow: 0 0 7px #fff,
-	0 0 10px #fff,
-	0 0 21px #fff,
-	0 0 42px #0fa,
-	0 0 82px #0fa,
-	0 0 92px #0fa,
-	0 0 102px #0fa,
-	0 0 151px #0fa,
-}
-
-.header-options-text{
-	width: 100%;
-	height: auto;
-
-	/* Normally cursor is in "text", but this is a button */
-	cursor: pointer;	
-
-	font-size: 3vw;
-	line-height: 1;
-	color: white;
-
-	/* giving off a glow */
-	filter: drop-shadow(0 1px 3px); 
-	font-family: "Old English Text MT";
-}
-
-.header-grid-container {
-	width: 100%;
-	height: auto;
-	
-	display: grid;
-	grid-template-columns: auto auto auto auto;
-	column-gap:1vw;
-}
-
-.header-grid-item {
-	text-align: center;
-	transition: background 2s;
-  	transition-timing-function: linear;
-}
-
-.header-grid-item:hover {
-	 background:rgba(60, 0, 122,0.2);
 }
 
 .main-content-container{
