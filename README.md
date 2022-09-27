@@ -6,10 +6,10 @@ Project fully dedicated to <a href="https://www.youtube.com/c/utsupofficial"> Ut
 And some other Vocaloid Producers.
 
 # Features
-1. <a href="#this-is-only-practice-project">Here will be described features</a>
-2. <a href="#this-is-only-practice-project">Here will be described features</a>
-3. <a href="#this-is-only-practice-project">Here will be described features</a>
-4. <a href="#this-is-only-practice-project">Here will be described features</a>
+1. <a href="#this-is-only-practice-project">Why?</a>
+2. <a href="#structure">Structure</a>
+3. <a href="#tecnologies-used">Tecnologies used</a>
+4. <a href="#how-to-use">How to use</a>
 
 # Structure 
 
@@ -39,7 +39,11 @@ The project structure is repeating that of Wikipedia, in terms of:
 10.1. JQuery.<br>
 <br>
 
-# How to use
+<h1 id="how-to-use"> How to use </h1>
 
+In order to run the application MySQL must be running and application.properties must be configured accordingly. MySQL database structure will be described somewhere in /resources/static.
+
+
+# Why?
 #### <div id="this-is-only-practice-project"> It's only practice progect. This project is made only to learn java. This project is not made for gaining money but only expirience 
 #### (exp > money) </div>
