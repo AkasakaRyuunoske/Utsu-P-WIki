@@ -44,7 +44,7 @@ The project structure is repeating that of Wikipedia, in terms of:
 In order to run the application MySQL must be running and application.properties must be configured accordingly. MySQL database structure will be described somewhere in /resources/static.
 
 
-<h1 id="#why"> Why? </h1>
+<h1 id="why"> Why? </h1>
 
 Project's goal is to design a very large scale application (number of files, pages, styles... wise) and in practice find best ways to develop it.
 
