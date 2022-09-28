@@ -8,6 +8,6 @@
  3. Static - contains static Front-End content such as images, .css and .js files.
  4. Templates - contains HTML (with Thymeleaf) pages only.
 
-<div align="center">
-    <img src="readme_resources/Cover.jpg" alt="Warufuzake cover">
+<div align="center" >
+    <img src="readme_resources/Cover.jpg" alt="Warufuzake cover" width="60%" height="50%">
 </div>
