@@ -48,4 +48,4 @@ In order to run the application MySQL must be running and application.properties
 
 Project's goal is to design a very large scale application (number of files, pages, styles... wise) and in practice find best ways to develop it.
 
-#### (exp > money) </div>
+</div>
