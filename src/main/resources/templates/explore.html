@@ -39,9 +39,9 @@
 	<div class="main-content-container">
         <div>Navigation:
             <div>
-                <a href="#explore-by-type">1.About</a>
-                <a href="#explore-by-genre">2.Stack</a>
-                <a href="#explore-by-most-products">3.Why?</a>
+                <a href="#explore-by-type" class="glitch-button" data-text="About">1.About</a>
+                <a href="#explore-by-genre" class="glitch-button" data-text="Stack">2.Stack</a>
+                <a href="#explore-by-most-products" class="glitch-button" data-text="Why?">3.Why?</a>
             </div>
                 
         </div>
@@ -53,12 +53,12 @@
 
 			<h1>Genres:</h1>
 			<li th:each="genres : ${genresList}">
-				<a th:href="@{'/genres/' + ${genres.toLowerCase()} }" th:text="${genres}"></a>
+				<a th:href="@{'/genres/' + ${genres.toLowerCase()} }" th:text="${genres}" class="glitch-button" th:attr="data-text=${genres}"></a>
 			</li>
 
 			<h1>Types:</h1>
 			<li th:each="types : ${typesList}">
-				<a th:href="@{'/types/' + ${types.toLowerCase()} }" th:text="${types}"></a>
+				<a th:href="@{'/types/' + ${types.toLowerCase()} }" th:text="${types}" class="glitch-button" th:attr="data-text=${types}"></a>
 			</li>
 
 			<div class="white-line">
