@@ -28,6 +28,12 @@ function loadCSS () {
 	header_css.rel  = 'stylesheet';
 	header_css.href = '/css/header.css';
 	document.head.appendChild(header_css);
+
+	var cyberpunk_like_glitch_button_css  = document.createElement('link');
+	cyberpunk_like_glitch_button_css.type = 'text/css';
+	cyberpunk_like_glitch_button_css.rel  = 'stylesheet';
+	cyberpunk_like_glitch_button_css.href = '/css/cyberpunk-like-glitch-button.css';
+	document.head.appendChild(cyberpunk_like_glitch_button_css);
 };
 
 loadCSS();
