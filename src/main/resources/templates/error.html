@@ -8,6 +8,7 @@
     <!-- CSS only libs. JS at the end of the page -->
 
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/navigation.css">
     <link rel="stylesheet" href="/css/full-glitch-effect-text.css">
     <link rel="stylesheet" href="/css/horizontal-glitch-effect-text.css">
 
@@ -22,11 +23,10 @@
 
         <!-- To know who the the user is -->
         <h2>You are:
-            <span th:text="*{currentUser}" id="currentUser"></span>
+            <span th:text="*{currentUser}" id="currentUser">Anonymous</span>
         </h2>
 
         <!-- To know where the the user is -->
-
         <h2>You are at:
             <span id="locationsContainer">
                 <span th:each="locations : ${location}" th:text="${locations}" onclick="navigate(this)"></span>
@@ -45,7 +45,7 @@
         <h1 class="error header-options-text" th:text="*{errorMessage}"></h1>
     </header>
     <header class="header-options-text header-grid-container">
-        <h2 class="header-grid-item" onclick="navigate(this)">Authors</h2>
+        <h2 class="header-grid-item" onclick="navigate(this)">Explore</h2>
         <h2 class="header-grid-item" onclick="navigate(this)">Community</h2>
         <h2 class="header-grid-item" onclick="navigate(this)">Create</h2>
         <h2 class="header-grid-item" onclick="navigate(this)">Buy</h2>
@@ -138,10 +138,10 @@
         
         <br>
 
-        <h2>    NEE ANATA WA ITSUMO GENKI WO KURE MASU KA?  </h2>
-        <h2>    OWARI KAKE NO KONO SEKAI DE                 </h2>
-        <h2>    KURAGARI DE KAWASHITA CHIISANA YAKUSOKU GA  </h2>
-        <h2>    WATASHI NOO IKIRUUUUU KATE SAAA             </h2>
+        <h2> NEE ANATA WA ITSUMO GENKI WO KURE MASU KA?  </h2>
+        <h2> OWARI KAKE NO KONO SEKAI DE                 </h2>
+        <h2> KURAGARI DE KAWASHITA CHIISANA YAKUSOKU GA  </h2>
+        <h2> WATASHI NOO IKIRUUUUU KATE SAAA             </h2>
         
         <br>
 
