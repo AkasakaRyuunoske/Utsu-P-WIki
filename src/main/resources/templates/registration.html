@@ -35,9 +35,15 @@
 
 	<div class="main-content-container">
 		<form method = "post" th:action = "@{/registration}" th:object = " ${client}">
-			<input type="text" name="userName" th:field = "${client.userName}">
-			<input type="password" name="password" th:field = "${client.password}">
-			<input type="text" name="email" th:field = "${client.email}">
+			<label for="userName">User Name: </label>
+			<input type="text" name="userName" th:field = "${client.userName}" id="userName">
+
+			<label for="password">Password: </label>
+			<input type="password" name="password" th:field = "${client.password}" id="password">
+
+			<label for="email">Email: </label>
+			<input type="text" name="email" th:field = "${client.email}" id="email">
+
 			<button type="submit">Submit</button>
 		</form>
 	</div>

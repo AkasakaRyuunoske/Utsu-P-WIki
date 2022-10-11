@@ -1,4 +1,4 @@
-package UtsuPWiki.Controller.CustomCMS;
+package UtsuPWiki.Filter.CustomCMS;
 
 import UtsuPWiki.utilities.Navigation;
 import lombok.extern.log4j.Log4j2;
