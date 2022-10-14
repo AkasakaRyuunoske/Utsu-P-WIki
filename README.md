@@ -3,7 +3,7 @@
 </div>
 
 Project fully dedicated to <a href="https://www.youtube.com/c/utsupofficial"> Utsu-P / 鬱P Works </a>.<br>
-And some other Vocaloid Producers.
+
 
 # Features
 1. <a href="#why">Why?</a>
