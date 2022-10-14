@@ -4,12 +4,12 @@
 
 Project fully dedicated to <a href="https://www.youtube.com/c/utsupofficial"> Utsu-P / 鬱P Works </a>.<br>
 
-
-# Features
+# Navigation
 1. <a href="#why">Why?</a>
 2. <a href="#structure">Structure</a>
 3. <a href="#tecnologies-used">Tecnologies used</a>
-4. <a href="#how-to-use">How to use</a>
+4. <a href="#features">Features</a>
+5. <a href="#how-to-use">How to use</a>
 
 # Structure 
 
@@ -38,6 +38,10 @@ The project structure is repeating that of Wikipedia, in terms of:
 10. JS.                     
 10.1. JQuery.<br>
 <br>
+
+<h1 id="features">Features</h1>
+1. JWT tokens Security
+2. Wide configurations
 
 <h1 id="how-to-use"> How to use </h1>
 
