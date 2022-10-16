@@ -1,59 +1,35 @@
 package UtsuPWiki.utilities;
 
 import lombok.extern.log4j.Log4j2;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.context.event.ApplicationReadyEvent;
-import org.springframework.context.event.EventListener;
-import org.springframework.stereotype.Component;
+import org.springframework.boot.context.event.ApplicationEnvironmentPreparedEvent;
+import org.springframework.context.ApplicationListener;
 
 @Log4j2
-@Component
-public class StartUpManager {
-    @Value("${database-helper.populate-database}")
-    private boolean doPopulateDatabase;
+//@Component
+public class StartUpManager implements ApplicationListener<ApplicationEnvironmentPreparedEvent> {
+    FancyWritings fancyWritings = new FancyWritings();
+    DatabaseHelper databaseHelper = new DatabaseHelper();
 
-    @Value("${database-helper.populate-authors}")
-    private boolean doPopulateAuthors;
+    @Override
+    public void onApplicationEvent(ApplicationEnvironmentPreparedEvent event) {
+        String doPopulateDatabase   = event.getEnvironment().getProperty("database-helper.populate-database");
+        String doPopulateAuthors    = event.getEnvironment().getProperty("database-helper.populate-authors");
+        String doPopulateClients    = event.getEnvironment().getProperty("database-helper.populate-clients");
+        String doPopulateComments   = event.getEnvironment().getProperty("database-helper.populate-comments");
+        String doPopulateCountries  = event.getEnvironment().getProperty("database-helper.populate-countries");
+        String doPopulateDelivery   = event.getEnvironment().getProperty("database-helper.populate-delivery");
+        String doPopulateGenres     = event.getEnvironment().getProperty("database-helper.populate-genres");
+        String doPopulateOrders     = event.getEnvironment().getProperty("database-helper.populate-orders");
+        String doPopulateProducts   = event.getEnvironment().getProperty("database-helper.populate-products");
+        String doPopulateTypes      = event.getEnvironment().getProperty("database-helper.populate-types");
+        String doPopulateAll        = event.getEnvironment().getProperty("database-helper.populate-all");
+        String doPrint              = event.getEnvironment().getProperty("fancy-writings.do-print");
 
-    @Value("${database-helper.populate-clients}")
-    private boolean doPopulateClients;
+        manageStartUp(doPrint);
 
-    @Value("${database-helper.populate-comments}")
-    private boolean doPopulateComments;
+        log.info("property is: " + event.getEnvironment().getProperty("database-helper.populate-database"));
 
-    @Value("${database-helper.populate-countries}")
-    private boolean doPopulateCountries;
-
-    @Value("${database-helper.populate-delivery}")
-    private boolean doPopulateDelivery;
-
-    @Value("${database-helper.populate-genres}")
-    private boolean doPopulateGenres;
-
-    @Value("${database-helper.populate-orders}")
-    private boolean doPopulateOrders;
-
-    @Value("${database-helper.populate-products}")
-    private boolean doPopulateProducts;
-    @Value("${database-helper.populate-types}")
-    private boolean doPopulateTypes;
-
-    @Value("${database-helper.populate-all}")
-    private boolean doPopulateAll;
-
-    @Value("${fancy-writings.do-print}")
-    private boolean doPrint;
-
-    @Autowired
-    FancyWritings fancyWritings;
-
-    @Autowired
-    DatabaseHelper databaseHelper;
-
-    @EventListener(ApplicationReadyEvent.class)
-    public void manageStartUp(){
-        fancyWritings.printMotivationalThingOnStartUp(doPrint);
         databaseHelper.populateDatabase(
                 doPopulateDatabase,
                 doPopulateAuthors,
@@ -67,5 +43,12 @@ public class StartUpManager {
                 doPopulateTypes,
                 doPopulateAll);
 
+        log.info("still here");
+    }
+
+//    @EventListener(ApplicationEnvironmentPreparedEvent.class)
+    public void manageStartUp(String doPrint){
+        log.info("started here");
+        fancyWritings.printMotivationalThingOnStartUp(doPrint);
     }
 }
