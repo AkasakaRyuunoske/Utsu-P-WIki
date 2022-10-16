@@ -4,11 +4,13 @@ import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Component;
 
 @Log4j2
-@Component
+//@Component
 public class FancyWritings {
 
-    public void printMotivationalThingOnStartUp(boolean doPrint) {
-        if (doPrint) {
+    public void printMotivationalThingOnStartUp(String doPrint) {
+        log.info("is allowed to print. ");
+        log.info("is " + doPrint);
+        if (doPrint.equals("true")) {
             log.info("\n" + "\n" +
                     "\"Воля может и должна быть предметом гордости гораздо больше, нежели талант.\n" +
                     " Если талант — это развитие природных склонностей, \n" +
