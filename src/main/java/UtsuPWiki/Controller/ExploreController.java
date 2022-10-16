@@ -10,16 +10,16 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import javax.servlet.http.HttpServletRequest;
+import java.io.File;
+import java.io.IOException;
 
 @Log4j2
 @Controller
 public class ExploreController {
     @Autowired
     TypesRepository typesRepository;
-
     @Autowired
     GenresRepository genresRepository;
-
     @GetMapping("/explore")
     public String GETExplore(Model model, HttpServletRequest request){
         Navigation.addLocations(model, request);
@@ -30,7 +30,6 @@ public class ExploreController {
 
         model.addAttribute("typesList", typesList);
         model.addAttribute("genresList", genresList);
-
 
         return "explore";
     }
