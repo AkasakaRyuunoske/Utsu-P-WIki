@@ -12,6 +12,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class UtsuPApplication {
 	public static void main(String[] args) {
 //		SpringApplication.run(UtsuPApplication.class, args);
+		log.info("Yume wo mite masu ka?");
 		ConfigurableApplicationContext context = new SpringApplicationBuilder(UtsuPApplication.class)
 				.listeners(new StartUpManager()).run();
 	}
