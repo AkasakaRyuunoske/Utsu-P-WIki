@@ -7,7 +7,8 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 var player;
 var follow = false;
-var timer = setTimeout(() => follow_player_time, 500);
+var promise_time = 500; // more than 500 is going to take too much CPU resources
+var timer = setTimeout(() => follow_player_time, promise_time);
 var the_dying_message_lyrics_box = document.getElementById("the_dying_message_lyrics_box");
 
 function follow_player_time() {
@@ -156,7 +157,7 @@ function follow_player_time() {
   }
 
   if (follow) {
-    timer = setTimeout(follow_player_time, 500);
+    timer = setTimeout(follow_player_time, promise_time);
   }
 }
 
