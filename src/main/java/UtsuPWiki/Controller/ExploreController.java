@@ -10,12 +10,19 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import javax.servlet.http.HttpServletRequest;
-import java.io.File;
-import java.io.IOException;
 
 @Log4j2
 @Controller
 public class ExploreController {
+
+    /**
+     *  Second by importance page (after main page). Provides user with some tools
+     *  to help them in searching the author they were searching for.
+     *
+     *  At least for now only responds to GET /explore and other than predefined html data
+     *  adds Types and Genres as hyperlink attributes.
+     *
+     * */
     @Autowired
     TypesRepository typesRepository;
     @Autowired
@@ -24,13 +31,15 @@ public class ExploreController {
     public String GETExplore(Model model, HttpServletRequest request){
         Navigation.addLocations(model, request);
 
-        String [] typesList = typesRepository.getAllTypesNames();
-
+        // Getting types and genres from database to display them on the model
+        String [] typesList  = typesRepository.getAllTypesNames();
         String [] genresList = genresRepository.getAllGenresNames();
 
+        // Adding types and genres on the model
         model.addAttribute("typesList", typesList);
         model.addAttribute("genresList", genresList);
 
+        // Returns explore.html with new attributes
         return "explore";
     }
 }
