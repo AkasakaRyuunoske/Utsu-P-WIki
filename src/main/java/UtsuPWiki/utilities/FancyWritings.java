@@ -8,8 +8,7 @@ import org.springframework.stereotype.Component;
 public class FancyWritings {
 
     public void printMotivationalThingOnStartUp(String doPrint) {
-        log.info("is allowed to print. ");
-        log.info("is " + doPrint);
+        log.info("is allowed to print? " + doPrint);
         if (doPrint.equals("true")) {
             log.info("\n" + "\n" +
                     "\"Воля может и должна быть предметом гордости гораздо больше, нежели талант.\n" +
