@@ -2,7 +2,7 @@ package UtsuPWiki;
 
 import UtsuPWiki.utilities.StartUpManager;
 import lombok.extern.log4j.Log4j2;
-import org.springframework.boot.SpringApplication;
+//import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -11,8 +11,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 @SpringBootApplication
 public class UtsuPApplication {
 	public static void main(String[] args) {
-//		SpringApplication.run(UtsuPApplication.class, args);
-		log.info("Yume wo mite masu ka?");
+//		SpringApplication.run(UtsuPApplication.class, args); //Default SpringApplication call, might be useful
 		ConfigurableApplicationContext context = new SpringApplicationBuilder(UtsuPApplication.class)
 				.listeners(new StartUpManager()).run();
 	}
