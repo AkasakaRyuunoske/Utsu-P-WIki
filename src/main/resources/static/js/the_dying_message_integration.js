@@ -33,7 +33,7 @@ function follow_player_time() {
     break;
 
     case (player.playerInfo.currentTime >= 24 && player.playerInfo.currentTime < 26.5):
-    the_dying_message_lyrics_box.innerHTML = "Kakumei ho okoshite yo";
+    the_dying_message_lyrics_box.innerHTML = "Kakumei wo okoshite yo";
     break;
 
     case (player.playerInfo.currentTime >= 28 && player.playerInfo.currentTime < 29.5):
@@ -41,11 +41,11 @@ function follow_player_time() {
     break;
 
     case (player.playerInfo.currentTime >= 30 && player.playerInfo.currentTime < 31):
-    the_dying_message_lyrics_box.innerHTML = "fuante nantei";
+    the_dying_message_lyrics_box.innerHTML = "fuan nante";
     break;
 
     case (player.playerInfo.currentTime >= 31 && player.playerInfo.currentTime < 33.5):
-    the_dying_message_lyrics_box.innerHTML = "kankani kiechate";
+    the_dying_message_lyrics_box.innerHTML = "kankan ni kiechatte";
     break;
 
     case (player.playerInfo.currentTime >= 33.5 && player.playerInfo.currentTime < 35):
@@ -53,11 +53,11 @@ function follow_player_time() {
     break;
 
     case (player.playerInfo.currentTime >= 35 && player.playerInfo.currentTime < 36):
-    the_dying_message_lyrics_box.innerHTML = "hi terasu";
+    the_dying_message_lyrics_box.innerHTML = "hi terasu,";
     break;
 
     case (player.playerInfo.currentTime >= 36.5 && player.playerInfo.currentTime < 39):
-    the_dying_message_lyrics_box.innerHTML = "sono mukou hee";
+    the_dying_message_lyrics_box.innerHTML = ",sono mukou hee";
     break;
 
     case (player.playerInfo.currentTime >= 40 && player.playerInfo.currentTime < 41):
@@ -109,48 +109,173 @@ function follow_player_time() {
     break;
 
     case (player.playerInfo.currentTime >= 68 && player.playerInfo.currentTime < 70):
-    the_dying_message_lyrics_box.innerHTML = "YAOKE MAE NO UREI";
+    the_dying_message_lyrics_box.innerHTML = "YOAKE MAE NO UREI";
     break;
 
     case (player.playerInfo.currentTime >= 70.5 && player.playerInfo.currentTime < 72):
     the_dying_message_lyrics_box.innerHTML = "TAEGATAI KODOKU";
     break;
 
-    case (player.playerInfo.currentTime >= 74 && player.playerInfo.currentTime < 76.5):
-    the_dying_message_lyrics_box.innerHTML = "AWAI OMOI TO";
+    case (player.playerInfo.currentTime >= 73 && player.playerInfo.currentTime < 75):
+    the_dying_message_lyrics_box.innerHTML = "AWAI OMOI TO SEKIBAKU";
     break;
 
-    case (player.playerInfo.currentTime >= 76.5 && player.playerInfo.currentTime < 78):
+    case (player.playerInfo.currentTime >= 76.5 && player.playerInfo.currentTime < 77):
     the_dying_message_lyrics_box.innerHTML = "WO";
     break;
 
-    case (player.playerInfo.currentTime >= 78 && player.playerInfo.currentTime < 79):
+    case (player.playerInfo.currentTime >= 77.5 && player.playerInfo.currentTime < 79):
     the_dying_message_lyrics_box.innerHTML = "DAITAAAAAAAAA";
     break;
 
-    case (player.playerInfo.currentTime >= 63.5 && player.playerInfo.currentTime < 66):
-    the_dying_message_lyrics_box.innerHTML = "OWARI KAKE NO KONO";
+    case (player.playerInfo.currentTime >= 97 && player.playerInfo.currentTime < 100):
+    the_dying_message_lyrics_box.innerHTML = "Senmei na dangan no kioku ni";
     break;
 
-    case (player.playerInfo.currentTime >= 63.5 && player.playerInfo.currentTime < 66):
-    the_dying_message_lyrics_box.innerHTML = "OWARI KAKE NO KONO";
+    case (player.playerInfo.currentTime >= 101 && player.playerInfo.currentTime < 104):
+    the_dying_message_lyrics_box.innerHTML = "Dare mo ga hi yotte wa";
     break;
 
-    case (player.playerInfo.currentTime >= 63.5 && player.playerInfo.currentTime < 66):
-    the_dying_message_lyrics_box.innerHTML = "OWARI KAKE NO KONO";
+    case (player.playerInfo.currentTime >= 105.5 && player.playerInfo.currentTime < 107):
+    the_dying_message_lyrics_box.innerHTML = "DAIIPO GA DE NAI";
     break;
 
-    case (player.playerInfo.currentTime >= 63.5 && player.playerInfo.currentTime < 66):
-    the_dying_message_lyrics_box.innerHTML = "OWARI KAKE NO KONO";
+    case (player.playerInfo.currentTime >= 108 && player.playerInfo.currentTime < 110):
+    the_dying_message_lyrics_box.innerHTML = "Anzen wa kankan ni kiechate";
     break;
 
-    case (player.playerInfo.currentTime >= 63.5 && player.playerInfo.currentTime < 66):
-    the_dying_message_lyrics_box.innerHTML = "OWARI KAKE NO KONO";
+    case (player.playerInfo.currentTime >= 111 && player.playerInfo.currentTime < 113.5):
+    the_dying_message_lyrics_box.innerHTML = "Akueikyou oyoboshi ta,";
     break;
 
-    case (player.playerInfo.currentTime >= 63.5 && player.playerInfo.currentTime < 66):
-    the_dying_message_lyrics_box.innerHTML = "OWARI KAKE NO KONO";
+    case (player.playerInfo.currentTime >= 114 && player.playerInfo.currentTime < 115.5):
+    the_dying_message_lyrics_box.innerHTML = "Boku no kokoro he";
     break;
+    
+    case (player.playerInfo.currentTime >= 116 && player.playerInfo.currentTime < 118):
+    the_dying_message_lyrics_box.innerHTML = "Nagai ame ga yami";
+    break;
+    
+    case (player.playerInfo.currentTime >= 118 && player.playerInfo.currentTime < 120):
+    the_dying_message_lyrics_box.innerHTML = "Atsui hizashi ga";
+    break;
+    
+    case (player.playerInfo.currentTime >= 122 && player.playerInfo.currentTime < 123.5):
+    the_dying_message_lyrics_box.innerHTML = "Tearsu ookina senaka woooo";
+    break;
+
+    case (player.playerInfo.currentTime >= 124 && player.playerInfo.currentTime < 125):
+    the_dying_message_lyrics_box.innerHTML = "WOOOOOOO";
+    break;
+    
+    case (player.playerInfo.currentTime >= 125 && player.playerInfo.currentTime < 129):
+    the_dying_message_lyrics_box.innerHTML = "NEE ANATA WA ITSUMO YUME WO MITE MASU KA?";
+    break;
+    
+    case (player.playerInfo.currentTime >= 130 && player.playerInfo.currentTime < 134):
+    the_dying_message_lyrics_box.innerHTML = "OWARI KAKE NO KONO SEKAI DE";
+    break;
+    
+    case (player.playerInfo.currentTime >= 135 && player.playerInfo.currentTime < 137.5):
+    the_dying_message_lyrics_box.innerHTML = "FUSAGA RE TA MICHI WO";
+    break;
+    
+    case (player.playerInfo.currentTime >= 138 && player.playerInfo.currentTime < 140):
+    the_dying_message_lyrics_box.innerHTML = "HIRAKU MONO NI NARU";
+    break;
+    
+    case (player.playerInfo.currentTime >= 140.5 && player.playerInfo.currentTime < 145):
+    the_dying_message_lyrics_box.innerHTML = "'MESSEJII' WO IDAITE TA TSRAI YOO";
+    break;
+    
+    case (player.playerInfo.currentTime >= 164 && player.playerInfo.currentTime < 66):
+    the_dying_message_lyrics_box.innerHTML = " boku no kokoro he";
+    break;
+    
+    case (player.playerInfo.currentTime >= 63.5 && player.playerInfo.currentTime < 66):
+    the_dying_message_lyrics_box.innerHTML = " boku no kokoro he";
+    break;
+    
+    case (player.playerInfo.currentTime >= 63.5 && player.playerInfo.currentTime < 66):
+    the_dying_message_lyrics_box.innerHTML = " boku no kokoro he";
+    break;
+    
+    case (player.playerInfo.currentTime >= 63.5 && player.playerInfo.currentTime < 66):
+    the_dying_message_lyrics_box.innerHTML = " boku no kokoro he";
+    break;
+    
+    case (player.playerInfo.currentTime >= 63.5 && player.playerInfo.currentTime < 66):
+    the_dying_message_lyrics_box.innerHTML = " boku no kokoro he";
+    break;
+    
+    case (player.playerInfo.currentTime >= 63.5 && player.playerInfo.currentTime < 66):
+    the_dying_message_lyrics_box.innerHTML = " boku no kokoro he";
+    break;
+    
+    case (player.playerInfo.currentTime >= 63.5 && player.playerInfo.currentTime < 66):
+    the_dying_message_lyrics_box.innerHTML = " boku no kokoro he";
+    break;
+    
+    case (player.playerInfo.currentTime >= 63.5 && player.playerInfo.currentTime < 66):
+    the_dying_message_lyrics_box.innerHTML = " boku no kokoro he";
+    break;
+    
+    case (player.playerInfo.currentTime >= 63.5 && player.playerInfo.currentTime < 66):
+    the_dying_message_lyrics_box.innerHTML = " boku no kokoro he";
+    break;
+    
+    case (player.playerInfo.currentTime >= 63.5 && player.playerInfo.currentTime < 66):
+    the_dying_message_lyrics_box.innerHTML = " boku no kokoro he";
+    break;
+    
+    case (player.playerInfo.currentTime >= 63.5 && player.playerInfo.currentTime < 66):
+    the_dying_message_lyrics_box.innerHTML = " boku no kokoro he";
+    break;
+    
+    case (player.playerInfo.currentTime >= 63.5 && player.playerInfo.currentTime < 66):
+    the_dying_message_lyrics_box.innerHTML = " boku no kokoro he";
+    break;
+    
+    case (player.playerInfo.currentTime >= 63.5 && player.playerInfo.currentTime < 66):
+    the_dying_message_lyrics_box.innerHTML = " boku no kokoro he";
+    break;
+    
+    case (player.playerInfo.currentTime >= 63.5 && player.playerInfo.currentTime < 66):
+    the_dying_message_lyrics_box.innerHTML = " boku no kokoro he";
+    break;
+    
+    case (player.playerInfo.currentTime >= 63.5 && player.playerInfo.currentTime < 66):
+    the_dying_message_lyrics_box.innerHTML = " boku no kokoro he";
+    break;
+    
+    case (player.playerInfo.currentTime >= 63.5 && player.playerInfo.currentTime < 66):
+    the_dying_message_lyrics_box.innerHTML = " boku no kokoro he";
+    break;
+    
+    case (player.playerInfo.currentTime >= 63.5 && player.playerInfo.currentTime < 66):
+    the_dying_message_lyrics_box.innerHTML = " boku no kokoro he";
+    break;
+    
+    case (player.playerInfo.currentTime >= 63.5 && player.playerInfo.currentTime < 66):
+    the_dying_message_lyrics_box.innerHTML = " boku no kokoro he";
+    break;
+    
+    case (player.playerInfo.currentTime >= 63.5 && player.playerInfo.currentTime < 66):
+    the_dying_message_lyrics_box.innerHTML = " boku no kokoro he";
+    break;
+    
+    case (player.playerInfo.currentTime >= 63.5 && player.playerInfo.currentTime < 66):
+    the_dying_message_lyrics_box.innerHTML = " boku no kokoro he";
+    break;
+    
+    case (player.playerInfo.currentTime >= 63.5 && player.playerInfo.currentTime < 66):
+    the_dying_message_lyrics_box.innerHTML = " boku no kokoro he";
+    break;
+    
+    case (player.playerInfo.currentTime >= 63.5 && player.playerInfo.currentTime < 66):
+    the_dying_message_lyrics_box.innerHTML = " boku no kokoro he";
+    break;
+
 
     default:
     the_dying_message_lyrics_box.innerHTML = "tu tutu tutu tutuTU";
