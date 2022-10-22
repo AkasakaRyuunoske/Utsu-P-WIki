@@ -96,7 +96,7 @@ function follow_player_time() {
     the_dying_message_lyrics_box.innerHTML = "Kakumei wo okoshite yo";
     break;
 
-    case (player.playerInfo.currentTime >= 28 && player.playerInfo.currentTime < 29.5):
+    case (player.playerInfo.currentTime >= 27 && player.playerInfo.currentTime < 29.5):
     the_dying_message_lyrics_box.innerHTML = "'Ai' ga seikai ni nare";
     break;
 
@@ -112,11 +112,11 @@ function follow_player_time() {
     the_dying_message_lyrics_box.innerHTML = "hakumei no";
     break;
 
-    case (player.playerInfo.currentTime >= 35 && player.playerInfo.currentTime < 36):
+    case (player.playerInfo.currentTime >= 35 && player.playerInfo.currentTime < 36.5):
     the_dying_message_lyrics_box.innerHTML = "hi terasu,";
     break;
 
-    case (player.playerInfo.currentTime >= 36.5 && player.playerInfo.currentTime < 39):
+    case (player.playerInfo.currentTime >= 36.5 && player.playerInfo.currentTime < 39.5):
     the_dying_message_lyrics_box.innerHTML = ",sono mukou hee";
     break;
 
@@ -124,7 +124,7 @@ function follow_player_time() {
     the_dying_message_lyrics_box.innerHTML = "Kiroku mo";
     break;
 
-    case (player.playerInfo.currentTime >= 41 && player.playerInfo.currentTime < 42):
+    case (player.playerInfo.currentTime >= 41 && player.playerInfo.currentTime < 42.5):
     the_dying_message_lyrics_box.innerHTML = "kioku mo";
     break;
 
@@ -144,7 +144,7 @@ function follow_player_time() {
     the_dying_message_lyrics_box.innerHTML = "Nagai yoru wo oe";
     break;
 
-    case (player.playerInfo.currentTime >= 52 && player.playerInfo.currentTime < 54):
+    case (player.playerInfo.currentTime >= 51.5 && player.playerInfo.currentTime < 54):
     the_dying_message_lyrics_box.innerHTML = "asayake wo mita";
     break;
 
@@ -160,7 +160,7 @@ function follow_player_time() {
     the_dying_message_lyrics_box.innerHTML = "INAKU NARI MASU KA?";
     break;
 
-    case (player.playerInfo.currentTime >= 63.5 && player.playerInfo.currentTime < 67):
+    case (player.playerInfo.currentTime >= 63 && player.playerInfo.currentTime < 67):
     the_dying_message_lyrics_box.innerHTML = "OWARI KAKE NO KONO";
     break;
 
@@ -192,11 +192,11 @@ function follow_player_time() {
     the_dying_message_lyrics_box.innerHTML = "Senmei na dangan no kioku ni";
     break;
 
-    case (player.playerInfo.currentTime >= 101 && player.playerInfo.currentTime < 104.5):
+    case (player.playerInfo.currentTime >= 101 && player.playerInfo.currentTime < 104):
     the_dying_message_lyrics_box.innerHTML = "Dare mo ga hi yotte wa";
     break;
 
-    case (player.playerInfo.currentTime >= 105 && player.playerInfo.currentTime < 107):
+    case (player.playerInfo.currentTime >= 104 && player.playerInfo.currentTime < 107):
     the_dying_message_lyrics_box.innerHTML = "DAIIPO GA DE NAI";
     break;
 
@@ -208,7 +208,7 @@ function follow_player_time() {
     the_dying_message_lyrics_box.innerHTML = "Akueikyou oyoboshi ta,";
     break;
 
-    case (player.playerInfo.currentTime >= 114 && player.playerInfo.currentTime < 115.5):
+    case (player.playerInfo.currentTime >= 113.5 && player.playerInfo.currentTime < 115.5):
     the_dying_message_lyrics_box.innerHTML = "Boku no kokoro he";
     break;
     
@@ -224,7 +224,7 @@ function follow_player_time() {
     the_dying_message_lyrics_box.innerHTML = "Tearsu ookina senaka woooo";
     break;
 
-    case (player.playerInfo.currentTime >= 124 && player.playerInfo.currentTime < 125):
+    case (player.playerInfo.currentTime >= 123.5 && player.playerInfo.currentTime < 125):
     the_dying_message_lyrics_box.innerHTML = "WOOOOOOO";
     break;
     
@@ -245,7 +245,7 @@ function follow_player_time() {
     break;
     
     case (player.playerInfo.currentTime >= 140 && player.playerInfo.currentTime < 145):
-    the_dying_message_lyrics_box.innerHTML = "'MESSEJII' WO IDAITE TA TSRAI YOO";
+    the_dying_message_lyrics_box.innerHTML = "'MESSEJII' WO IDA ITE TA TSURAI YOO";
     break;
     
     case (player.playerInfo.currentTime >= 164 && player.playerInfo.currentTime < 166.5):
@@ -276,10 +276,6 @@ function follow_player_time() {
     the_dying_message_lyrics_box.innerHTML = "KAZE NI NATTAAAAAAAAAA";
     break;
     
-    // case (player.playerInfo.currentTime >= 182 && player.playerInfo.currentTime < 66):
-    // the_dying_message_lyrics_box.innerHTML = "DOOOOUKOOOOOOOOOOOOOOOO";
-    // break;
-    
     case (player.playerInfo.currentTime >= 182 && player.playerInfo.currentTime < 183):
     the_dying_message_lyrics_box.innerHTML = "DOU";
     break;
@@ -300,7 +296,7 @@ function follow_player_time() {
     the_dying_message_lyrics_box.innerHTML = "SEKI";
     break;
     
-    case (player.playerInfo.currentTime >= 194 && player.playerInfo.currentTime < 195):
+    case (player.playerInfo.currentTime >= 193 && player.playerInfo.currentTime < 195):
     the_dying_message_lyrics_box.innerHTML = "SEKIBA";
     break;
     
@@ -365,7 +361,7 @@ function follow_player_time() {
     break;
     
     case (player.playerInfo.currentTime >= 247 && player.playerInfo.currentTime < 251.5):
-    the_dying_message_lyrics_box.innerHTML = "saegiru kage mono nienu kara";
+    the_dying_message_lyrics_box.innerHTML = "saegiru kage mono mienu kara";
     break;
     
     case (player.playerInfo.currentTime >= 251.5 && player.playerInfo.currentTime < 254):
@@ -379,8 +375,8 @@ function follow_player_time() {
     case (player.playerInfo.currentTime >= 257 && player.playerInfo.currentTime < 261):
     the_dying_message_lyrics_box.innerHTML = "'Muika' no taoru tare ta wo daita";
     break;
-
-    case (player.playerInfo.currentTime >= 270 && player.playerInfo.currentTime < 274):
+ы
+    case (player.playerInfo.currentTime >= 270 && player.playerInfo.currentTime < 276):
     the_dying_message_lyrics_box.innerHTML = "Utsu-P - The Dying Message";
     break;
     
