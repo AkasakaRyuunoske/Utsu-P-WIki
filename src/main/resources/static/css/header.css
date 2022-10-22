@@ -10,7 +10,7 @@
 	color: white;
 
 	/* giving off a glow */
-	filter: drop-shadow(0 1px 3px); 
+	filter: drop-shadow(0 0.1vw 1.5vw);
 	font-family: "Old English Text MT";
 }
 
