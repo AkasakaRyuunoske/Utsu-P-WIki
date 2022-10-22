@@ -1,7 +1,6 @@
 package UtsuPWiki.utilities;
 
 import lombok.extern.log4j.Log4j2;
-import org.springframework.stereotype.Component;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -15,7 +14,6 @@ import java.io.IOException;
  * */
 
 @Log4j2
-//@Component
 public class DatabaseHelper {
     public void populateDatabase(
             String doPopulateDatabase,
@@ -50,6 +48,8 @@ public class DatabaseHelper {
             try {
                 // file data.sql created earlier is now picked by fileWriter
                 FileWriter data_sqlWriter = new FileWriter("src/main/resources/data.sql");
+
+                // Every configuration property is controlled one by one
 
                 if (doPopulateAuthors.equals("true") || doPopulateAll.equals("true")) {
                     data_sqlWriter.write("INSERT INTO Authors(id, author_pseudonym, date_of_birth, last_name, name, total_masterpieces, country_id_fk, additional_info, main_genre, main_type) VALUES(2, \"Utsu-P\", \"December/01/1990\", \"Unknown\", \"Unknown\", 7, 1, \"Very little is known about this guy\", 1, 1);\n \n");
