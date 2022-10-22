@@ -1,6 +1,7 @@
 package UtsuPWiki.utilities;
 
 import lombok.extern.log4j.Log4j2;
+import org.springframework.stereotype.Component;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -14,6 +15,7 @@ import java.io.IOException;
  * */
 
 @Log4j2
+//@Component
 public class DatabaseHelper {
     public void populateDatabase(
             String doPopulateDatabase,
@@ -49,10 +51,35 @@ public class DatabaseHelper {
                 // file data.sql created earlier is now picked by fileWriter
                 FileWriter data_sqlWriter = new FileWriter("src/main/resources/data.sql");
 
-                // Every configuration property is controlled one by one
+                if (doPopulateCountries.equals("true") || doPopulateAll.equals("true")) {
+
+                    data_sqlWriter.write("INSERT INTO Countries(id, description, name) VALUES(1,\"none\",\"Japan\");    \n");
+                    data_sqlWriter.write("INSERT INTO Countries(id, description, name) VALUES(2,\"none\",\"Italy\");    \n");
+                    data_sqlWriter.write("INSERT INTO Countries(id, description, name) VALUES(3,\"none\",\"America\");  \n");
+                    data_sqlWriter.write("INSERT INTO Countries(id, description, name) VALUES(4,\"none\",\"Ukraine\");  \n \n");
+
+                    log.info("Countries have been populated");
+                }
+
+                if (doPopulateTypes.equals("true") || doPopulateAll.equals("true")) {
+                    data_sqlWriter.write("INSERT INTO Types(id, description, name) VALUES(1,\"Mostly vocaloid \", \"Music\"); \n");
+                    data_sqlWriter.write("INSERT INTO Types(id, description, name) VALUES(2,\"none \", \"Manga\"); \n");
+                    data_sqlWriter.write("INSERT INTO Types(id, description, name) VALUES(3,\"none \", \"Anime\"); \n");
+                    data_sqlWriter.write("INSERT INTO Types(id, description, name) VALUES(4,\"none \", \"Games\"); \n");
+                    data_sqlWriter.write("INSERT INTO Types(id, description, name) VALUES(5,\"none \", \"Programming\"); \n \n");
+
+                    log.info("Types have been populated");
+                }
+
+                if (doPopulateGenres.equals("true") || doPopulateAll.equals("true")) {
+                    data_sqlWriter.write("INSERT INTO Genres(id, description, name) VALUES(1,\"The shit that only Utsu does well \", \"Vocaloid-Metal\"); \n");
+                    data_sqlWriter.write("INSERT INTO Genres(id, description, name) VALUES(2,\"none \", \"Vocaloid\"); \n \n");
+
+                    log.info("Genres have been populated");
+                }
 
                 if (doPopulateAuthors.equals("true") || doPopulateAll.equals("true")) {
-                    data_sqlWriter.write("INSERT INTO Authors(id, author_pseudonym, date_of_birth, last_name, name, total_masterpieces, country_id_fk, additional_info, main_genre, main_type) VALUES(2, \"Utsu-P\", \"December/01/1990\", \"Unknown\", \"Unknown\", 7, 1, \"Very little is known about this guy\", 1, 1);\n \n");
+                    data_sqlWriter.write("INSERT INTO Authors(id, author_pseudonym, date_of_birth, last_name, name, total_masterpieces, country_id_fk, additional_info, main_genre, main_type) VALUES(1, \"Utsu-P\", \"December/01/1990\", \"Unknown\", \"Unknown\", 7, 1, \"Very little is known about this guy\", 1, 1);\n \n");
                     log.info("Authors have been populated");
                 }
 
@@ -68,25 +95,8 @@ public class DatabaseHelper {
                     log.info("Comments have been populated");
                 }
 
-                if (doPopulateCountries.equals("true") || doPopulateAll.equals("true")) {
-
-                    data_sqlWriter.write("INSERT INTO Countries(id, description, name) VALUES(1,\"none\",\"Japan\")    \n");
-                    data_sqlWriter.write("INSERT INTO Countries(id, description, name) VALUES(2,\"none\",\"Italy\")    \n");
-                    data_sqlWriter.write("INSERT INTO Countries(id, description, name) VALUES(3,\"none\",\"America\")  \n");
-                    data_sqlWriter.write("INSERT INTO Countries(id, description, name) VALUES(4,\"none\",\"Ukraine\")  \n \n");
-
-                    log.info("Countries have been populated");
-                }
-
                 if (doPopulateDelivery.equals("true") || doPopulateAll.equals("true")) {
                     log.info("Delivery have been populated");
-                }
-
-                if (doPopulateGenres.equals("true") || doPopulateAll.equals("true")) {
-                    data_sqlWriter.write("INSERT INTO Genres(id, description, name) VALUES(1,\"The shit that only Utsu does well \", \"Vocaloid-Metal\") \n");
-                    data_sqlWriter.write("INSERT INTO Genres(id, description, name) VALUES(2,\"none \", \"Vocaloid\") \n \n");
-
-                    log.info("Genres have been populated");
                 }
 
                 if (doPopulateOrders.equals("true") || doPopulateAll.equals("true")) {
@@ -94,29 +104,19 @@ public class DatabaseHelper {
                 }
 
                 if (doPopulateProducts.equals("true") || doPopulateAll.equals("true")) {
-                    data_sqlWriter.write("INSERT INTO Products(id, cost, product_name, quantity, genres_id_fk, date_out, author_id_fk, types_id_fk, product_image) VALUES(1, 9.49, \"Utsu-P - Diarrhea\", 0, 1, \"15/11/2009\", 1, 1, \"https://yt3.ggpht.com/ytc/AKedOLSZDJ0kM5zXdip49BsNbamj_FTTfIZRpy_CU6ATrg=s900-c-k-c0x00ffffff-no-rj\")\n");
-                    data_sqlWriter.write("INSERT INTO Products(id, cost, product_name, quantity, genres_id_fk, date_out, author_id_fk, types_id_fk, product_image) VALUES(2, 9.49, \"Utsu-P - Traumatic\", 0, 1, \"14/11/2010\", 1, 1, \"https://yt3.ggpht.com/ytc/AKedOLSZDJ0kM5zXdip49BsNbamj_FTTfIZRpy_CU6ATrg=s900-c-k-c0x00ffffff-no-rj\")\n");
-                    data_sqlWriter.write("INSERT INTO Products(id, cost, product_name, quantity, genres_id_fk, date_out, author_id_fk, types_id_fk, product_image) VALUES(3, 8.99, \"Utsu-P - Moksha\", 0, 1, \"30/04/2012\", 1, 1, \"https://yt3.ggpht.com/ytc/AKedOLSZDJ0kM5zXdip49BsNbamj_FTTfIZRpy_CU6ATrg=s900-c-k-c0x00ffffff-no-rj\")\n");
-                    data_sqlWriter.write("INSERT INTO Products(id, cost, product_name, quantity, genres_id_fk, date_out, author_id_fk, types_id_fk, product_image) VALUES(4, 10.99, \"Utsu-P - CD-R\", 0, 1, \"07/07/2013\", 1, 1, \"https://yt3.ggpht.com/ytc/AKedOLSZDJ0kM5zXdip49BsNbamj_FTTfIZRpy_CU6ATrg=s900-c-k-c0x00ffffff-no-rj\")\n");
-                    data_sqlWriter.write("INSERT INTO Products(id, cost, product_name, quantity, genres_id_fk, date_out, author_id_fk, types_id_fk, product_image) VALUES(5, 20.60, \"Utsu-P - Warufuzake\", 0, 1, \"07/08/2013\", 1, 1, \"https://yt3.ggpht.com/ytc/AKedOLSZDJ0kM5zXdip49BsNbamj_FTTfIZRpy_CU6ATrg=s900-c-k-c0x00ffffff-no-rj\")\n");
-                    data_sqlWriter.write("INSERT INTO Products(id, cost, product_name, quantity, genres_id_fk, date_out, author_id_fk, types_id_fk, product_image) VALUES(6, 9.49, \"Utsu-P - Algorithm\", 0, 1, \"17/08/2014\", 1, 1, \"https://yt3.ggpht.com/ytc/AKedOLSZDJ0kM5zXdip49BsNbamj_FTTfIZRpy_CU6ATrg=s900-c-k-c0x00ffffff-no-rj\")\n");
-                    data_sqlWriter.write("INSERT INTO Products(id, cost, product_name, quantity, genres_id_fk, date_out, author_id_fk, types_id_fk, product_image) VALUES(7, 9.49, \"Utsu-P - Post-Traumatic-Stress-Disorder\", 0, 1, \"10/08/2016\", 1, 1, \"https://yt3.ggpht.com/ytc/AKedOLSZDJ0kM5zXdip49BsNbamj_FTTfIZRpy_CU6ATrg=s900-c-k-c0x00ffffff-no-rj\")\n");
-                    data_sqlWriter.write("INSERT INTO Products(id, cost, product_name, quantity, genres_id_fk, date_out, author_id_fk, types_id_fk, product_image) VALUES(8, 7.92, \"Utsu-P - Galapagos\", 0, 1, \"11/08/2017\", 1, 1, \"https://yt3.ggpht.com/ytc/AKedOLSZDJ0kM5zXdip49BsNbamj_FTTfIZRpy_CU6ATrg=s900-c-k-c0x00ffffff-no-rj\")\n");
-                    data_sqlWriter.write("INSERT INTO Products(id, cost, product_name, quantity, genres_id_fk, date_out, author_id_fk, types_id_fk, product_image) VALUES(9, 9.49, \"Utsu-P - Greatest Shits\", 0, 1, \"10/08/2018\", 1, 1, \"https://yt3.ggpht.com/ytc/AKedOLSZDJ0kM5zXdip49BsNbamj_FTTfIZRpy_CU6ATrg=s900-c-k-c0x00ffffff-no-rj\")\n");
-                    data_sqlWriter.write("INSERT INTO Products(id, cost, product_name, quantity, genres_id_fk, date_out, author_id_fk, types_id_fk, product_image) VALUES(10, 7.92, \"Utsu-P - Renaissance\", 0, 1, \"10/08/2019\", 1, 1, \"https://yt3.ggpht.com/ytc/AKedOLSZDJ0kM5zXdip49BsNbamj_FTTfIZRpy_CU6ATrg=s900-c-k-c0x00ffffff-no-rj\")\n");
-                    data_sqlWriter.write("INSERT INTO Products(id, cost, product_name, quantity, genres_id_fk, date_out, author_id_fk, types_id_fk, product_image) VALUES(11, 9.49, \"Utsu-P - Unique\", 0, 1, \"23/10/2021\", 1, 1, \"https://yt3.ggpht.com/ytc/AKedOLSZDJ0kM5zXdip49BsNbamj_FTTfIZRpy_CU6ATrg=s900-c-k-c0x00ffffff-no-rj\")\n \n");
+                    data_sqlWriter.write("INSERT INTO Products(id, cost, product_name, quantity, genres_id_fk, date_out, author_id_fk, types_id_fk, product_image) VALUES(1, 9.49, \"Utsu-P - Diarrhea\", 0, 1, \"15/11/2009\", 1, 1, \"https://yt3.ggpht.com/ytc/AKedOLSZDJ0kM5zXdip49BsNbamj_FTTfIZRpy_CU6ATrg=s900-c-k-c0x00ffffff-no-rj\");                      \n");
+                    data_sqlWriter.write("INSERT INTO Products(id, cost, product_name, quantity, genres_id_fk, date_out, author_id_fk, types_id_fk, product_image) VALUES(2, 9.49, \"Utsu-P - Traumatic\", 0, 1, \"14/11/2010\", 1, 1, \"https://yt3.ggpht.com/ytc/AKedOLSZDJ0kM5zXdip49BsNbamj_FTTfIZRpy_CU6ATrg=s900-c-k-c0x00ffffff-no-rj\");                     \n");
+                    data_sqlWriter.write("INSERT INTO Products(id, cost, product_name, quantity, genres_id_fk, date_out, author_id_fk, types_id_fk, product_image) VALUES(3, 8.99, \"Utsu-P - Moksha\", 0, 1, \"30/04/2012\", 1, 1, \"https://yt3.ggpht.com/ytc/AKedOLSZDJ0kM5zXdip49BsNbamj_FTTfIZRpy_CU6ATrg=s900-c-k-c0x00ffffff-no-rj\");                        \n");
+                    data_sqlWriter.write("INSERT INTO Products(id, cost, product_name, quantity, genres_id_fk, date_out, author_id_fk, types_id_fk, product_image) VALUES(4, 10.99, \"Utsu-P - CD-R\", 0, 1, \"07/07/2013\", 1, 1, \"https://yt3.ggpht.com/ytc/AKedOLSZDJ0kM5zXdip49BsNbamj_FTTfIZRpy_CU6ATrg=s900-c-k-c0x00ffffff-no-rj\");                         \n");
+                    data_sqlWriter.write("INSERT INTO Products(id, cost, product_name, quantity, genres_id_fk, date_out, author_id_fk, types_id_fk, product_image) VALUES(5, 20.60, \"Utsu-P - Warufuzake\", 0, 1, \"07/08/2013\", 1, 1, \"https://yt3.ggpht.com/ytc/AKedOLSZDJ0kM5zXdip49BsNbamj_FTTfIZRpy_CU6ATrg=s900-c-k-c0x00ffffff-no-rj\");                   \n");
+                    data_sqlWriter.write("INSERT INTO Products(id, cost, product_name, quantity, genres_id_fk, date_out, author_id_fk, types_id_fk, product_image) VALUES(6, 9.49, \"Utsu-P - Algorithm\", 0, 1, \"17/08/2014\", 1, 1, \"https://yt3.ggpht.com/ytc/AKedOLSZDJ0kM5zXdip49BsNbamj_FTTfIZRpy_CU6ATrg=s900-c-k-c0x00ffffff-no-rj\");                     \n");
+                    data_sqlWriter.write("INSERT INTO Products(id, cost, product_name, quantity, genres_id_fk, date_out, author_id_fk, types_id_fk, product_image) VALUES(7, 9.49, \"Utsu-P - Post-Traumatic-Stress-Disorder\", 0, 1, \"10/08/2016\", 1, 1, \"https://yt3.ggpht.com/ytc/AKedOLSZDJ0kM5zXdip49BsNbamj_FTTfIZRpy_CU6ATrg=s900-c-k-c0x00ffffff-no-rj\");\n");
+                    data_sqlWriter.write("INSERT INTO Products(id, cost, product_name, quantity, genres_id_fk, date_out, author_id_fk, types_id_fk, product_image) VALUES(8, 7.92, \"Utsu-P - Galapagos\", 0, 1, \"11/08/2017\", 1, 1, \"https://yt3.ggpht.com/ytc/AKedOLSZDJ0kM5zXdip49BsNbamj_FTTfIZRpy_CU6ATrg=s900-c-k-c0x00ffffff-no-rj\");                     \n");
+                    data_sqlWriter.write("INSERT INTO Products(id, cost, product_name, quantity, genres_id_fk, date_out, author_id_fk, types_id_fk, product_image) VALUES(9, 9.49, \"Utsu-P - Greatest Shits\", 0, 1, \"10/08/2018\", 1, 1, \"https://yt3.ggpht.com/ytc/AKedOLSZDJ0kM5zXdip49BsNbamj_FTTfIZRpy_CU6ATrg=s900-c-k-c0x00ffffff-no-rj\");                \n");
+                    data_sqlWriter.write("INSERT INTO Products(id, cost, product_name, quantity, genres_id_fk, date_out, author_id_fk, types_id_fk, product_image) VALUES(10, 7.92, \"Utsu-P - Renaissance\", 0, 1, \"10/08/2019\", 1, 1, \"https://yt3.ggpht.com/ytc/AKedOLSZDJ0kM5zXdip49BsNbamj_FTTfIZRpy_CU6ATrg=s900-c-k-c0x00ffffff-no-rj\");                  \n");
+                    data_sqlWriter.write("INSERT INTO Products(id, cost, product_name, quantity, genres_id_fk, date_out, author_id_fk, types_id_fk, product_image) VALUES(11, 9.49, \"Utsu-P - Unique\", 0, 1, \"23/10/2021\", 1, 1, \"https://yt3.ggpht.com/ytc/AKedOLSZDJ0kM5zXdip49BsNbamj_FTTfIZRpy_CU6ATrg=s900-c-k-c0x00ffffff-no-rj\");                    \n \n");
 
                     log.info("Products have been populated");
-                }
-
-                if (doPopulateTypes.equals("true") || doPopulateAll.equals("true")) {
-                    data_sqlWriter.write("INSERT INTO Genres(id, description, name) VALUES(1,\"Mostly vocaloid \", \"Music\") \n");
-                    data_sqlWriter.write("INSERT INTO Genres(id, description, name) VALUES(2,\"none \", \"Manga\") \n");
-                    data_sqlWriter.write("INSERT INTO Genres(id, description, name) VALUES(3,\"none \", \"Anime\") \n");
-                    data_sqlWriter.write("INSERT INTO Genres(id, description, name) VALUES(4,\"none \", \"Games\") \n");
-                    data_sqlWriter.write("INSERT INTO Genres(id, description, name) VALUES(5,\"none \", \"Programming\") \n");
-
-                    log.info("Types have been populated");
                 }
 
                 data_sqlWriter.close();
