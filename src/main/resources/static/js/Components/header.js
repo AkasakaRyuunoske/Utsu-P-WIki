@@ -25,17 +25,67 @@ let counter = 0;
 var currentUser = document.getElementById("currentUser");
 
 //is implemented as counter because in the future there will be more than 2 variations.
+// document.getElementById("Utsu-P").onclick = function () {
+// 	if (counter == 0) {
+// 		utsup.dataset.text = "Utsu-P Wiki";
+// 		utsup.innerHTML = "Utsu-P Wiki";
+// 		counter = 1;
+// 	} else {
+// 		utsup.dataset.text = "鬱P Wiki";
+// 		utsup.innerHTML = "鬱P Wiki";
+// 		counter = 0;
+// 	}
+// }
+
 document.getElementById("Utsu-P").onclick = function () {
-	if (counter == 0) {
-		utsup.dataset.text = "Utsu-P Wiki";
-		utsup.innerHTML = "Utsu-P Wiki";
-		counter = 1;
-	} else {
+	switch(counter){
+		case 0:
 		utsup.dataset.text = "鬱P Wiki";
 		utsup.innerHTML = "鬱P Wiki";
+		counter++;
+		break;
+
+		case 1:
+		utsup.dataset.text = "Utsu-P Wiki";
+		utsup.innerHTML = "Utsu-P Wiki";
+		counter++;
+		break;
+
+		case 2:
+		utsup.dataset.text = "Depression-P Wiki";
+		utsup.innerHTML = "Depression-P Wiki";
+		counter++;
+		break;
+
+		case 3:
+		utsup.dataset.text = "My Song Is Shit Wiki";
+		utsup.innerHTML = "My Song Is Shit Wiki";
+		counter++;
+		break;
+
+		case 4:
+		utsup.dataset.text = "おはようございます Wiki";
+		utsup.innerHTML = "おはようございます Wiki";
+		counter++;
+		break;
+
+		case 5:
+		utsup.dataset.text = "Ohayougozaimasu Wiki";
+		utsup.innerHTML = "Ohayougozaimasu Wiki";
+		counter++;
+		break;
+
+		case 6:
+		utsup.dataset.text = "Zsasz Wiki";
+		utsup.innerHTML = "Zsasz Wiki";
+		counter++;
+		break;
+
+		default:
 		counter = 0;
 	}
 }
+
 
 function getCookie(cookie_name) {
   let name = cookie_name + "=";
