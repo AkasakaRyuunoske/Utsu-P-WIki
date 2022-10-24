@@ -92,15 +92,15 @@ function follow_player_time() {
     the_dying_message_lyrics_box.innerHTML = "kono sekai";
     break;
 
-    case (player.playerInfo.currentTime >= 24 && player.playerInfo.currentTime < 26.5):
+    case (player.playerInfo.currentTime >= 23.5 && player.playerInfo.currentTime < 26.5):
     the_dying_message_lyrics_box.innerHTML = "Kakumei wo okoshite yo";
     break;
 
-    case (player.playerInfo.currentTime >= 27 && player.playerInfo.currentTime < 29.5):
+    case (player.playerInfo.currentTime >= 26.5 && player.playerInfo.currentTime < 29.5):
     the_dying_message_lyrics_box.innerHTML = "'Ai' ga seikai ni nare";
     break;
 
-    case (player.playerInfo.currentTime >= 30 && player.playerInfo.currentTime < 31):
+    case (player.playerInfo.currentTime >= 29.5 && player.playerInfo.currentTime < 31):
     the_dying_message_lyrics_box.innerHTML = "fuan nante";
     break;
 
@@ -221,7 +221,7 @@ function follow_player_time() {
     break;
     
     case (player.playerInfo.currentTime >= 120 && player.playerInfo.currentTime < 123.5):
-    the_dying_message_lyrics_box.innerHTML = "Tearsu ookina senaka woooo";
+    the_dying_message_lyrics_box.innerHTML = "Terasu ookina senaka woooo";
     break;
 
     case (player.playerInfo.currentTime >= 123.5 && player.playerInfo.currentTime < 125):
@@ -284,7 +284,7 @@ function follow_player_time() {
     the_dying_message_lyrics_box.innerHTML = "DOUKO";
     break;
     
-    case (player.playerInfo.currentTime >= 184 && player.playerInfo.currentTime < 185):
+    case (player.playerInfo.currentTime >= 184 && player.playerInfo.currentTime < 187.5):
     the_dying_message_lyrics_box.innerHTML = "DOUKOKU";
     break;
     
@@ -300,7 +300,7 @@ function follow_player_time() {
     the_dying_message_lyrics_box.innerHTML = "SEKIBA";
     break;
     
-    case (player.playerInfo.currentTime >= 195 && player.playerInfo.currentTime < 196):
+    case (player.playerInfo.currentTime >= 195 && player.playerInfo.currentTime < 197):
     the_dying_message_lyrics_box.innerHTML = "SEKIBAKU";
     break;
     
@@ -328,7 +328,7 @@ function follow_player_time() {
     the_dying_message_lyrics_box.innerHTML = "soko ni aru no wa tadaaaa";
     break;
     
-    case (player.playerInfo.currentTime >= 221 && player.playerInfo.currentTime < 222):
+    case (player.playerInfo.currentTime >= 220 && player.playerInfo.currentTime < 222):
     the_dying_message_lyrics_box.innerHTML = "HIROIIIII";
     break;
     
@@ -381,7 +381,7 @@ function follow_player_time() {
     break;
     
     default:
-    the_dying_message_lyrics_box.innerHTML = "tu tutu tutu tutuTU";
+    the_dying_message_lyrics_box.innerHTML = "<instrumental>";
   }
 
   if (follow) {
