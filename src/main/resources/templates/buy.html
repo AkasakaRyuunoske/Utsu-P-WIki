@@ -37,7 +37,7 @@
 	<header id="headers"></header>
 	<!-- Here the main content of the page starts -->
 
-	<div class="main-content-container" style="width: 99%">
+<div class="main-content-container" style="width: 99%">
 
 	<div class="main-div">
 
@@ -50,7 +50,7 @@
 					<span th:text="${products.dateOut}" th:remove="tag"></span>
 
 					<br>
-					
+
 					<span><a href="https://open.spotify.com/album/3WrPMnsYqOsqbYBHeEqURI?si=DyuhLLfjQsWet9osbCjdWw">On spotify</a></span>
 				</div>
 			</div>
@@ -58,9 +58,18 @@
 			<div class="product__info">
 				<div class="title-span">
 
-					<h1 class="title-h1" style="text-align:initial" th:text="${products.productName}"></h1>
+<!-- 					<h1 class="title-h1 stack" style="text-align:initial; --stacks: 3;" >
+						    <span style="--index: 0;" th:text="${products.productName}"></span>
+    						<span style="--index: 1;" th:text="${products.productName}"></span>
+    						<span style="--index: 2;" th:text="${products.productName}"></span>
+					</h1> -->
+					<h1 class="title-h1 header-options-text stack" style="text-align:initial; --stacks: 3;" >
+						<span style="--index: 0;" th:text="${products.productName}"></span>
+						<span style="--index: 1;" th:text="${products.productName}"></span>
+						<span style="--index: 2;" th:text="${products.productName}"></span>
+					</h1>
 
-					<span>COD:
+					<span style="font-size: 1vw;">COD:
 						<span th:text="${products.id}" th:remove="tag"></span>
 					</span>
 				</div>
@@ -91,8 +100,8 @@
 
 			</div>
 		</div>
-		</div>
 	</div>
+</div>
 
 <footer id="footer"></footer>
 </body>
