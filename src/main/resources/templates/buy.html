@@ -21,7 +21,7 @@
 	<div class="navigation">
 
 		<!-- To know who the the user is -->
-		<h2>You ares:
+		<h2>You are:
         <span id="currentUser">Anonymous</span>
 		</h2>
 
@@ -40,178 +40,57 @@
 	<div class="main-content-container" style="width: 99%">
 
 	<div class="main-div">
-		<section class="product">
-			<div class="product__photo">
-				<div class="photo-container">
-					<div class="photo-main">
-						<img src="https://static.zerochan.net/Hatsune.Miku.full.1513568.jpg" alt="green apple slice" class="products-img">
-					</div>
-				</div>
-			</div>
-			<div class="product__info">
-				<div class="title-span">
-					<h1 class="title-h1">Utsu-P - Warufuzake</h1>
-					<span>COD: 4</span>
-				</div>
-				<div class="price">
-					 <span> ¥ 20.93</span>
-				</div>
-				<div class="description">
-					<h3 class="products-h3">Constains</h3>
-					<ul>
-						<li>The dying Message</li>
-						<li>Adult's toy</li>
-						<li>Dokoni demooooooooo dokai oooonaaaaa</li>
-						<li>B - Class heroes</li>
-					</ul>
-				</div>
-				<button class="buy--btn">ADD TO CART</button>
-			</div>
-		</section>
-				<section class="product">
-			<div class="product__photo">
-				<div class="photo-container">
-					<div class="photo-main">
-						<img src="https://static.zerochan.net/Hatsune.Miku.full.1513568.jpg" alt="green apple slice" class="products-img">
-					</div>
-				</div>
-			</div>
-			<div class="product__info">
-				<div class="title-span">
-					<h1 class="title-h1">Utsu-P - Warufuzake</h1>
-					<span>COD: 4</span>
-				</div>
-				<div class="price">
-					 <span> ¥ 20.93</span>
-				</div>
-				<div class="description">
-					<h3 class="products-h3">Constains</h3>
-					<ul>
-						<li>The dying Message</li>
-						<li>Adult's toy</li>
-						<li>Dokoni demooooooooo dokai oooonaaaaa</li>
-						<li>B - Class heroes</li>
-					</ul>
-				</div>
-				<button class="buy--btn">ADD TO CART</button>
-			</div>
-		</section>
 
-				<section class="product">
-			<div class="product__photo">
-				<div class="photo-container">
-					<div class="photo-main">
-						<img src="https://static.zerochan.net/Hatsune.Miku.full.1513568.jpg" alt="green apple slice" class="products-img">
-					</div>
-				</div>
-			</div>
-			<div class="product__info">
-				<div class="title-span">
-					<h1 class="title-h1">Utsu-P - Warufuzake</h1>
-					<span>COD: 4</span>
-				</div>
-				<div class="price">
-					 <span> ¥ 20.93</span>
-				</div>
-				<div class="description">
-					<h3 class="products-h3">Constains</h3>
-					<ul>
-						<li>The dying Message</li>
-						<li>Adult's toy</li>
-						<li>Dokoni demooooooooo dokai oooonaaaaa</li>
-						<li>B - Class heroes</li>
-					</ul>
-				</div>
-				<button class="buy--btn">ADD TO CART</button>
-			</div>
-		</section>
+		<div class="product" th:each="products : ${productsList}">
 
-				<section class="product">
-			<div class="product__photo">
-				<div class="photo-container">
-					<div class="photo-main">
-						<img src="https://static.zerochan.net/Hatsune.Miku.full.1513568.jpg" alt="green apple slice" class="products-img">
-					</div>
-				</div>
-			</div>
-			<div class="product__info">
-				<div class="title-span">
-					<h1 class="title-h1">Utsu-P - Warufuzake</h1>
-					<span>COD: 4</span>
-				</div>
-				<div class="price">
-					 <span> ¥ 20.93</span>
-				</div>
-				<div class="description">
-					<h3 class="products-h3">Constains</h3>
-					<ul>
-						<li>The dying Message</li>
-						<li>Adult's toy</li>
-						<li>Dokoni demooooooooo dokai oooonaaaaa</li>
-						<li>B - Class heroes</li>
-					</ul>
-				</div>
-				<button class="buy--btn">ADD TO CART</button>
-			</div>
-		</section>
+			<div class="photo-main">
+				<img th:src="@{${products.productImage}}" class="products-img">
 
-				<section class="product">
-			<div class="product__photo">
-				<div class="photo-container">
-					<div class="photo-main">
-						<img src="https://static.zerochan.net/Hatsune.Miku.full.1513568.jpg" alt="green apple slice" class="products-img">
-					</div>
-				</div>
-			</div>
-			<div class="product__info">
-				<div class="title-span">
-					<h1 class="title-h1">Utsu-P - Warufuzake</h1>
-					<span>COD: 4</span>
-				</div>
-				<div class="price">
-					 <span> ¥ 20.93</span>
-				</div>
-				<div class="description">
-					<h3 class="products-h3">Constains</h3>
-					<ul>
-						<li>The dying Message</li>
-						<li>Adult's toy</li>
-						<li>Dokoni demooooooooo dokai oooonaaaaa</li>
-						<li>B - Class heroes</li>
-					</ul>
-				</div>
-				<button class="buy--btn">ADD TO CART</button>
-			</div>
-		</section>
+				<div>Date Out:
+					<span th:text="${products.dateOut}" th:remove="tag"></span>
 
-				<section class="product">
-			<div class="product__photo">
-				<div class="photo-container">
-					<div class="photo-main">
-						<img src="https://static.zerochan.net/Hatsune.Miku.full.1513568.jpg" alt="green apple slice" class="products-img">
-					</div>
+					<br>
+					
+					<span><a href="https://open.spotify.com/album/3WrPMnsYqOsqbYBHeEqURI?si=DyuhLLfjQsWet9osbCjdWw">On spotify</a></span>
 				</div>
 			</div>
+
 			<div class="product__info">
 				<div class="title-span">
-					<h1 class="title-h1">Utsu-P - Warufuzake</h1>
-					<span>COD: 4</span>
+
+					<h1 class="title-h1" style="text-align:initial" th:text="${products.productName}"></h1>
+
+					<span>COD:
+						<span th:text="${products.id}" th:remove="tag"></span>
+					</span>
 				</div>
+
 				<div class="price">
-					 <span> ¥ 20.93</span>
+					<span>¥
+						<span th:text="${products.cost}" th:remove="tag"></span>
+					</span>
 				</div>
+
 				<div class="description">
+
 					<h3 class="products-h3">Constains</h3>
-					<ul>
+
+<!-- th:each="descriptions : ${descriptionList}" -->
+<!-- TBD: description as parsed String list -->
+
+					<ul >
 						<li>The dying Message</li>
 						<li>Adult's toy</li>
 						<li>Dokoni demooooooooo dokai oooonaaaaa</li>
 						<li>B - Class heroes</li>
 					</ul>
+
 				</div>
+
 				<button class="buy--btn">ADD TO CART</button>
+
 			</div>
-		</section>
+		</div>
 		</div>
 	</div>
 
