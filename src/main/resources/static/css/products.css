@@ -6,10 +6,20 @@
 	box-sizing: border-box;
 	padding-right: 40vw;
 
-    column-gap: 0vw;
-    grid-template-rows: 30vw;
+	grid-row-gap: 10vw;
+    column-gap: 20vw;
 	grid-template-columns: 25vw 25vw;
 }
+
+/*
+
+Author:John Mantas 
+CodePen
+E-commerce Product (Delicious Apples)
+
+https://codepen.io/john-mantas/pen/bxmrBq
+
+*/
 
 .products-h3 {
 	font-size: 1.5vw;
@@ -20,9 +30,9 @@
 
 .products-img {
 	max-width: 100%;
-	margin-left:-2.5vw; 
-    margin-top:2vw;
-	filter: drop-shadow(1px 1px 30px #000000);
+/*	margin-left:-2.5vw; 
+    margin-top:2vw;*/
+	filter: drop-shadow(0.1vw 0.1vw 1vw #000000);
 }
 
 /* ----- Product Section ----- */
@@ -31,13 +41,14 @@
 /*	grid-template-columns: 0.9fr 1fr;*/
 	margin: auto;
 	padding: 2.5vw 0;
-	min-width: 38vw;
+	width: 40vw;
+    height: 33vw;
 	background-color: white;
 	border-radius: 5px;
 
     column-gap: 0vw;
     grid-template-rows: 30vw;
-	grid-template-columns: 25vw 25vw;
+	grid-template-columns: 20vw 20vw;
 }
 
 /* ----- Photo Section ----- */
@@ -58,22 +69,31 @@
 }
 
 .photo-main {
-	border-radius: 6px 6px 0 0;
-	background: #6F18D3;
+/*	border-radius: 6px 6px 0 0;
+	background: #6F18D3;*/
+	text-align:center;
+	position: relative;
+    width: 20vw;
+    height: 20vw;
 }
 
 .photo-main img {
-	position: absolute;
-	left: -2.5vw;
-	top: 2vw;
-	max-width: 110%;
-	filter: saturate(150%) contrast(120%) hue-rotate(10deg)
-		drop-shadow(1px 20px 10px rgba(0, 0, 0, 0.3));
+	position: relative;
+/*	left: -2.5vw;
+	top: 2vw;*/
+	width: 15vw;
+	margin-left: 2vw;
+    margin-top: 3vw;
+/*	filter: saturate(150%) contrast(120%) hue-rotate(10deg)
+		drop-shadow(1px 20px 10px rgba(0, 0, 0, 0.3));*/
 }
 
 /* ----- Informations Section ----- */
 .product__info {
-	padding: 0.5vw 0;
+	position: relative;
+    width: 20vw;
+    height: 20vw;
+    grid-template-columns: auto auto;
 }
 
 .title-span span{
@@ -82,8 +102,9 @@
 }
 
 .title-h1 {
-	margin-left: -3vw
-	margin-bottom: 0.1vw;
+	text-align: initial;
+/*	margin-left: -3vw;
+	margin-bottom: 0.1vw;*/
 	color: #4c4c4c;
 	font-size: 2vw;
 	font-weight: 900;
@@ -128,7 +149,7 @@
 	margin-bottom: 1.1em;
 }
 
-.description {
+/*.description {
 	color: black;
 	clear: left;
 	margin: 2em 0;
@@ -148,7 +169,7 @@
 	list-style: disc;
 	margin-left: 0.9vw;
 	filter: drop-shadow(1vw 0.01vw 0.8vw);
-}
+}*/
 
 .buy--btn {
 	padding: 1.5vw 3.1vw;
@@ -161,4 +182,5 @@
 	background-color: blue;
 	box-shadow: 2px 2px 25px -7px #4c4c4c;
 	cursor: pointer;
+	margin-top: 5vw;
 }
