@@ -1,3 +1,9 @@
+/** {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}*/
+
 /*
 Author:Aldriê
 
@@ -8,20 +14,18 @@ https://codepen.io/aldrie/pen/PojGYLo
 
 */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/*.container {
+.container {
   color: var(--color);
-  font-size: 1.5rem;
+  font-size: 2vw;
   display: flex;
   flex-direction: column;
-  width: 98%; /* 100% makes appear scrolling bar for sec
+  width: 95%; /* 100% makes appear scrolling bar for sec*/
 }
-*/
+
+.right {
+  text-align: right;
+  width: 100%;
+}
 
 .stack {
   display: grid;
@@ -32,7 +36,7 @@ https://codepen.io/aldrie/pen/PojGYLo
   font-weight: bold;
   grid-row-start: 1;
   grid-column-start: 1;
-  font-size: 2rem;
+  font-size: 2vw;
   --stack-height: calc(98% / var(--stacks) - 1px);
   --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
   --clip-top: calc(var(--stack-height) * var(--index));
