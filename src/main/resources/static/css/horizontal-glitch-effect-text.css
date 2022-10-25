@@ -1,8 +1,8 @@
-/** {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}*/
+} /* CTRL + S PLEASE NEVER FORGET*/
 
 /*
 Author:Aldriê
@@ -19,7 +19,7 @@ https://codepen.io/aldrie/pen/PojGYLo
   font-size: 2vw;
   display: flex;
   flex-direction: column;
-  width: 95%; /* 100% makes appear scrolling bar for sec*/
+  width: 95%; /* 100% makes appear scrolling bar for a sec*/
 }
 
 .right {
