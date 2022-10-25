@@ -16,6 +16,12 @@ function follow_player_time() {
 // thanks to this guy's replay:
 // https://stackoverflow.com/questions/21808543/multple-criteria-in-a-single-case-inside-a-switch-statement?noredirect=1&lq=1
   
+
+
+
+
+
+
 // Switch below takes the time in the player and for specific range of seconds displays
 // lyrics in the song overriding over and over again the same object 
 
@@ -79,6 +85,9 @@ function follow_player_time() {
 // 「6日」の朝を迎えた
 
   switch(true){
+    case (player.playerInfo.currentTime >= 0 && player.playerInfo.currentTime < 1):
+    the_dying_message_lyrics_box.innerHTML = "";
+    break;
 
     case (player.playerInfo.currentTime >= 20 && player.playerInfo.currentTime < 21.5):
     the_dying_message_lyrics_box.innerHTML = "Sanman de";
@@ -381,7 +390,7 @@ function follow_player_time() {
     break;
     
     default:
-    the_dying_message_lyrics_box.innerHTML = "<instrumental>";
+    the_dying_message_lyrics_box.innerHTML = "instrumental";
   }
 
   if (follow) {
