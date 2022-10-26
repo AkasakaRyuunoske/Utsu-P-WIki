@@ -67,7 +67,7 @@ To populate database with data consider using database-helper configuration in a
 ### To make it work:
 <br> 1. Enable these settings.
 <br> 2. Run the application, data.sql file must be created.
-<br> 3. Disable these settings and tun again the application.
+<br> 3. Disable these settings and run again the application.
 <br> 4. Check if data appeared in database, if it is so, manually delete data.sql file. (by default it will be at "\Utsu-P\src\main\resources\data.sql".
 
 ## 3.Tomcat <br>
@@ -87,10 +87,8 @@ Default port for embeded Tomcat server is 8080: <br>
 5. Lombok.
 6. Thymeleaf.
 7. Maven.
-8. HTML.
-9. CSS.
-10. JS.                     
-10.1. JQuery.<br>
+8. HTML/CSS/JS.                     
+8.1. JQuery.<br>
 <br>
 
 <h1 id="why"> Why? </h1>
