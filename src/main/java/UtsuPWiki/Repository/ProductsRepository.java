@@ -10,6 +10,8 @@ public interface ProductsRepository extends JpaRepository<Products, Long> {
     @Query("SELECT productName FROM Products")
     String[] getAllProductsNames();
 
+    @Query(value = "SELECT additional_info FROM Products", nativeQuery = true)
+    String[] getAllProperties();
 //    @Query("SELECT * FROM Products where author_id_fk = :author_id")
 //    String[] getAllproductsByAuthorsId();
 }
