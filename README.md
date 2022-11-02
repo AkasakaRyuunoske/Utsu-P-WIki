@@ -40,6 +40,8 @@ The project structure is repeating that of Wikipedia, in terms of:
 1. JWT tokens Security
 <br>
 2. Wide configurations
+<br>
+3. Scalability
 
 <h1 id="how-to-use"> How to use </h1>
 Application is pretty easy to use and needs very little configuration.
@@ -93,6 +95,6 @@ Default port for embeded Tomcat server is 8080: <br>
 
 <h1 id="why"> Why? </h1>
 
-Project's goal is to design a very large scale application (number of files, pages, styles... wise) and in practice find best ways to develop it.
+Because Utsu-P is just too good at creating vocaloid music, so I will, in some way, try to help him get the attention he deserves.
 
 </div>
