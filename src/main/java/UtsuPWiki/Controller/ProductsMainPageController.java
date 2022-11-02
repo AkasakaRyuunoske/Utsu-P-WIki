@@ -23,7 +23,7 @@ public class ProductsMainPageController {
         Navigation.addLocations(model, request);
 
         List<Products> productsList = productsRepository.findAll();
-        String[] propertiesArray = productsRepository.getAllProperties();
+        //String[] propertiesArray = productsRepository.getAllProperties();
 
         model.addAttribute("productsList", productsList);
 
