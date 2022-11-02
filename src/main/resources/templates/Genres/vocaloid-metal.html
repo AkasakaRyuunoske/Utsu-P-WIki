@@ -37,15 +37,7 @@
 	<!-- Here the main content of the page starts -->
 
 	<div class="main-content-container">
-        <div>Navigation:
-            <div>
-                <a href="#about-the-progect">1.About</a>
-                <a href="#tecnologies-used">2.Stack</a>
-                <a href="#why-was-it-created">3.Why?</a>
-            </div>
-        </div>
-
-		<h1>Authors in this genre:</h1>
+		<h1>Authors in this genre:</h1> <!-- TODO add in what genre -->
 		<li th:each="authors_by_genres : ${authorsByGenreList}">
 			<a th:href="@{'/genres/' + ${authors_by_genres.toLowerCase()} }" th:text="${authors_by_genres}"></a>
 		</li>
