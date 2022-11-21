@@ -2,7 +2,7 @@
 //	takes the data and makes an AJAX(Jquery) Call with all the data
 //	but preventing the default behavior of the htmlForm.
 //	If credentials are wrong, so AJAX call error case is called
-var form  = document.getElementById('myForm');
+var form  = document.getElementById('logInForm');
 
 var userName;
 var password;
