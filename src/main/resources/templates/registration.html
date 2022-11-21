@@ -34,17 +34,24 @@
 	<!-- Here the main content of the page starts -->
 
 	<div class="main-content-container">
+		<h1>In order to do high-impact stuff u must log-in.</h1>
 		<form method = "post" th:action = "@{/registration}" th:object = " ${client}">
 			<label for="userName">User Name: </label>
 			<input type="text" name="userName" th:field = "${client.userName}" id="userName">
 
+			<br>
+
 			<label for="password">Password: </label>
 			<input type="password" name="password" th:field = "${client.password}" id="password">
+
+			<br>
 
 			<label for="email">Email: </label>
 			<input type="text" name="email" th:field = "${client.email}" id="email">
 
-			<button type="submit">Submit</button>
+			<br>
+
+			<button type="submit">Register</button>
 		</form>
 	</div>
 
