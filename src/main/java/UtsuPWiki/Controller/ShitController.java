@@ -10,12 +10,12 @@ import javax.servlet.http.HttpServletRequest;
 
 @Log4j2
 @Controller
-public class CommunityController {
+public class ShitController {
 
-    @GetMapping("/community")
-    public String GETCommunity(Model model, HttpServletRequest request){
+    @GetMapping("/shit")
+    public String GETShit(Model model, HttpServletRequest request){
         Navigation.addLocations(model, request);
 
-        return "community";
+        return "shit";
     }
 }
