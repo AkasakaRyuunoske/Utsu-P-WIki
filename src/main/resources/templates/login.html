@@ -38,20 +38,29 @@
 <!-- Here the main content of the page starts -->
 
 <div class="main-content-container">
+
+<!-- Error messages are sent directly by back-end. They are displayed here -->
     <h1 id="userNameOrPasswordError"></h1>
-
-    <h1 th:if="${param.error}">Fuck yo u suck, check yo credentials.</h1>
-    <h1 th:if="${param.logout}">u've been logout to hell.</h1>
-
-    <form id="myForm">
+    
+    <form id="logInForm">
         <label  for="userName">User Name:</label>
         <input  type="text" id="userName">
 
+        <br>
+
         <label  for="password">Password:</label>
         <input  type="password" id="password">
+
+        <br>
         
-        <button type="submit">submit</button>
+        <button type="submit">Log-in</button>
     </form>
+
+    <div>
+        <h1>If r new:</h1>
+        <a href="/registration">Register</a>
+    </div>
+    
 </div>
 
 <!-- Below starts footer -->
