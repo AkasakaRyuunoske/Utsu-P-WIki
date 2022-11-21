@@ -13,7 +13,7 @@ if (headers != null) {
 			
 			+	"<header class='header-options-text header-grid-container'>"
 			+		"<h2 class='header-grid-item' onclick='navigate(this)'>Explore</h2>"
-			+		"<h2 class='header-grid-item' onclick='navigate(this)'>Community</h2>"
+			+		"<h2 class='header-grid-item' onclick='navigate(this)'>Shit</h2>"
 			+		"<h2 class='header-grid-item' onclick='navigate(this)'>Create</h2>"
 			+		"<h2 class='header-grid-item' onclick='navigate(this)'>Buy</h2>"
 			+	"</header>";
