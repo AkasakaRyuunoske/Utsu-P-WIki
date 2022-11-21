@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Utsu-P-Wiki Home Page</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- CSS only libs. JS at the end of the page -->
+
+	<script type="text/javascript" src="/js/load-css.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="/Post-Traumatic-Stress-Disorder.jpg">
+
+    <!-- JQuery for AJAX calls only-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> 
+
+</head>
+<body>
+
+	<div class="navigation">
+
+		<!-- To know who the the user is -->
+		<h2>You are:
+        	<span id="currentUser">Anonymous</span>
+		</h2>
+
+		<h2>You are at:
+			<span id="locationsContainer">
+				<span th:each="locations : ${location}" th:text="${locations}" onclick="navigate(this)"></span>
+			</span>	
+		</h2>
+	</div>
+
+	<!-- Principal Header, same for all pages -->
+	<header id="headers"></header>
+	<!-- Here the main content of the page starts -->
+
+	<div class="main-content-container">
+		<h1>This page will contain some stuff that has little use but is actually hard to code. For now only the dying message in assembly MIPS</h1>
+		
+		<div id="ytplayer"></div>
+		<div id="the_dying_message_lyrics_box"></div>
+	</div>
+<footer id="footer"></footer>
+</body>
+<script type="text/javascript" src="/js/navigation.js"></script>
+<script type="text/javascript" src="/js/Components/header.js"></script>
+<script type="text/javascript" src="/js/Components/footer.js"></script>
+<script type="text/javascript" src="/js/the_dying_message_integration.js"></script>
+</html>
