@@ -90,7 +90,8 @@ public class JWTAuthorizationFilter extends OncePerRequestFilter {
                 path.contains("/login")         ||
                 path.contains("/registration")  ||
                 path.contains("/logout")        ||
-                path.contains("/error");
+                path.contains("/error")         ||
+                path.contains(".svg");
     }
 
     @Override
