@@ -36,5 +36,11 @@ public class FancyWritings {
                     " FUSAGA RE TA MICCHI WO HIRAKU MONO NI NARU \n" +
                     " 'MESSEJII' WO DAITAAAAAAA\n");
         }
+
+        if (doPrint.equals("Blaise")) {
+            log.info("\n \n" +
+                    "all humanity's problems stem from mans " +
+                    "inability to sit quietly in a room alone\" (Blaise Pascal)");
+        }
     }
 }
