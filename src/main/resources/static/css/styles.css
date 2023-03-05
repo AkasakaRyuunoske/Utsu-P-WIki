@@ -3,6 +3,7 @@ html, body {
 	width: 100%;
 }
 
+
 /*
 	This style.css contains styles that are same for every page, 
 	but are not referred to a certain component
@@ -70,3 +71,11 @@ html, body {
 }
 
 /*style="background-image: url('https://i.ytimg.com/vi/siQxhzOksWU/maxresdefault.jpg');background-repeat: no-repeat;background-position: center;"*/
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    list-style-type: none;
+}
