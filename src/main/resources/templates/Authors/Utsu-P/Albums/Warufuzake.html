@@ -4,39 +4,45 @@
 <head>
     <title>Utsu-P-Wiki Home Page</title>
 
-    <link rel="stylesheet" href="/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only libs. JS at the end of the page -->
+
+    <script type="text/javascript" src="/js/load-css.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="/Post-Traumatic-Stress-Disorder.jpg">
+
+    <!-- JQuery for AJAX calls only-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> 
+
 </head>
 <body>
 
-<!-- Principal Header, same for all pages -->
-<header class="fav-color top-header">
-    <h1 class="middle-title">Utsu-P-Wiki!</h1>
+    <div class="navigation">
 
-    <div>
-        <button>Authors</button>
-        <button>Community</button>
+        <!-- To know who the the user is -->
+        <h2>You are:
+            <span id="currentUser">Anonymous</span>
+        </h2>
+
+        <h2>You are at:
+            <span id="locationsContainer">
+                <span th:each="locations : ${location}" th:text="${locations}" onclick="navigate(this)"></span>
+            </span> 
+        </h2>
     </div>
 
-    <div>
-        <button>Create</button>
-        <button>Buy</button>
-        <h1>We know you as:</h1>
-        <button>Akasaka Ryuunosuke</button>
+    <!-- Principal Header, same for all pages -->
+    <header id="headers"></header>
+    <!-- Here the main content of the page starts -->
+
+    <div class="main-content-container">
+        <h1>Warufuzake page is working correctly.</h1>
+        
     </div>
-
-
-    <!-- 		<a href="/">
-                <img src="/Post-Traumatic-Stress-Disorder.jpg" class="utsu-p-icon" alt="error">
-            </a> -->
-
-</header>
-
-<nav>
-    <h2 class="top-header middle-title">You are in:
-        <p th:text="*{currentPage}" th:remove="tag"></p>
-    </h2>
-</nav>
-
-
+<footer id="footer"></footer>
 </body>
+<script type="text/javascript" src="/js/navigation.js"></script>
+<script type="text/javascript" src="/js/Components/header.js"></script>
+<script type="text/javascript" src="/js/Components/footer.js"></script>
+<script type="text/javascript" src="/js/the_dying_message_integration.js"></script>
 </html>
