@@ -32,3 +32,9 @@
 .header-grid-item:hover {
 	 background:rgba(60, 0, 122,0.2);
 }
+
+.sub-header-text{
+	font-size: 2vw;
+	font-family: 'Old English Text MT';
+	filter: drop-shadow(0 0.1vw 1.3vw);
+}
