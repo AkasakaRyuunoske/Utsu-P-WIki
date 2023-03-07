@@ -26,6 +26,7 @@ public class DatabaseHelper {
             String doPopulateOrders,
             String doPopulateProducts,
             String doPopulateTypes,
+            String doPopulateProductsAdditionalInfo,
             String doPopulateAll) {
 
         // if true creates data.sql file that will be written in later and will automatically be executed by hibernate
@@ -93,7 +94,7 @@ public class DatabaseHelper {
 
                 // Authors Table
                 if (doPopulateAuthors.equals("true") || doPopulateAll.equals("true")) {
-                    data_sqlWriter.write("INSERT INTO Authors(id, author_pseudonym, date_of_birth, last_name, name, total_masterpieces, country_id_fk, additional_info, main_genre, main_type) VALUES(1, \"Utsu-P\", \"December/01/1990\", \"Unknown\", \"Unknown\", 7, 1, \"Very little is known about this guy\", 1, 1);\n \n");
+                    data_sqlWriter.write("INSERT INTO Authors(id, author_pseudonym, date_of_birth, last_name, name, total_masterpieces, country_id_fk,  additional_info, main_genre, main_type) VALUES(1, \"Utsu-P\", \"December/01/1990\", \"Unknown\", \"Unknown\", 7, 1, \"Very little is known about this guy\", 1, 1);\n \n");
                     log.info("Authors have been populated");
                 }
 
@@ -123,7 +124,7 @@ public class DatabaseHelper {
 
                 //Products Table
                 if (doPopulateProducts.equals("true") || doPopulateAll.equals("true")) {
-                    data_sqlWriter.write("INSERT INTO Products(id, cost, product_name, quantity, genres_id_fk, date_out, author_id_fk, types_id_fk, product_image, additional_info) VALUES(1, 9.49, \"Utsu-P - Diarrhea\", 0, 1, \"15/11/2009\", 1, 1, \"https://i.scdn.co/image/ab67616d00001e02486835908dacc4ca95d5a7e4\", 1);                                        \n");
+                    data_sqlWriter.write("INSERT INTO Products(id, cost, product_name, quantity, genres_id_fk, date_out, author_id_fk, types_id_fk, product_image) VALUES(1, 9.49, \"Utsu-P - Diarrhea\", 0, 1, \"15/11/2009\", 1, 1, \"https://i.scdn.co/image/ab67616d00001e02486835908dacc4ca95d5a7e4\");                                        \n");
                     data_sqlWriter.write("INSERT INTO Products(id, cost, product_name, quantity, genres_id_fk, date_out, author_id_fk, types_id_fk, product_image) VALUES(2, 9.49, \"Utsu-P - Traumatic\", 0, 1, \"14/11/2010\", 1, 1, \"https://pbs.twimg.com/media/FIcD_F7VEAAGOoN.jpg\");                                                                            \n");
                     data_sqlWriter.write("INSERT INTO Products(id, cost, product_name, quantity, genres_id_fk, date_out, author_id_fk, types_id_fk, product_image) VALUES(3, 8.99, \"Utsu-P - Moksha\", 0, 1, \"30/04/2012\", 1, 1, \"https://static.zerochan.net/Type-H.full.1118182.jpg\");                                                                           \n");
                     data_sqlWriter.write("INSERT INTO Products(id, cost, product_name, quantity, genres_id_fk, date_out, author_id_fk, types_id_fk, product_image) VALUES(4, 10.99, \"Utsu-P - CD-R\", 0, 1, \"07/07/2013\", 1, 1, \"https://2.bp.blogspot.com/-NADgzcUVVUk/Vd4KDsYlY_I/AAAAAAAACfk/UTiAT4Qyrq0/s1600/Cover.jpg\");                                     \n");
@@ -136,6 +137,25 @@ public class DatabaseHelper {
                     data_sqlWriter.write("INSERT INTO Products(id, cost, product_name, quantity, genres_id_fk, date_out, author_id_fk, types_id_fk, product_image) VALUES(11, 9.49, \"Utsu-P - Unique\", 0, 1, \"23/10/2021\", 1, 1, \"https://pbs.twimg.com/media/FEu7iZNXwA4Dy-U.jpg\");                    \n                                                        \n");
 
                     log.info("Products have been populated");
+                }
+
+                // Products Additional Info Table
+                if (doPopulateProductsAdditionalInfo.equals("true") || doPopulateAll.equals("true")) {
+                    log.info("Products Additional Info have been populated");
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, song_name, link_spotify, link_wiki, product_id_fk) VALUES (1, \"Poison Apple\", \"none\", \"none\", 1);\n"                );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, song_name, link_spotify, link_wiki, product_id_fk) VALUES (2, \"Corpse Attack!!\", \"none\", \"none\", 1);\n"             );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, song_name, link_spotify, link_wiki, product_id_fk) VALUES (3, \"Anti Digitalizm\", \"none\", \"none\", 1);\n"             );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, song_name, link_spotify, link_wiki, product_id_fk) VALUES (4, \"Melancholy of Heavy Rain\", \"none\", \"none\", 1);\n"    );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, song_name, link_spotify, link_wiki, product_id_fk) VALUES (5, \"Shoegaze Life\", \"none\", \"none\", 1);\n"               );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, song_name, link_spotify, link_wiki, product_id_fk) VALUES (6, \"Sex Doll with Life\", \"none\", \"none\", 1);\n"          );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, song_name, link_spotify, link_wiki, product_id_fk) VALUES (7, \"Disparate Society\", \"none\", \"none\", 1);\n"           );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, song_name, link_spotify, link_wiki, product_id_fk) VALUES (8, \"Initiative\", \"none\", \"none\", 1);\n "                 );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, song_name, link_spotify, link_wiki, product_id_fk) VALUES (9, \"Welcome to the Love Hospital\", \"none\", \"none\", 1);\n");
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, song_name, link_spotify, link_wiki, product_id_fk) VALUES (10, \"SHIRONOIR\", \"none\", \"none\", 1);\n"                  );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, song_name, link_spotify, link_wiki, product_id_fk) VALUES (11, \"Psychokinesis\", \"none\", \"none\", 1);\n"              );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, song_name, link_spotify, link_wiki, product_id_fk) VALUES (12, \"DIARRHEA\", \"none\", \"none\", 1);\n"                   );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, song_name, link_spotify, link_wiki, product_id_fk) VALUES (13, \"Sky Burial\", \"none\", \"none\", 1);\n"                 );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, song_name, link_spotify, link_wiki, product_id_fk) VALUES (14, \"Self-Distruct\", \"none\", \"none\", 1);\n"              );
                 }
 
                 // File is no longer needed
