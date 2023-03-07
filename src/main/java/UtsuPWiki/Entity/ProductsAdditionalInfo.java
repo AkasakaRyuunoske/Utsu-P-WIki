@@ -19,8 +19,8 @@ public class ProductsAdditionalInfo {
     @Column(name = "id")
     private long id;
 
-    @Column(name = "contains")
-    private String contains;
+    @Column(name = "song_name")
+    private String song_name;
 
     @Column(name = "link_spotify")
     private String linkSpotify;
@@ -28,7 +28,7 @@ public class ProductsAdditionalInfo {
     @Column(name = "link_wiki")
     private String linkWiki;
 
-    @Column(name = "track_list")
-    private String trackList;
-
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "product_id_fk", referencedColumnName = "id")
+    private Products products;
 }
