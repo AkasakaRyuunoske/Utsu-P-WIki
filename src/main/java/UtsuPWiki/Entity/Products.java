@@ -46,10 +46,6 @@ public class Products {
     @JoinColumn(name = "Author_id_fk", referencedColumnName = "id")
     private Authors authors;
 
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "AdditionalInfo_id_fk", referencedColumnName = "id")
-    private ProductsAdditionalInfo productsAdditionalInfo;
-
     //For Utsu-P (authors.id = 1) Costs for related products are in "$". Exact numbers
     //are taken from Amazon.com (Except for CD-R, there the cost is ￥1,500 to "$" (so it's ~10.99$)
 
