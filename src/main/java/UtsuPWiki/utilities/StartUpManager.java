@@ -16,20 +16,22 @@ public class StartUpManager implements ApplicationListener<ApplicationEnvironmen
          At ApplicationEnvironmentPreparedEvent annotations do not work yet */
 
         // database-helper properties
-        String doPopulateDatabase   = event.getEnvironment().getProperty("database-helper.populate-database" );
-        String doPopulateAuthors    = event.getEnvironment().getProperty("database-helper.populate-authors"  );
-        String doPopulateClients    = event.getEnvironment().getProperty("database-helper.populate-clients"  );
-        String doPopulateComments   = event.getEnvironment().getProperty("database-helper.populate-comments" );
-        String doPopulateCountries  = event.getEnvironment().getProperty("database-helper.populate-countries");
-        String doPopulateDelivery   = event.getEnvironment().getProperty("database-helper.populate-delivery" );
-        String doPopulateGenres     = event.getEnvironment().getProperty("database-helper.populate-genres"   );
-        String doPopulateOrders     = event.getEnvironment().getProperty("database-helper.populate-orders"   );
-        String doPopulateProducts   = event.getEnvironment().getProperty("database-helper.populate-products" );
-        String doPopulateTypes      = event.getEnvironment().getProperty("database-helper.populate-types"    );
-        String doPopulateAll        = event.getEnvironment().getProperty("database-helper.populate-all"      );
+        String doPopulateDatabase                    = event.getEnvironment().getProperty("database-helper.populate-database"                    );
+        String doPopulateAuthors                     = event.getEnvironment().getProperty("database-helper.populate-authors"                     );
+        String doPopulateClients                     = event.getEnvironment().getProperty("database-helper.populate-clients"                     );
+        String doPopulateComments                    = event.getEnvironment().getProperty("database-helper.populate-comments"                    );
+        String doPopulateCountries                   = event.getEnvironment().getProperty("database-helper.populate-countries"                   );
+        String doPopulateDelivery                    = event.getEnvironment().getProperty("database-helper.populate-delivery"                    );
+        String doPopulateGenres                      = event.getEnvironment().getProperty("database-helper.populate-genres"                      );
+        String doPopulateOrders                      = event.getEnvironment().getProperty("database-helper.populate-orders"                      );
+        String doPopulateProducts                    = event.getEnvironment().getProperty("database-helper.populate-products"                    );
+        String doPopulateTypes                       = event.getEnvironment().getProperty("database-helper.populate-types"                       );
+        String doPopulateProductsAdditionalInfo      = event.getEnvironment().getProperty("database-helper.populate-products-additional-info"    );
+
+        String doPopulateAll                         = event.getEnvironment().getProperty("database-helper.populate-all");
 
         // fancy writings properties
-        String doPrint              = event.getEnvironment().getProperty("fancy-writings.do-print"      );
+        String doPrint              = event.getEnvironment().getProperty("fancy-writings.do-print");
 
         // managing startup
         manageStartUp(doPrint);
@@ -45,6 +47,7 @@ public class StartUpManager implements ApplicationListener<ApplicationEnvironmen
                 doPopulateOrders,
                 doPopulateProducts,
                 doPopulateTypes,
+                doPopulateProductsAdditionalInfo,
                 doPopulateAll);
     }
 
