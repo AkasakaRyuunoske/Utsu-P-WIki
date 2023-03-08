@@ -22,6 +22,7 @@ function navigate(element) {
 	
 	locationsContainer = locationsContainer.replaceAll("\n", "");
 	locationsContainer = locationsContainer.replaceAll("\t", "");
+	locationsContainer = locationsContainer.replaceAll(/\s/g, "");
 	
 	let locationIndex = locationsContainer.indexOf(location);
 	let sliceTo;
