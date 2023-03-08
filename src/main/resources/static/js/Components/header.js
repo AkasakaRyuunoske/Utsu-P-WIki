@@ -9,7 +9,7 @@ if (headers != null) {
 			+	"<h1 class='hero glitch layers' data-text='鬱P Wiki' id='Utsu-P'>"
 			+		"鬱P Wiki"
 			+	"</h1>"
-			+ "<h2 class='sub-header-text'>Home</h2>"
+			+ "<h2 class='sub-header-text' id='sub-header'>Home</h2>"
 			+ "</header>"
 
 			+	"<header class='header-options-text header-grid-container'>"
@@ -18,6 +18,8 @@ if (headers != null) {
 			+		"<h2 class='header-grid-item' onclick='navigate(this)'>Create</h2>"
 			+		"<h2 class='header-grid-item' onclick='navigate(this)'>Buy</h2>"
 			+	"</header>";
+} else {
+	console.log("Something went wrong.");
 }
 
 let utsup = document.getElementById("Utsu-P");
