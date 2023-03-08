@@ -1,0 +1,16 @@
+.album-grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  padding: 10px;
+  background: black;
+  width: 63vw;
+  height: 30vw;
+  float: right;
+  font-size: 2vw;
+}
+
+.item1 {
+  text-align: center;
+  grid-column: 1 / 3;
+}
