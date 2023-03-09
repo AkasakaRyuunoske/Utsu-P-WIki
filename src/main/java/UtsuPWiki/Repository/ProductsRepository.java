@@ -22,7 +22,7 @@ public interface ProductsRepository extends JpaRepository<Products, Long> {
 
     @Query(value = "SELECT products_additional_info.song_name " +
                    "FROM products " +
-                   "JOIN products_additional_info ON products.id = products_additional_info.id " +
+                   "JOIN products_additional_info ON products.id = products_additional_info.product_id_fk " +
                    "WHERE products_additional_info.product_id_fk = :id_album",
                    nativeQuery = true)
     String[] selectTrackListByAlbumId(long id_album);
