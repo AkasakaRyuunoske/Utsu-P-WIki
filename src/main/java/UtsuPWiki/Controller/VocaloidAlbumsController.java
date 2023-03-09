@@ -45,9 +45,11 @@ public class VocaloidAlbumsController {
         model.addAttribute("product_product_id", product.getId());
         model.addAttribute("track_list", productsRepository.selectTrackListByAlbumId(product.getId()));
 
+        log.info("Info on selected product: " + product.getProductName() + " " + product.getId());
+        log.info("Track list of selected album: " + Arrays.toString(productsRepository.selectTrackListByAlbumId(product.getId())));
         model.addAttribute("album_and_author", albumAndAuthor);
 
-        String resultPage = "Authors/" + "/" + author + "/" + "Albums" + "/" + album + ".html"; // here is defined page to be returned
+        String resultPage = "Authors" + "/" + author + "/" + "Albums" + "/album.html"; // here is defined page to be returned
         model.addAttribute("currentPage","/authors/{" + author + "}/albums/{" + album + "}");
 
         return resultPage;
