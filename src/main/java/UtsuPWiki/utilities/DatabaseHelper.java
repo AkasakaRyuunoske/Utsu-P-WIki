@@ -142,6 +142,9 @@ public class DatabaseHelper {
                 // Products Additional Info Table
                 if (doPopulateProductsAdditionalInfo.equals("true") || doPopulateAll.equals("true")) {
                     log.info("Products Additional Info have been populated");
+                    //Order of albums and song in them is taken from : https://vocaloid.fandom.com/wiki/Utsu-P
+
+                    // Diarrhea
                     data_sqlWriter.write("INSERT INTO products_additional_info(id, song_name, link_spotify, link_wiki, product_id_fk) VALUES (1, \"Poison Apple\", \"none\", \"none\", 1);\n"                );
                     data_sqlWriter.write("INSERT INTO products_additional_info(id, song_name, link_spotify, link_wiki, product_id_fk) VALUES (2, \"Corpse Attack!!\", \"none\", \"none\", 1);\n"             );
                     data_sqlWriter.write("INSERT INTO products_additional_info(id, song_name, link_spotify, link_wiki, product_id_fk) VALUES (3, \"Anti Digitalizm\", \"none\", \"none\", 1);\n"             );
@@ -156,6 +159,72 @@ public class DatabaseHelper {
                     data_sqlWriter.write("INSERT INTO products_additional_info(id, song_name, link_spotify, link_wiki, product_id_fk) VALUES (12, \"DIARRHEA\", \"none\", \"none\", 1);\n"                   );
                     data_sqlWriter.write("INSERT INTO products_additional_info(id, song_name, link_spotify, link_wiki, product_id_fk) VALUES (13, \"Sky Burial\", \"none\", \"none\", 1);\n"                 );
                     data_sqlWriter.write("INSERT INTO products_additional_info(id, song_name, link_spotify, link_wiki, product_id_fk) VALUES (14, \"Self-Distruct\", \"none\", \"none\", 1);\n"              );
+
+                    // Traumatic
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (15, \"none\", \"none\", \"Constipation of Death\", 2);\n");
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (16, \"nsone\", \"none\", \"Children's World\", 2);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (17, \"none\", \"none\", \"Adult's Toy\", 2);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (18, \"none\", \"none\", \"THE DYING MESSAGE\", 2);\n");
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (19, \"none\", \"none\", \"The Public Toilet's Murky Water\", 2);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (20, \"none\", \"none\", \"TRAUMATIC\", 2);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (21, \"none\", \"none\", \"Monkey Doesn't Know\", 2);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (22, \"none\", \"none\", \"Black Showtime\", 2);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (23, \"none\", \"none\", \"potato-head in wonderland\", 2);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (24, \"none\", \"none\", \"Wraith\", 2);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (25, \"none\", \"none\", \"Vermin\", 2);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (26, \"none\", \"none\", \"Sleepwalk\", 2);\n");
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (27, \"none\", \"none\", \"Doll\", 2);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (28, \"none\", \"none\", \"Heart Sutra Hardcore\", 2);\n");
+
+                    // Moksha
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (29, \"none\", \"none\", \"MOKSHA (emancipation)\", 3);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (30, \"none\", \"none\", \"Riot\", 3);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (31, \"none\", \"none\", \"Fools Are Attracted to Anomaly\", 3);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (32, \"none\", \"none\", \"Rebirth\", 3);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (33, \"none\", \"none\", \"Corona\", 3);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (34, \"none\", \"none\", \"Red light, green light?\", 3);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (35, \"none\", \"none\", \"This is Love Song\", 3);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (36, \"none\", \"none\", \"The Setting Sun\", 3);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (37, \"none\", \"none\", \"Let's Ride The Happy Train\", 3);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (38, \"none\", \"none\", \"Compared to The Black of The Anonymous\", 3);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (39, \"none\", \"none\", \"MOKSHA\", 3);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (40, \"none\", \"none\", \"Blackhole Artist\", 3);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (41, \"none\", \"none\", \"Allegra\", 3);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (42, \"none\", \"none\", \"The trains are running on shedule\", 3);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (43, \"none\", \"none\", \"Pure White Poison\", 3);\n");
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (44, \"none\", \"none\", \"Striped Melody\", 3);\n");
+
+                    // CD-R
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (45, \"none\", \"none\", \"Poison Apple\", 4);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (46, \"none\", \"none\", \"Corpse Attack!!\", 4);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (47, \"none\", \"none\", \"Anti digitalizm\", 4);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (48, \"none\", \"none\", \"Melancholy of Heavy Rain\", 4);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (49, \"none\", \"none\", \"Shoegaze Life\", 4);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (50, \"none\", \"none\", \"Sex doll with life\", 4);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (51, \"none\", \"none\", \"Disparate Society\", 4);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (52, \"none\", \"none\", \"Initiative\", 4);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (53, \"none\", \"none\", \"Welcome to The Love Hospital\", 4);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (54, \"none\", \"none\", \"SHIRONOIR\", 4);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (55, \"none\", \"none\", \"Psychokinesis\", 4);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (56, \"none\", \"none\", \"DARRHEA\", 4);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (57, \"none\", \"none\", \"Sky Burial\", 4);");
+
+                    // Warufuzake
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (58, \"none\", \"none\", \"Impli-cat Understanding\", 5);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (59, \"none\", \"none\", \"Fools are Attracted to Anomaly\", 5);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (60, \"none\", \"none\", \"Vermin\", 5);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (61, \"none\", \"none\", \"Ghost Under the Umbrella\", 5);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (62, \"none\", \"none\", \"Painting\", 5);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (63, \"none\", \"none\", \"Corona\", 5);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (64, \"none\", \"none\", \"Adult's Toy\", 5);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (65, \"none\", \"none\", \"B-CLASS HEROES\", 5);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (66, \"none\", \"none\", \"Poster Girl's Prank\", 5);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (67, \"none\", \"none\", \"Corpse Attack!!\", 5);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (68, \"none\", \"none\", \"Flu\", 5);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (69, \"none\", \"none\", \"THE DYING MESSAGE\", 5);\n" );
+                    data_sqlWriter.write("INSERT INTO products_additional_info(id, link_spotify, link_wiki, song_name, product_id_fk) VALUES (70, \"none\", \"none\", \"Life Select Button ~'M~\", 5);");
+
+
                 }
 
                 // File is no longer needed
