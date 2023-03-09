@@ -31,6 +31,11 @@ public class VocaloidAlbumsController {
 
     @GetMapping("/authors/{author}/albums/{album}")
     public String albumGETController(Model model, @PathVariable String author, @PathVariable String album, HttpServletRequest request){
+        //Todo Change order to go by one full column to another full column
+        //Todo Add numbers
+        //Todo Add "THE GREATEST INDIE VOCALOID" etc...
+        //TODO Add ChatGPT-3 Interpretations for EACH song
+        //Todo help yo self
         Navigation.addLocations(model, request);
 
         String albumAndAuthor = author + " - " + album;
