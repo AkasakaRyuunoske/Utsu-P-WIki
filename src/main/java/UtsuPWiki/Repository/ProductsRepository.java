@@ -6,6 +6,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 public interface ProductsRepository extends JpaRepository<Products, Long> {
     @Query("SELECT productName FROM Products")
@@ -20,10 +22,7 @@ public interface ProductsRepository extends JpaRepository<Products, Long> {
 
     //todo get track list by name
 
-    @Query(value = "SELECT products_additional_info.song_name " +
-                   "FROM products " +
-                   "JOIN products_additional_info ON products.id = products_additional_info.product_id_fk " +
-                   "WHERE products_additional_info.product_id_fk = :id_album",
+    @Query(value = "SELECT song_name, id FROM products_additional_info WHERE product_id_fk = :id_album",
                    nativeQuery = true)
     String[] selectTrackListByAlbumId(long id_album);
 }
