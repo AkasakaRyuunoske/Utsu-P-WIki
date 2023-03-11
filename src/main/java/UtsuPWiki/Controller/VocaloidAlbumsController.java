@@ -47,11 +47,10 @@ public class VocaloidAlbumsController {
         model.addAttribute("product_image"     , product.getProductImage());
         model.addAttribute("product_cost"      , product.getCost());
         model.addAttribute("product_date_out"  , product.getDateOut());
-        model.addAttribute("product_product_id", product.getId());
+        model.addAttribute("product_id", product.getId());
         model.addAttribute("track_list", productsRepository.selectTrackListByAlbumId(product.getId()));
 
         log.info("Info on selected product: " + product.getProductName() + " " + product.getId());
-        log.info("Track list of selected album: " + Arrays.toString(productsRepository.selectTrackListByAlbumId(product.getId())));
         model.addAttribute("album_and_author", albumAndAuthor);
 
         String resultPage = "Authors" + "/" + author + "/" + "Albums" + "/album.html"; // here is defined page to be returned
