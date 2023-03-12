@@ -46,6 +46,8 @@ public class Products {
     @JoinColumn(name = "Author_id_fk", referencedColumnName = "id")
     private Authors authors;
 
+    @Column(name = "contains", nullable = false)
+    private String contains = "none";
     //For Utsu-P (authors.id = 1) Costs for related products are in "$". Exact numbers
     //are taken from Amazon.com (Except for CD-R, there the cost is ￥1,500 to "$" (so it's ~10.99$)
 
