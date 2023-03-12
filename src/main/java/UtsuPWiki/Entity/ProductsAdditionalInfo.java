@@ -31,4 +31,7 @@ public class ProductsAdditionalInfo {
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "product_id_fk", referencedColumnName = "id")
     private Products products;
+
+    @Column(name = "interpretation", nullable = false)
+    private String interpretation = "none";
 }
