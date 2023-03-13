@@ -32,6 +32,6 @@ public class ProductsAdditionalInfo {
     @JoinColumn(name = "product_id_fk", referencedColumnName = "id")
     private Products products;
 
-    @Column(name = "interpretation", nullable = false)
+    @Column(name = "interpretation", nullable = true)
     private String interpretation = "none";
 }
