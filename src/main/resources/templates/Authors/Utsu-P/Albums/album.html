@@ -41,12 +41,11 @@
 
         <div class="album-grid-container">
             <h1 class="item1" style="font-size: 4vw">鬱P [Utsu-P]</h1>
-            <h1 class="item1" style="font-size: 2.5vw">VOCALOID INDIES BEST ALBUM</h1>
-            <h1 class="item1" th:text="${product_name}"></h1>
-            <h1 class="item2" style="font-size: 4vw">--Track List:--</h1>
-
-            <!-- <h1 th:text="${product_image}"></h1> -->
-
+            <h1 class="item1" style="font-size: 2.5vw">VOCALOID 
+                <span th:text="${product_id}" th:remove="tag"></span>th ALBUM
+            </h1>
+            <h1 class="item1" th:text="${product_name}" id="subheader"></h1>
+            <h1 class="item2" style="font-size: 4vw">--Track List--</h1>
             <div th:each="track : ${track_list}" th:text="${track}"></div>
         </div>
     </div>
