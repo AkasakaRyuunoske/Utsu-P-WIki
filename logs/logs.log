@@ -561,3 +561,1210 @@ all humanity's problems stem from mans inability to sit quietly in a room alone"
 2023-03-12 11:15:24.842  INFO 4708 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-03-12 11:15:24.843  INFO 4708 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-03-12 11:15:24.854  INFO 4708 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-13 11:23:18.589  INFO 14284 --- [main] UtsuPWiki.utilities.FancyWritings        : 
+ 
+all humanity's problems stem from mans inability to sit quietly in a room alone" (Blaise Pascal)
+2023-03-13 11:23:18.723  INFO 14284 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.16.1 on Yume with PID 14284 (C:\Users\akasa\IdeaProjects\Utsu-P-WIki\target\classes started by akasa in C:\Users\akasa\IdeaProjects\Utsu-P-WIki)
+2023-03-13 11:23:18.724  INFO 14284 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
+2023-03-13 11:23:20.627  INFO 14284 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-13 11:23:20.744  INFO 14284 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 104 ms. Found 10 JPA repository interfaces.
+2023-03-13 11:23:21.849  INFO 14284 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-13 11:23:21.867  INFO 14284 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-13 11:23:21.868  INFO 14284 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2023-03-13 11:23:22.104  INFO 14284 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-13 11:23:22.104  INFO 14284 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3269 ms
+2023-03-13 11:23:22.391  INFO 14284 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-13 11:23:22.477  INFO 14284 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2023-03-13 11:23:22.828  INFO 14284 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-13 11:23:23.043  INFO 14284 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-13 11:23:23.057  WARN 14284 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-13 11:23:23.343  INFO 14284 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-13 11:23:23.388  INFO 14284 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2023-03-13 11:23:25.107  INFO 14284 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-13 11:23:25.124  INFO 14284 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 11:23:25.216  WARN 14284 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-13 11:23:26.461  INFO 14284 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2023-03-13 11:23:26.808  INFO 14284 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-03-13 11:23:27.256  INFO 14284 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-13 11:23:27.273  INFO 14284 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 9.431 seconds (JVM running for 10.976)
+2023-03-13 11:24:18.705  INFO 14284 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-13 11:24:18.707  INFO 14284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-13 11:24:18.709  INFO 14284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-13 11:26:07.469  INFO 14284 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 11:26:07.472  INFO 14284 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-13 11:26:07.485  INFO 14284 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-13 11:27:04.648  INFO 5252 --- [main] UtsuPWiki.utilities.FancyWritings        : 
+ 
+all humanity's problems stem from mans inability to sit quietly in a room alone" (Blaise Pascal)
+2023-03-13 11:27:04.653  INFO 5252 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Database populating is started.
+2023-03-13 11:27:04.653  INFO 5252 --- [main] UtsuPWiki.utilities.DatabaseHelper       : data.sql created
+2023-03-13 11:27:04.655  INFO 5252 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Countries have been populated
+2023-03-13 11:27:04.656  INFO 5252 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Types have been populated
+2023-03-13 11:27:04.656  INFO 5252 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Genres have been populated
+2023-03-13 11:27:04.656  INFO 5252 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Authors have been populated
+2023-03-13 11:27:04.657  INFO 5252 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Clients have been populated
+2023-03-13 11:27:04.657  INFO 5252 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Comments have been populated
+2023-03-13 11:27:04.657  INFO 5252 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Delivery have been populated
+2023-03-13 11:27:04.657  INFO 5252 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Orders have been populated
+2023-03-13 11:27:04.657  INFO 5252 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products have been populated
+2023-03-13 11:27:04.658  INFO 5252 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products Additional Info have been populated
+2023-03-13 11:27:04.659  INFO 5252 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Successfully wrote to the data.sql .
+2023-03-13 11:27:04.757  INFO 5252 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.16.1 on Yume with PID 5252 (C:\Users\akasa\IdeaProjects\Utsu-P-WIki\target\classes started by akasa in C:\Users\akasa\IdeaProjects\Utsu-P-WIki)
+2023-03-13 11:27:04.758  INFO 5252 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
+2023-03-13 11:27:05.515  INFO 5252 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-13 11:27:05.618  INFO 5252 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94 ms. Found 10 JPA repository interfaces.
+2023-03-13 11:27:06.503  INFO 5252 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-13 11:27:06.515  INFO 5252 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-13 11:27:06.515  INFO 5252 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2023-03-13 11:27:06.656  INFO 5252 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-13 11:27:06.656  INFO 5252 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1828 ms
+2023-03-13 11:27:06.863  INFO 5252 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-13 11:27:06.933  INFO 5252 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2023-03-13 11:27:07.105  INFO 5252 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-13 11:27:07.191  INFO 5252 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-13 11:27:07.195  WARN 5252 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-13 11:27:07.338  INFO 5252 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-13 11:27:07.377  INFO 5252 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2023-03-13 11:27:09.263  INFO 5252 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-13 11:27:09.270  INFO 5252 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 11:27:09.309  WARN 5252 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-13 11:27:10.137  INFO 5252 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2023-03-13 11:27:10.351  INFO 5252 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-03-13 11:27:10.612  INFO 5252 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-13 11:27:10.621  INFO 5252 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 6.419 seconds (JVM running for 6.987)
+2023-03-13 11:27:45.600  INFO 5252 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 11:27:45.600  INFO 5252 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-13 11:27:45.632  INFO 5252 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-13 11:27:48.525  INFO 21876 --- [main] UtsuPWiki.utilities.FancyWritings        : 
+ 
+all humanity's problems stem from mans inability to sit quietly in a room alone" (Blaise Pascal)
+2023-03-13 11:27:48.541  INFO 21876 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Database populating is started.
+2023-03-13 11:27:48.541  INFO 21876 --- [main] UtsuPWiki.utilities.DatabaseHelper       : data.sql already exists.
+2023-03-13 11:27:48.541  INFO 21876 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Countries have been populated
+2023-03-13 11:27:48.541  INFO 21876 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Types have been populated
+2023-03-13 11:27:48.541  INFO 21876 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Genres have been populated
+2023-03-13 11:27:48.541  INFO 21876 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Authors have been populated
+2023-03-13 11:27:48.541  INFO 21876 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Clients have been populated
+2023-03-13 11:27:48.541  INFO 21876 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Comments have been populated
+2023-03-13 11:27:48.541  INFO 21876 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Delivery have been populated
+2023-03-13 11:27:48.541  INFO 21876 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Orders have been populated
+2023-03-13 11:27:48.541  INFO 21876 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products have been populated
+2023-03-13 11:27:48.541  INFO 21876 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products Additional Info have been populated
+2023-03-13 11:27:48.541  INFO 21876 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Successfully wrote to the data.sql .
+2023-03-13 11:27:48.620  INFO 21876 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.16.1 on Yume with PID 21876 (C:\Users\akasa\IdeaProjects\Utsu-P-WIki\target\classes started by akasa in C:\Users\akasa\IdeaProjects\Utsu-P-WIki)
+2023-03-13 11:27:48.620  INFO 21876 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
+2023-03-13 11:27:49.381  INFO 21876 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-13 11:27:49.472  INFO 21876 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 10 JPA repository interfaces.
+2023-03-13 11:27:50.305  INFO 21876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-13 11:27:50.313  INFO 21876 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-13 11:27:50.314  INFO 21876 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2023-03-13 11:27:50.431  INFO 21876 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-13 11:27:50.431  INFO 21876 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1748 ms
+2023-03-13 11:27:50.558  INFO 21876 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-13 11:27:50.565  WARN 21876 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-13 11:27:50.703  INFO 21876 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-13 11:27:50.770  WARN 21876 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scriptDataSourceInitializer' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceInitializationConfiguration$SharedCredentialsDataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #16 of URL [file:/C:/Users/akasa/IdeaProjects/Utsu-P-WIki/target/classes/data.sql]: INSERT INTO Products(id, cost, product_name, quantity, genres_id_fk, date_out, author_id_fk, types_id_fk, product_image) VALUES(1, 9.49, "Utsu-P - Diarrhea", 0, 1, "15/11/2009", 1, 1, "https://i.scdn.co/image/ab67616d00001e02486835908dacc4ca95d5a7e4"); nested exception is java.sql.SQLException: Field 'contains' doesn't have a default value
+2023-03-13 11:27:50.770  INFO 21876 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-13 11:27:50.778  INFO 21876 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-13 11:27:50.781  INFO 21876 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-13 11:27:50.789  INFO 21876 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-03-13 11:27:50.812 ERROR 21876 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scriptDataSourceInitializer' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceInitializationConfiguration$SharedCredentialsDataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #16 of URL [file:/C:/Users/akasa/IdeaProjects/Utsu-P-WIki/target/classes/data.sql]: INSERT INTO Products(id, cost, product_name, quantity, genres_id_fk, date_out, author_id_fk, types_id_fk, product_image) VALUES(1, 9.49, "Utsu-P - Diarrhea", 0, 1, "15/11/2009", 1, 1, "https://i.scdn.co/image/ab67616d00001e02486835908dacc4ca95d5a7e4"); nested exception is java.sql.SQLException: Field 'contains' doesn't have a default value
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:164) ~[spring-boot-2.6.6.jar:2.6.6]
+	at UtsuPWiki.UtsuPApplication.main(UtsuPApplication.java:16) ~[classes/:na]
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #16 of URL [file:/C:/Users/akasa/IdeaProjects/Utsu-P-WIki/target/classes/data.sql]: INSERT INTO Products(id, cost, product_name, quantity, genres_id_fk, date_out, author_id_fk, types_id_fk, product_image) VALUES(1, 9.49, "Utsu-P - Diarrhea", 0, 1, "15/11/2009", 1, 1, "https://i.scdn.co/image/ab67616d00001e02486835908dacc4ca95d5a7e4"); nested exception is java.sql.SQLException: Field 'contains' doesn't have a default value
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282) ~[spring-jdbc-5.3.18.jar:5.3.18]
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254) ~[spring-jdbc-5.3.18.jar:5.3.18]
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54) ~[spring-jdbc-5.3.18.jar:5.3.18]
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:90) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:145) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:107) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyDataScripts(AbstractScriptDatabaseInitializer.java:101) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:76) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:65) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.18.jar:5.3.18]
+	... 17 common frames omitted
+Caused by: java.sql.SQLException: Field 'contains' doesn't have a default value
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261) ~[spring-jdbc-5.3.18.jar:5.3.18]
+	... 27 common frames omitted
+
+2023-03-13 11:31:54.513  INFO 25268 --- [main] UtsuPWiki.utilities.FancyWritings        : 
+ 
+all humanity's problems stem from mans inability to sit quietly in a room alone" (Blaise Pascal)
+2023-03-13 11:31:54.517  INFO 25268 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Database populating is started.
+2023-03-13 11:31:54.518  INFO 25268 --- [main] UtsuPWiki.utilities.DatabaseHelper       : data.sql already exists.
+2023-03-13 11:31:54.519  INFO 25268 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Countries have been populated
+2023-03-13 11:31:54.519  INFO 25268 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Types have been populated
+2023-03-13 11:31:54.519  INFO 25268 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Genres have been populated
+2023-03-13 11:31:54.519  INFO 25268 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Authors have been populated
+2023-03-13 11:31:54.519  INFO 25268 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Clients have been populated
+2023-03-13 11:31:54.520  INFO 25268 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Comments have been populated
+2023-03-13 11:31:54.521  INFO 25268 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Delivery have been populated
+2023-03-13 11:31:54.521  INFO 25268 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Orders have been populated
+2023-03-13 11:31:54.521  INFO 25268 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products have been populated
+2023-03-13 11:31:54.521  INFO 25268 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products Additional Info have been populated
+2023-03-13 11:31:54.522  INFO 25268 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Successfully wrote to the data.sql .
+2023-03-13 11:31:54.603  INFO 25268 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.16.1 on Yume with PID 25268 (C:\Users\akasa\IdeaProjects\Utsu-P-WIki\target\classes started by akasa in C:\Users\akasa\IdeaProjects\Utsu-P-WIki)
+2023-03-13 11:31:54.604  INFO 25268 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
+2023-03-13 11:31:55.388  INFO 25268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-13 11:31:55.474  INFO 25268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 10 JPA repository interfaces.
+2023-03-13 11:31:56.272  INFO 25268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-13 11:31:56.280  INFO 25268 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-13 11:31:56.280  INFO 25268 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2023-03-13 11:31:56.383  INFO 25268 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-13 11:31:56.383  INFO 25268 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1709 ms
+2023-03-13 11:31:56.498  INFO 25268 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-13 11:31:56.507  WARN 25268 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-13 11:31:56.691  INFO 25268 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-13 11:31:56.739  WARN 25268 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scriptDataSourceInitializer' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceInitializationConfiguration$SharedCredentialsDataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/akasa/IdeaProjects/Utsu-P-WIki/target/classes/data.sql]: INSERT INTO Countries(id, description, name) VALUES(1,"none","Japan"); nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+2023-03-13 11:31:56.740  INFO 25268 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-13 11:31:56.749  INFO 25268 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-13 11:31:56.753  INFO 25268 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-13 11:31:56.764  INFO 25268 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-03-13 11:31:56.786 ERROR 25268 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scriptDataSourceInitializer' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceInitializationConfiguration$SharedCredentialsDataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/akasa/IdeaProjects/Utsu-P-WIki/target/classes/data.sql]: INSERT INTO Countries(id, description, name) VALUES(1,"none","Japan"); nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:164) ~[spring-boot-2.6.6.jar:2.6.6]
+	at UtsuPWiki.UtsuPApplication.main(UtsuPApplication.java:16) ~[classes/:na]
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/akasa/IdeaProjects/Utsu-P-WIki/target/classes/data.sql]: INSERT INTO Countries(id, description, name) VALUES(1,"none","Japan"); nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282) ~[spring-jdbc-5.3.18.jar:5.3.18]
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254) ~[spring-jdbc-5.3.18.jar:5.3.18]
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54) ~[spring-jdbc-5.3.18.jar:5.3.18]
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:90) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:145) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:107) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyDataScripts(AbstractScriptDatabaseInitializer.java:101) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:76) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:65) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.18.jar:5.3.18]
+	... 17 common frames omitted
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261) ~[spring-jdbc-5.3.18.jar:5.3.18]
+	... 27 common frames omitted
+
+2023-03-13 11:32:29.978  INFO 23556 --- [main] UtsuPWiki.utilities.FancyWritings        : 
+ 
+all humanity's problems stem from mans inability to sit quietly in a room alone" (Blaise Pascal)
+2023-03-13 11:32:29.993  INFO 23556 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Database populating is started.
+2023-03-13 11:32:29.993  INFO 23556 --- [main] UtsuPWiki.utilities.DatabaseHelper       : data.sql already exists.
+2023-03-13 11:32:29.994  INFO 23556 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Countries have been populated
+2023-03-13 11:32:29.994  INFO 23556 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Types have been populated
+2023-03-13 11:32:29.994  INFO 23556 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Genres have been populated
+2023-03-13 11:32:29.994  INFO 23556 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Authors have been populated
+2023-03-13 11:32:29.994  INFO 23556 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Clients have been populated
+2023-03-13 11:32:29.994  INFO 23556 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Comments have been populated
+2023-03-13 11:32:29.994  INFO 23556 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Delivery have been populated
+2023-03-13 11:32:29.994  INFO 23556 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Orders have been populated
+2023-03-13 11:32:29.994  INFO 23556 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products have been populated
+2023-03-13 11:32:29.994  INFO 23556 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products Additional Info have been populated
+2023-03-13 11:32:29.994  INFO 23556 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Successfully wrote to the data.sql .
+2023-03-13 11:32:30.073  INFO 23556 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.16.1 on Yume with PID 23556 (C:\Users\akasa\IdeaProjects\Utsu-P-WIki\target\classes started by akasa in C:\Users\akasa\IdeaProjects\Utsu-P-WIki)
+2023-03-13 11:32:30.081  INFO 23556 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
+2023-03-13 11:32:30.795  INFO 23556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-13 11:32:30.883  INFO 23556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 10 JPA repository interfaces.
+2023-03-13 11:32:31.692  INFO 23556 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-13 11:32:31.701  INFO 23556 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-13 11:32:31.701  INFO 23556 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2023-03-13 11:32:31.814  INFO 23556 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-13 11:32:31.814  INFO 23556 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1677 ms
+2023-03-13 11:32:31.923  INFO 23556 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-13 11:32:31.930  WARN 23556 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-13 11:32:32.065  INFO 23556 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-13 11:32:32.095  WARN 23556 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scriptDataSourceInitializer' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceInitializationConfiguration$SharedCredentialsDataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/akasa/IdeaProjects/Utsu-P-WIki/target/classes/data.sql]: INSERT INTO Countries(id, description, name) VALUES(1,"none","Japan"); nested exception is java.sql.SQLSyntaxErrorException: Table 'utsu_p_wiki.countries' doesn't exist
+2023-03-13 11:32:32.095  INFO 23556 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-13 11:32:32.102  INFO 23556 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-13 11:32:32.104  INFO 23556 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-13 11:32:32.114  INFO 23556 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-03-13 11:32:32.133 ERROR 23556 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scriptDataSourceInitializer' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceInitializationConfiguration$SharedCredentialsDataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/akasa/IdeaProjects/Utsu-P-WIki/target/classes/data.sql]: INSERT INTO Countries(id, description, name) VALUES(1,"none","Japan"); nested exception is java.sql.SQLSyntaxErrorException: Table 'utsu_p_wiki.countries' doesn't exist
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:164) ~[spring-boot-2.6.6.jar:2.6.6]
+	at UtsuPWiki.UtsuPApplication.main(UtsuPApplication.java:16) ~[classes/:na]
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/akasa/IdeaProjects/Utsu-P-WIki/target/classes/data.sql]: INSERT INTO Countries(id, description, name) VALUES(1,"none","Japan"); nested exception is java.sql.SQLSyntaxErrorException: Table 'utsu_p_wiki.countries' doesn't exist
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282) ~[spring-jdbc-5.3.18.jar:5.3.18]
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254) ~[spring-jdbc-5.3.18.jar:5.3.18]
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54) ~[spring-jdbc-5.3.18.jar:5.3.18]
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:90) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:145) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:107) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyDataScripts(AbstractScriptDatabaseInitializer.java:101) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:76) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:65) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.18.jar:5.3.18]
+	... 17 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Table 'utsu_p_wiki.countries' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261) ~[spring-jdbc-5.3.18.jar:5.3.18]
+	... 27 common frames omitted
+
+2023-03-13 11:35:06.176  INFO 23300 --- [main] UtsuPWiki.utilities.FancyWritings        : 
+ 
+all humanity's problems stem from mans inability to sit quietly in a room alone" (Blaise Pascal)
+2023-03-13 11:35:06.180  INFO 23300 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Database populating is started.
+2023-03-13 11:35:06.182  INFO 23300 --- [main] UtsuPWiki.utilities.DatabaseHelper       : data.sql created
+2023-03-13 11:35:06.183  INFO 23300 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Countries have been populated
+2023-03-13 11:35:06.183  INFO 23300 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Types have been populated
+2023-03-13 11:35:06.183  INFO 23300 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Genres have been populated
+2023-03-13 11:35:06.183  INFO 23300 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Authors have been populated
+2023-03-13 11:35:06.183  INFO 23300 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Clients have been populated
+2023-03-13 11:35:06.185  INFO 23300 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Comments have been populated
+2023-03-13 11:35:06.185  INFO 23300 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Delivery have been populated
+2023-03-13 11:35:06.185  INFO 23300 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Orders have been populated
+2023-03-13 11:35:06.185  INFO 23300 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products have been populated
+2023-03-13 11:35:06.185  INFO 23300 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products Additional Info have been populated
+2023-03-13 11:35:06.187  INFO 23300 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Successfully wrote to the data.sql .
+2023-03-13 11:35:06.277  INFO 23300 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.16.1 on Yume with PID 23300 (C:\Users\akasa\IdeaProjects\Utsu-P-WIki\target\classes started by akasa in C:\Users\akasa\IdeaProjects\Utsu-P-WIki)
+2023-03-13 11:35:06.279  INFO 23300 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
+2023-03-13 11:35:07.004  INFO 23300 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-13 11:35:07.092  INFO 23300 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 10 JPA repository interfaces.
+2023-03-13 11:35:08.018  INFO 23300 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-13 11:35:08.030  INFO 23300 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-13 11:35:08.030  INFO 23300 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2023-03-13 11:35:08.137  INFO 23300 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-13 11:35:08.137  INFO 23300 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1786 ms
+2023-03-13 11:35:08.319  INFO 23300 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-13 11:35:08.386  INFO 23300 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2023-03-13 11:35:08.547  INFO 23300 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-13 11:35:08.654  INFO 23300 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-13 11:35:08.657  WARN 23300 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-13 11:35:08.858  INFO 23300 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-13 11:35:08.899  INFO 23300 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2023-03-13 11:35:10.816  INFO 23300 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-13 11:35:10.823  INFO 23300 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 11:35:10.876  WARN 23300 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-13 11:35:11.677  INFO 23300 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2023-03-13 11:35:11.930  INFO 23300 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-03-13 11:35:12.233  INFO 23300 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-13 11:35:12.240  INFO 23300 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 6.45 seconds (JVM running for 6.965)
+2023-03-13 11:35:29.062  INFO 23300 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 11:35:29.062  INFO 23300 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-13 11:35:29.085  INFO 23300 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-13 11:35:32.333  INFO 856 --- [main] UtsuPWiki.utilities.FancyWritings        : 
+ 
+all humanity's problems stem from mans inability to sit quietly in a room alone" (Blaise Pascal)
+2023-03-13 11:35:32.337  INFO 856 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Database populating is started.
+2023-03-13 11:35:32.338  INFO 856 --- [main] UtsuPWiki.utilities.DatabaseHelper       : data.sql already exists.
+2023-03-13 11:35:32.340  INFO 856 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Countries have been populated
+2023-03-13 11:35:32.340  INFO 856 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Types have been populated
+2023-03-13 11:35:32.340  INFO 856 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Genres have been populated
+2023-03-13 11:35:32.340  INFO 856 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Authors have been populated
+2023-03-13 11:35:32.340  INFO 856 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Clients have been populated
+2023-03-13 11:35:32.340  INFO 856 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Comments have been populated
+2023-03-13 11:35:32.340  INFO 856 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Delivery have been populated
+2023-03-13 11:35:32.340  INFO 856 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Orders have been populated
+2023-03-13 11:35:32.341  INFO 856 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products have been populated
+2023-03-13 11:35:32.341  INFO 856 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products Additional Info have been populated
+2023-03-13 11:35:32.343  INFO 856 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Successfully wrote to the data.sql .
+2023-03-13 11:35:32.433  INFO 856 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.16.1 on Yume with PID 856 (C:\Users\akasa\IdeaProjects\Utsu-P-WIki\target\classes started by akasa in C:\Users\akasa\IdeaProjects\Utsu-P-WIki)
+2023-03-13 11:35:32.434  INFO 856 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
+2023-03-13 11:35:33.231  INFO 856 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-13 11:35:33.348  INFO 856 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 10 JPA repository interfaces.
+2023-03-13 11:35:34.224  INFO 856 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-13 11:35:34.233  INFO 856 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-13 11:35:34.234  INFO 856 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2023-03-13 11:35:34.365  INFO 856 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-13 11:35:34.366  INFO 856 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1845 ms
+2023-03-13 11:35:34.491  INFO 856 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-13 11:35:34.497  WARN 856 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-13 11:35:34.633  INFO 856 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-13 11:35:34.723  WARN 856 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scriptDataSourceInitializer' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceInitializationConfiguration$SharedCredentialsDataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #27 of URL [file:/C:/Users/akasa/IdeaProjects/Utsu-P-WIki/target/classes/data.sql]: INSERT INTO products_additional_info(id, song_name, link_spotify, link_wiki, product_id_fk) VALUES (1, "Poison Apple", "none", "none", 1); nested exception is java.sql.SQLException: Field 'interpretation' doesn't have a default value
+2023-03-13 11:35:34.724  INFO 856 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-13 11:35:34.731  INFO 856 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-13 11:35:34.734  INFO 856 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-13 11:35:34.743  INFO 856 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-03-13 11:35:34.766 ERROR 856 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scriptDataSourceInitializer' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceInitializationConfiguration$SharedCredentialsDataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #27 of URL [file:/C:/Users/akasa/IdeaProjects/Utsu-P-WIki/target/classes/data.sql]: INSERT INTO products_additional_info(id, song_name, link_spotify, link_wiki, product_id_fk) VALUES (1, "Poison Apple", "none", "none", 1); nested exception is java.sql.SQLException: Field 'interpretation' doesn't have a default value
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:164) ~[spring-boot-2.6.6.jar:2.6.6]
+	at UtsuPWiki.UtsuPApplication.main(UtsuPApplication.java:16) ~[classes/:na]
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #27 of URL [file:/C:/Users/akasa/IdeaProjects/Utsu-P-WIki/target/classes/data.sql]: INSERT INTO products_additional_info(id, song_name, link_spotify, link_wiki, product_id_fk) VALUES (1, "Poison Apple", "none", "none", 1); nested exception is java.sql.SQLException: Field 'interpretation' doesn't have a default value
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282) ~[spring-jdbc-5.3.18.jar:5.3.18]
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254) ~[spring-jdbc-5.3.18.jar:5.3.18]
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54) ~[spring-jdbc-5.3.18.jar:5.3.18]
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:90) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:145) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:107) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyDataScripts(AbstractScriptDatabaseInitializer.java:101) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:76) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:65) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.18.jar:5.3.18]
+	... 17 common frames omitted
+Caused by: java.sql.SQLException: Field 'interpretation' doesn't have a default value
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261) ~[spring-jdbc-5.3.18.jar:5.3.18]
+	... 27 common frames omitted
+
+2023-03-13 11:36:55.252  INFO 15976 --- [main] UtsuPWiki.utilities.FancyWritings        : 
+ 
+all humanity's problems stem from mans inability to sit quietly in a room alone" (Blaise Pascal)
+2023-03-13 11:36:55.256  INFO 15976 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Database populating is started.
+2023-03-13 11:36:55.257  INFO 15976 --- [main] UtsuPWiki.utilities.DatabaseHelper       : data.sql created
+2023-03-13 11:36:55.258  INFO 15976 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Countries have been populated
+2023-03-13 11:36:55.258  INFO 15976 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Types have been populated
+2023-03-13 11:36:55.258  INFO 15976 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Genres have been populated
+2023-03-13 11:36:55.258  INFO 15976 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Authors have been populated
+2023-03-13 11:36:55.258  INFO 15976 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Clients have been populated
+2023-03-13 11:36:55.259  INFO 15976 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Comments have been populated
+2023-03-13 11:36:55.260  INFO 15976 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Delivery have been populated
+2023-03-13 11:36:55.260  INFO 15976 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Orders have been populated
+2023-03-13 11:36:55.260  INFO 15976 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products have been populated
+2023-03-13 11:36:55.260  INFO 15976 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products Additional Info have been populated
+2023-03-13 11:36:55.262  INFO 15976 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Successfully wrote to the data.sql .
+2023-03-13 11:36:55.343  INFO 15976 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.16.1 on Yume with PID 15976 (C:\Users\akasa\IdeaProjects\Utsu-P-WIki\target\classes started by akasa in C:\Users\akasa\IdeaProjects\Utsu-P-WIki)
+2023-03-13 11:36:55.346  INFO 15976 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
+2023-03-13 11:36:56.091  INFO 15976 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-13 11:36:56.183  INFO 15976 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 10 JPA repository interfaces.
+2023-03-13 11:36:57.037  INFO 15976 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-13 11:36:57.051  INFO 15976 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-13 11:36:57.051  INFO 15976 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2023-03-13 11:36:57.178  INFO 15976 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-13 11:36:57.178  INFO 15976 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1764 ms
+2023-03-13 11:36:57.356  INFO 15976 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-13 11:36:57.406  INFO 15976 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2023-03-13 11:36:57.565  INFO 15976 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-13 11:36:57.654  INFO 15976 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-13 11:36:57.658  WARN 15976 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-13 11:36:57.795  INFO 15976 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-13 11:36:57.837  INFO 15976 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2023-03-13 11:36:58.674  INFO 15976 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-13 11:36:58.688  INFO 15976 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 11:36:58.727  WARN 15976 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-13 11:36:59.483  INFO 15976 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2023-03-13 11:36:59.690  INFO 15976 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-03-13 11:36:59.971  INFO 15976 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-13 11:36:59.979  INFO 15976 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 5.096 seconds (JVM running for 5.619)
+2023-03-13 11:37:01.753  INFO 15976 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 11:37:01.756  INFO 15976 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-13 11:37:01.767  INFO 15976 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-13 11:37:04.502  INFO 16012 --- [main] UtsuPWiki.utilities.FancyWritings        : 
+ 
+all humanity's problems stem from mans inability to sit quietly in a room alone" (Blaise Pascal)
+2023-03-13 11:37:04.507  INFO 16012 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Database populating is started.
+2023-03-13 11:37:04.507  INFO 16012 --- [main] UtsuPWiki.utilities.DatabaseHelper       : data.sql already exists.
+2023-03-13 11:37:04.508  INFO 16012 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Countries have been populated
+2023-03-13 11:37:04.508  INFO 16012 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Types have been populated
+2023-03-13 11:37:04.508  INFO 16012 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Genres have been populated
+2023-03-13 11:37:04.509  INFO 16012 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Authors have been populated
+2023-03-13 11:37:04.509  INFO 16012 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Clients have been populated
+2023-03-13 11:37:04.510  INFO 16012 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Comments have been populated
+2023-03-13 11:37:04.510  INFO 16012 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Delivery have been populated
+2023-03-13 11:37:04.510  INFO 16012 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Orders have been populated
+2023-03-13 11:37:04.510  INFO 16012 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products have been populated
+2023-03-13 11:37:04.510  INFO 16012 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products Additional Info have been populated
+2023-03-13 11:37:04.512  INFO 16012 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Successfully wrote to the data.sql .
+2023-03-13 11:37:04.590  INFO 16012 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.16.1 on Yume with PID 16012 (C:\Users\akasa\IdeaProjects\Utsu-P-WIki\target\classes started by akasa in C:\Users\akasa\IdeaProjects\Utsu-P-WIki)
+2023-03-13 11:37:04.592  INFO 16012 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
+2023-03-13 11:37:05.315  INFO 16012 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-13 11:37:05.395  INFO 16012 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 10 JPA repository interfaces.
+2023-03-13 11:37:06.234  INFO 16012 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-13 11:37:06.244  INFO 16012 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-13 11:37:06.244  INFO 16012 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2023-03-13 11:37:06.351  INFO 16012 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-13 11:37:06.352  INFO 16012 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1696 ms
+2023-03-13 11:37:06.524  INFO 16012 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-13 11:37:06.567  INFO 16012 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2023-03-13 11:37:06.715  INFO 16012 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-13 11:37:06.807  INFO 16012 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-13 11:37:06.811  WARN 16012 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-13 11:37:06.949  INFO 16012 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-13 11:37:06.976  INFO 16012 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2023-03-13 11:37:07.850  INFO 16012 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-13 11:37:07.857  INFO 16012 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 11:37:07.896  WARN 16012 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-13 11:37:08.610  INFO 16012 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2023-03-13 11:37:08.817  INFO 16012 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-03-13 11:37:09.080  INFO 16012 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-13 11:37:09.087  INFO 16012 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 4.992 seconds (JVM running for 5.563)
+2023-03-13 11:37:24.870  INFO 16012 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 11:37:24.870  INFO 16012 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-13 11:37:24.901  INFO 16012 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-13 11:37:27.807  INFO 15876 --- [main] UtsuPWiki.utilities.FancyWritings        : 
+ 
+all humanity's problems stem from mans inability to sit quietly in a room alone" (Blaise Pascal)
+2023-03-13 11:37:27.819  INFO 15876 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Database populating is started.
+2023-03-13 11:37:27.819  INFO 15876 --- [main] UtsuPWiki.utilities.DatabaseHelper       : data.sql already exists.
+2023-03-13 11:37:27.819  INFO 15876 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Countries have been populated
+2023-03-13 11:37:27.819  INFO 15876 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Types have been populated
+2023-03-13 11:37:27.819  INFO 15876 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Genres have been populated
+2023-03-13 11:37:27.819  INFO 15876 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Authors have been populated
+2023-03-13 11:37:27.819  INFO 15876 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Clients have been populated
+2023-03-13 11:37:27.823  INFO 15876 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Comments have been populated
+2023-03-13 11:37:27.823  INFO 15876 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Delivery have been populated
+2023-03-13 11:37:27.823  INFO 15876 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Orders have been populated
+2023-03-13 11:37:27.823  INFO 15876 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products have been populated
+2023-03-13 11:37:27.823  INFO 15876 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products Additional Info have been populated
+2023-03-13 11:37:27.823  INFO 15876 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Successfully wrote to the data.sql .
+2023-03-13 11:37:27.902  INFO 15876 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.16.1 on Yume with PID 15876 (C:\Users\akasa\IdeaProjects\Utsu-P-WIki\target\classes started by akasa in C:\Users\akasa\IdeaProjects\Utsu-P-WIki)
+2023-03-13 11:37:27.902  INFO 15876 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
+2023-03-13 11:37:28.639  INFO 15876 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-13 11:37:28.713  INFO 15876 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 10 JPA repository interfaces.
+2023-03-13 11:37:29.510  INFO 15876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-13 11:37:29.520  INFO 15876 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-13 11:37:29.520  INFO 15876 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2023-03-13 11:37:29.641  INFO 15876 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-13 11:37:29.641  INFO 15876 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1675 ms
+2023-03-13 11:37:29.746  INFO 15876 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-13 11:37:29.755  WARN 15876 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-13 11:37:29.920  INFO 15876 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-13 11:37:29.968  WARN 15876 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scriptDataSourceInitializer' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceInitializationConfiguration$SharedCredentialsDataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/akasa/IdeaProjects/Utsu-P-WIki/target/classes/data.sql]: INSERT INTO Countries(id, description, name) VALUES(1,"none","Japan"); nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+2023-03-13 11:37:29.969  INFO 15876 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-13 11:37:29.980  INFO 15876 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-13 11:37:29.983  INFO 15876 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-13 11:37:29.996  INFO 15876 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-03-13 11:37:30.014 ERROR 15876 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scriptDataSourceInitializer' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceInitializationConfiguration$SharedCredentialsDataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/akasa/IdeaProjects/Utsu-P-WIki/target/classes/data.sql]: INSERT INTO Countries(id, description, name) VALUES(1,"none","Japan"); nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:164) ~[spring-boot-2.6.6.jar:2.6.6]
+	at UtsuPWiki.UtsuPApplication.main(UtsuPApplication.java:16) ~[classes/:na]
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/akasa/IdeaProjects/Utsu-P-WIki/target/classes/data.sql]: INSERT INTO Countries(id, description, name) VALUES(1,"none","Japan"); nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282) ~[spring-jdbc-5.3.18.jar:5.3.18]
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254) ~[spring-jdbc-5.3.18.jar:5.3.18]
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54) ~[spring-jdbc-5.3.18.jar:5.3.18]
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:90) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:145) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:107) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyDataScripts(AbstractScriptDatabaseInitializer.java:101) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:76) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:65) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.18.jar:5.3.18]
+	... 17 common frames omitted
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261) ~[spring-jdbc-5.3.18.jar:5.3.18]
+	... 27 common frames omitted
+
+2023-03-13 11:38:36.640  INFO 11072 --- [main] UtsuPWiki.utilities.FancyWritings        : 
+ 
+all humanity's problems stem from mans inability to sit quietly in a room alone" (Blaise Pascal)
+2023-03-13 11:38:36.642  INFO 11072 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Database populating is started.
+2023-03-13 11:38:36.642  INFO 11072 --- [main] UtsuPWiki.utilities.DatabaseHelper       : data.sql created
+2023-03-13 11:38:36.642  INFO 11072 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Countries have been populated
+2023-03-13 11:38:36.648  INFO 11072 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Types have been populated
+2023-03-13 11:38:36.648  INFO 11072 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Genres have been populated
+2023-03-13 11:38:36.648  INFO 11072 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Authors have been populated
+2023-03-13 11:38:36.648  INFO 11072 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Clients have been populated
+2023-03-13 11:38:36.648  INFO 11072 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Comments have been populated
+2023-03-13 11:38:36.648  INFO 11072 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Delivery have been populated
+2023-03-13 11:38:36.648  INFO 11072 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Orders have been populated
+2023-03-13 11:38:36.648  INFO 11072 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products have been populated
+2023-03-13 11:38:36.648  INFO 11072 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products Additional Info have been populated
+2023-03-13 11:38:36.648  INFO 11072 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Successfully wrote to the data.sql .
+2023-03-13 11:38:36.730  INFO 11072 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.16.1 on Yume with PID 11072 (C:\Users\akasa\IdeaProjects\Utsu-P-WIki\target\classes started by akasa in C:\Users\akasa\IdeaProjects\Utsu-P-WIki)
+2023-03-13 11:38:36.730  INFO 11072 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
+2023-03-13 11:38:37.417  INFO 11072 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-13 11:38:37.506  INFO 11072 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 10 JPA repository interfaces.
+2023-03-13 11:38:38.353  INFO 11072 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-13 11:38:38.362  INFO 11072 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-13 11:38:38.362  INFO 11072 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2023-03-13 11:38:38.474  INFO 11072 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-13 11:38:38.474  INFO 11072 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1677 ms
+2023-03-13 11:38:38.642  INFO 11072 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-13 11:38:38.688  INFO 11072 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2023-03-13 11:38:38.810  INFO 11072 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-13 11:38:38.899  INFO 11072 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-13 11:38:38.903  WARN 11072 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-13 11:38:39.022  INFO 11072 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-13 11:38:39.044  INFO 11072 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2023-03-13 11:38:40.831  INFO 11072 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-13 11:38:40.839  INFO 11072 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 11:38:40.884  WARN 11072 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-13 11:38:41.581  INFO 11072 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2023-03-13 11:38:41.796  INFO 11072 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-03-13 11:38:42.073  INFO 11072 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-13 11:38:42.082  INFO 11072 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 5.815 seconds (JVM running for 6.326)
+2023-03-13 11:40:03.046  INFO 11072 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 11:40:03.046  INFO 11072 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-13 11:40:03.070  INFO 11072 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-13 11:40:05.890  INFO 24240 --- [main] UtsuPWiki.utilities.FancyWritings        : 
+ 
+all humanity's problems stem from mans inability to sit quietly in a room alone" (Blaise Pascal)
+2023-03-13 11:40:05.890  INFO 24240 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Database populating is started.
+2023-03-13 11:40:05.890  INFO 24240 --- [main] UtsuPWiki.utilities.DatabaseHelper       : data.sql already exists.
+2023-03-13 11:40:05.890  INFO 24240 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Countries have been populated
+2023-03-13 11:40:05.890  INFO 24240 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Types have been populated
+2023-03-13 11:40:05.890  INFO 24240 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Genres have been populated
+2023-03-13 11:40:05.890  INFO 24240 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Authors have been populated
+2023-03-13 11:40:05.890  INFO 24240 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Clients have been populated
+2023-03-13 11:40:05.890  INFO 24240 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Comments have been populated
+2023-03-13 11:40:05.890  INFO 24240 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Delivery have been populated
+2023-03-13 11:40:05.890  INFO 24240 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Orders have been populated
+2023-03-13 11:40:05.890  INFO 24240 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products have been populated
+2023-03-13 11:40:05.890  INFO 24240 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products Additional Info have been populated
+2023-03-13 11:40:05.890  INFO 24240 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Successfully wrote to the data.sql .
+2023-03-13 11:40:05.970  INFO 24240 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.16.1 on Yume with PID 24240 (C:\Users\akasa\IdeaProjects\Utsu-P-WIki\target\classes started by akasa in C:\Users\akasa\IdeaProjects\Utsu-P-WIki)
+2023-03-13 11:40:05.970  INFO 24240 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
+2023-03-13 11:40:06.665  INFO 24240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-13 11:40:06.747  INFO 24240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 10 JPA repository interfaces.
+2023-03-13 11:40:07.580  INFO 24240 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-13 11:40:07.589  INFO 24240 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-13 11:40:07.589  INFO 24240 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2023-03-13 11:40:07.698  INFO 24240 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-13 11:40:07.700  INFO 24240 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1651 ms
+2023-03-13 11:40:07.802  INFO 24240 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-13 11:40:07.808  WARN 24240 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-13 11:40:07.963  INFO 24240 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-13 11:40:08.158  INFO 24240 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-13 11:40:08.210  INFO 24240 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2023-03-13 11:40:08.336  INFO 24240 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-13 11:40:08.449  INFO 24240 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2023-03-13 11:40:09.280  INFO 24240 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-13 11:40:09.291  INFO 24240 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 11:40:09.330  WARN 24240 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-13 11:40:10.013  INFO 24240 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2023-03-13 11:40:10.200  INFO 24240 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-03-13 11:40:10.445  INFO 24240 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-13 11:40:10.453  INFO 24240 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 4.916 seconds (JVM running for 5.461)
+2023-03-13 11:40:42.494  INFO 24240 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-13 11:40:42.508  INFO 24240 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-13 11:40:42.510  INFO 24240 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-13 11:40:52.924  INFO 24240 --- [http-nio-8080-exec-3] U.Controller.VocaloidAlbumsController    : Info on selected product: Utsu-P - Diarrhea 1
+2023-03-13 11:41:06.998  INFO 24240 --- [http-nio-8080-exec-3] U.Controller.VocaloidAlbumsController    : Info on selected product: Utsu-P - Warufuzake 5
+2023-03-13 11:46:59.996  INFO 24240 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 11:46:59.996  INFO 24240 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-13 11:47:00.038  INFO 24240 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-13 11:47:03.207  INFO 2576 --- [main] UtsuPWiki.utilities.FancyWritings        : 
+ 
+all humanity's problems stem from mans inability to sit quietly in a room alone" (Blaise Pascal)
+2023-03-13 11:47:03.211  INFO 2576 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Database populating is started.
+2023-03-13 11:47:03.211  INFO 2576 --- [main] UtsuPWiki.utilities.DatabaseHelper       : data.sql already exists.
+2023-03-13 11:47:03.212  INFO 2576 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Countries have been populated
+2023-03-13 11:47:03.212  INFO 2576 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Types have been populated
+2023-03-13 11:47:03.212  INFO 2576 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Genres have been populated
+2023-03-13 11:47:03.213  INFO 2576 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Authors have been populated
+2023-03-13 11:47:03.213  INFO 2576 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Clients have been populated
+2023-03-13 11:47:03.214  INFO 2576 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Comments have been populated
+2023-03-13 11:47:03.214  INFO 2576 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Delivery have been populated
+2023-03-13 11:47:03.214  INFO 2576 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Orders have been populated
+2023-03-13 11:47:03.214  INFO 2576 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products have been populated
+2023-03-13 11:47:03.214  INFO 2576 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products Additional Info have been populated
+2023-03-13 11:47:03.216  INFO 2576 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Successfully wrote to the data.sql .
+2023-03-13 11:47:03.294  INFO 2576 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.16.1 on Yume with PID 2576 (C:\Users\akasa\IdeaProjects\Utsu-P-WIki\target\classes started by akasa in C:\Users\akasa\IdeaProjects\Utsu-P-WIki)
+2023-03-13 11:47:03.295  INFO 2576 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
+2023-03-13 11:47:04.045  INFO 2576 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-13 11:47:04.148  INFO 2576 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92 ms. Found 10 JPA repository interfaces.
+2023-03-13 11:47:04.991  INFO 2576 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-13 11:47:05.001  INFO 2576 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-13 11:47:05.001  INFO 2576 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2023-03-13 11:47:05.129  INFO 2576 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-13 11:47:05.129  INFO 2576 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1761 ms
+2023-03-13 11:47:05.240  INFO 2576 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-13 11:47:05.248  WARN 2576 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-13 11:47:05.386  INFO 2576 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-13 11:47:05.427  WARN 2576 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scriptDataSourceInitializer' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceInitializationConfiguration$SharedCredentialsDataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/akasa/IdeaProjects/Utsu-P-WIki/target/classes/data.sql]: INSERT INTO Countries(id, description, name) VALUES(1,"none","Japan"); nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+2023-03-13 11:47:05.427  INFO 2576 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-13 11:47:05.440  INFO 2576 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-13 11:47:05.442  INFO 2576 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-13 11:47:05.452  INFO 2576 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-03-13 11:47:05.481 ERROR 2576 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scriptDataSourceInitializer' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceInitializationConfiguration$SharedCredentialsDataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/akasa/IdeaProjects/Utsu-P-WIki/target/classes/data.sql]: INSERT INTO Countries(id, description, name) VALUES(1,"none","Japan"); nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:164) ~[spring-boot-2.6.6.jar:2.6.6]
+	at UtsuPWiki.UtsuPApplication.main(UtsuPApplication.java:16) ~[classes/:na]
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/akasa/IdeaProjects/Utsu-P-WIki/target/classes/data.sql]: INSERT INTO Countries(id, description, name) VALUES(1,"none","Japan"); nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282) ~[spring-jdbc-5.3.18.jar:5.3.18]
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254) ~[spring-jdbc-5.3.18.jar:5.3.18]
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54) ~[spring-jdbc-5.3.18.jar:5.3.18]
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:90) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:145) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:107) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyDataScripts(AbstractScriptDatabaseInitializer.java:101) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:76) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:65) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.18.jar:5.3.18]
+	... 17 common frames omitted
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261) ~[spring-jdbc-5.3.18.jar:5.3.18]
+	... 27 common frames omitted
+
+2023-03-13 11:47:20.416  INFO 24020 --- [main] UtsuPWiki.utilities.FancyWritings        : 
+ 
+all humanity's problems stem from mans inability to sit quietly in a room alone" (Blaise Pascal)
+2023-03-13 11:47:20.420  INFO 24020 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Database populating is started.
+2023-03-13 11:47:20.420  INFO 24020 --- [main] UtsuPWiki.utilities.DatabaseHelper       : data.sql created
+2023-03-13 11:47:20.421  INFO 24020 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Countries have been populated
+2023-03-13 11:47:20.421  INFO 24020 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Types have been populated
+2023-03-13 11:47:20.421  INFO 24020 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Genres have been populated
+2023-03-13 11:47:20.421  INFO 24020 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Authors have been populated
+2023-03-13 11:47:20.422  INFO 24020 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Clients have been populated
+2023-03-13 11:47:20.423  INFO 24020 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Comments have been populated
+2023-03-13 11:47:20.423  INFO 24020 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Delivery have been populated
+2023-03-13 11:47:20.423  INFO 24020 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Orders have been populated
+2023-03-13 11:47:20.423  INFO 24020 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products have been populated
+2023-03-13 11:47:20.423  INFO 24020 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products Additional Info have been populated
+2023-03-13 11:47:20.424  INFO 24020 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Successfully wrote to the data.sql .
+2023-03-13 11:47:20.501  INFO 24020 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.16.1 on Yume with PID 24020 (C:\Users\akasa\IdeaProjects\Utsu-P-WIki\target\classes started by akasa in C:\Users\akasa\IdeaProjects\Utsu-P-WIki)
+2023-03-13 11:47:20.502  INFO 24020 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
+2023-03-13 11:47:21.227  INFO 24020 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-13 11:47:21.316  INFO 24020 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 10 JPA repository interfaces.
+2023-03-13 11:47:22.133  INFO 24020 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-13 11:47:22.140  INFO 24020 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-13 11:47:22.140  INFO 24020 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2023-03-13 11:47:22.266  INFO 24020 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-13 11:47:22.267  INFO 24020 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1697 ms
+2023-03-13 11:47:22.461  INFO 24020 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-13 11:47:22.514  INFO 24020 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2023-03-13 11:47:22.664  INFO 24020 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-13 11:47:22.748  INFO 24020 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-13 11:47:22.752  WARN 24020 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-13 11:47:22.885  INFO 24020 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-13 11:47:22.927  INFO 24020 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2023-03-13 11:47:23.766  INFO 24020 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-13 11:47:23.782  INFO 24020 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 11:47:23.826  WARN 24020 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-13 11:47:24.524  INFO 24020 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2023-03-13 11:47:24.724  INFO 24020 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-03-13 11:47:24.992  INFO 24020 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-13 11:47:25.003  INFO 24020 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 4.969 seconds (JVM running for 5.473)
+2023-03-13 11:47:31.471  INFO 24020 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-13 11:47:31.473  INFO 24020 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-13 11:47:31.475  INFO 24020 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-13 11:47:31.702  INFO 24020 --- [http-nio-8080-exec-1] U.Controller.VocaloidAlbumsController    : Info on selected product: Utsu-P - Warufuzake 5
+2023-03-13 11:47:55.001  INFO 24020 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 11:47:55.001  INFO 24020 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-13 11:47:55.044  INFO 24020 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-13 11:47:57.981  INFO 23232 --- [main] UtsuPWiki.utilities.FancyWritings        : 
+ 
+all humanity's problems stem from mans inability to sit quietly in a room alone" (Blaise Pascal)
+2023-03-13 11:47:57.981  INFO 23232 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Database populating is started.
+2023-03-13 11:47:57.981  INFO 23232 --- [main] UtsuPWiki.utilities.DatabaseHelper       : data.sql already exists.
+2023-03-13 11:47:57.981  INFO 23232 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Countries have been populated
+2023-03-13 11:47:57.981  INFO 23232 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Types have been populated
+2023-03-13 11:47:57.981  INFO 23232 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Genres have been populated
+2023-03-13 11:47:57.981  INFO 23232 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Authors have been populated
+2023-03-13 11:47:57.981  INFO 23232 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Clients have been populated
+2023-03-13 11:47:57.997  INFO 23232 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Comments have been populated
+2023-03-13 11:47:57.997  INFO 23232 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Delivery have been populated
+2023-03-13 11:47:57.997  INFO 23232 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Orders have been populated
+2023-03-13 11:47:57.997  INFO 23232 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products have been populated
+2023-03-13 11:47:57.997  INFO 23232 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products Additional Info have been populated
+2023-03-13 11:47:57.997  INFO 23232 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Successfully wrote to the data.sql .
+2023-03-13 11:47:58.077  INFO 23232 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.16.1 on Yume with PID 23232 (C:\Users\akasa\IdeaProjects\Utsu-P-WIki\target\classes started by akasa in C:\Users\akasa\IdeaProjects\Utsu-P-WIki)
+2023-03-13 11:47:58.077  INFO 23232 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
+2023-03-13 11:47:58.819  INFO 23232 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-13 11:47:58.908  INFO 23232 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 10 JPA repository interfaces.
+2023-03-13 11:47:59.746  INFO 23232 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-13 11:47:59.754  INFO 23232 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-13 11:47:59.755  INFO 23232 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2023-03-13 11:47:59.873  INFO 23232 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-13 11:47:59.873  INFO 23232 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1731 ms
+2023-03-13 11:47:59.980  INFO 23232 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-13 11:47:59.989  WARN 23232 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-13 11:48:00.137  INFO 23232 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-13 11:48:00.170  WARN 23232 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scriptDataSourceInitializer' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceInitializationConfiguration$SharedCredentialsDataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/akasa/IdeaProjects/Utsu-P-WIki/target/classes/data.sql]: INSERT INTO Countries(id, description, name) VALUES(1,"none","Japan"); nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+2023-03-13 11:48:00.170  INFO 23232 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-13 11:48:00.178  INFO 23232 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-13 11:48:00.183  INFO 23232 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-13 11:48:00.195  INFO 23232 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-03-13 11:48:00.214 ERROR 23232 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scriptDataSourceInitializer' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceInitializationConfiguration$SharedCredentialsDataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/akasa/IdeaProjects/Utsu-P-WIki/target/classes/data.sql]: INSERT INTO Countries(id, description, name) VALUES(1,"none","Japan"); nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:164) ~[spring-boot-2.6.6.jar:2.6.6]
+	at UtsuPWiki.UtsuPApplication.main(UtsuPApplication.java:16) ~[classes/:na]
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/akasa/IdeaProjects/Utsu-P-WIki/target/classes/data.sql]: INSERT INTO Countries(id, description, name) VALUES(1,"none","Japan"); nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282) ~[spring-jdbc-5.3.18.jar:5.3.18]
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254) ~[spring-jdbc-5.3.18.jar:5.3.18]
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54) ~[spring-jdbc-5.3.18.jar:5.3.18]
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:90) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:145) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:107) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyDataScripts(AbstractScriptDatabaseInitializer.java:101) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:76) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:65) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.18.jar:5.3.18]
+	... 17 common frames omitted
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261) ~[spring-jdbc-5.3.18.jar:5.3.18]
+	... 27 common frames omitted
+
+2023-03-13 11:48:25.944  INFO 23096 --- [main] UtsuPWiki.utilities.FancyWritings        : 
+ 
+all humanity's problems stem from mans inability to sit quietly in a room alone" (Blaise Pascal)
+2023-03-13 11:48:26.031  INFO 23096 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.16.1 on Yume with PID 23096 (C:\Users\akasa\IdeaProjects\Utsu-P-WIki\target\classes started by akasa in C:\Users\akasa\IdeaProjects\Utsu-P-WIki)
+2023-03-13 11:48:26.032  INFO 23096 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
+2023-03-13 11:48:26.700  INFO 23096 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-13 11:48:26.782  INFO 23096 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 10 JPA repository interfaces.
+2023-03-13 11:48:27.616  INFO 23096 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-13 11:48:27.625  INFO 23096 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-13 11:48:27.625  INFO 23096 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2023-03-13 11:48:27.737  INFO 23096 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-13 11:48:27.737  INFO 23096 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1641 ms
+2023-03-13 11:48:27.912  INFO 23096 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-13 11:48:27.954  INFO 23096 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2023-03-13 11:48:28.085  INFO 23096 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-13 11:48:28.174  INFO 23096 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-13 11:48:28.178  WARN 23096 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-13 11:48:28.311  INFO 23096 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-13 11:48:28.340  INFO 23096 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2023-03-13 11:48:29.128  INFO 23096 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-13 11:48:29.138  INFO 23096 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 11:48:29.201  WARN 23096 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-13 11:48:29.927  INFO 23096 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2023-03-13 11:48:30.125  INFO 23096 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-03-13 11:48:30.381  INFO 23096 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-13 11:48:30.388  INFO 23096 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 4.851 seconds (JVM running for 5.341)
+2023-03-13 11:48:35.430  INFO 23096 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-13 11:48:35.434  INFO 23096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-13 11:48:35.435  INFO 23096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-13 11:48:35.617  INFO 23096 --- [http-nio-8080-exec-1] U.Controller.VocaloidAlbumsController    : Info on selected product: Utsu-P - Warufuzake 5
+2023-03-13 11:49:29.578  INFO 23096 --- [http-nio-8080-exec-6] U.Controller.VocaloidAlbumsController    : Info on selected product: Utsu-P - Moksha 3
+2023-03-13 11:51:33.733  INFO 23096 --- [http-nio-8080-exec-6] U.Controller.VocaloidAlbumsController    : Info on selected product: Utsu-P - Moksha 3
+2023-03-13 11:52:12.346  INFO 23096 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 11:52:12.348  INFO 23096 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-13 11:52:12.361  INFO 23096 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-13 11:52:15.261  INFO 22412 --- [main] UtsuPWiki.utilities.FancyWritings        : 
+ 
+all humanity's problems stem from mans inability to sit quietly in a room alone" (Blaise Pascal)
+2023-03-13 11:52:15.360  INFO 22412 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.16.1 on Yume with PID 22412 (C:\Users\akasa\IdeaProjects\Utsu-P-WIki\target\classes started by akasa in C:\Users\akasa\IdeaProjects\Utsu-P-WIki)
+2023-03-13 11:52:15.361  INFO 22412 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
+2023-03-13 11:52:16.147  INFO 22412 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-13 11:52:16.244  INFO 22412 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87 ms. Found 10 JPA repository interfaces.
+2023-03-13 11:52:17.155  INFO 22412 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-13 11:52:17.167  INFO 22412 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-13 11:52:17.167  INFO 22412 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2023-03-13 11:52:17.313  INFO 22412 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-13 11:52:17.313  INFO 22412 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1884 ms
+2023-03-13 11:52:17.498  INFO 22412 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-13 11:52:17.554  INFO 22412 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2023-03-13 11:52:17.718  INFO 22412 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-13 11:52:17.798  INFO 22412 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-13 11:52:17.802  WARN 22412 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-13 11:52:17.945  INFO 22412 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-13 11:52:17.981  INFO 22412 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2023-03-13 11:52:18.864  INFO 22412 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-13 11:52:18.873  INFO 22412 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 11:52:18.925  WARN 22412 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-13 11:52:19.769  INFO 22412 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2023-03-13 11:52:19.964  INFO 22412 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-03-13 11:52:20.228  INFO 22412 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-13 11:52:20.238  INFO 22412 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 5.367 seconds (JVM running for 6.062)
+2023-03-13 11:52:24.465  INFO 22412 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-13 11:52:24.467  INFO 22412 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-13 11:52:24.469  INFO 22412 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-13 11:52:24.690  INFO 22412 --- [http-nio-8080-exec-1] U.Controller.VocaloidAlbumsController    : Info on selected product: Utsu-P - Moksha 3
+2023-03-13 11:52:40.837  INFO 22412 --- [http-nio-8080-exec-7] U.Controller.VocaloidAlbumsController    : Info on selected product: Utsu-P - Warufuzake 5
+2023-03-13 11:54:41.952  INFO 22412 --- [http-nio-8080-exec-8] U.Controller.VocaloidAlbumsController    : Info on selected product: Utsu-P - Traumatic 2
+2023-03-13 11:54:52.797  INFO 22412 --- [http-nio-8080-exec-1] U.Controller.VocaloidAlbumsController    : Info on selected product: Utsu-P - CD-R 4
+2023-03-13 11:56:58.050  INFO 22412 --- [http-nio-8080-exec-1] U.Controller.VocaloidAlbumsController    : Info on selected product: Utsu-P - Diarrhea 1
+2023-03-13 11:58:18.055  INFO 22412 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 11:58:18.064  INFO 22412 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-13 11:58:18.081  INFO 22412 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-13 12:11:42.041  INFO 25092 --- [main] UtsuPWiki.utilities.FancyWritings        : 
+ 
+all humanity's problems stem from mans inability to sit quietly in a room alone" (Blaise Pascal)
+2023-03-13 12:11:42.157  INFO 25092 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.16.1 on Yume with PID 25092 (C:\Users\akasa\IdeaProjects\Utsu-P-WIki\target\classes started by akasa in C:\Users\akasa\IdeaProjects\Utsu-P-WIki)
+2023-03-13 12:11:42.158  INFO 25092 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
+2023-03-13 12:11:43.085  INFO 25092 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-13 12:11:43.229  INFO 25092 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 130 ms. Found 10 JPA repository interfaces.
+2023-03-13 12:11:44.303  INFO 25092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-13 12:11:44.316  INFO 25092 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-13 12:11:44.316  INFO 25092 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2023-03-13 12:11:44.453  INFO 25092 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-13 12:11:44.453  INFO 25092 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2208 ms
+2023-03-13 12:11:44.661  INFO 25092 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-13 12:11:44.732  INFO 25092 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2023-03-13 12:11:44.922  INFO 25092 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-13 12:11:45.017  INFO 25092 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-13 12:11:45.022  WARN 25092 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-13 12:11:45.210  INFO 25092 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-13 12:11:45.258  INFO 25092 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2023-03-13 12:11:46.526  INFO 25092 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-13 12:11:46.535  INFO 25092 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 12:11:46.573  WARN 25092 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-13 12:11:47.494  INFO 25092 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2023-03-13 12:11:47.716  INFO 25092 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-03-13 12:11:48.000  INFO 25092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-13 12:11:48.011  INFO 25092 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 6.455 seconds (JVM running for 7.148)
+2023-03-13 12:12:03.394  INFO 25092 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-13 12:12:03.394  INFO 25092 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-13 12:12:03.402  INFO 25092 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2023-03-13 12:12:03.794  INFO 25092 --- [http-nio-8080-exec-1] U.Controller.VocaloidAlbumsController    : Info on selected product: Utsu-P - Diarrhea 1
+2023-03-13 12:20:29.428  INFO 25092 --- [http-nio-8080-exec-8] U.Controller.VocaloidAlbumsController    : Info on selected product: Utsu-P - CD-R 4
+2023-03-13 12:22:17.399  INFO 25092 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 12:22:17.399  INFO 25092 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-13 12:22:17.447  INFO 25092 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-13 12:29:57.678  INFO 10068 --- [main] UtsuPWiki.utilities.FancyWritings        : 
+ 
+all humanity's problems stem from mans inability to sit quietly in a room alone" (Blaise Pascal)
+2023-03-13 12:29:57.682  INFO 10068 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Database populating is started.
+2023-03-13 12:29:57.684  INFO 10068 --- [main] UtsuPWiki.utilities.DatabaseHelper       : data.sql created
+2023-03-13 12:29:57.685  INFO 10068 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Countries have been populated
+2023-03-13 12:29:57.685  INFO 10068 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Types have been populated
+2023-03-13 12:29:57.685  INFO 10068 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Genres have been populated
+2023-03-13 12:29:57.685  INFO 10068 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Authors have been populated
+2023-03-13 12:29:57.687  INFO 10068 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Clients have been populated
+2023-03-13 12:29:57.687  INFO 10068 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Comments have been populated
+2023-03-13 12:29:57.687  INFO 10068 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Delivery have been populated
+2023-03-13 12:29:57.687  INFO 10068 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Orders have been populated
+2023-03-13 12:29:57.687  INFO 10068 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products have been populated
+2023-03-13 12:29:57.688  INFO 10068 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products Additional Info have been populated
+2023-03-13 12:29:57.689  INFO 10068 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Successfully wrote to the data.sql .
+2023-03-13 12:29:57.796  INFO 10068 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.16.1 on Yume with PID 10068 (C:\Users\akasa\IdeaProjects\Utsu-P-WIki\target\classes started by akasa in C:\Users\akasa\IdeaProjects\Utsu-P-WIki)
+2023-03-13 12:29:57.798  INFO 10068 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
+2023-03-13 12:29:58.793  INFO 10068 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-13 12:29:58.923  INFO 10068 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 116 ms. Found 10 JPA repository interfaces.
+2023-03-13 12:30:00.013  INFO 10068 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-13 12:30:00.035  INFO 10068 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-13 12:30:00.036  INFO 10068 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2023-03-13 12:30:00.166  INFO 10068 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-13 12:30:00.166  INFO 10068 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2279 ms
+2023-03-13 12:30:00.421  INFO 10068 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-13 12:30:00.504  INFO 10068 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2023-03-13 12:30:00.735  INFO 10068 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-13 12:30:00.849  INFO 10068 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-13 12:30:00.855  WARN 10068 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-13 12:30:01.042  INFO 10068 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-13 12:30:01.090  INFO 10068 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2023-03-13 12:30:03.445  INFO 10068 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-13 12:30:03.452  INFO 10068 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 12:30:03.500  WARN 10068 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-13 12:30:04.440  INFO 10068 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2023-03-13 12:30:04.688  INFO 10068 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-03-13 12:30:05.013  INFO 10068 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-13 12:30:05.025  INFO 10068 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 7.804 seconds (JVM running for 8.506)
+2023-03-13 12:30:25.287  INFO 10068 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 12:30:25.287  INFO 10068 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-13 12:30:25.324  INFO 10068 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-13 12:30:29.157  INFO 14644 --- [main] UtsuPWiki.utilities.FancyWritings        : 
+ 
+all humanity's problems stem from mans inability to sit quietly in a room alone" (Blaise Pascal)
+2023-03-13 12:30:29.162  INFO 14644 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Database populating is started.
+2023-03-13 12:30:29.162  INFO 14644 --- [main] UtsuPWiki.utilities.DatabaseHelper       : data.sql already exists.
+2023-03-13 12:30:29.163  INFO 14644 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Countries have been populated
+2023-03-13 12:30:29.163  INFO 14644 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Types have been populated
+2023-03-13 12:30:29.163  INFO 14644 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Genres have been populated
+2023-03-13 12:30:29.163  INFO 14644 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Authors have been populated
+2023-03-13 12:30:29.163  INFO 14644 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Clients have been populated
+2023-03-13 12:30:29.164  INFO 14644 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Comments have been populated
+2023-03-13 12:30:29.164  INFO 14644 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Delivery have been populated
+2023-03-13 12:30:29.164  INFO 14644 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Orders have been populated
+2023-03-13 12:30:29.164  INFO 14644 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products have been populated
+2023-03-13 12:30:29.164  INFO 14644 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products Additional Info have been populated
+2023-03-13 12:30:29.166  INFO 14644 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Successfully wrote to the data.sql .
+2023-03-13 12:30:29.266  INFO 14644 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.16.1 on Yume with PID 14644 (C:\Users\akasa\IdeaProjects\Utsu-P-WIki\target\classes started by akasa in C:\Users\akasa\IdeaProjects\Utsu-P-WIki)
+2023-03-13 12:30:29.268  INFO 14644 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
+2023-03-13 12:30:30.146  INFO 14644 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-13 12:30:30.264  INFO 14644 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106 ms. Found 10 JPA repository interfaces.
+2023-03-13 12:30:31.261  INFO 14644 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-13 12:30:31.274  INFO 14644 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-13 12:30:31.274  INFO 14644 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2023-03-13 12:30:31.410  INFO 14644 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-13 12:30:31.411  INFO 14644 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2062 ms
+2023-03-13 12:30:31.569  INFO 14644 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-13 12:30:31.577  WARN 14644 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-13 12:30:31.742  INFO 14644 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-13 12:30:31.998  INFO 14644 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-13 12:30:32.053  INFO 14644 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2023-03-13 12:30:32.214  INFO 14644 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-13 12:30:32.368  INFO 14644 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2023-03-13 12:30:33.408  INFO 14644 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-13 12:30:33.420  INFO 14644 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 12:30:33.472  WARN 14644 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-13 12:30:34.338  INFO 14644 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2023-03-13 12:30:34.588  INFO 14644 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-03-13 12:30:34.883  INFO 14644 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-13 12:30:34.896  INFO 14644 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 6.158 seconds (JVM running for 6.757)
+2023-03-13 12:30:57.720  INFO 14644 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-13 12:30:57.735  INFO 14644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-13 12:30:57.735  INFO 14644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-03-13 12:31:20.538  INFO 14644 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 12:31:20.538  INFO 14644 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-13 12:31:20.564  INFO 14644 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-13 12:44:52.276  INFO 9044 --- [main] UtsuPWiki.utilities.FancyWritings        : 
+ 
+all humanity's problems stem from mans inability to sit quietly in a room alone" (Blaise Pascal)
+2023-03-13 12:44:52.280  INFO 9044 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Database populating is started.
+2023-03-13 12:44:52.281  INFO 9044 --- [main] UtsuPWiki.utilities.DatabaseHelper       : data.sql already exists.
+2023-03-13 12:44:52.283  INFO 9044 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Countries have been populated
+2023-03-13 12:44:52.283  INFO 9044 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Types have been populated
+2023-03-13 12:44:52.283  INFO 9044 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Genres have been populated
+2023-03-13 12:44:52.283  INFO 9044 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Authors have been populated
+2023-03-13 12:44:52.284  INFO 9044 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Clients have been populated
+2023-03-13 12:44:52.284  INFO 9044 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Comments have been populated
+2023-03-13 12:44:52.284  INFO 9044 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Delivery have been populated
+2023-03-13 12:44:52.284  INFO 9044 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Orders have been populated
+2023-03-13 12:44:52.285  INFO 9044 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products have been populated
+2023-03-13 12:44:52.285  INFO 9044 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products Additional Info have been populated
+2023-03-13 12:44:52.287  INFO 9044 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Successfully wrote to the data.sql .
+2023-03-13 12:44:52.399  INFO 9044 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.16.1 on Yume with PID 9044 (C:\Users\akasa\IdeaProjects\Utsu-P-WIki\target\classes started by akasa in C:\Users\akasa\IdeaProjects\Utsu-P-WIki)
+2023-03-13 12:44:52.400  INFO 9044 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
+2023-03-13 12:44:53.337  INFO 9044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-13 12:44:53.484  INFO 9044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 135 ms. Found 10 JPA repository interfaces.
+2023-03-13 12:44:54.582  INFO 9044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-13 12:44:54.593  INFO 9044 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-13 12:44:54.594  INFO 9044 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2023-03-13 12:44:54.740  INFO 9044 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-13 12:44:54.741  INFO 9044 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2248 ms
+2023-03-13 12:44:54.912  INFO 9044 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-13 12:44:54.920  WARN 9044 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-13 12:44:55.090  INFO 9044 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-13 12:44:55.138  WARN 9044 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scriptDataSourceInitializer' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceInitializationConfiguration$SharedCredentialsDataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/akasa/IdeaProjects/Utsu-P-WIki/target/classes/data.sql]: INSERT INTO Countries(id, description, name) VALUES(1,"none","Japan"); nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+2023-03-13 12:44:55.139  INFO 9044 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-13 12:44:55.149  INFO 9044 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-13 12:44:55.151  INFO 9044 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-13 12:44:55.160  INFO 9044 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-03-13 12:44:55.180 ERROR 9044 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scriptDataSourceInitializer' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceInitializationConfiguration$SharedCredentialsDataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/akasa/IdeaProjects/Utsu-P-WIki/target/classes/data.sql]: INSERT INTO Countries(id, description, name) VALUES(1,"none","Japan"); nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:164) ~[spring-boot-2.6.6.jar:2.6.6]
+	at UtsuPWiki.UtsuPApplication.main(UtsuPApplication.java:16) ~[classes/:na]
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/akasa/IdeaProjects/Utsu-P-WIki/target/classes/data.sql]: INSERT INTO Countries(id, description, name) VALUES(1,"none","Japan"); nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282) ~[spring-jdbc-5.3.18.jar:5.3.18]
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254) ~[spring-jdbc-5.3.18.jar:5.3.18]
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54) ~[spring-jdbc-5.3.18.jar:5.3.18]
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:90) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:145) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:107) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyDataScripts(AbstractScriptDatabaseInitializer.java:101) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:76) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:65) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.18.jar:5.3.18]
+	... 17 common frames omitted
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261) ~[spring-jdbc-5.3.18.jar:5.3.18]
+	... 27 common frames omitted
+
+2023-03-13 12:45:07.316  INFO 10080 --- [main] UtsuPWiki.utilities.FancyWritings        : 
+ 
+all humanity's problems stem from mans inability to sit quietly in a room alone" (Blaise Pascal)
+2023-03-13 12:45:07.321  INFO 10080 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Database populating is started.
+2023-03-13 12:45:07.322  INFO 10080 --- [main] UtsuPWiki.utilities.DatabaseHelper       : data.sql created
+2023-03-13 12:45:07.323  INFO 10080 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Countries have been populated
+2023-03-13 12:45:07.323  INFO 10080 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Types have been populated
+2023-03-13 12:45:07.323  INFO 10080 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Genres have been populated
+2023-03-13 12:45:07.323  INFO 10080 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Authors have been populated
+2023-03-13 12:45:07.324  INFO 10080 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Clients have been populated
+2023-03-13 12:45:07.325  INFO 10080 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Comments have been populated
+2023-03-13 12:45:07.325  INFO 10080 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Delivery have been populated
+2023-03-13 12:45:07.325  INFO 10080 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Orders have been populated
+2023-03-13 12:45:07.325  INFO 10080 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products have been populated
+2023-03-13 12:45:07.325  INFO 10080 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Products Additional Info have been populated
+2023-03-13 12:45:07.326  INFO 10080 --- [main] UtsuPWiki.utilities.DatabaseHelper       : Successfully wrote to the data.sql .
+2023-03-13 12:45:07.433  INFO 10080 --- [main] UtsuPWiki.UtsuPApplication               : Starting UtsuPApplication using Java 11.0.16.1 on Yume with PID 10080 (C:\Users\akasa\IdeaProjects\Utsu-P-WIki\target\classes started by akasa in C:\Users\akasa\IdeaProjects\Utsu-P-WIki)
+2023-03-13 12:45:07.434  INFO 10080 --- [main] UtsuPWiki.UtsuPApplication               : No active profile set, falling back to 1 default profile: "default"
+2023-03-13 12:45:08.384  INFO 10080 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-13 12:45:08.528  INFO 10080 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 130 ms. Found 10 JPA repository interfaces.
+2023-03-13 12:45:09.864  INFO 10080 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-13 12:45:09.874  INFO 10080 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-13 12:45:09.874  INFO 10080 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2023-03-13 12:45:10.017  INFO 10080 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-13 12:45:10.018  INFO 10080 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2505 ms
+2023-03-13 12:45:10.314  INFO 10080 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-13 12:45:10.400  INFO 10080 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2023-03-13 12:45:10.639  INFO 10080 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-13 12:45:10.763  INFO 10080 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-13 12:45:10.767  WARN 10080 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-13 12:45:10.914  INFO 10080 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-13 12:45:10.961  INFO 10080 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2023-03-13 12:45:12.227  INFO 10080 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-13 12:45:12.237  INFO 10080 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 12:45:12.281  WARN 10080 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-13 12:45:13.207  INFO 10080 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2023-03-13 12:45:13.443  INFO 10080 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-03-13 12:45:13.780  INFO 10080 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-13 12:45:13.789  INFO 10080 --- [main] UtsuPWiki.UtsuPApplication               : Started UtsuPApplication in 6.916 seconds (JVM running for 7.508)
+2023-03-13 12:45:21.060  INFO 10080 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-13 12:45:21.061  INFO 10080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-13 12:45:21.062  INFO 10080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-13 12:45:45.613  INFO 10080 --- [http-nio-8080-exec-2] U.Controller.VocaloidAlbumsController    : Info on selected product: Utsu-P - Diarrhea 1
+2023-03-13 12:48:15.505  INFO 10080 --- [http-nio-8080-exec-9] U.Filter.JWTAuthenticationFilter         : eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJGZWRlcmljYSIsImV4cCI6MTY3ODcxMTY5NX0.APMF5YGppKS-82NekRKLnBFfbfrffX-WTd6lhEX_REdzk5qpK2Dr8Zi5a3hv6jrfjSyyqFqJIjjQAIgPM24MFA token that was created!
+2023-03-13 12:49:46.389  INFO 10080 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 12:49:46.393  INFO 10080 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-13 12:49:46.407  INFO 10080 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
