@@ -7,3 +7,21 @@ function buy(element){
 
 	window.location.href = "authors/utsu-p/albums/" + product;
 }
+
+function setTrackList(){
+	let trackList = document.getElementsByClassName("contains");
+	let collectionArr = [].slice.call(trackList);
+
+	for(let i = 0; i < trackList.length ; i++){
+	    let result = collectionArr[i].innerHTML.replace(","," ");
+	    document.getElementsByClassName("contains")[i].innerHTML = i + " " + result;
+
+	}
+}
+
+setTrackList();
+
+function setContains(){
+	
+}
+
