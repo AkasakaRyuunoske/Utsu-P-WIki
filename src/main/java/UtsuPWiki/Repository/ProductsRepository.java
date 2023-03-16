@@ -13,7 +13,7 @@ public interface ProductsRepository extends JpaRepository<Products, Long> {
     @Query(value = "SELECT * FROM Products WHERE product_name = :name", nativeQuery = true)
     Products selectProductByProductName(String name);
 
-    @Query(value = "SELECT id, song_name FROM products_additional_info WHERE product_id_fk = :id_album",
+    @Query(value = "SELECT song_name FROM products_additional_info WHERE product_id_fk = :id_album",
                    nativeQuery = true)
     String[] selectTrackListByAlbumId(long id_album);
 
