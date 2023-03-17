@@ -46,7 +46,7 @@
             </h1>
             <h1 class="item1" th:text="${product_name}" id="subheader"></h1>
             <h1 class="item2" style="font-size: 4vw">--Track List--</h1>
-            <div th:each="track : ${track_list}" th:text="${track}"></div>
+            <div th:each="track : ${track_list}" th:text="${track}" class="contains"></div>
         </div>
     </div>
 
@@ -58,6 +58,7 @@
 <script type="text/javascript" src="/js/Components/header.js"></script>
 <script type="text/javascript" src="/js/Components/footer.js"></script>
 <script type="text/javascript" src="/js/Components/navigation-component.js"></script>
+<script type="text/javascript" src="/js/buy.js"></script>
 
 <script type="text/javascript" src="/js/the_dying_message_integration.js"></script>
 </html>
