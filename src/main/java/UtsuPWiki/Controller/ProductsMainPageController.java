@@ -10,6 +10,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.Arrays;
 import java.util.List;
 
 @Log4j2
@@ -23,12 +24,8 @@ public class ProductsMainPageController {
         Navigation.addLocations(model, request);
 
         List<Products> productsList = productsRepository.findAll();
-        //String[] propertiesArray = productsRepository.getAllProperties();
 
         model.addAttribute("productsList", productsList);
-
-        //todo get done this thing
-        //model.addAttribute("propertiesArray", propertiesArray);
 
         return "buy";
     }
