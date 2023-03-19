@@ -1,7 +1,7 @@
 .album-grid-container {
   display: grid;
   grid-template-columns: auto auto;
-  gap: 0.5vw;
+/*  gap: 0.5vw;*/
   padding: 0.5vw;
   background: black;
   width: 63vw;
