@@ -47,6 +47,7 @@ public class VocaloidAlbumsController {
         model.addAttribute("product_cost"      , product.getCost());
         model.addAttribute("product_date_out"  , product.getDateOut());
         model.addAttribute("product_id", product.getId());
+        model.addAttribute("link_spotify", product.getLinkSpotify());
         model.addAttribute("track_list", productsRepository.selectTrackListByAlbumId(product.getId()));
 
         log.info("Info on selected product: " + product.getProductName() + " " + product.getId());
