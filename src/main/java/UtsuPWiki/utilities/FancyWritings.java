@@ -39,8 +39,13 @@ public class FancyWritings {
 
         if (doPrint.equals("Blaise")) {
             log.info("\n \n" +
-                    "all humanity's problems stem from mans " +
+                    "\"all humanity's problems stem from mans " +
                     "inability to sit quietly in a room alone\" (Blaise Pascal)");
+        }
+
+        if(doPrint.equals("F")){
+            log.info("\n \n " +
+                    "\"Bakit hindi mo sabukan bago mo sabihin na hindi mo kaya\" (A random Girl)");
         }
     }
 }
