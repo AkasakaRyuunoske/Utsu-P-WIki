@@ -34,6 +34,9 @@ public class Products {
     @Column(name = "product_image", nullable = false)
     private String productImage = "This product has no image.";
 
+    @Column(name = "link_spotify", nullable = true)
+    private String linkSpotify;
+
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "genres_id_fk", referencedColumnName = "id")
     private Genres genres;
