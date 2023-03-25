@@ -47,5 +47,9 @@ public class FancyWritings {
             log.info("\n \n " +
                     "\"Bakit hindi mo sabukan bago mo sabihin na hindi mo kaya\" (A random Girl)");
         }
+        
+        // Todo add this cringy quote --> one learns when one has to; one learns
+        //                                when one needs a way out; one learns at all costs. One stands over oneself with a whip;
+        //                                one flays oneself at the slightest opposition.
     }
 }
