@@ -45,7 +45,7 @@ public class FancyWritings {
 
         if(doPrint.equals("F")){
             log.info("\n \n " +
-                    "\"Bakit hindi mo sabukan bago mo sabihin na hindi mo kaya\" (A random Girl)");
+                    "\"Bakit hindi mo subukan bago mo sabihin na hindi mo kaya\" (A random Girl)");
         }
         
         // Todo add this cringy quote --> one learns when one has to; one learns
