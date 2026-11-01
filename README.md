@@ -28,6 +28,8 @@ Aside from that, his lyrics often are somewhat complex and their hidden meaning 
 He is also a member and founder of the band <a href="https://www.youtube.com/channel/UClxtqRMh8Jhl8H6hu5uAoiA/videos"> Ohayougozaimasu </a> (おはようございます, Good Morning), and producer of the idol group <a href="https://www.youtube.com/channel/UC8xlnhEOYqKCOA_zv119T0w/videos">Zsasz.</a>
 
 <h1 id="how-it-looks">How it looks?</h1>
+<h3>Buy Page:</h3>
+<img src="src/main/resources/readme_resources/buy_page_screenshot.png" width="50%">
 
 # Structure 
 
