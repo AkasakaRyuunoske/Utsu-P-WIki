@@ -6,11 +6,12 @@ Project fully dedicated to <a href="https://www.youtube.com/c/utsupofficial"> Ut
 
 # Navigation
 1. <a href="#thanks-utsu-p">Thaks Utsu-P. </a>
-2. <a href="#structure">Structure</a>
-3. <a href="#how-to-use">How to use</a>
-4. <a href="#features">Features</a>
-5. <a href="#tecnologies-used">Tecnologies used</a>
-6. <a href="#why">Why?</a>
+2. <a href="#how-it-looks">How it looks?</a>
+3. <a href="#structure">Structure</a>
+4. <a href="#how-to-use">How to use</a>
+5. <a href="#features">Features</a>
+6. <a href="#tecnologies-used">Tecnologies used</a>
+7. <a href="#why">Why?</a>
 
 # Thanks Utsu-P
 
@@ -25,6 +26,8 @@ He is well known for managing VOCALOIDs to perform shouts, screams and grunts th
 Aside from that, his lyrics often are somewhat complex and their hidden meaning is difficult to grasp at first glance.
 
 He is also a member and founder of the band <a href="https://www.youtube.com/channel/UClxtqRMh8Jhl8H6hu5uAoiA/videos"> Ohayougozaimasu </a> (おはようございます, Good Morning), and producer of the idol group <a href="https://www.youtube.com/channel/UC8xlnhEOYqKCOA_zv119T0w/videos">Zsasz.</a>
+
+<h1 id="how-it-looks">How it looks?</h1>
 
 # Structure 
 
